@@ -10,6 +10,7 @@ toc_footers:
 
 includes:
   - iloamp_introduction
+  - iloamp_gettingstarted
   - errors
 
 search: true
