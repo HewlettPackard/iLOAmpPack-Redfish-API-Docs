@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - iloamp_introduction
   - iloamp_gettingstarted
+  - iloamp_navigating
   - errors
 
 search: true

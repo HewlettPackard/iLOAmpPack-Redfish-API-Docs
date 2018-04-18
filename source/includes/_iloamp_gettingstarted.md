@@ -23,7 +23,7 @@ import sys
 import redfish
 
 # Specify the remote iLO Amp address
-login_host = "https://127.0.0.1"
+login_host = "https://{iLOAmpServer}"
 
 # Create a REDFISH object
 REDFISH_OBJ = redfish.redfish_client(base_url=login_host)
@@ -34,8 +34,21 @@ response = REDFISH_OBJ.get("/redfish/v1")
 # Print out the response
 sys.stdout.write("%s\n" % response)
 ```
-> The above command returns JSON structured like this:
+> The above command (or program) returns HTTP response headers and JSON response body structured like this:
 
+```http
+HTTP/1.1 200 OK
+Date: Tue, 17 Apr 2018 05:33:52 GMT
+Server: Apache
+Allow: GET, HEAD
+OData-Version: 4.0
+Link: </json/schema/ServiceRoot.json>; rel=describedby
+ETag: W/"4651B5FB"
+Content-Length: 1335
+X-Frame-Options: sameorigin
+Set-Cookie: HttpOnly;Secure
+Content-Type: application/json
+```
 ```json
 {
     "@odata.context": "/redfish/v1/$metadata#ServiceRoot.ServiceRoot",
@@ -111,8 +124,15 @@ Let's perform our first GET operation using the RESTful API. We will do an HTTP 
 
 Our GET operation will be against a resource at `/redfish/v1/` (with a trailing slash):
 
-It is best to perform this initial GET with a tool like the CURL or the Postman REST Client. Later you will want to do this with your own scripting code, but for now it's useful to see the HTTP header information exchanged using a browser.
+It is best to perform this initial GET with a tool like the CURL or the Postman REST Client tool. Later you will want to do this with your own scripting code. The options used with the CURL command are:
 
+* `-i` returns HTTP response headers
+* `--insecure` bypasses TLS/SSL certification verification
+* `-L` follows HTTP redirect
+
+It's also useful to see the HTTP header information exchanged using a browser or REST Client tool. 
+
+In JSON, there is no strong ordering of property names, so iLO Amplifier Pack may return JSON properties in any order. Likewise, iLO Amplifier Pack cannot assume the order of properties in any submitted JSON. This is why the best scripting data structure for a RESTful client is a dictionary: a simple set of unordered key/value pairs. This lack of ordering is also the reason you see embedded structure within objects (objects within objects). This allows us to keep related data together that is more logically organized, aesthetically pleasing to view, and helps avoid property name conflicts or ridiculously long property names. It also allows us to use identical blocks of JSON in many places in the data model, like `Status`.
 
 ## HTTP Resource Operations
 
