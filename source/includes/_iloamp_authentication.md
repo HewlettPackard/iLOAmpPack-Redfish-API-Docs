@@ -116,6 +116,15 @@ The RESTful API allows you to use HTTP Basic Authentication using a valid iLO Am
 ```shell
 curl -H "Content-Type: application/json" -X POST --data "@data.json" https://{iLOAmpServer}/redfish/v1/SessionService/Sessions/ --insecure -i
 ```
+<blockquote class="lang-specific shell">
+  <p>Contents of data.json file</p>
+  <p><code>
+  {</br>
+  "UserName": "username",</br>
+  "Password": "password"</br>
+  }</br>
+  </code></p>
+</blockquote>
 ```python
 # Creating a session
 import sys
@@ -134,15 +143,6 @@ REDFISH_OBJ = redfish.redfish_client(base_url=login_host, \
 
 # Login into the server and create a session
 REDFISH_OBJ.login(auth="session")
-```
-
-> Contents of data.json file
-
-```json
-{
-    "UserName": "username", 
-    "Password": "password"
-}
 ```
 
 > Successful HTTP headers from iLO Amplifier Pack:

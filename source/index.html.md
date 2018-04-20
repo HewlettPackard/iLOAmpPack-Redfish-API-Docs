@@ -13,6 +13,7 @@ includes:
   - iloamp_gettingstarted
   - iloamp_navigating
   - iloamp_authentication
+  - iloamp_performingaction
   - errors
 
 search: true
