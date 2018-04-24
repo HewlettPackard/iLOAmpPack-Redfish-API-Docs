@@ -14,6 +14,7 @@ includes:
   - iloamp_navigating
   - iloamp_authentication
   - iloamp_performingaction
+  - iloamp_usecases
   - errors
 
 search: true

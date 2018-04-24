@@ -99,7 +99,7 @@ In Redfish, the available actions that can be invoked are identified by a "targe
 > This action may be invoked by performing:
 
 ```shell
-curl https://{iLOAmpServer}/redfish/v1/Systems/1/Actions/ComputerSystem.Reset/
+curl https://{iLOAmpServer}/redfish/v1/Managers/iLOAmplifier/Actions/Oem/Hpe/HpeWfmManagerExt.Backup/
   -H "Content-Type: application/json" 
   -X POST 
   --data "@data.json"  
