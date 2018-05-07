@@ -146,11 +146,19 @@ Delete | DELETE resource URI | Deletes the specified resource.
 ## HTTP Status Return Codes
 
 Return Status | Description
--------------- | -------------- | --------------
+-------------- | --------------
 2xx | Successful operation.
 308 | The resource has moved
-4xx | Client-side error with message returned
-5xx | iLO error with error message returned
+400 | Bad Request -- Request is invalid.
+401 | Unauthorized -- Provided credentials is incorrect or is not authorized to perform the operation.
+403 | Forbidden -- The request is hidden for administrators only.
+404 | Not Found -- The specified request or URI could not be found.
+405 | Method Not Allowed -- The requested method is not allowed.
+406 | Not Acceptable -- The requested format is not correct.
+410 | Gone -- The requested URI has been removed.
+429 | Too Many Requests -- Too many requests to the server! Slow down!
+500 | Internal Server Error -- A problem occured with in the server. Try again later.
+503 | Service Unavailable -- Temporarily offline for maintenance. Please try again later.
 
 <aside class="notice">
 NOTE:	If an error occurs, indicated by a return code 4xx or 5xx, an ExtendedError or ExtendedInfo JSON response is returned. The expected resource is not returned.
