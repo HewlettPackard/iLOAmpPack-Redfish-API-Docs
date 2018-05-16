@@ -15,6 +15,12 @@ includes:
   - iloamp_authentication
   - iloamp_performingaction
   - iloamp_usecases
+  - iloamp_errorhandling
+  - iloamp_resmap
+  - iloamp_resourcedefnhdr
+  - iloamp_resourcedefns
+  - iloamp_msgreghdr
+  - iloamp_msgregs
 
 search: true
 ---

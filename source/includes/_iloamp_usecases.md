@@ -120,7 +120,7 @@ Software Inventory | /redfish/v1/UpdateService/SoftwareInventory
 ## Adding range of Servers
 
 ```shell
-curl https://{iLOAmpServer}//redfish/v1/ManagedNodes/ManagedSystems/ 
+curl https://{iLOAmpServer}//redfish/v1/ManagedNodes/Actions/HpeWfmManagedNodes.DiscoverServersInRange/ 
   -H "Content-Type: application/json" 
   -X POST 
   --data "@data.json"  
