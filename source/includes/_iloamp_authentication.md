@@ -114,7 +114,12 @@ The RESTful API allows you to use HTTP Basic Authentication using a valid iLO Am
 ## Creating and Using Sessions
 
 ```shell
-curl -H "Content-Type: application/json" -X POST --data "@data.json" https://{iLOAmpServer}/redfish/v1/SessionService/Sessions/ --insecure -i
+curl https://{iLOAmpServer}/redfish/v1/SessionService/Sessions/
+  -X POST
+  -H "Content-Type: application/json"
+  --data "@data.json"
+  --insecure 
+  -i
 ```
 <blockquote class="lang-specific shell">
   <p>Contents of data.json file</p>
@@ -208,7 +213,10 @@ If REDFISH_OBJ of Redfish Python Library is used, then the login method automati
 ## Log Out of a Session
 
 ```shell
-curl -X "DELETE" https://{iLOAmpServer}/redfish/v1/SessionService/Sessions/{item}/ -u username:password --insecure
+curl https://{iLOAmpServer}/redfish/v1/SessionService/Sessions/{item}/ 
+  -X "DELETE" 
+  -u username:password
+  --insecure
 ```
 ```python
 # Creating and deleting a session
