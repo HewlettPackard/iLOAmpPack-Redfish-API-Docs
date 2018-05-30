@@ -43,8 +43,8 @@ Server: Apache
 Allow: GET, HEAD
 OData-Version: 4.0
 Link: </json/schema/ServiceRoot.json>; rel=describedby
-ETag: W/"4651B5FB"
-Content-Length: 1335
+ETag: W/"4A1C99B7"
+Content-Length: 1254
 X-Frame-Options: sameorigin
 Set-Cookie: HttpOnly;Secure
 Content-Type: application/json
@@ -52,6 +52,7 @@ Content-Type: application/json
 ```json
 {
     "@odata.context": "/redfish/v1/$metadata#ServiceRoot.ServiceRoot",
+    "@odata.etag": "W/\"4A1C99B7\"",
     "@odata.id": "/redfish/v1",
     "@odata.type": "#ServiceRoot.v1_1_1.ServiceRoot",
     "AccountService": {
@@ -75,20 +76,17 @@ Content-Type: application/json
     "Name": "HPE RESTful Root Service",
     "Oem": {
         "Hpe": {
-            "@odata.type": "#HpeWfmServiceExt.v1_0_0.HpeWfmServiceExt",
+            "@odata.etag": "W/\"8D7A95D7\"",
+            "@odata.type": "#HpeWfmServiceExt.v1_1_0.HpeWfmServiceExt",
             "Links": {
                 "AggregatorService": {
                     "@odata.id": "/redfish/v1/AggregatorService"
-                },
-                "ManagedNodes": {
-                    "@odata.id": "/redfish/v1/ManagedNodes"
-                },
-                "ResourceDirectory": null
+                }
             },
             "Manager": [
                 {
-                    "ManagerFirmwareVersion": "1.20",
-                    "ManagerFirmwareVersionPass": "14",
+                    "ManagerFirmwareVersion": "1.25",
+                    "ManagerFirmwareVersionPass": "8",
                     "Model": "iLO Amplifier Pack"
                 }
             ],

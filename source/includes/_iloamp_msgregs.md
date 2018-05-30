@@ -458,7 +458,7 @@ Indicates that the service encountered an unrecognizable request body that could
 |Severity|Warning
 |Resolution|Correct the request body and resubmit the request if it failed.
 
-### HpeBiosMessageRegistry.1.0.MessagesMaxSizeExceeded
+### HpeBios.1.0.MessagesMaxSizeExceeded
 Indicates that the last configuration change attempted by the user resulted in a number of error messages that exceeded the maximum storage capacity alloted for messages corresponding to this resource.
 
 | | |
@@ -467,7 +467,7 @@ Indicates that the last configuration change attempted by the user resulted in a
 |Severity|Warning
 |Resolution|Inspect the last configuration change request for issues that may be generating errors, compare the request against the resource's schema, then retry the configuration change.
 
-### HpeBiosMessageRegistry.1.0.UnsupportedAMPConfiguration
+### HpeBios.1.0.UnsupportedAMPConfiguration
 Indicates that the user provided Advanced Memory Protection (AMP) option is not appropriate for this memory configuration, as the underlying hardware does not support it.
 
 | | |
@@ -476,7 +476,7 @@ Indicates that the user provided Advanced Memory Protection (AMP) option is not 
 |Severity|Warning
 |Resolution|Ensure that the current memory configuration meets the requirements of the requested value before applying the settings.
 
-### HpeBiosMessageRegistry.1.0.UnsupportedDramRaplValue
+### HpeBios.1.0.UnsupportedDramRaplValue
 Indicates that the user provided Running Average Power Limit (RAPL) value could not be applied due to inherent DRAM power limitation. The value may be out of bounds or invalid.
 
 | | |
@@ -485,7 +485,7 @@ Indicates that the user provided Running Average Power Limit (RAPL) value could 
 |Severity|Warning
 |Resolution|Ensure that the requested value is within the supported bounds before applying the settings.
 
-### HpeBiosMessageRegistry.1.0.UnsupportedProcessorRaplValue
+### HpeBios.1.0.UnsupportedProcessorRaplValue
 Indicates that the user provided Running Average Power Limit (RAPL) value could not be applied due to inherent processor power limitation. The value may be out of bounds or invalid.
 
 | | |
@@ -611,7 +611,7 @@ A previously requested property value change was reverted because the current ha
 |Severity|Warning
 |Resolution|Ensure that the system's hardware configuration supports the property value.
 
-### SmartStorageMessages.2.0.AddEditableDataDriveFailed
+### HpeSmartStorage.2.0.AddEditableDataDriveFailed
 Indicates that the data drive was not added due to an unknown error.
 
 | | |
@@ -620,7 +620,7 @@ Indicates that the data drive was not added due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.AddEditableSpareDriveFailed
+### HpeSmartStorage.2.0.AddEditableSpareDriveFailed
 Indicates that the spare drive was not added due to an unknown error.
 
 | | |
@@ -629,7 +629,7 @@ Indicates that the spare drive was not added due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveArrayHasFailedSpareDrive
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveArrayHasFailedSpareDrive
 Indicates that the spare drive cannot be added to the array because the array has failed spare drive(s).
 
 | | |
@@ -638,7 +638,7 @@ Indicates that the spare drive cannot be added to the array because the array ha
 |Severity|Critical
 |Resolution|Remove all failed spare drives from the array.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveArrayHasNoDataDrives
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveArrayHasNoDataDrives
 Indicates that the spare drive cannot be added to the array because the array has no data drives assigned.
 
 | | |
@@ -647,7 +647,7 @@ Indicates that the spare drive cannot be added to the array because the array ha
 |Severity|Critical
 |Resolution|Assign data drives to the array.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveArrayStatusNotOK
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveArrayStatusNotOK
 Indicates that the spare drive cannot be added to the array because the array status is not OK.
 
 | | |
@@ -656,7 +656,7 @@ Indicates that the spare drive cannot be added to the array because the array st
 |Severity|Critical
 |Resolution|Check status messages on the array for more information.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveCannotChangeSpareType
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveCannotChangeSpareType
 Indicates that the spare drive cannot be added to the array because the spare type does not match.
 
 | | |
@@ -665,7 +665,7 @@ Indicates that the spare drive cannot be added to the array because the spare ty
 |Severity|Critical
 |Resolution|Correct the spare type to match the array.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveCannotMixDriveTypes
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveCannotMixDriveTypes
 Indicates that the spare drive cannot be added to the array because its drive type does not match that of the array.
 
 | | |
@@ -674,7 +674,7 @@ Indicates that the spare drive cannot be added to the array because its drive ty
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveDriveAlreadyUsedAsSpare
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveDriveAlreadyUsedAsSpare
 Indicates that the spare drive cannot be added because the requested spare drive is already configured as a spare.
 
 | | |
@@ -683,7 +683,7 @@ Indicates that the spare drive cannot be added because the requested spare drive
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveDriveIsNotConfigurable
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveDriveIsNotConfigurable
 Indicates that the spare drive cannot be added to the array because the selected drive is not configurable.
 
 | | |
@@ -692,7 +692,7 @@ Indicates that the spare drive cannot be added to the array because the selected
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveDriveIsNotUnassigned
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveDriveIsNotUnassigned
 Indicates that the spare drive cannot be added to the array because the selected drive is not unassigned.
 
 | | |
@@ -701,7 +701,7 @@ Indicates that the spare drive cannot be added to the array because the selected
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveDriveIsNotUnassignedOrShareableStandby
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveDriveIsNotUnassignedOrShareableStandby
 Indicates that the spare drive cannot be added to the array because the requested drive is not available.
 
 | | |
@@ -710,7 +710,7 @@ Indicates that the spare drive cannot be added to the array because the requeste
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveIncompatibleBlockSize
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveIncompatibleBlockSize
 Indicates that the spare drive cannot be added to the array because its block size is not compatible with that of the array.
 
 | | |
@@ -719,7 +719,7 @@ Indicates that the spare drive cannot be added to the array because its block si
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveInvalidSAM
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveInvalidSAM
 Indicates that the spare drive cannot be added to the array because spare activation mode must be set to predictive to assign spare drives to RAID 0 volumes.
 
 | | |
@@ -728,7 +728,7 @@ Indicates that the spare drive cannot be added to the array because spare activa
 |Severity|Critical
 |Resolution|Change the spare activation mode.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveInvalidSpareType
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveInvalidSpareType
 Indicates that the spare drive cannot be added to the array because the desired spare type is invalid.
 
 | | |
@@ -737,7 +737,7 @@ Indicates that the spare drive cannot be added to the array because the desired 
 |Severity|Critical
 |Resolution|Correct the spare type of the array.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveMaxSpareDriveCountReached
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveMaxSpareDriveCountReached
 Indicates that the spare drive cannot be added to the array because the maximum number of spare drives has been reached.
 
 | | |
@@ -746,7 +746,7 @@ Indicates that the spare drive cannot be added to the array because the maximum 
 |Severity|Critical
 |Resolution|Remove one or more spare drive(s).
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveNoSpareTypeSet
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveNoSpareTypeSet
 Indicates that the spare drive cannot be added to the array because the array has no spare type set.
 
 | | |
@@ -755,7 +755,7 @@ Indicates that the spare drive cannot be added to the array because the array ha
 |Severity|Critical
 |Resolution|Specify the spare type.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveNotAllowed
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveNotAllowed
 Indicates that adding a spare drive is not allowed at this time.
 
 | | |
@@ -764,7 +764,7 @@ Indicates that adding a spare drive is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveTooSmall
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveTooSmall
 Indicates that the spare drive cannot be added to the array because the selected drive is too small.
 
 | | |
@@ -773,7 +773,7 @@ Indicates that the spare drive cannot be added to the array because the selected
 |Severity|Critical
 |Resolution|Select a larger physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableArraySpareDriveUnknownError
+### HpeSmartStorage.2.0.CanAddEditableArraySpareDriveUnknownError
 Indicates that the spare drive cannot be added to the array for an unknown reason.
 
 | | |
@@ -782,7 +782,7 @@ Indicates that the spare drive cannot be added to the array for an unknown reaso
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveArrayContainsUnsavedLogicalDrives
+### HpeSmartStorage.2.0.CanAddEditableDataDriveArrayContainsUnsavedLogicalDrives
 Indicates that the data drive cannot be added to the array because the array has unlocked logical drives.
 
 | | |
@@ -791,7 +791,7 @@ Indicates that the data drive cannot be added to the array because the array has
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveCannotMixDriveTypes
+### HpeSmartStorage.2.0.CanAddEditableDataDriveCannotMixDriveTypes
 Indicates that the data drive cannot be added to the array because its drive type does not match that of the array.
 
 | | |
@@ -800,7 +800,7 @@ Indicates that the data drive cannot be added to the array because its drive typ
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveDriveIsNotConfigurable
+### HpeSmartStorage.2.0.CanAddEditableDataDriveDriveIsNotConfigurable
 Indicates that the data drive cannot be added to the array because the selected drive is not configurable.
 
 | | |
@@ -809,7 +809,7 @@ Indicates that the data drive cannot be added to the array because the selected 
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveDriveIsNotUnassigned
+### HpeSmartStorage.2.0.CanAddEditableDataDriveDriveIsNotUnassigned
 Indicates that the data drive cannot be added to the array because the selected drive is not unassigned.
 
 | | |
@@ -818,7 +818,7 @@ Indicates that the data drive cannot be added to the array because the selected 
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveIncompatibleBlockSize
+### HpeSmartStorage.2.0.CanAddEditableDataDriveIncompatibleBlockSize
 Indicates that the data drive cannot be added to the array because its block size is not compatible with that of the array.
 
 | | |
@@ -827,7 +827,7 @@ Indicates that the data drive cannot be added to the array because its block siz
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveMaxDataDriveCountReached
+### HpeSmartStorage.2.0.CanAddEditableDataDriveMaxDataDriveCountReached
 Indicates that the data drive cannot be added to the array because the maximum number of physical drives on the array has been reached.
 
 | | |
@@ -836,7 +836,7 @@ Indicates that the data drive cannot be added to the array because the maximum n
 |Severity|Critical
 |Resolution|Remove one or more physical drive(s) from the array.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveNotAllowed
+### HpeSmartStorage.2.0.CanAddEditableDataDriveNotAllowed
 Indicates that adding a data drive is not allowed at this time.
 
 | | |
@@ -845,7 +845,7 @@ Indicates that adding a data drive is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanAddEditableDataDriveUnknownError
+### HpeSmartStorage.2.0.CanAddEditableDataDriveUnknownError
 Indicates that the data drive cannot be added to the array for an unknown reason.
 
 | | |
@@ -854,7 +854,7 @@ Indicates that the data drive cannot be added to the array for an unknown reason
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeAlreadySet
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeAlreadySet
 Indicates that desired boot volume is already set.
 
 | | |
@@ -863,7 +863,7 @@ Indicates that desired boot volume is already set.
 |Severity|Critical
 |Resolution|No actions required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeInvalidBootVolumeNumber
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeInvalidBootVolumeNumber
 Indicates that the controller boot volume cannot be set because target device is invalid.
 
 | | |
@@ -872,7 +872,7 @@ Indicates that the controller boot volume cannot be set because target device is
 |Severity|Critical
 |Resolution|Target a valid device for the boot volume.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeInvalidBootVolumeType
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeInvalidBootVolumeType
 Indicates that the controller boot volume cannot be set because the boot volume type is invalid.
 
 | | |
@@ -881,7 +881,7 @@ Indicates that the controller boot volume cannot be set because the boot volume 
 |Severity|Critical
 |Resolution|Correct the boot volume type.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeInvalidLogicalBootVolume
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeInvalidLogicalBootVolume
 Indicates that the controller boot volume cannot be set because the target logical drive is invalid.
 
 | | |
@@ -890,7 +890,7 @@ Indicates that the controller boot volume cannot be set because the target logic
 |Severity|Critical
 |Resolution|Resolution
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeInvalidPhysicalBootVolume
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeInvalidPhysicalBootVolume
 Indicates that the controller boot volume cannot be set because the target physical drive is invalid.
 
 | | |
@@ -899,7 +899,7 @@ Indicates that the controller boot volume cannot be set because the target physi
 |Severity|Critical
 |Resolution|Resolution
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeInvalidPrecedence
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeInvalidPrecedence
 Indicates that the desired boot volume priority is invalid.
 
 | | |
@@ -908,7 +908,7 @@ Indicates that the desired boot volume priority is invalid.
 |Severity|Critical
 |Resolution|Correct the boot volume priority.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeNotAllowed
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeNotAllowed
 Indicates that setting the boot volume is not allowed at this time.
 
 | | |
@@ -917,7 +917,7 @@ Indicates that setting the boot volume is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeOperationUnsupported
 Indicates that the controller does not support setting boot volumes.
 
 | | |
@@ -926,7 +926,7 @@ Indicates that the controller does not support setting boot volumes.
 |Severity|Critical
 |Resolution|Do not modify the controller boot volume.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerBootVolumeUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerBootVolumeUnknownError
 Indicates that the controller boot volume cannot be set for an unknown reason.
 
 | | |
@@ -935,7 +935,7 @@ Indicates that the controller boot volume cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDPOInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerDPOInvalidValue
 Indicates that the controller degraded performance optimization cannot be set because the desired value is invalid.
 
 | | |
@@ -944,7 +944,7 @@ Indicates that the controller degraded performance optimization cannot be set be
 |Severity|Critical
 |Resolution|Correct the controller degraded performance optimization.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDPONoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerDPONoChange
 Indicates that the desired controller degraded performance optimization is already set.
 
 | | |
@@ -953,7 +953,7 @@ Indicates that the desired controller degraded performance optimization is alrea
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDPONoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerDPONoLogicalDrives
 Indicates that the controller degraded performance optimization cannot be set because no logical drives are configured.
 
 | | |
@@ -962,7 +962,7 @@ Indicates that the controller degraded performance optimization cannot be set be
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDPONotSupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerDPONotSupported
 Indicates that the controller degraded performance optimization cannot be set because the feature is not supported.
 
 | | |
@@ -971,7 +971,7 @@ Indicates that the controller degraded performance optimization cannot be set be
 |Severity|Critical
 |Resolution|Do not modify the degraded performance optimization.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDPOUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerDPOUnknownError
 Indicates that the controller degraded performance optimization cannot be set for an unknown reason.
 
 | | |
@@ -980,7 +980,7 @@ Indicates that the controller degraded performance optimization cannot be set fo
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDriveWriteCacheModeInvalidMode
+### HpeSmartStorage.2.0.CanChangeEditableControllerDriveWriteCacheModeInvalidMode
 Indicates that the controller drive write cache mode cannot be set because the desired drive write cache mode is invalid.
 
 | | |
@@ -989,7 +989,7 @@ Indicates that the controller drive write cache mode cannot be set because the d
 |Severity|Critical
 |Resolution|Correct the drive write cache mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDriveWriteCacheModeNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerDriveWriteCacheModeNoChange
 Indicates that the desired controller drive write cache mode is already set.
 
 | | |
@@ -998,7 +998,7 @@ Indicates that the desired controller drive write cache mode is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDriveWriteCacheModeNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerDriveWriteCacheModeNoLogicalDrives
 Indicates that the controller drive write cache mode cannot be set because no logical drives are configured.
 
 | | |
@@ -1007,7 +1007,7 @@ Indicates that the controller drive write cache mode cannot be set because no lo
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDriveWriteCacheModeNotSupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerDriveWriteCacheModeNotSupported
 Indicates that the controller drive write cache mode cannot be changed because the operation is not supported.
 
 | | |
@@ -1016,7 +1016,7 @@ Indicates that the controller drive write cache mode cannot be changed because t
 |Severity|Critical
 |Resolution|Do not modify the controller drive write cache mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerDriveWriteCacheModeUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerDriveWriteCacheModeUnknownError
 Indicates that the controller drive write cache mode cannot be set for an unknown reason.
 
 | | |
@@ -1025,7 +1025,7 @@ Indicates that the controller drive write cache mode cannot be set for an unknow
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerElevatorSortInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerElevatorSortInvalidValue
 Indicates that the controller elevator sort cannot be set because the desired value is invalid.
 
 | | |
@@ -1034,7 +1034,7 @@ Indicates that the controller elevator sort cannot be set because the desired va
 |Severity|Critical
 |Resolution|Correct the controller elevator sort.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerElevatorSortNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerElevatorSortNoChange
 Indicates that the desired controller elevator sort is already set.
 
 | | |
@@ -1043,7 +1043,7 @@ Indicates that the desired controller elevator sort is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerElevatorSortNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerElevatorSortNoLogicalDrives
 Indicates that the controller elevator sort cannot be set because no logical drives are configured.
 
 | | |
@@ -1052,7 +1052,7 @@ Indicates that the controller elevator sort cannot be set because no logical dri
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerElevatorSortUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerElevatorSortUnknownError
 Indicates that the controller elevator sort cannot be set for an unknown reason.
 
 | | |
@@ -1061,7 +1061,7 @@ Indicates that the controller elevator sort cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionHasEncryptedVolumes
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionHasEncryptedVolumes
 Indicates that the encryption configuration cannot be set because encrypted logical drives exist.
 
 | | |
@@ -1070,7 +1070,7 @@ Indicates that the encryption configuration cannot be set because encrypted logi
 |Severity|Critical
 |Resolution|Delete all encrypted logical drives.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionInHBAMode
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionInHBAMode
 Indicates that the encryption configuration cannot be set because the controller is currently in or pending HBA mode.
 
 | | |
@@ -1079,7 +1079,7 @@ Indicates that the encryption configuration cannot be set because the controller
 |Severity|Critical
 |Resolution|Set the controller or connector mode to mixed or RAID mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionInvalidValue
 Indicates that the desired encryption configuration is invalid.
 
 | | |
@@ -1088,7 +1088,7 @@ Indicates that the desired encryption configuration is invalid.
 |Severity|Critical
 |Resolution|Correct the encryption configuration.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionNoChange
 Indicates that the desired encryption configuration is already set.
 
 | | |
@@ -1097,7 +1097,7 @@ Indicates that the desired encryption configuration is already set.
 |Severity|Critical
 |Resolution|Resolution
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionNotAllowed
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionNotAllowed
 Indicates that setting the encryption configuration is not allowed at this time.
 
 | | |
@@ -1106,7 +1106,7 @@ Indicates that setting the encryption configuration is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionOperationUnsupported
 Indicates that encryption is not supported on the controller.
 
 | | |
@@ -1115,7 +1115,7 @@ Indicates that encryption is not supported on the controller.
 |Severity|Critical
 |Resolution|Do not modify the encryption configuration.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerEncryptionUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerEncryptionUnknownError
 Indicates that the encryption configuration cannot be set for an unknown reason.
 
 | | |
@@ -1124,7 +1124,7 @@ Indicates that the encryption configuration cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerExpandPriorityInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerExpandPriorityInvalidValue
 Indicates that the controller expand priority cannot be set because the desired expand priority is invalid.
 
 | | |
@@ -1133,7 +1133,7 @@ Indicates that the controller expand priority cannot be set because the desired 
 |Severity|Critical
 |Resolution|Correct the expand priority.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerExpandPriorityNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerExpandPriorityNoChange
 Indicates that the desired controller expand priority is already set.
 
 | | |
@@ -1142,7 +1142,7 @@ Indicates that the desired controller expand priority is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerExpandPriorityNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerExpandPriorityNoLogicalDrives
 Indicates that the controller expand priority cannot be set because no logical drives are configured.
 
 | | |
@@ -1151,7 +1151,7 @@ Indicates that the controller expand priority cannot be set because no logical d
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerExpandPriorityUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerExpandPriorityUnknownError
 Indicates that the controller expand priority cannot be set for an unknown reason.
 
 | | |
@@ -1160,7 +1160,7 @@ Indicates that the controller expand priority cannot be set for an unknown reaso
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerFLSInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerFLSInvalidValue
 Indicates that the controller flexible latency scheduler cannot be set because the desired value is invalid.
 
 | | |
@@ -1169,7 +1169,7 @@ Indicates that the controller flexible latency scheduler cannot be set because t
 |Severity|Critical
 |Resolution|Correct the flexible latency scheduler.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerFLSNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerFLSNoChange
 Indicates that the desired controller flexible latency scheduler is already set.
 
 | | |
@@ -1178,7 +1178,7 @@ Indicates that the desired controller flexible latency scheduler is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerFLSNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerFLSNoLogicalDrives
 Indicates that the controller flexible latency scheduler cannot be set because no logical drives are configured.
 
 | | |
@@ -1187,7 +1187,7 @@ Indicates that the controller flexible latency scheduler cannot be set because n
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerFLSUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerFLSUnknownError
 Indicates that the controller flexible latency scheduler cannot be set for an unknown reason.
 
 | | |
@@ -1196,7 +1196,7 @@ Indicates that the controller flexible latency scheduler cannot be set for an un
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerIRPInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerIRPInvalidValue
 Indicates that the controller inconsistency repair policy cannot be set because the desired value is invalid.
 
 | | |
@@ -1205,7 +1205,7 @@ Indicates that the controller inconsistency repair policy cannot be set because 
 |Severity|Critical
 |Resolution|Correct the controller inconsistency repair policy.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerIRPNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerIRPNoChange
 Indicates that the desired controller inconsistency repair policy is already set.
 
 | | |
@@ -1214,7 +1214,7 @@ Indicates that the desired controller inconsistency repair policy is already set
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerIRPNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerIRPNoLogicalDrives
 Indicates that the controller inconsistency repair policy cannot be set because no logical drives are configured.
 
 | | |
@@ -1223,7 +1223,7 @@ Indicates that the controller inconsistency repair policy cannot be set because 
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerIRPUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerIRPUnknownError
 Indicates that the controller inconsistency repair policy cannot be set for an unknown reason.
 
 | | |
@@ -1232,7 +1232,7 @@ Indicates that the controller inconsistency repair policy cannot be set for an u
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerIRPUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerIRPUnsupported
 Indicates that the controller does not support changing the inconsistency repair policy.
 
 | | |
@@ -1241,7 +1241,7 @@ Indicates that the controller does not support changing the inconsistency repair
 |Severity|Critical
 |Resolution|Do not modify the inconsistency repair policy.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerMNPDelayInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerMNPDelayInvalidValue
 Indicates that the controller monitor and performance delay cannot be set because the desired value is invalid.
 
 | | |
@@ -1250,7 +1250,7 @@ Indicates that the controller monitor and performance delay cannot be set becaus
 |Severity|Critical
 |Resolution|Correct the monitor and performance delay.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerMNPDelayNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerMNPDelayNoChange
 Indicates that the desired controller monitor and performance delay is already set.
 
 | | |
@@ -1259,7 +1259,7 @@ Indicates that the desired controller monitor and performance delay is already s
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerMNPDelayNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerMNPDelayNoLogicalDrives
 Indicates that the controller monitor and performance delay cannot be set because no logical drives are configured.
 
 | | |
@@ -1268,7 +1268,7 @@ Indicates that the controller monitor and performance delay cannot be set becaus
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerMNPDelayUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerMNPDelayUnknownError
 Indicates that the controller monitor and performance delay cannot be set for an unknown reason.
 
 | | |
@@ -1277,7 +1277,7 @@ Indicates that the controller monitor and performance delay cannot be set for an
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCControllerCacheInactive
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCControllerCacheInactive
 Indicates that the controller no battery write cache cannot be set because the controller cache is inactive.
 
 | | |
@@ -1286,7 +1286,7 @@ Indicates that the controller no battery write cache cannot be set because the c
 |Severity|Critical
 |Resolution|Activate the controller cache.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCInHBAMode
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCInHBAMode
 Indicates that the controller no battery write cache cannot be set because the controller is currently in or pending HBA mode.
 
 | | |
@@ -1295,7 +1295,7 @@ Indicates that the controller no battery write cache cannot be set because the c
 |Severity|Critical
 |Resolution|Set the controller or connector mode to mixed or RAID mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCInvalidValue
 Indicates that the controller no battery write cache cannot be set because the desired value is invalid.
 
 | | |
@@ -1304,7 +1304,7 @@ Indicates that the controller no battery write cache cannot be set because the d
 |Severity|Critical
 |Resolution|Correct the no battery write cache.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCNoCachePresent
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCNoCachePresent
 Indicates that the controller no battery write cache cannot be set because there is no cache board present.
 
 | | |
@@ -1313,7 +1313,7 @@ Indicates that the controller no battery write cache cannot be set because there
 |Severity|Critical
 |Resolution|Attach a cache board.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCNoChange
 Indicates that the desired controller no battery write cache is already set.
 
 | | |
@@ -1322,7 +1322,7 @@ Indicates that the desired controller no battery write cache is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCNoLogicalDrives
 Indicates that the controller no battery write cache cannot be set because no logical drives are configured.
 
 | | |
@@ -1331,7 +1331,7 @@ Indicates that the controller no battery write cache cannot be set because no lo
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCOperationUnsupported
 Indicates that the controller does not support changing the no battery write cache.
 
 | | |
@@ -1340,7 +1340,7 @@ Indicates that the controller does not support changing the no battery write cac
 |Severity|Critical
 |Resolution|Do not modify the no battery write cache.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerNBWCUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerNBWCUnknownError
 Indicates that the controller no battery write cache cannot be set for an unknown reason.
 
 | | |
@@ -1349,7 +1349,7 @@ Indicates that the controller no battery write cache cannot be set for an unknow
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerPSSCountNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerPSSCountNoChange
 Indicates that desired controller parallel surface scan count is already set.
 
 | | |
@@ -1358,7 +1358,7 @@ Indicates that desired controller parallel surface scan count is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerPSSCountNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerPSSCountNoLogicalDrives
 Indicates that the controller parallel surface scan count cannot be set because no logical drives are configured.
 
 | | |
@@ -1367,7 +1367,7 @@ Indicates that the controller parallel surface scan count cannot be set because 
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerPSSCountOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerPSSCountOperationUnsupported
 Indicates that the controller does not support parallel surface scan.
 
 | | |
@@ -1376,7 +1376,7 @@ Indicates that the controller does not support parallel surface scan.
 |Severity|Critical
 |Resolution|Do not modify the parallel surface scan count.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerPSSCountOutOfRange
+### HpeSmartStorage.2.0.CanChangeEditableControllerPSSCountOutOfRange
 Indicates that the controller parallel surface scan count cannot be set because the desired value is out of range.
 
 | | |
@@ -1385,7 +1385,7 @@ Indicates that the controller parallel surface scan count cannot be set because 
 |Severity|Critical
 |Resolution|Correct the parallel surface scan count.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerPSSCountUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerPSSCountUnknownError
 Indicates that the controller parallel surface scan count cannot be set for an unknown reason.
 
 | | |
@@ -1394,7 +1394,7 @@ Indicates that the controller parallel surface scan count cannot be set for an u
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerQueueDepthInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerQueueDepthInvalidValue
 Indicates that the controller queue depth cannot be set because the desired value is invalid.
 
 | | |
@@ -1403,7 +1403,7 @@ Indicates that the controller queue depth cannot be set because the desired valu
 |Severity|Critical
 |Resolution|Correct the controller queue depth.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerQueueDepthNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerQueueDepthNoChange
 Indicates that the desired controller queue depth is already set.
 
 | | |
@@ -1412,7 +1412,7 @@ Indicates that the desired controller queue depth is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerQueueDepthNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerQueueDepthNoLogicalDrives
 Indicates that the controller queue depth cannot be set because no logical drives are configured.
 
 | | |
@@ -1421,7 +1421,7 @@ Indicates that the controller queue depth cannot be set because no logical drive
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerQueueDepthUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerQueueDepthUnknownError
 Indicates that the controller queue depth cannot be set for an unknown reason.
 
 | | |
@@ -1430,7 +1430,7 @@ Indicates that the controller queue depth cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentBadPowerSource
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentBadPowerSource
 Indicates that the controller read cache percent cannot be set because the backup power source is not charged or not present.
 
 | | |
@@ -1439,7 +1439,7 @@ Indicates that the controller read cache percent cannot be set because the backu
 |Severity|Critical
 |Resolution|Attach a backup power source or allow it to charge fully.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentControllerCacheInactive
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentControllerCacheInactive
 Indicates that the controller read cache percent cannot be set because the controller cache is inactive.
 
 | | |
@@ -1448,7 +1448,7 @@ Indicates that the controller read cache percent cannot be set because the contr
 |Severity|Critical
 |Resolution|Activate the controller cache.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentInHBAMode
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentInHBAMode
 Indicates that the controller read cache percent cannot be set because the controller is currently in or pending HBA mode.
 
 | | |
@@ -1457,7 +1457,7 @@ Indicates that the controller read cache percent cannot be set because the contr
 |Severity|Critical
 |Resolution|Set the controller or connector mode to mixed or RAID mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentInvalidValue
 Indicates that the controller read cache percent cannot be set because the desired value is invalid.
 
 | | |
@@ -1466,7 +1466,7 @@ Indicates that the controller read cache percent cannot be set because the desir
 |Severity|Critical
 |Resolution|Correct the read cache percent.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentNoCachePresent
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentNoCachePresent
 Indicates that the controller read cache percent cannot be set because there is no cache board present.
 
 | | |
@@ -1475,7 +1475,7 @@ Indicates that the controller read cache percent cannot be set because there is 
 |Severity|Critical
 |Resolution|Attach a cache board.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentNoChange
 Indicates that the desired controller read cache percent is already set.
 
 | | |
@@ -1484,7 +1484,7 @@ Indicates that the desired controller read cache percent is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentNoLogicalDrives
 Indicates that the controller read cache percent cannot be set because no logical drives are configured.
 
 | | |
@@ -1493,7 +1493,7 @@ Indicates that the controller read cache percent cannot be set because no logica
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerReadCachePercentUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerReadCachePercentUnknownError
 Indicates that the controller read cache percent cannot be set for an unknown reason.
 
 | | |
@@ -1502,7 +1502,7 @@ Indicates that the controller read cache percent cannot be set for an unknown re
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerRebuildPriorityInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerRebuildPriorityInvalidValue
 Indicates that the controller rebuild priority cannot be set because the desired rebuild priority is invalid.
 
 | | |
@@ -1511,7 +1511,7 @@ Indicates that the controller rebuild priority cannot be set because the desired
 |Severity|Critical
 |Resolution|Correct the rebuild priority.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerRebuildPriorityNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerRebuildPriorityNoChange
 Indicates that the desired controller rebuild priority is already set.
 
 | | |
@@ -1520,7 +1520,7 @@ Indicates that the desired controller rebuild priority is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerRebuildPriorityNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerRebuildPriorityNoLogicalDrives
 Indicates that the controller rebuild priority cannot be set because no logical drives are configured.
 
 | | |
@@ -1529,7 +1529,7 @@ Indicates that the controller rebuild priority cannot be set because no logical 
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerRebuildPriorityRapidUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerRebuildPriorityRapidUnsupported
 Indicates that the controller does not support rapid rebuild.
 
 | | |
@@ -1538,7 +1538,7 @@ Indicates that the controller does not support rapid rebuild.
 |Severity|Critical
 |Resolution|Select a non-rapid rebuild priority.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerRebuildPriorityUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerRebuildPriorityUnknownError
 Indicates that the controller rebuild priority cannot be set for an unknown reason.
 
 | | |
@@ -1547,7 +1547,7 @@ Indicates that the controller rebuild priority cannot be set for an unknown reas
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMArrayHasActiveSpare
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMArrayHasActiveSpare
 Indicates that the controller spare activation mode cannot be set to predictive because a RAID 0 logical drive with an active spare exists.
 
 | | |
@@ -1556,7 +1556,7 @@ Indicates that the controller spare activation mode cannot be set to predictive 
 |Severity|Critical
 |Resolution|Delete the RAID 0 logical drive, remove the active spare, or select a different controller spare activation mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMArrayHasAutoReplaceSpare
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMArrayHasAutoReplaceSpare
 Indicates that the controller spare activation mode cannot be set to failure because a RAID 0 logical drive with an auto-replace spare exists.
 
 | | |
@@ -1565,7 +1565,7 @@ Indicates that the controller spare activation mode cannot be set to failure bec
 |Severity|Critical
 |Resolution|Delete the RAID 0 logical drive, remove the auto-replace spare, or select a different controller spare activation mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMArrayIsTransforming
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMArrayIsTransforming
 Indicates that the controller spare activation mode cannot be set because the array is transforming.
 
 | | |
@@ -1574,7 +1574,7 @@ Indicates that the controller spare activation mode cannot be set because the ar
 |Severity|Critical
 |Resolution|Resubmit the request when the array finishes transforming.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMNoLogicalDrives
 Indicates that the controller spare activation mode cannot be set because no logical drives are configured.
 
 | | |
@@ -1583,7 +1583,7 @@ Indicates that the controller spare activation mode cannot be set because no log
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMSelectedModeActive
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMSelectedModeActive
 Indicates that the desired controller spare activation mode is already set.
 
 | | |
@@ -1592,7 +1592,7 @@ Indicates that the desired controller spare activation mode is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMUnknownError
 Indicates that the controller spare activation mode cannot be set for an unknown reason.
 
 | | |
@@ -1601,7 +1601,7 @@ Indicates that the controller spare activation mode cannot be set for an unknown
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSAMUnsupportedMode
+### HpeSmartStorage.2.0.CanChangeEditableControllerSAMUnsupportedMode
 Indicates that the controller spare activation mode is not supported.
 
 | | |
@@ -1610,7 +1610,7 @@ Indicates that the controller spare activation mode is not supported.
 |Severity|Critical
 |Resolution|Select a different spare activation mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSSAPriorityInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerSSAPriorityInvalidValue
 Indicates that the controller surface scan analysis priority cannot be set because the desired surface scan analysis priority is invalid.
 
 | | |
@@ -1619,7 +1619,7 @@ Indicates that the controller surface scan analysis priority cannot be set becau
 |Severity|Critical
 |Resolution|Correct the surface scan analysis priority.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSSAPriorityNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerSSAPriorityNoChange
 Indicates that the desired controller surface scan analysis priority is already set.
 
 | | |
@@ -1628,7 +1628,7 @@ Indicates that the desired controller surface scan analysis priority is already 
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSSAPriorityNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerSSAPriorityNoLogicalDrives
 Indicates that the controller surface scan analysis priority cannot be set because no logical drives are configured.
 
 | | |
@@ -1637,7 +1637,7 @@ Indicates that the controller surface scan analysis priority cannot be set becau
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSSAPriorityUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerSSAPriorityUnknownError
 Indicates that the controller surface scan analysis priority cannot be set for an unknown reason.
 
 | | |
@@ -1646,7 +1646,7 @@ Indicates that the controller surface scan analysis priority cannot be set for a
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSurvivalPowerModeInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerSurvivalPowerModeInvalidValue
 Indicates that the desired controller survival mode is invalid.
 
 | | |
@@ -1655,7 +1655,7 @@ Indicates that the desired controller survival mode is invalid.
 |Severity|Critical
 |Resolution|Correct the controller survival mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSurvivalPowerModeNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerSurvivalPowerModeNoChange
 Indicates that the desired survival mode is already set.
 
 | | |
@@ -1664,7 +1664,7 @@ Indicates that the desired survival mode is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSurvivalPowerModeNotConfigurable
+### HpeSmartStorage.2.0.CanChangeEditableControllerSurvivalPowerModeNotConfigurable
 Indicates that the controller survival mode cannot be set because the controller does not support survival mode configuration.
 
 | | |
@@ -1673,7 +1673,7 @@ Indicates that the controller survival mode cannot be set because the controller
 |Severity|Critical
 |Resolution|Do not modify the survival mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSurvivalPowerModeOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerSurvivalPowerModeOperationUnsupported
 Indicates that the controller survival mode cannot be set because the controller does not support survival mode.
 
 | | |
@@ -1682,7 +1682,7 @@ Indicates that the controller survival mode cannot be set because the controller
 |Severity|Critical
 |Resolution|Do not modify the survival mode.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerSurvivalPowerModeUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerSurvivalPowerModeUnknownError
 Indicates that the controller survival mode cannot be set for an unknown reason.
 
 | | |
@@ -1691,7 +1691,7 @@ Indicates that the controller survival mode cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerWCBTInvalidValue
+### HpeSmartStorage.2.0.CanChangeEditableControllerWCBTInvalidValue
 Indicates that the desired controller write cache bypass threshold is invalid.
 
 | | |
@@ -1700,7 +1700,7 @@ Indicates that the desired controller write cache bypass threshold is invalid.
 |Severity|Critical
 |Resolution|Correct the write cache bypass threshold.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerWCBTNoChange
+### HpeSmartStorage.2.0.CanChangeEditableControllerWCBTNoChange
 Indicates that desired write cache bypass threshold is already set.
 
 | | |
@@ -1709,7 +1709,7 @@ Indicates that desired write cache bypass threshold is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerWCBTNoLogicalDrives
+### HpeSmartStorage.2.0.CanChangeEditableControllerWCBTNoLogicalDrives
 Indicates that the controller write cache bypass threshold cannot be set because no logical drives are configured.
 
 | | |
@@ -1718,7 +1718,7 @@ Indicates that the controller write cache bypass threshold cannot be set because
 |Severity|Critical
 |Resolution|Configure a logical drive.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerWCBTOperationUnsupported
+### HpeSmartStorage.2.0.CanChangeEditableControllerWCBTOperationUnsupported
 Indicates that the controller write cache bypass threshold is not supported.
 
 | | |
@@ -1727,7 +1727,7 @@ Indicates that the controller write cache bypass threshold is not supported.
 |Severity|Critical
 |Resolution|Do not modify the write cache bypass threshold.
 
-### SmartStorageMessages.2.0.CanChangeEditableControllerWCBTUnknownError
+### HpeSmartStorage.2.0.CanChangeEditableControllerWCBTUnknownError
 Indicates that the controller write cache bypass threshold cannot be set for an unknown reason.
 
 | | |
@@ -1736,7 +1736,7 @@ Indicates that the controller write cache bypass threshold cannot be set for an 
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanClearEditableControllerBootVolumeInvalidPrecedence
+### HpeSmartStorage.2.0.CanClearEditableControllerBootVolumeInvalidPrecedence
 Indicates that the the boot volume cannot be cleared because the boot volume priority is invalid.
 
 | | |
@@ -1745,7 +1745,7 @@ Indicates that the the boot volume cannot be cleared because the boot volume pri
 |Severity|Critical
 |Resolution|Correct the boot volume priority.
 
-### SmartStorageMessages.2.0.CanClearEditableControllerBootVolumeNotAllowed
+### HpeSmartStorage.2.0.CanClearEditableControllerBootVolumeNotAllowed
 Indicates that clearing the controller boot volume is not allowed at this time.
 
 | | |
@@ -1754,7 +1754,7 @@ Indicates that clearing the controller boot volume is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanClearEditableControllerBootVolumeNotSet
+### HpeSmartStorage.2.0.CanClearEditableControllerBootVolumeNotSet
 Indicates that the boot volume cannot be cleared because no boot volume is set.
 
 | | |
@@ -1763,7 +1763,7 @@ Indicates that the boot volume cannot be cleared because no boot volume is set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanClearEditableControllerBootVolumeOperationUnsupported
+### HpeSmartStorage.2.0.CanClearEditableControllerBootVolumeOperationUnsupported
 Indicates that clearing the boot volume is not suppported on the controller.
 
 | | |
@@ -1772,7 +1772,7 @@ Indicates that clearing the boot volume is not suppported on the controller.
 |Severity|Critical
 |Resolution|Do not clear the controller boot volume.
 
-### SmartStorageMessages.2.0.CanClearEditableControllerBootVolumeUnknownError
+### HpeSmartStorage.2.0.CanClearEditableControllerBootVolumeUnknownError
 Indicates that the controller boot volume cannot be cleared for an unknown reason.
 
 | | |
@@ -1781,7 +1781,7 @@ Indicates that the controller boot volume cannot be cleared for an unknown reaso
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanCommitEditableConfigurationNoChangesToCommit
+### HpeSmartStorage.2.0.CanCommitEditableConfigurationNoChangesToCommit
 Indicates that the editable configuration was not committed because there are no editable changes to commit.
 
 | | |
@@ -1790,7 +1790,7 @@ Indicates that the editable configuration was not committed because there are no
 |Severity|Warning
 |Resolution|Modify the editable configuration.
 
-### SmartStorageMessages.2.0.CanCommitEditableConfigurationOutOfSync
+### HpeSmartStorage.2.0.CanCommitEditableConfigurationOutOfSync
 Indicates that an external change occured which invalidates the editable configuration.
 
 | | |
@@ -1799,7 +1799,7 @@ Indicates that an external change occured which invalidates the editable configu
 |Severity|Critical
 |Resolution|Recreate and re-submit the configuration request.
 
-### SmartStorageMessages.2.0.CanCommitEditableConfigurationUnknownError
+### HpeSmartStorage.2.0.CanCommitEditableConfigurationUnknownError
 Indicates that an editable configuration cannot be committed for an unknown reason.
 
 | | |
@@ -1808,7 +1808,7 @@ Indicates that an editable configuration cannot be committed for an unknown reas
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanCommitEditableConfigurationUnlockedLogicalDrivesExist
+### HpeSmartStorage.2.0.CanCommitEditableConfigurationUnlockedLogicalDrivesExist
 Indicates that the editable configuration was not committed because there are unlocked logical drives.
 
 | | |
@@ -1817,7 +1817,7 @@ Indicates that the editable configuration was not committed because there are un
 |Severity|Critical
 |Resolution|Lock all logical drives.
 
-### SmartStorageMessages.2.0.CanCreateEditableArrayCreatesNotAllowed
+### HpeSmartStorage.2.0.CanCreateEditableArrayCreatesNotAllowed
 Indicates that creating arrays is not allowed at this time.
 
 | | |
@@ -1826,7 +1826,7 @@ Indicates that creating arrays is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanCreateEditableArrayMaxLDCountReached
+### HpeSmartStorage.2.0.CanCreateEditableArrayMaxLDCountReached
 Indicates that the array cannot be created because the maximum number of logical drives on the controller has been reached.
 
 | | |
@@ -1835,7 +1835,7 @@ Indicates that the array cannot be created because the maximum number of logical
 |Severity|Critical
 |Resolution|Delete one or more logical drive(s).
 
-### SmartStorageMessages.2.0.CanCreateEditableArrayNoUnassignedDrivesAvailable
+### HpeSmartStorage.2.0.CanCreateEditableArrayNoUnassignedDrivesAvailable
 Indicates that the array cannot be created because no unassigned drives are available.
 
 | | |
@@ -1844,7 +1844,7 @@ Indicates that the array cannot be created because no unassigned drives are avai
 |Severity|Critical
 |Resolution|Delete an existing array or add more physical drives.
 
-### SmartStorageMessages.2.0.CanCreateEditableArrayUnknownError
+### HpeSmartStorage.2.0.CanCreateEditableArrayUnknownError
 Indicates that the array cannot be created for an unknown reason.
 
 | | |
@@ -1853,7 +1853,7 @@ Indicates that the array cannot be created for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanCreateEditableConfigControllerStatusNotOK
+### HpeSmartStorage.2.0.CanCreateEditableConfigControllerStatusNotOK
 Indicates that an editable configuration was not created because the status of the controller is not in an OK state.
 
 | | |
@@ -1862,7 +1862,7 @@ Indicates that an editable configuration was not created because the status of t
 |Severity|Critical
 |Resolution|Check status messages on the controller for more information.
 
-### SmartStorageMessages.2.0.CanCreateEditableConfigEditableConfigExists
+### HpeSmartStorage.2.0.CanCreateEditableConfigEditableConfigExists
 Indicates that an editable configuration was not created because an editable configuration already being edited.
 
 | | |
@@ -1871,7 +1871,7 @@ Indicates that an editable configuration was not created because an editable con
 |Severity|Critical
 |Resolution|Delete the existing editable configuration.
 
-### SmartStorageMessages.2.0.CanCreateEditableConfigInconsistentPortSettings
+### HpeSmartStorage.2.0.CanCreateEditableConfigInconsistentPortSettings
 Indicates that an editable configuration was not created because the controller's port settings do not match.
 
 | | |
@@ -1880,7 +1880,7 @@ Indicates that an editable configuration was not created because the controller'
 |Severity|Critical
 |Resolution|Make the port settings consistent in the request and resubmit.
 
-### SmartStorageMessages.2.0.CanCreateEditableConfigUnknownError
+### HpeSmartStorage.2.0.CanCreateEditableConfigUnknownError
 Indicates that an editable configuration cannot be created for an unknown reason.
 
 | | |
@@ -1889,7 +1889,7 @@ Indicates that an editable configuration cannot be created for an unknown reason
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanCreateEditableLogicalDriveControllerNotOK
+### HpeSmartStorage.2.0.CanCreateEditableLogicalDriveControllerNotOK
 Indicates that the logical drive cannot be created because the controller status is not OK.
 
 | | |
@@ -1898,7 +1898,7 @@ Indicates that the logical drive cannot be created because the controller status
 |Severity|Critical
 |Resolution|Check status messages on the controller for more information.
 
-### SmartStorageMessages.2.0.CanCreateEditableLogicalDriveMaxLDReached
+### HpeSmartStorage.2.0.CanCreateEditableLogicalDriveMaxLDReached
 Indicates that the logical drive cannot be created because the maximum number of logical drives on the controller has been reached.
 
 | | |
@@ -1907,7 +1907,7 @@ Indicates that the logical drive cannot be created because the maximum number of
 |Severity|Critical
 |Resolution|Delete on or more logical drive(s).
 
-### SmartStorageMessages.2.0.CanCreateEditableLogicalDriveNoFreeSpaceAvailable
+### HpeSmartStorage.2.0.CanCreateEditableLogicalDriveNoFreeSpaceAvailable
 Indicates that the logical drive cannot be created because the array has no free space available.
 
 | | |
@@ -1916,7 +1916,7 @@ Indicates that the logical drive cannot be created because the array has no free
 |Severity|Critical
 |Resolution|Delete one or more logical drive(s) from the array.
 
-### SmartStorageMessages.2.0.CanCreateEditableLogicalDriveNotAllowed
+### HpeSmartStorage.2.0.CanCreateEditableLogicalDriveNotAllowed
 Indicates that creating logical drives is not allowed at this time.
 
 | | |
@@ -1925,7 +1925,7 @@ Indicates that creating logical drives is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanCreateEditableLogicalDriveUnknownError
+### HpeSmartStorage.2.0.CanCreateEditableLogicalDriveUnknownError
 Indicates that the logical drive cannot be created for an unknown reason.
 
 | | |
@@ -1934,7 +1934,7 @@ Indicates that the logical drive cannot be created for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanDeleteEditableArrayContainsUnsavedLogicalDrives
+### HpeSmartStorage.2.0.CanDeleteEditableArrayContainsUnsavedLogicalDrives
 Indicates that the array cannot be deleted because the array contains unlocked logical drives.
 
 | | |
@@ -1943,7 +1943,7 @@ Indicates that the array cannot be deleted because the array contains unlocked l
 |Severity|Critical
 |Resolution|Lock all logical drives on the array.
 
-### SmartStorageMessages.2.0.CanDeleteEditableArrayNotAllowed
+### HpeSmartStorage.2.0.CanDeleteEditableArrayNotAllowed
 Indicates that deleting an array is not allowed at this time.
 
 | | |
@@ -1952,7 +1952,7 @@ Indicates that deleting an array is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanDeleteEditableArrayUnknownError
+### HpeSmartStorage.2.0.CanDeleteEditableArrayUnknownError
 Indicates that the array size cannot be deleted for an unknown reason.
 
 | | |
@@ -1961,7 +1961,7 @@ Indicates that the array size cannot be deleted for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanDeleteEditableLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanDeleteEditableLogicalDriveIsLocked
 Indicates that the logical drive cannot be deleted because the logical drive is locked.
 
 | | |
@@ -1970,7 +1970,7 @@ Indicates that the logical drive cannot be deleted because the logical drive is 
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanDeleteEditableLogicalDriveNotAllowed
+### HpeSmartStorage.2.0.CanDeleteEditableLogicalDriveNotAllowed
 Indicates that deleting the logical drive is not allowed at this time.
 
 | | |
@@ -1979,7 +1979,7 @@ Indicates that deleting the logical drive is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanDeleteEditableLogicalDriveNotLastLDInArray
+### HpeSmartStorage.2.0.CanDeleteEditableLogicalDriveNotLastLDInArray
 Indicates that the logical drive cannot be deleted because the logical drive is not the last logical drive on the array.
 
 | | |
@@ -1988,7 +1988,7 @@ Indicates that the logical drive cannot be deleted because the logical drive is 
 |Severity|Critical
 |Resolution|Delete the last logical drive on the array first.
 
-### SmartStorageMessages.2.0.CanDeleteEditableLogicalDriveUnknownError
+### HpeSmartStorage.2.0.CanDeleteEditableLogicalDriveUnknownError
 Indicates that the logical drive size cannot be deleted for an unknown reason.
 
 | | |
@@ -1997,7 +1997,7 @@ Indicates that the logical drive size cannot be deleted for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanEnableErasedPhysicalDriveRestrictedSanitize
+### HpeSmartStorage.2.0.CanEnableErasedPhysicalDriveRestrictedSanitize
 Indicates that the physical drive cannot be enabled because of a restricted, failed sanitize erase.
 
 | | |
@@ -2006,7 +2006,7 @@ Indicates that the physical drive cannot be enabled because of a restricted, fai
 |Severity|Critical
 |Resolution|Restart the sanitize erase on the physical drive.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveIsErasing
+### HpeSmartStorage.2.0.CanErasePhysicalDriveIsErasing
 Indicates that the physical drive cannot be erased because the drive is currently erasing.
 
 | | |
@@ -2015,7 +2015,7 @@ Indicates that the physical drive cannot be erased because the drive is currentl
 |Severity|Critical
 |Resolution|Wait for the physical drive erase to complete.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveIsFailed
+### HpeSmartStorage.2.0.CanErasePhysicalDriveIsFailed
 Indicates that the physical drive cannot be erased because the drive is failed.
 
 | | |
@@ -2024,7 +2024,7 @@ Indicates that the physical drive cannot be erased because the drive is failed.
 |Severity|Critical
 |Resolution|Check the state of the drive.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveIsHBA
+### HpeSmartStorage.2.0.CanErasePhysicalDriveIsHBA
 Indicates that the physical drive cannot be erased because the drive is exposed to the operating system.
 
 | | |
@@ -2033,7 +2033,7 @@ Indicates that the physical drive cannot be erased because the drive is exposed 
 |Severity|Critical
 |Resolution|Change the controller or connector to RAID mode to mask the drive from the operating system.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveNotAllowed
+### HpeSmartStorage.2.0.CanErasePhysicalDriveNotAllowed
 Indicates that the physical drive erase is not allowed at this time.
 
 | | |
@@ -2042,7 +2042,7 @@ Indicates that the physical drive erase is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveNotUnassigned
+### HpeSmartStorage.2.0.CanErasePhysicalDriveNotUnassigned
 Indicates that the physical drive cannot be erased because it is not unassigned.
 
 | | |
@@ -2051,7 +2051,7 @@ Indicates that the physical drive cannot be erased because it is not unassigned.
 |Severity|Critical
 |Resolution|Unassign the physical drive.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDrivePatternNotSupported
+### HpeSmartStorage.2.0.CanErasePhysicalDrivePatternNotSupported
 Indicates that the desired erase pattern is not supported on the target drive.
 
 | | |
@@ -2060,7 +2060,7 @@ Indicates that the desired erase pattern is not supported on the target drive.
 |Severity|Critical
 |Resolution|Select a different erase pattern.
 
-### SmartStorageMessages.2.0.CanErasePhysicalDriveUnknownError
+### HpeSmartStorage.2.0.CanErasePhysicalDriveUnknownError
 Indicates that the physical drive cannot be erased for an unknown reason.
 
 | | |
@@ -2069,7 +2069,7 @@ Indicates that the physical drive cannot be erased for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveAlreadyLocked
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveAlreadyLocked
 Indicates that the logical drive cannot be locked because it is already locked.
 
 | | |
@@ -2078,7 +2078,7 @@ Indicates that the logical drive cannot be locked because it is already locked.
 |Severity|Critical
 |Resolution|No action.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveNoArraySet
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveNoArraySet
 Indicates that the logical drive cannot be locked because it is not assigned to an array.
 
 | | |
@@ -2087,7 +2087,7 @@ Indicates that the logical drive cannot be locked because it is not assigned to 
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveNoRAIDLevelSet
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveNoRAIDLevelSet
 Indicates that the logical drive cannot be locked because the RAID level is not set.
 
 | | |
@@ -2096,7 +2096,7 @@ Indicates that the logical drive cannot be locked because the RAID level is not 
 |Severity|Critical
 |Resolution|Set the logical drive RAID level.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveNoSizeSet
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveNoSizeSet
 Indicates that the logical drive cannot be locked because the size is not set.
 
 | | |
@@ -2105,7 +2105,7 @@ Indicates that the logical drive cannot be locked because the size is not set.
 |Severity|Critical
 |Resolution|Set the logical drive size.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveNoStripSizeSet
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveNoStripSizeSet
 Indicates that the logical drive cannot be locked because the strip size is not set.
 
 | | |
@@ -2114,7 +2114,7 @@ Indicates that the logical drive cannot be locked because the strip size is not 
 |Severity|Critical
 |Resolution|Set the logical drive strip size.
 
-### SmartStorageMessages.2.0.CanLockEditableLogicalDriveUnknownError
+### HpeSmartStorage.2.0.CanLockEditableLogicalDriveUnknownError
 Indicates that the logical drive cannot be locked for an unknown reason.
 
 | | |
@@ -2123,7 +2123,7 @@ Indicates that the logical drive cannot be locked for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorAlreadySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorAlreadySet
 Indicates that the desired logical drive accelerator is already set.
 
 | | |
@@ -2132,7 +2132,7 @@ Indicates that the desired logical drive accelerator is already set.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorArrayUsesIOBypass
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorArrayUsesIOBypass
 Indicates that IOBypass is already set as the logical drive accelerator.
 
 | | |
@@ -2141,7 +2141,7 @@ Indicates that IOBypass is already set as the logical drive accelerator.
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorDriveTypeNotSSD
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorDriveTypeNotSSD
 Indicates that IOBypass is only supported on SSD arrays.
 
 | | |
@@ -2150,7 +2150,7 @@ Indicates that IOBypass is only supported on SSD arrays.
 |Severity|Critical
 |Resolution|Select a different logical drive accelerator for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorLogicalDriveNotCreated
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorLogicalDriveNotCreated
 Indicates that the logical drive accelerator cannot be set because the target logical drive does not exist.
 
 | | |
@@ -2159,7 +2159,7 @@ Indicates that the logical drive accelerator cannot be set because the target lo
 |Severity|Critical
 |Resolution|Create the logical drive first.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorNoArraySet
 Indicates that the logical drive accelerator cannot be set because the logical drive is not assigned to an array.
 
 | | |
@@ -2168,7 +2168,7 @@ Indicates that the logical drive accelerator cannot be set because the logical d
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorNotAllowed
 Indicates that setting the logical drive accelerator is not allowed at this time.
 
 | | |
@@ -2177,7 +2177,7 @@ Indicates that setting the logical drive accelerator is not allowed at this time
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorNotTheFirstLDInArray
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorNotTheFirstLDInArray
 Indicates that the logical drive accelerator cannot be set because the logical drive is not the first logical drive of the array.
 
 | | |
@@ -2186,7 +2186,7 @@ Indicates that the logical drive accelerator cannot be set because the logical d
 |Severity|Critical
 |Resolution|Delete the last logical drive in the array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorUnknownError
 Indicates that the logical drive accelerator cannot be set for an unknown reason.
 
 | | |
@@ -2195,7 +2195,7 @@ Indicates that the logical drive accelerator cannot be set for an unknown reason
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveAcceleratorUnsupported
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveAcceleratorUnsupported
 Indicates that the logical drive accelerator cannot be set because the desired logical drive accelerator is unsupported.
 
 | | |
@@ -2204,7 +2204,7 @@ Indicates that the logical drive accelerator cannot be set because the desired l
 |Severity|Critical
 |Resolution|Do not modify the logical drive accelerator.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayArrayHasNoDataDrives
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayArrayHasNoDataDrives
 Indicates that the logical drive cannot be assigned to the array because the array has no data drives.
 
 | | |
@@ -2213,7 +2213,7 @@ Indicates that the logical drive cannot be assigned to the array because the arr
 |Severity|Critical
 |Resolution|Add data drives to the array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayArrayStatusNotOK
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayArrayStatusNotOK
 Indicates that the logical drive cannot be assigned to the array because the array status is not OK.
 
 | | |
@@ -2222,7 +2222,7 @@ Indicates that the logical drive cannot be assigned to the array because the arr
 |Severity|Critical
 |Resolution|Check status messages on the array for more information.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayChangeArrayNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayChangeArrayNotAllowed
 Indicates that changing the array assignment of the logical drive is not allowed at this time.
 
 | | |
@@ -2231,7 +2231,7 @@ Indicates that changing the array assignment of the logical drive is not allowed
 |Severity|Critical
 |Resolution|Do not assign the logical drive to a different array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayHasUnlockedLD
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayHasUnlockedLD
 Indicates that the logical drive cannot be assigned to the array because the array has unlocked logical drives.
 
 | | |
@@ -2240,7 +2240,7 @@ Indicates that the logical drive cannot be assigned to the array because the arr
 |Severity|Critical
 |Resolution|Lock all existing logical drives on the array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayLogicalDriveIsLocked
 Indicates that the logical drive cannot be assigned to the array because the logical drive is locked.
 
 | | |
@@ -2249,7 +2249,7 @@ Indicates that the logical drive cannot be assigned to the array because the log
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayNoSpaceAvailableOnArray
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayNoSpaceAvailableOnArray
 Indicates that the logical drive cannot be assigned to the array because the array has no available space.
 
 | | |
@@ -2258,7 +2258,7 @@ Indicates that the logical drive cannot be assigned to the array because the arr
 |Severity|Critical
 |Resolution|Free up space on the array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayNotAllowed
 Indicates that assigning the logical drive to the array is not allowed at this time.
 
 | | |
@@ -2267,7 +2267,7 @@ Indicates that assigning the logical drive to the array is not allowed at this t
 |Severity|Critical
 |Resolution|Resolution
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayNotDataArray
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayNotDataArray
 Indicates that the logical drive cannot be assigned to the array because the array is not a data array.
 
 | | |
@@ -2276,7 +2276,7 @@ Indicates that the logical drive cannot be assigned to the array because the arr
 |Severity|Critical
 |Resolution|Assign the logical drive to a different array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveArrayUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveArrayUnknownError
 Indicates that the logical drive cannot be assigned to the array for an unknown reason.
 
 | | |
@@ -2285,7 +2285,7 @@ Indicates that the logical drive cannot be assigned to the array for an unknown 
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodDriveTypeNotSSD
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodDriveTypeNotSSD
 Indicates that the logical drive initialization method cannot be set for a non-SSD logical drive.
 
 | | |
@@ -2294,7 +2294,7 @@ Indicates that the logical drive initialization method cannot be set for a non-S
 |Severity|Critical
 |Resolution|Set a different logical drive initialization method for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodLDIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodLDIsLocked
 Indicates that the logical drive initialization method cannot be set because the logical drive is locked.
 
 | | |
@@ -2303,7 +2303,7 @@ Indicates that the logical drive initialization method cannot be set because the
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodNoArraySet
 Indicates that the logical drive initialization method cannot be set because the logical drive is not assigned to an array.
 
 | | |
@@ -2312,7 +2312,7 @@ Indicates that the logical drive initialization method cannot be set because the
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodNoRAIDLevelSet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodNoRAIDLevelSet
 Indicates that the logical drive initialization method cannot be set because the logical drive has no RAID level set.
 
 | | |
@@ -2321,7 +2321,7 @@ Indicates that the logical drive initialization method cannot be set because the
 |Severity|Critical
 |Resolution|Set the logical drive RAID level.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodNotAllowed
 Indicates that setting the logical drive initialization method is not allowed at this time.
 
 | | |
@@ -2330,7 +2330,7 @@ Indicates that setting the logical drive initialization method is not allowed at
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodNotFirstLDInArray
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodNotFirstLDInArray
 Indicates that the logical drive initialization method cannot be set for the logical drive because the logical drive is not the first in the array.
 
 | | |
@@ -2339,7 +2339,7 @@ Indicates that the logical drive initialization method cannot be set for the log
 |Severity|Critical
 |Resolution|Set a different logical drive initialization method for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodNotRequiredForRAID
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodNotRequiredForRAID
 Indicates that rapid parity initialization is not valid for the RAID level of the logical drive.
 
 | | |
@@ -2348,7 +2348,7 @@ Indicates that rapid parity initialization is not valid for the RAID level of th
 |Severity|Critical
 |Resolution|Set a different logical drive initialization method for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodOPONotSupported
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodOPONotSupported
 Indicates that the controller does not support over provisioning optimization.
 
 | | |
@@ -2357,7 +2357,7 @@ Indicates that the controller does not support over provisioning optimization.
 |Severity|Critical
 |Resolution|Set a different logical drive initialization method for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodRPINotSupported
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodRPINotSupported
 Indicates that the controller does not support rapid parity initialization.
 
 | | |
@@ -2366,7 +2366,7 @@ Indicates that the controller does not support rapid parity initialization.
 |Severity|Critical
 |Resolution|Set a different logical drive initialization method for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveInitializationMethodUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveInitializationMethodUnknownError
 Indicates that the logical drive initialization method cannot be set for the logical drive for an unknown reason.
 
 | | |
@@ -2375,7 +2375,7 @@ Indicates that the logical drive initialization method cannot be set for the log
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelInvalidCharacter
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelInvalidCharacter
 Indicates that the logical drive label cannot be set because an invalid character was found in the logical drive label.
 
 | | |
@@ -2384,7 +2384,7 @@ Indicates that the logical drive label cannot be set because an invalid characte
 |Severity|Critical
 |Resolution|Remove invalid characters from the logical drive label.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelInvalidLabel
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelInvalidLabel
 Indicates that the logical drive label cannot be set because the logical drive label is invalid.
 
 | | |
@@ -2393,7 +2393,7 @@ Indicates that the logical drive label cannot be set because the logical drive l
 |Severity|Critical
 |Resolution|Correct the logical drive label.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelInvalidLogicalDrive
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelInvalidLogicalDrive
 Indicates that the logical drive label cannot be set because the target logical drive is invalid.
 
 | | |
@@ -2402,7 +2402,7 @@ Indicates that the logical drive label cannot be set because the target logical 
 |Severity|Critical
 |Resolution|Target a different logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelLabelTooLong
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelLabelTooLong
 Indicates that the logical drive label cannot be set because the logical drive label is too long.
 
 | | |
@@ -2411,7 +2411,7 @@ Indicates that the logical drive label cannot be set because the logical drive l
 |Severity|Critical
 |Resolution|Decrease the length of the logical drive label.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelLogicalDriveIsLocked
 Indicates that the logical drive label cannot be set because the logical drive is locked.
 
 | | |
@@ -2420,7 +2420,7 @@ Indicates that the logical drive label cannot be set because the logical drive i
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelNoArraySet
 Indicates that the logical drive label cannot be set because the logical drive is not assigned to an array.
 
 | | |
@@ -2429,7 +2429,7 @@ Indicates that the logical drive label cannot be set because the logical drive i
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveLabelUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveLabelUnknownError
 Indicates that the logical drive label cannot be set for an unknown reason.
 
 | | |
@@ -2438,7 +2438,7 @@ Indicates that the logical drive label cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelFullStripeSizeOverflow
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelFullStripeSizeOverflow
 Indicates that the logical drive RAID level cannot be set because it will cause the stripe size of the logical drive to exceed the maximum safe value.
 
 | | |
@@ -2447,7 +2447,7 @@ Indicates that the logical drive RAID level cannot be set because it will cause 
 |Severity|Critical
 |Resolution|Select a different RAID level for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelInvalidRAIDLevel
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelInvalidRAIDLevel
 Indicates that the logical drive RAID level cannot be set because the desired RAID level is invalid.
 
 | | |
@@ -2456,7 +2456,7 @@ Indicates that the logical drive RAID level cannot be set because the desired RA
 |Severity|Critical
 |Resolution|Correct the RAID level of the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelLogicalDriveIsLocked
 Indicates that the logical drive RAID level cannot be set because the logical drive is locked.
 
 | | |
@@ -2465,7 +2465,7 @@ Indicates that the logical drive RAID level cannot be set because the logical dr
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelNoArraySet
 Indicates that the logical drive RAID level cannot be set because the logical drive has not been assigned to an array.
 
 | | |
@@ -2474,7 +2474,7 @@ Indicates that the logical drive RAID level cannot be set because the logical dr
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelNotAllowed
 Indicates that setting the logical drive RAID level is not allowed at this time.
 
 | | |
@@ -2483,7 +2483,7 @@ Indicates that setting the logical drive RAID level is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelNotEnoughFreeSpaceForRAID
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelNotEnoughFreeSpaceForRAID
 Indicates that the logical drive RAID level cannot be set because there is not enough available free space on the array.
 
 | | |
@@ -2492,7 +2492,7 @@ Indicates that the logical drive RAID level cannot be set because there is not e
 |Severity|Critical
 |Resolution|Select a different RAID level for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelUnknownError
 Indicates that the logical drive RAID level cannot be set for an unknown reason.
 
 | | |
@@ -2501,7 +2501,7 @@ Indicates that the logical drive RAID level cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelUnsupportedDriveCount
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelUnsupportedDriveCount
 Indicates that the logical drive RAID level cannot be set because the number of drives assigned to the array is not supported by the desired RAID level.
 
 | | |
@@ -2510,7 +2510,7 @@ Indicates that the logical drive RAID level cannot be set because the number of 
 |Severity|Critical
 |Resolution|Select a different RAID level for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveRAIDLevelUnsupportedRAIDLevel
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveRAIDLevelUnsupportedRAIDLevel
 Indicates that the logical drive RAID level cannot be set because the desired RAID level is not supported on the controller.
 
 | | |
@@ -2519,7 +2519,7 @@ Indicates that the logical drive RAID level cannot be set because the desired RA
 |Severity|Critical
 |Resolution|Select a different RAID level for the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeInvalidSizeType
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeInvalidSizeType
 Indicates that the logical drive size cannot be set because the units given for the size is invalid.
 
 | | |
@@ -2528,7 +2528,7 @@ Indicates that the logical drive size cannot be set because the units given for 
 |Severity|Critical
 |Resolution|Correct the size of the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeLogicalDriveIsLocked
 Indicates that the logical drive size cannot be set because the logical drive is locked.
 
 | | |
@@ -2537,7 +2537,7 @@ Indicates that the logical drive size cannot be set because the logical drive is
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeNoArraySet
 Indicates that the logical drive size cannot be set because the logical drive is not assigned to an array.
 
 | | |
@@ -2546,7 +2546,7 @@ Indicates that the logical drive size cannot be set because the logical drive is
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeNoRAIDLevelSet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeNoRAIDLevelSet
 Indicates that the logical drive size cannot be set because the logical drive RAID level is not set.
 
 | | |
@@ -2555,7 +2555,7 @@ Indicates that the logical drive size cannot be set because the logical drive RA
 |Severity|Critical
 |Resolution|Set the logical drive RAID level.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeNoStripSizeSet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeNoStripSizeSet
 Indicates that the logical drive size cannot be set because the logical drive strip size is not set.
 
 | | |
@@ -2564,7 +2564,7 @@ Indicates that the logical drive size cannot be set because the logical drive st
 |Severity|Critical
 |Resolution|Set the logical drive strip size.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeNotAllowed
 Indicates that setting the logical drive size is not allowed at this time.
 
 | | |
@@ -2573,7 +2573,7 @@ Indicates that setting the logical drive size is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeRequestedSizeTooLarge
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeRequestedSizeTooLarge
 Indicates that the logical drive size cannot be set because the logical drive size is too large.
 
 | | |
@@ -2582,7 +2582,7 @@ Indicates that the logical drive size cannot be set because the logical drive si
 |Severity|Critical
 |Resolution|Decrease the logical drive size.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeRequestedSizeTooSmall
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeRequestedSizeTooSmall
 Indicates that the logical drive size cannot be set because the logical drive size is too small.
 
 | | |
@@ -2591,7 +2591,7 @@ Indicates that the logical drive size cannot be set because the logical drive si
 |Severity|Critical
 |Resolution|Increase the logical drive size.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveSizeUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveSizeUnknownError
 Indicates that the logical drive size cannot be set for an unknown reason.
 
 | | |
@@ -2600,7 +2600,7 @@ Indicates that the logical drive size cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeInvalidValue
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeInvalidValue
 Indicates that the logical drive strip size cannot be set because the desired value is invalid.
 
 | | |
@@ -2609,7 +2609,7 @@ Indicates that the logical drive strip size cannot be set because the desired va
 |Severity|Critical
 |Resolution|Correct the value of the logical drive strip size.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeLogicalDriveIsLocked
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeLogicalDriveIsLocked
 Indicates that the logical drive strip size cannot be set because the logical drive is locked.
 
 | | |
@@ -2618,7 +2618,7 @@ Indicates that the logical drive strip size cannot be set because the logical dr
 |Severity|Critical
 |Resolution|Unlock the logical drive.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeNoArraySet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeNoArraySet
 Indicates that the logical drive stirp size cannot be set because the logical drive is not assigned to an array.
 
 | | |
@@ -2627,7 +2627,7 @@ Indicates that the logical drive stirp size cannot be set because the logical dr
 |Severity|Critical
 |Resolution|Assign the logical drive to an array.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeNoRAIDLevelSet
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeNoRAIDLevelSet
 Indicates that the logical drive strip size cannot be set because the RAID level is not set.
 
 | | |
@@ -2636,7 +2636,7 @@ Indicates that the logical drive strip size cannot be set because the RAID level
 |Severity|Critical
 |Resolution|Set the logical drive RAID level.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeNotAllowed
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeNotAllowed
 Indicates that setting the logical drive strip size is not allowed at this time.
 
 | | |
@@ -2645,7 +2645,7 @@ Indicates that setting the logical drive strip size is not allowed at this time.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeUnknownError
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeUnknownError
 Indicates that the logical drive strip size cannot be set for an unknown reason.
 
 | | |
@@ -2654,7 +2654,7 @@ Indicates that the logical drive strip size cannot be set for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanSetEditableLogicalDriveStripSizeValueOutOfRange
+### HpeSmartStorage.2.0.CanSetEditableLogicalDriveStripSizeValueOutOfRange
 Indicates that the logical drive strip size cannot be set because the desired value is out of range.
 
 | | |
@@ -2663,7 +2663,7 @@ Indicates that the logical drive strip size cannot be set because the desired va
 |Severity|Critical
 |Resolution|Correct the value of the logical drive strip size.
 
-### SmartStorageMessages.2.0.CanStopEnableErasedPhysicalDriveUnknownError
+### HpeSmartStorage.2.0.CanStopEnableErasedPhysicalDriveUnknownError
 Indicates that the physical drive cannot be enabled for an unknown reason.
 
 | | |
@@ -2672,7 +2672,7 @@ Indicates that the physical drive cannot be enabled for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.CanStopErasePhysicalDriveNotErasing
+### HpeSmartStorage.2.0.CanStopErasePhysicalDriveNotErasing
 Indicates that the physical drive was not enabled because it is not erasing.
 
 | | |
@@ -2681,7 +2681,7 @@ Indicates that the physical drive was not enabled because it is not erasing.
 |Severity|Warning
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.CanStopErasePhysicalDriveSanitizing
+### HpeSmartStorage.2.0.CanStopErasePhysicalDriveSanitizing
 Indicates that the physical drive cannot be enabled because it is currently sanitizing.
 
 | | |
@@ -2690,7 +2690,7 @@ Indicates that the physical drive cannot be enabled because it is currently sani
 |Severity|Critical
 |Resolution|Resubmit the request at a later time.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeConnectorNotFound
+### HpeSmartStorage.2.0.ChangeConnectorModeConnectorNotFound
 Indicates that the connector mode was not changed because the connector was not found.
 
 | | |
@@ -2699,7 +2699,7 @@ Indicates that the connector mode was not changed because the connector was not 
 |Severity|Critical
 |Resolution|Select a valid connector.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeFailed
+### HpeSmartStorage.2.0.ChangeConnectorModeFailed
 Indicates that the connector was not changed to the desired mode due to an unknown error.
 
 | | |
@@ -2708,7 +2708,7 @@ Indicates that the connector was not changed to the desired mode due to an unkno
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeLogicalDrivesExist
+### HpeSmartStorage.2.0.ChangeConnectorModeLogicalDrivesExist
 Indicates that the connector mode cannot be changed because the connector has configured logical drives.
 
 | | |
@@ -2717,7 +2717,7 @@ Indicates that the connector mode cannot be changed because the connector has co
 |Severity|Critical
 |Resolution|Delete the configured logical drives.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeSelectedModePending
+### HpeSmartStorage.2.0.ChangeConnectorModeSelectedModePending
 Indicates that the desired connector mode is already pending a reboot.
 
 | | |
@@ -2726,7 +2726,7 @@ Indicates that the desired connector mode is already pending a reboot.
 |Severity|Critical
 |Resolution|Reboot the system to apply the pending connector mode.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeUnknownError
+### HpeSmartStorage.2.0.ChangeConnectorModeUnknownError
 Indicates that the connector mode cannot be changed for an unknown reason.
 
 | | |
@@ -2735,7 +2735,7 @@ Indicates that the connector mode cannot be changed for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeUnsupportedMode
+### HpeSmartStorage.2.0.ChangeConnectorModeUnsupportedMode
 Indicates that the desired connector mode is invalid or unsupported.
 
 | | |
@@ -2744,7 +2744,7 @@ Indicates that the desired connector mode is invalid or unsupported.
 |Severity|Critical
 |Resolution|Correct the value of the connector mode.
 
-### SmartStorageMessages.2.0.ChangeConnectorModeUnsupportedOperation
+### HpeSmartStorage.2.0.ChangeConnectorModeUnsupportedOperation
 Indicates that changing the connector mode is not supported on the connector.
 
 | | |
@@ -2753,7 +2753,7 @@ Indicates that changing the connector mode is not supported on the connector.
 |Severity|Critical
 |Resolution|Remove the connector mode property from the request.
 
-### SmartStorageMessages.2.0.ChangeControllerModeEncryptionIsEnabled
+### HpeSmartStorage.2.0.ChangeControllerModeEncryptionIsEnabled
 Indicates that the controller mode cannot be changed because encryption is enabled.
 
 | | |
@@ -2762,7 +2762,7 @@ Indicates that the controller mode cannot be changed because encryption is enabl
 |Severity|Critical
 |Resolution|Disable encryption on the controller.
 
-### SmartStorageMessages.2.0.ChangeControllerModeFailed
+### HpeSmartStorage.2.0.ChangeControllerModeFailed
 Indicates that the controller was not changed to the desired mode due to an unknown error.
 
 | | |
@@ -2771,7 +2771,7 @@ Indicates that the controller was not changed to the desired mode due to an unkn
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeControllerModeLogicalDrivesExist
+### HpeSmartStorage.2.0.ChangeControllerModeLogicalDrivesExist
 Indicates that the controller mode cannot be changed because the controller has configured logical drives.
 
 | | |
@@ -2780,7 +2780,7 @@ Indicates that the controller mode cannot be changed because the controller has 
 |Severity|Critical
 |Resolution|Delete the configured logical drives.
 
-### SmartStorageMessages.2.0.ChangeControllerModeSelectedModePending
+### HpeSmartStorage.2.0.ChangeControllerModeSelectedModePending
 Indicates that the desired controller mode is already pending a reboot.
 
 | | |
@@ -2789,7 +2789,7 @@ Indicates that the desired controller mode is already pending a reboot.
 |Severity|Critical
 |Resolution|Reboot the system to apply the pending controller mode.
 
-### SmartStorageMessages.2.0.ChangeControllerModeUnknownError
+### HpeSmartStorage.2.0.ChangeControllerModeUnknownError
 Indicates that the controller mode cannot be changed for an unknown reason.
 
 | | |
@@ -2798,7 +2798,7 @@ Indicates that the controller mode cannot be changed for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.ChangeControllerModeUnsupportedMode
+### HpeSmartStorage.2.0.ChangeControllerModeUnsupportedMode
 Indicates that the desired controller mode is invalid or unsupported.
 
 | | |
@@ -2807,7 +2807,7 @@ Indicates that the desired controller mode is invalid or unsupported.
 |Severity|Critical
 |Resolution|Correct the value of the controller mode.
 
-### SmartStorageMessages.2.0.ChangeControllerModeUnsupportedOperation
+### HpeSmartStorage.2.0.ChangeControllerModeUnsupportedOperation
 Indicates that changing the controller mode is not supported on controller.
 
 | | |
@@ -2816,7 +2816,7 @@ Indicates that changing the controller mode is not supported on controller.
 |Severity|Critical
 |Resolution|Remove the controller mode property from the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerBootVolumeConflict
+### HpeSmartStorage.2.0.ChangeEditableControllerBootVolumeConflict
 Indicates that multiple drives have been requested as a boot volume.
 
 | | |
@@ -2825,7 +2825,7 @@ Indicates that multiple drives have been requested as a boot volume.
 |Severity|Critical
 |Resolution|Select only one device as a boot volume.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerBootVolumeFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerBootVolumeFailed
 Indicates that the controller boot volume was not set due to an unknown error.
 
 | | |
@@ -2834,7 +2834,7 @@ Indicates that the controller boot volume was not set due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerDPOFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerDPOFailed
 Indicates that the controller degraded performance optimization was not set due to an unknown error.
 
 | | |
@@ -2843,7 +2843,7 @@ Indicates that the controller degraded performance optimization was not set due 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerDriveWriteCacheModeFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerDriveWriteCacheModeFailed
 Indicates that the controller drive write cache mode was not set due to an unknown error.
 
 | | |
@@ -2852,7 +2852,7 @@ Indicates that the controller drive write cache mode was not set due to an unkno
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerElevatorSortFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerElevatorSortFailed
 Indicates that the controller elevator sort was not set due to an unknown error.
 
 | | |
@@ -2861,7 +2861,7 @@ Indicates that the controller elevator sort was not set due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerEncryptionFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerEncryptionFailed
 Indicates that the controller encryption configuration was not set due to an unknown error.
 
 | | |
@@ -2870,7 +2870,7 @@ Indicates that the controller encryption configuration was not set due to an unk
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerExpandPriorityFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerExpandPriorityFailed
 Indicates that the controller expand priority was not set due to an unknown error.
 
 | | |
@@ -2879,7 +2879,7 @@ Indicates that the controller expand priority was not set due to an unknown erro
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerFLSFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerFLSFailed
 Indicates that the controller flexible latency scheduler was not set due to an unknown error.
 
 | | |
@@ -2888,7 +2888,7 @@ Indicates that the controller flexible latency scheduler was not set due to an u
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerIRPFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerIRPFailed
 Indicates that the controller inconsistency repair policy was not set due to an unknown error.
 
 | | |
@@ -2897,7 +2897,7 @@ Indicates that the controller inconsistency repair policy was not set due to an 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerMNPDelayFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerMNPDelayFailed
 Indicates that the controller monitor and performance delay was not set due to an unknown error.
 
 | | |
@@ -2906,7 +2906,7 @@ Indicates that the controller monitor and performance delay was not set due to a
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerNBWCFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerNBWCFailed
 Indicates that the controller no battery write cache was not set due to an unknown error.
 
 | | |
@@ -2915,7 +2915,7 @@ Indicates that the controller no battery write cache was not set due to an unkno
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerPSSCountFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerPSSCountFailed
 Indicates that the controller parallel surface scan count was not set due to an unknown error.
 
 | | |
@@ -2924,7 +2924,7 @@ Indicates that the controller parallel surface scan count was not set due to an 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerQueueDepthFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerQueueDepthFailed
 Indicates that the controller queue depth was not set due to an unknown error.
 
 | | |
@@ -2933,7 +2933,7 @@ Indicates that the controller queue depth was not set due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerReadCachePercentFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerReadCachePercentFailed
 Indicates that the controller read cache percent was not set due to an unknown error.
 
 | | |
@@ -2942,7 +2942,7 @@ Indicates that the controller read cache percent was not set due to an unknown e
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerRebuildPriorityFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerRebuildPriorityFailed
 Indicates that the controller rebuild priority was not set due to an unknown error.
 
 | | |
@@ -2951,7 +2951,7 @@ Indicates that the controller rebuild priority was not set due to an unknown err
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerSAMFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerSAMFailed
 Indicates that the controller spare activation mode was not set due to an unknown error.
 
 | | |
@@ -2960,7 +2960,7 @@ Indicates that the controller spare activation mode was not set due to an unknow
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerSSAPriorityFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerSSAPriorityFailed
 Indicates that the controller surface scan analysis priority was not set due to an unknown error.
 
 | | |
@@ -2969,7 +2969,7 @@ Indicates that the controller surface scan analysis priority was not set due to 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerSurvivalPowerModeFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerSurvivalPowerModeFailed
 Indicates that the controller survival mode was not set due to an unknown error.
 
 | | |
@@ -2978,7 +2978,7 @@ Indicates that the controller survival mode was not set due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangeEditableControllerWCBTFailed
+### HpeSmartStorage.2.0.ChangeEditableControllerWCBTFailed
 Indicates that the controller write cache bypass threshold was not set due to an unknown error.
 
 | | |
@@ -2987,7 +2987,7 @@ Indicates that the controller write cache bypass threshold was not set due to an
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangePowerModeFailed
+### HpeSmartStorage.2.0.ChangePowerModeFailed
 Indicates that the power mode was not changed to maximum due to an unknown error.
 
 | | |
@@ -2996,7 +2996,7 @@ Indicates that the power mode was not changed to maximum due to an unknown error
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ChangePowerModeSelectedModePending
+### HpeSmartStorage.2.0.ChangePowerModeSelectedModePending
 Indicates that the desired power mode is already pending a reboot.
 
 | | |
@@ -3005,7 +3005,7 @@ Indicates that the desired power mode is already pending a reboot.
 |Severity|Critical
 |Resolution|Reboot the system to apply the pending power mode.
 
-### SmartStorageMessages.2.0.ChangePowerModeUnknownError
+### HpeSmartStorage.2.0.ChangePowerModeUnknownError
 Indicates that the power mode cannot be changed for an unknown reason.
 
 | | |
@@ -3014,7 +3014,7 @@ Indicates that the power mode cannot be changed for an unknown reason.
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.ChangePowerModeUnsupportedMode
+### HpeSmartStorage.2.0.ChangePowerModeUnsupportedMode
 Indicates that the desired power mode is invalid or unsupported.
 
 | | |
@@ -3023,7 +3023,7 @@ Indicates that the desired power mode is invalid or unsupported.
 |Severity|Critical
 |Resolution|Correct the value of the power mode.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMEncryptionLocked
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMEncryptionLocked
 Indicates that the controller configuration metadata on the physical drive cannot be cleared because encryption is enabled.
 
 | | |
@@ -3032,7 +3032,7 @@ Indicates that the controller configuration metadata on the physical drive canno
 |Severity|Critical
 |Resolution|Disabled encryption on the controller.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMNoCCM
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMNoCCM
 Indicates that the controller configuration metadata on physical drives cannot be cleared because no physical drives drives contain configuration metadata.
 
 | | |
@@ -3041,7 +3041,7 @@ Indicates that the controller configuration metadata on physical drives cannot b
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMNoDrivesAttached
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMNoDrivesAttached
 Indicates that the controller configuration metadata on physical drives cannot be cleared because the controller has no physical drives attached.
 
 | | |
@@ -3050,7 +3050,7 @@ Indicates that the controller configuration metadata on physical drives cannot b
 |Severity|Critical
 |Resolution|No action required.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMNotAllowed
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMNotAllowed
 Indicates that clearing the controller configuration metadata on physical drives is not allowed at this time.
 
 | | |
@@ -3059,7 +3059,7 @@ Indicates that clearing the controller configuration metadata on physical drives
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMNotSupported
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMNotSupported
 Indicates that clearing the controller configuration metadata on physical drives is not supported on this controller.
 
 | | |
@@ -3068,7 +3068,7 @@ Indicates that clearing the controller configuration metadata on physical drives
 |Severity|Critical
 |Resolution|Do not attempt to clear the controller configuration metadata from the physical drive.
 
-### SmartStorageMessages.2.0.ClearConfigurationClearPhysicalDriveCCMUnknownError
+### HpeSmartStorage.2.0.ClearConfigurationClearPhysicalDriveCCMUnknownError
 Indicates that the controller configuration metadata on physical drives cannot be cleared for an unknown reason.
 
 | | |
@@ -3077,7 +3077,7 @@ Indicates that the controller configuration metadata on physical drives cannot b
 |Severity|Critical
 |Resolution|No resolution available.
 
-### SmartStorageMessages.2.0.ClearEditableControllerBootVolumeFailed
+### HpeSmartStorage.2.0.ClearEditableControllerBootVolumeFailed
 Indicates that the controller boot volume was not cleared due to an unknown error.
 
 | | |
@@ -3086,7 +3086,7 @@ Indicates that the controller boot volume was not cleared due to an unknown erro
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CommitEditableConfigurationFailed
+### HpeSmartStorage.2.0.CommitEditableConfigurationFailed
 Indicates that the editable configuration was not committed because of an unknown reason.
 
 | | |
@@ -3095,7 +3095,7 @@ Indicates that the editable configuration was not committed because of an unknow
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CreateEditableArrayFailed
+### HpeSmartStorage.2.0.CreateEditableArrayFailed
 Indicates that the array was not created due to an unknown error.
 
 | | |
@@ -3104,7 +3104,7 @@ Indicates that the array was not created due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CreateEditableConfigFailed
+### HpeSmartStorage.2.0.CreateEditableConfigFailed
 Indicates that the editable configuration was not created due to an unknown error.
 
 | | |
@@ -3113,7 +3113,7 @@ Indicates that the editable configuration was not created due to an unknown erro
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.CreateEditableLogicalDriveFailed
+### HpeSmartStorage.2.0.CreateEditableLogicalDriveFailed
 Indicates that the logical drive was not created due to an unknown error.
 
 | | |
@@ -3122,7 +3122,7 @@ Indicates that the logical drive was not created due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.DataDriveNotFound
+### HpeSmartStorage.2.0.DataDriveNotFound
 Indicates that the requested data drive was not found.
 
 | | |
@@ -3131,7 +3131,7 @@ Indicates that the requested data drive was not found.
 |Severity|Critical
 |Resolution|Modify the requested data drive list.
 
-### SmartStorageMessages.2.0.DataDriveSetNotFound
+### HpeSmartStorage.2.0.DataDriveSetNotFound
 Indicates that the requested data drive set was not found.
 
 | | |
@@ -3140,7 +3140,7 @@ Indicates that the requested data drive set was not found.
 |Severity|Critical
 |Resolution|Modify the requested data drive set.
 
-### SmartStorageMessages.2.0.DeleteEditableArrayFailed
+### HpeSmartStorage.2.0.DeleteEditableArrayFailed
 Indicates that the logical drive was not deleted due to an unknown error.
 
 | | |
@@ -3149,7 +3149,7 @@ Indicates that the logical drive was not deleted due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.DeleteEditableLogicalDriveFailed
+### HpeSmartStorage.2.0.DeleteEditableLogicalDriveFailed
 Indicates that the logical drive was not deleted due to an unknown error.
 
 | | |
@@ -3158,7 +3158,7 @@ Indicates that the logical drive was not deleted due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.EnablePhysicalDriveFailed
+### HpeSmartStorage.2.0.EnablePhysicalDriveFailed
 Indicates that the physical drive was not enabled due to an unknown error.
 
 | | |
@@ -3167,7 +3167,7 @@ Indicates that the physical drive was not enabled due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.EnablePhysicalDriveNotFound
+### HpeSmartStorage.2.0.EnablePhysicalDriveNotFound
 Indicates that the physical drive requested to be enabled was not found.
 
 | | |
@@ -3176,7 +3176,7 @@ Indicates that the physical drive requested to be enabled was not found.
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.ErasePhysicalDriveFailed
+### HpeSmartStorage.2.0.ErasePhysicalDriveFailed
 Indicates that the physical drive was not erased due to an unknown error.
 
 | | |
@@ -3185,7 +3185,7 @@ Indicates that the physical drive was not erased due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.ErasePhysicalDriveNotFound
+### HpeSmartStorage.2.0.ErasePhysicalDriveNotFound
 Indicates that the physical drive requested for erase was not found.
 
 | | |
@@ -3194,7 +3194,7 @@ Indicates that the physical drive requested for erase was not found.
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.InternalError
+### HpeSmartStorage.2.0.InternalError
 Indicates that an internal error has occurred.
 
 | | |
@@ -3203,7 +3203,7 @@ Indicates that an internal error has occurred.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.LockEditableLogicalDriveFailed
+### HpeSmartStorage.2.0.LockEditableLogicalDriveFailed
 Indicates that locking the logical drive failed due to an unknown error.
 
 | | |
@@ -3212,7 +3212,7 @@ Indicates that locking the logical drive failed due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.LogicalDriveNotFound
+### HpeSmartStorage.2.0.LogicalDriveNotFound
 Indicates that the logical drive was not found.
 
 | | |
@@ -3221,7 +3221,7 @@ Indicates that the logical drive was not found.
 |Severity|Critical
 |Resolution|Select a different logical drive.
 
-### SmartStorageMessages.2.0.LogicalDriveNotFoundWarning
+### HpeSmartStorage.2.0.LogicalDriveNotFoundWarning
 Indicates that the logical drive was not found but is not required to complete the request.
 
 | | |
@@ -3230,7 +3230,7 @@ Indicates that the logical drive was not found but is not required to complete t
 |Severity|Warning
 |Resolution|Select a different logical drive.
 
-### SmartStorageMessages.2.0.LogicalDrivesInPendingHBAMode
+### HpeSmartStorage.2.0.LogicalDrivesInPendingHBAMode
 Indicates that the logical drives are being requested and the controller is pending HBA mode.
 
 | | |
@@ -3239,7 +3239,7 @@ Indicates that the logical drives are being requested and the controller is pend
 |Severity|Critical
 |Resolution|Change the controller mode or delete all logical drives.
 
-### SmartStorageMessages.2.0.MalformedJSON
+### HpeSmartStorage.2.0.MalformedJSON
 Indicates that the request body was malformed JSON.  Could be duplicate, syntax error, etc.
 
 | | |
@@ -3248,7 +3248,7 @@ Indicates that the request body was malformed JSON.  Could be duplicate, syntax 
 |Severity|Critical
 |Resolution|Ensure that the request body is valid JSON and resubmit the request.
 
-### SmartStorageMessages.2.0.NoEditableConfigCreated
+### HpeSmartStorage.2.0.NoEditableConfigCreated
 Indicates that a configuration has not been created to edit.
 
 | | |
@@ -3257,7 +3257,7 @@ Indicates that a configuration has not been created to edit.
 |Severity|Critical
 |Resolution|Create an editable configuration.
 
-### SmartStorageMessages.2.0.PhysicalDriveNotFound
+### HpeSmartStorage.2.0.PhysicalDriveNotFound
 Indicates that the physical drive was not found.
 
 | | |
@@ -3266,7 +3266,7 @@ Indicates that the physical drive was not found.
 |Severity|Critical
 |Resolution|Select a different physical drive.
 
-### SmartStorageMessages.2.0.PropertyKeyMissing
+### HpeSmartStorage.2.0.PropertyKeyMissing
 Indicates that the request is missing a required property.
 
 | | |
@@ -3275,7 +3275,7 @@ Indicates that the request is missing a required property.
 |Severity|Critical
 |Resolution|Add the missing property to the request.
 
-### SmartStorageMessages.2.0.PropertyRequiresLogicalDrives
+### HpeSmartStorage.2.0.PropertyRequiresLogicalDrives
 Indicates that the value given for the property requires at least one configured logical drive.
 
 | | |
@@ -3284,7 +3284,7 @@ Indicates that the value given for the property requires at least one configured
 |Severity|Critical
 |Resolution|Configure at least one logical drive.
 
-### SmartStorageMessages.2.0.PropertyRequiresMixedModeSupport
+### HpeSmartStorage.2.0.PropertyRequiresMixedModeSupport
 Indicates that the value given for the property requires mixed mode support on the controller.
 
 | | |
@@ -3293,7 +3293,7 @@ Indicates that the value given for the property requires mixed mode support on t
 |Severity|Critical
 |Resolution|Remove the property or attempt on a controller that supports mixed mode.
 
-### SmartStorageMessages.2.0.PropertyValueEnumNotInList
+### HpeSmartStorage.2.0.PropertyValueEnumNotInList
 Indicates that the desired value is not in the enum list for the property.
 
 | | |
@@ -3302,7 +3302,7 @@ Indicates that the desired value is not in the enum list for the property.
 |Severity|Critical
 |Resolution|Select a value for the property that is in the enum list.
 
-### SmartStorageMessages.2.0.PropertyValueOutOfRange
+### HpeSmartStorage.2.0.PropertyValueOutOfRange
 Indicates that the property could not be set because the desired value is out of range.
 
 | | |
@@ -3311,7 +3311,7 @@ Indicates that the property could not be set because the desired value is out of
 |Severity|Critical
 |Resolution|Correct the value of the property.
 
-### SmartStorageMessages.2.0.PropertyValueTypeError
+### HpeSmartStorage.2.0.PropertyValueTypeError
 Indicates that the property could not be set because the value type is incorrect.
 
 | | |
@@ -3320,7 +3320,7 @@ Indicates that the property could not be set because the value type is incorrect
 |Severity|Critical
 |Resolution|Correct the value of the property.
 
-### SmartStorageMessages.2.0.RebootAndRetryRequired
+### HpeSmartStorage.2.0.RebootAndRetryRequired
 Indicates that a reboot is required then reapply the configuration.
 
 | | |
@@ -3329,7 +3329,7 @@ Indicates that a reboot is required then reapply the configuration.
 |Severity|Warning
 |Resolution|Reboot the system then reapply the configuration.
 
-### SmartStorageMessages.2.0.RebootRequired
+### HpeSmartStorage.2.0.RebootRequired
 Indicates that a reboot is required to apply the configuration.
 
 | | |
@@ -3338,7 +3338,7 @@ Indicates that a reboot is required to apply the configuration.
 |Severity|Warning
 |Resolution|Reboot the system to apply the configuration.
 
-### SmartStorageMessages.2.0.ReturnToFactoryNotAllowed
+### HpeSmartStorage.2.0.ReturnToFactoryNotAllowed
 Indicates that reseting the controller to factory settings is not allowed at this time.
 
 | | |
@@ -3347,7 +3347,7 @@ Indicates that reseting the controller to factory settings is not allowed at thi
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveAcceleratorFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveAcceleratorFailed
 Indicates that setting the logical drive accelerator failed due to an unknown error.
 
 | | |
@@ -3356,7 +3356,7 @@ Indicates that setting the logical drive accelerator failed due to an unknown er
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveArrayFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveArrayFailed
 Indicates that the logical drive was not assigned to an array due to an unknown error.
 
 | | |
@@ -3365,7 +3365,7 @@ Indicates that the logical drive was not assigned to an array due to an unknown 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveInitializationMethodFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveInitializationMethodFailed
 Indicates that setting the logical drive initialization method failed due to an unknown error.
 
 | | |
@@ -3374,7 +3374,7 @@ Indicates that setting the logical drive initialization method failed due to an 
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveLabelFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveLabelFailed
 Indicates that setting the logical drive label failed due to an unknown error.
 
 | | |
@@ -3383,7 +3383,7 @@ Indicates that setting the logical drive label failed due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveRAIDLevelFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveRAIDLevelFailed
 Indicates that setting the logical drive RAID level failed due to an unknown error.
 
 | | |
@@ -3392,7 +3392,7 @@ Indicates that setting the logical drive RAID level failed due to an unknown err
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveSizeFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveSizeFailed
 Indicates that setting the logical drive size failed due to an unknown error.
 
 | | |
@@ -3401,7 +3401,7 @@ Indicates that setting the logical drive size failed due to an unknown error.
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SetEditableLogicalDriveStripSizeFailed
+### HpeSmartStorage.2.0.SetEditableLogicalDriveStripSizeFailed
 Indicates that setting the logical drive strip size failed due to an unknown error.
 
 | | |
@@ -3410,7 +3410,7 @@ Indicates that setting the logical drive strip size failed due to an unknown err
 |Severity|Critical
 |Resolution|Resubmit the request.
 
-### SmartStorageMessages.2.0.SpareDriveNotFound
+### HpeSmartStorage.2.0.SpareDriveNotFound
 Indicates that the requested spare drive was not found.
 
 | | |
@@ -3419,7 +3419,7 @@ Indicates that the requested spare drive was not found.
 |Severity|Critical
 |Resolution|Modify the requested spare drive list.
 
-### SmartStorageMessages.2.0.SpareDriveSetNotFound
+### HpeSmartStorage.2.0.SpareDriveSetNotFound
 Indicates that the requested spare drive set was not found.
 
 | | |
@@ -3428,7 +3428,7 @@ Indicates that the requested spare drive set was not found.
 |Severity|Critical
 |Resolution|Modify the requested spare drive set.
 
-### SmartStorageMessages.2.0.Success
+### HpeSmartStorage.2.0.Success
 Indicates that all conditions of a successful operation have been met.
 
 | | |
@@ -4183,6 +4183,15 @@ Restore Failed, File not found
 |Message Format|"Restore Failed as the specified file is not found"
 |Severity|Warning
 |Resolution|Specify a valid backup file and retry the operation.
+
+### HpeWolfram.1.0.SpecialCharacterNotAllowedInUsername
+No special characters except underscore are allowed in the username.
+
+| | |
+|:---|:---|
+|Message Format|"No special characters except underscore are allowed in the username."
+|Severity|Warning
+|Resolution|Try a different user or login user name.
 
 ### HpeWolfram.1.0.SystemResetRequired
 The system properties were correctly changed, but will not take effect until the system is reset.

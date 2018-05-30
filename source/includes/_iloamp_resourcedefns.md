@@ -101,16 +101,6 @@ Member of [AccountService.v1_0_4.AccountService](#accountservice-v1_0_4-accounts
 Member of [AccountService.v1_0_4.AccountService](#accountservice-v1_0_4-accountservice)
 See the Redfish standard schema and specification for information on common Status object.
 
-## Chassis.v1_4_0.Chassis
-```@odata.type: "#Chassis.v1_4_0.Chassis"```
-ERROR: No instances found for resource type #Chassis.v1_4_0.Chassis in the resource map.
-
-The schema definition for the Chassis resource represents the properties for physical components for any system. This object represents racks, rack mount servers, blades, standalone, modular systems, enclosures, and all other containers. The non-CPU/device-centric parts of the schema are accessed either directly or indirectly through this resource.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #Chassis.v1_4_0.Chassis in the resource map.
 ## ComputerSystem.v1_3_0.ComputerSystem
 ```@odata.type: "#ComputerSystem.v1_3_0.ComputerSystem"```
 
@@ -194,15 +184,6 @@ Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computer
 |---|---|
 |Description|The model information that the manufacturer uses to refer to this system.|
 |Type|string or null|
-|Read Only|True|
-
-### Oem.Hpe.Type
-Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computersystem)
-
-| | |
-|---|---|
-|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
-|Type|string|
 |Read Only|True|
 
 ### PCIeDevices
@@ -1232,15 +1213,6 @@ The following are the supported values:
 |```NIC1```|NIC1 is the preferred NIC|
 |```NIC2```|NIC2 is the preferred NIC|
 
-### Oem.Hpe.Type
-Member of [EthernetInterface.v1_2_0.EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)
-
-| | |
-|---|---|
-|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
-|Type|string|
-|Read Only|True|
-
 ### PermanentMACAddress
 Member of [EthernetInterface.v1_2_0.EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)
 
@@ -1290,14 +1262,6 @@ Member of [EthernetInterface.v1_2_0.EthernetInterface](#ethernetinterface-v1_2_0
 |Type|string|
 |Read Only|True|
 
-## HpeFwRev.v1_0_0.HpeFwRev
-```@odata.type: "#HpeFwRev.v1_0_0.HpeFwRev"```
-ERROR: No instances found for resource type #HpeFwRev.v1_0_0.HpeFwRev in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeFwRev.v1_0_0.HpeFwRev in the resource map.
 ## HpeHttpsCert.v1_0_0.HpeHttpsCert
 ```@odata.type: "#HpeHttpsCert.v1_0_0.HpeHttpsCert"```
 
@@ -1484,16 +1448,6 @@ Imports a Trusted Certificate and resets the device.
 **Certificate (string)**
 
 Contains PEM formatted X509 certificate (Base64 encoded).
-## HpeProcessorExt.v1_0_0.HpeProcessorExt
-```@odata.type: "#HpeProcessorExt.v1_0_0.HpeProcessorExt"```
-ERROR: No instances found for resource type #HpeProcessorExt.v1_0_0.HpeProcessorExt in the resource map.
-
-HPE CPU Information
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeProcessorExt.v1_0_0.HpeProcessorExt in the resource map.
 ## HpeSecurityService.v1_0_0.HpeSecurityService
 ```@odata.type: "#HpeSecurityService.v1_0_0.HpeSecurityService"```
 ### Resource Instances
@@ -1526,134 +1480,34 @@ Member of [HpeSecurityService.v1_0_0.HpeSecurityService](#hpesecurityservice-v1_
 |Type|string|
 |Read Only|False|
 
-### Type
-Member of [HpeSecurityService.v1_0_0.HpeSecurityService](#hpesecurityservice-v1_0_0-hpesecurityservice)
-
-| | |
-|---|---|
-|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
-|Type|string|
-|Read Only|True|
-
-## HpeWfmAbsarokaOfflineUpdateTask.v1_0_0.HpeWfmAbsarokaOfflineUpdateTask
-```@odata.type: "#HpeWfmAbsarokaOfflineUpdateTask.v1_0_0.HpeWfmAbsarokaOfflineUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmAbsarokaOfflineUpdateTask.v1_0_0.HpeWfmAbsarokaOfflineUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAbsarokaOfflineUpdateTask.v1_0_0.HpeWfmAbsarokaOfflineUpdateTask in the resource map.
-## HpeWfmAbsarokaOfflineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOfflineUpdateTaskResults
-```@odata.type: "#HpeWfmAbsarokaOfflineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOfflineUpdateTaskResults"```
-ERROR: No instances found for resource type #HpeWfmAbsarokaOfflineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOfflineUpdateTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAbsarokaOfflineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOfflineUpdateTaskResults in the resource map.
-## HpeWfmAbsarokaOnlineUpdateTask.v1_0_0.HpeWfmAbsarokaOnlineUpdateTask
-```@odata.type: "#HpeWfmAbsarokaOnlineUpdateTask.v1_0_0.HpeWfmAbsarokaOnlineUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmAbsarokaOnlineUpdateTask.v1_0_0.HpeWfmAbsarokaOnlineUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAbsarokaOnlineUpdateTask.v1_0_0.HpeWfmAbsarokaOnlineUpdateTask in the resource map.
-## HpeWfmAbsarokaOnlineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOnlineUpdateTaskResults
-```@odata.type: "#HpeWfmAbsarokaOnlineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOnlineUpdateTaskResults"```
-ERROR: No instances found for resource type #HpeWfmAbsarokaOnlineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOnlineUpdateTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAbsarokaOnlineUpdateTaskResults.v1_0_0.HpeWfmAbsarokaOnlineUpdateTaskResults in the resource map.
-## HpeWfmAccountExt.v1_0_0.HpeWfmAccountExt
-```@odata.type: "#HpeWfmAccountExt.v1_0_0.HpeWfmAccountExt"```
-ERROR: No instances found for resource type #HpeWfmAccountExt.v1_0_0.HpeWfmAccountExt in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAccountExt.v1_0_0.HpeWfmAccountExt in the resource map.
-## HpeWfmActivityLogs.v1_0_0.HpeWfmActivityLogs
-```@odata.type: "#HpeWfmActivityLogs.v1_0_0.HpeWfmActivityLogs"```
-ERROR: No instances found for resource type #HpeWfmActivityLogs.v1_0_0.HpeWfmActivityLogs in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmActivityLogs.v1_0_0.HpeWfmActivityLogs in the resource map.
-## HpeWfmAggregatorService.v1_0_0.HpeWfmAggregatorService
-```@odata.type: "#HpeWfmAggregatorService.v1_0_0.HpeWfmAggregatorService"```
+## HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService
+```@odata.type: "#HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService"```
 
 This is the schema definition for the Aggregator service. It represents the properties for this service and has links to the Systems and federation groups managed by iLO Amplifier Pack.
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
-|```/redfish/v1/aggregatorservice```|GET |
+|```/redfish/v1/aggregatorservice```|GET POST PATCH |
 
 ### Links to other Resources
 |Link Name|Destination type
 |---|---|
-|```FederationGroups```|[ERROR_UNKNOWN](#error_unknown-v0_0_0-error_unknown)|
-|```Systems```|[ERROR_UNKNOWN](#error_unknown-v0_0_0-error_unknown)|
+|```FederationGroups```|HpeWfmFederationGroupCollection|
+|```Links/ManagedGroups```|HpeWfmManagedGroupCollection|
+|```Links/ManagedSystems```|Collection of [HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)|
+|```Links/ReportsSummary```|HpeWfmReportsSummaryCollection|
+|```Links/ManagedSystemsSummary```|HpeWfmSystemSummaryCollection|
+|```Links/LogServices```|Collection of [LogService](#logservice-v1_0_3-logservice)|
+|```Systems```|Collection of [ComputerSystem](#computersystem-v1_3_0-computersystem)|
 
-### FederationGroups
-This property references a resource of type Collection with a MemberType of Federation groups.
-### Systems
-This property references a resource of type Collection with a MemberType of Systems.
-## HpeWfmAhsDownloadTask.v1_0_0.HpeWfmAhsDownloadTask
-```@odata.type: "#HpeWfmAhsDownloadTask.v1_0_0.HpeWfmAhsDownloadTask"```
-ERROR: No instances found for resource type #HpeWfmAhsDownloadTask.v1_0_0.HpeWfmAhsDownloadTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAhsDownloadTask.v1_0_0.HpeWfmAhsDownloadTask in the resource map.
-## HpeWfmAlertService.v1_0_0.HpeWfmAlertService
-```@odata.type: "#HpeWfmAlertService.v1_0_0.HpeWfmAlertService"```
-ERROR: No instances found for resource type #HpeWfmAlertService.v1_0_0.HpeWfmAlertService in the resource map.
-
-The Alert Service Settings.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAlertService.v1_0_0.HpeWfmAlertService in the resource map.
-## HpeWfmApplyConfigurationBaselineTask.v1_0_0.HpeWfmApplyConfigurationBaselineTask
-```@odata.type: "#HpeWfmApplyConfigurationBaselineTask.v1_0_0.HpeWfmApplyConfigurationBaselineTask"```
-ERROR: No instances found for resource type #HpeWfmApplyConfigurationBaselineTask.v1_0_0.HpeWfmApplyConfigurationBaselineTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmApplyConfigurationBaselineTask.v1_0_0.HpeWfmApplyConfigurationBaselineTask in the resource map.
-## HpeWfmAssignRecoveryPersonaTask.v1_0_0.HpeWfmAssignRecoveryPersonaTask
-```@odata.type: "#HpeWfmAssignRecoveryPersonaTask.v1_0_0.HpeWfmAssignRecoveryPersonaTask"```
-ERROR: No instances found for resource type #HpeWfmAssignRecoveryPersonaTask.v1_0_0.HpeWfmAssignRecoveryPersonaTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmAssignRecoveryPersonaTask.v1_0_0.HpeWfmAssignRecoveryPersonaTask in the resource map.
-## HpeWfmBaseline.v1_0_0.HpeWfmBaseline
-```@odata.type: "#HpeWfmBaseline.v1_0_0.HpeWfmBaseline"```
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-|```/redfish/v1/managers/iloamplifier/baselineservice/baselines/{item}```|GET DELETE |
-
-### Links to other Resources
-|Link Name|Destination type
-|---|---|
-|```Components```|[ERROR_UNKNOWN](#error_unknown-v0_0_0-error_unknown)|
-
-### BaselineState
-Member of [HpeWfmBaseline.v1_0_0.HpeWfmBaseline](#hpewfmbaseline-v1_0_0-hpewfmbaseline)
+### ActionStatus
+**ActionStatus.DiscoverServersFromCSV**
+**ActionStatus.DiscoverServersFromCSV.DiscoveryStatus**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|This property indicates the state of inventory for this resource.|
+|Description|The status of the discovery process.|
 |Type|string|
 |Read Only|True|
 
@@ -1661,122 +1515,222 @@ The following are the supported values:
 
 |Value|Description|
 |---|---|
-|```ImportInProgress```|Import of the baseline is in progress.|
-|```ImportSuccess```|Import of the baseline was completed successfully.|
-|```ImportFailed```|Import of the baseline failed.|
+|```NotInitiated```|Discovery process is not initiated|
+|```Queued```|Discovery process is queued|
+|```InProgress```|Discovery process is in progress|
+|```Successful```|Discovery process is successfully completed|
+|```PartiallySuccessful```|Discovery process is partially successful and completed|
+|```Failed```|Discovery process is completed and is failed|
 
-### Components
-The URI refers to collection of components in the baseline.
-### RelatedTask
-The URI refers to the task which is created to import this baseline.
-### SizeInMB
-Member of [HpeWfmBaseline.v1_0_0.HpeWfmBaseline](#hpewfmbaseline-v1_0_0-hpewfmbaseline)
+**ActionStatus.DiscoverServersFromCSV.ProgressPercent**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|Space on disk (in MB) used by this baseline.|
+|Description|The progress percent of the discovery process.|
 |Type|integer|
 |Read Only|True|
 
-### Version
-Member of [HpeWfmBaseline.v1_0_0.HpeWfmBaseline](#hpewfmbaseline-v1_0_0-hpewfmbaseline)
+**ActionStatus.DiscoverServersInRange**
+**ActionStatus.DiscoverServersInRange.DiscoveryStatus**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|The version of the Baseline|
+|Description|The status of the discovery process.|
 |Type|string|
 |Read Only|True|
 
-## HpeWfmBaselineComponents.v1_0_0.HpeWfmBaselineComponents
-```@odata.type: "#HpeWfmBaselineComponents.v1_0_0.HpeWfmBaselineComponents"```
-ERROR: No instances found for resource type #HpeWfmBaselineComponents.v1_0_0.HpeWfmBaselineComponents in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+The following are the supported values:
+
+|Value|Description|
 |---|---|
+|```NotInitiated```|Discovery process is not initiated|
+|```Queued```|Discovery process is queued|
+|```InProgress```|Discovery process is in progress|
+|```Successful```|Discovery process is successfully completed|
+|```PartiallySuccessful```|Discovery process is partially successful and completed|
+|```Failed```|Discovery process is completed and is failed|
 
-ERROR: No instances found for resource type #HpeWfmBaselineComponents.v1_0_0.HpeWfmBaselineComponents in the resource map.
-## HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService
-```@odata.type: "#HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService"```
-
-This is the schema definition for the Baseline Service.  It represents the properties for the service itself and has links to the various baselines that are imported.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-|```/redfish/v1/managers/iloamplifier/baselineservice```|GET |
-
-### Links to other Resources
-|Link Name|Destination type
-|---|---|
-|```Baselines```|Collection of [HpeWfmBaseline](#hpewfmbaseline-v1_0_0-hpewfmbaseline)|
-
-### Baselines
-This property references a collection resource of imported baselines.
-### DateTime
-Member of [HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)
+**ActionStatus.DiscoverServersInRange.EndAddress**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|The current DateTime (with offset) setting that the task service is using.|
-|Type|string or null|
+|Description|The ending address at which the discovery process stops.|
+|Type|string|
 |Read Only|True|
 
-### FreeSpaceInMB
-Member of [HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)
+**ActionStatus.DiscoverServersInRange.ProgressPercent**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|Free space of disk (in MB) remaining for importing baselines .|
+|Description|The progress percent of the discovery process.|
 |Type|integer|
 |Read Only|True|
 
-### ServiceEnabled
-Member of [HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)
+**ActionStatus.DiscoverServersInRange.StartAddress**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|This indicates whether this service is enabled.|
-|Type|boolean or null|
+|Description|The starting address at which the discovery process begins.|
+|Type|string|
 |Read Only|True|
 
-### Status
-Member of [HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)
-See the Redfish standard schema and specification for information on common Status object.
-
-### TotalSpaceInMB
-Member of [HpeWfmBaselineService.v1_0_0.HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)
+**ActionStatus.RefreshAll**
+**ActionStatus.RefreshAll.IsUserInitiated**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
 | | |
 |---|---|
-|Description|Total space of disk (in MB) allocated for importing baselines .|
+|Description|The flag indicates whether the refresh is initiated by user.|
+|Type|boolean|
+|Read Only|True|
+
+**ActionStatus.RefreshAll.ProgressPercent**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The progress percent of the Refresh process.|
 |Type|integer|
 |Read Only|True|
 
-## HpeWfmComputerSystem.v1_0_0.HpeWfmComputerSystem
-```@odata.type: "#HpeWfmComputerSystem.v1_0_0.HpeWfmComputerSystem"```
-ERROR: No instances found for resource type #HpeWfmComputerSystem.v1_0_0.HpeWfmComputerSystem in the resource map.
+**ActionStatus.RefreshAll.RefreshStatus**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
 
-The Management Processor General Network Settings.
-### Resource Instances
-|Uri|HTTP Allow|
+| | |
 |---|---|
+|Description|The status of the refresh process.|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmComputerSystem.v1_0_0.HpeWfmComputerSystem in the resource map.
-## HpeWfmConfigureRemoteSyslogTask.v1_0_0.HpeWfmConfigureRemoteSyslogTask
-```@odata.type: "#HpeWfmConfigureRemoteSyslogTask.v1_0_0.HpeWfmConfigureRemoteSyslogTask"```
-ERROR: No instances found for resource type #HpeWfmConfigureRemoteSyslogTask.v1_0_0.HpeWfmConfigureRemoteSyslogTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+The following are the supported values:
+
+|Value|Description|
 |---|---|
+|```NotInitiated```|Refresh process is not initiated|
+|```InProgress```|Refresh process is in progress|
+|```Successful```|Refresh process is successfully completed|
+|```Failed```|Refresh process is completed and is failed|
 
-ERROR: No instances found for resource type #HpeWfmConfigureRemoteSyslogTask.v1_0_0.HpeWfmConfigureRemoteSyslogTask in the resource map.
-## HpeWfmCreateGroupTask.v1_0_0.HpeWfmCreateGroupTask
-```@odata.type: "#HpeWfmCreateGroupTask.v1_0_0.HpeWfmCreateGroupTask"```
-ERROR: No instances found for resource type #HpeWfmCreateGroupTask.v1_0_0.HpeWfmCreateGroupTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+### AggregatedHealth
+**AggregatedHealth.Critical**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
 |---|---|
+|Description|The number of systems with Critical health status that are managed by this device.|
+|Type|integer|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmCreateGroupTask.v1_0_0.HpeWfmCreateGroupTask in the resource map.
+**AggregatedHealth.OK**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The number of systems with OK health status that are managed by this device.|
+|Type|integer|
+|Read Only|True|
+
+**AggregatedHealth.Unknown**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The number of systems with unknown health status that are managed by this device.|
+|Type|integer|
+|Read Only|True|
+
+**AggregatedHealth.Warning**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The number of systems with Warning health status that are managed by this device.|
+|Type|integer|
+|Read Only|True|
+
+### AutoRefreshMode
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|If enabled, servers will be refreshed automatically in intervals based on the total number of managed Nodes.|
+|Type|boolean|
+|Read Only|False|
+
+### ContinousDiscovery
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|If enabled, the information of nodes and groups are refreshed at a regular interval. The regular interval is specified by RefreshInterval.|
+|Type|boolean|
+|Read Only|False|
+
+### FederationGroups
+This property references a resource of type Collection with a MemberType of Federation groups.
+### RefreshIntervalInHours
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The time interval in minutes when refresh of information of nodes and groups are initiated again.|
+|Type|integer|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```6```|
+|```8```|
+|```12```|
+|```24```|
+
+### Systems
+This property references a resource of type Collection with a MemberType of Systems.
+### SystemsCount
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+| | |
+|---|---|
+|Description|The number of systems managed by Central Management Device.|
+|Type|integer|
+|Read Only|True|
+
+### Actions
+
+**RefreshAll**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+There are no parameters for this action.
+
+**DiscoverServersFromCSV**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+**Parameters:**
+
+**File (string)**
+
+CSV file content
+
+**DiscoverServersInRange**
+Member of [HpeWfmAggregatorService.v1_1_0.HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)
+
+**Parameters:**
+
+**UserName (string)**
+
+**EndAddress (string)**
+
+**StartAddress (string)**
+
+**PortNumber (integer)**
+
+**Password (string)**
 ## HpeWfmDateTime.v1_0_0.HpeWfmDateTime
 ```@odata.type: "#HpeWfmDateTime.v1_0_0.HpeWfmDateTime"```
 
@@ -1910,15 +1864,6 @@ Member of [HpeWfmDateTime.v1_0_0.HpeWfmDateTime](#hpewfmdatetime-v1_0_0-hpewfmda
 |Type|string|
 |Read Only|True|
 
-### Type
-Member of [HpeWfmDateTime.v1_0_0.HpeWfmDateTime](#hpewfmdatetime-v1_0_0-hpewfmdatetime)
-
-| | |
-|---|---|
-|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
-|Type|string|
-|Read Only|True|
-
 ## HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs
 ```@odata.type: "#HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs"```
 
@@ -1974,15 +1919,6 @@ Member of [HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewf
 |Type|string|
 |Read Only|True|
 
-### Type
-Member of [HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewfmdebuglogs)
-
-| | |
-|---|---|
-|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
-|Type|string|
-|Read Only|True|
-
 ### WritePolicy
 Member of [HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewfmdebuglogs)
 
@@ -2008,144 +1944,6 @@ There are no parameters for this action.
 **AuditLogs**
 Member of [HpeWfmDebugLogs.v1_0_0.HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewfmdebuglogs)
 There are no parameters for this action.
-## HpeWfmDeleteTask.v1_0_0.HpeWfmDeleteTask
-```@odata.type: "#HpeWfmDeleteTask.v1_0_0.HpeWfmDeleteTask"```
-ERROR: No instances found for resource type #HpeWfmDeleteTask.v1_0_0.HpeWfmDeleteTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDeleteTask.v1_0_0.HpeWfmDeleteTask in the resource map.
-## HpeWfmDirectory.v1_0_0.HpeWfmDirectory
-```@odata.type: "#HpeWfmDirectory.v1_0_0.HpeWfmDirectory"```
-ERROR: No instances found for resource type #HpeWfmDirectory.v1_0_0.HpeWfmDirectory in the resource map.
-
-This is the schema definition for the Directory Access service. It represents the properties for this service and has links to the list of directories.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDirectory.v1_0_0.HpeWfmDirectory in the resource map.
-## HpeWfmDirectoryAccessService.v1_0_0.HpeWfmDirectoryAccessService
-```@odata.type: "#HpeWfmDirectoryAccessService.v1_0_0.HpeWfmDirectoryAccessService"```
-ERROR: No instances found for resource type #HpeWfmDirectoryAccessService.v1_0_0.HpeWfmDirectoryAccessService in the resource map.
-
-This is the schema definition for the Directory Access service. It represents the properties for this service and has links to the list of directories.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDirectoryAccessService.v1_0_0.HpeWfmDirectoryAccessService in the resource map.
-## HpeWfmDirectoryGroup.v1_0_0.HpeWfmDirectoryGroup
-```@odata.type: "#HpeWfmDirectoryGroup.v1_0_0.HpeWfmDirectoryGroup"```
-ERROR: No instances found for resource type #HpeWfmDirectoryGroup.v1_0_0.HpeWfmDirectoryGroup in the resource map.
-
-This is the schema definition for the Directory Access service. It represents the properties for this service and has links to the list of directories.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDirectoryGroup.v1_0_0.HpeWfmDirectoryGroup in the resource map.
-## HpeWfmDiscoverFederationGroup.v1_0_0.HpeWfmDiscoverFederationGroup
-```@odata.type: "#HpeWfmDiscoverFederationGroup.v1_0_0.HpeWfmDiscoverFederationGroup"```
-ERROR: No instances found for resource type #HpeWfmDiscoverFederationGroup.v1_0_0.HpeWfmDiscoverFederationGroup in the resource map.
-
-Discover federation groups that are part of Manager.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDiscoverFederationGroup.v1_0_0.HpeWfmDiscoverFederationGroup in the resource map.
-## HpeWfmDownloadReportsTask.v1_0_0.HpeWfmDownloadReportsTask
-```@odata.type: "#HpeWfmDownloadReportsTask.v1_0_0.HpeWfmDownloadReportsTask"```
-ERROR: No instances found for resource type #HpeWfmDownloadReportsTask.v1_0_0.HpeWfmDownloadReportsTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmDownloadReportsTask.v1_0_0.HpeWfmDownloadReportsTask in the resource map.
-## HpeWfmEnvironmentMetrics.v1_0_0.HpeWfmEnvironmentMetrics
-```@odata.type: "#HpeWfmEnvironmentMetrics.v1_0_0.HpeWfmEnvironmentMetrics"```
-ERROR: No instances found for resource type #HpeWfmEnvironmentMetrics.v1_0_0.HpeWfmEnvironmentMetrics in the resource map.
-
-This resource contains the data about a sensor environment.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmEnvironmentMetrics.v1_0_0.HpeWfmEnvironmentMetrics in the resource map.
-## HpeWfmEnvironmentMetricsExt.v1_0_0.HpeWfmEnvironmentMetricsExt
-```@odata.type: "#HpeWfmEnvironmentMetricsExt.v1_0_0.HpeWfmEnvironmentMetricsExt"```
-ERROR: No instances found for resource type #HpeWfmEnvironmentMetricsExt.v1_0_0.HpeWfmEnvironmentMetricsExt in the resource map.
-
-This resource contains the data about a sensor environment.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmEnvironmentMetricsExt.v1_0_0.HpeWfmEnvironmentMetricsExt in the resource map.
-## HpeWfmEthernetNetworkInterface.v1_0_0.HpeWfmEthernetNetworkInterface
-```@odata.type: "#HpeWfmEthernetNetworkInterface.v1_0_0.HpeWfmEthernetNetworkInterface"```
-ERROR: No instances found for resource type #HpeWfmEthernetNetworkInterface.v1_0_0.HpeWfmEthernetNetworkInterface in the resource map.
-
-The Management Processor General Network Settings.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmEthernetNetworkInterface.v1_0_0.HpeWfmEthernetNetworkInterface in the resource map.
-## HpeWfmFederationGroup.v1_0_0.HpeWfmFederationGroup
-```@odata.type: "#HpeWfmFederationGroup.v1_0_0.HpeWfmFederationGroup"```
-ERROR: No instances found for resource type #HpeWfmFederationGroup.v1_0_0.HpeWfmFederationGroup in the resource map.
-
-This is the schema definition for the Aggregator service. It represents the properties for this service and has links to the Systems and federation groups managed by iLO Amplifier Pack.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmFederationGroup.v1_0_0.HpeWfmFederationGroup in the resource map.
-## HpeWfmHttpsCert.v1_0_0.HpeWfmHttpsCert
-```@odata.type: "#HpeWfmHttpsCert.v1_0_0.HpeWfmHttpsCert"```
-ERROR: No instances found for resource type #HpeWfmHttpsCert.v1_0_0.HpeWfmHttpsCert in the resource map.
-
-This is the schema definition for the X509 Certificate.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmHttpsCert.v1_0_0.HpeWfmHttpsCert in the resource map.
-## HpeWfmImportBaselineTask.v1_0_0.HpeWfmImportBaselineTask
-```@odata.type: "#HpeWfmImportBaselineTask.v1_0_0.HpeWfmImportBaselineTask"```
-ERROR: No instances found for resource type #HpeWfmImportBaselineTask.v1_0_0.HpeWfmImportBaselineTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmImportBaselineTask.v1_0_0.HpeWfmImportBaselineTask in the resource map.
-## HpeWfmImportConfigurationBaselineTask.v1_0_0.HpeWfmImportConfigurationBaselineTask
-```@odata.type: "#HpeWfmImportConfigurationBaselineTask.v1_0_0.HpeWfmImportConfigurationBaselineTask"```
-ERROR: No instances found for resource type #HpeWfmImportConfigurationBaselineTask.v1_0_0.HpeWfmImportConfigurationBaselineTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmImportConfigurationBaselineTask.v1_0_0.HpeWfmImportConfigurationBaselineTask in the resource map.
-## HpeWfmImportOSBaselineTask.v1_0_0.HpeWfmImportOSBaselineTask
-```@odata.type: "#HpeWfmImportOSBaselineTask.v1_0_0.HpeWfmImportOSBaselineTask"```
-ERROR: No instances found for resource type #HpeWfmImportOSBaselineTask.v1_0_0.HpeWfmImportOSBaselineTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmImportOSBaselineTask.v1_0_0.HpeWfmImportOSBaselineTask in the resource map.
-## HpeWfmInstallLicenseTask.v1_0_0.HpeWfmInstallLicenseTask
-```@odata.type: "#HpeWfmInstallLicenseTask.v1_0_0.HpeWfmInstallLicenseTask"```
-ERROR: No instances found for resource type #HpeWfmInstallLicenseTask.v1_0_0.HpeWfmInstallLicenseTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmInstallLicenseTask.v1_0_0.HpeWfmInstallLicenseTask in the resource map.
 ## HpeWfmLicense.v1_0_0.HpeWfmLicense
 ```@odata.type: "#HpeWfmLicense.v1_0_0.HpeWfmLicense"```
 ### Resource Instances
@@ -2225,447 +2023,2510 @@ Member of [HpeWfmLicense.v1_0_0.HpeWfmLicense](#hpewfmlicense-v1_0_0-hpewfmlicen
 |Type|integer|
 |Read Only|True|
 
-## HpeWfmLogEntry.v1_0_0.HpeWfmLogEntry
-```@odata.type: "#HpeWfmLogEntry.v1_0_0.HpeWfmLogEntry"```
-ERROR: No instances found for resource type #HpeWfmLogEntry.v1_0_0.HpeWfmLogEntry in the resource map.
+## HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem
+```@odata.type: "#HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem"```
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
-
-ERROR: No instances found for resource type #HpeWfmLogEntry.v1_0_0.HpeWfmLogEntry in the resource map.
-## HpeWfmManagedGroup.v1_0_0.HpeWfmManagedGroup
-```@odata.type: "#HpeWfmManagedGroup.v1_0_0.HpeWfmManagedGroup"```
-ERROR: No instances found for resource type #HpeWfmManagedGroup.v1_0_0.HpeWfmManagedGroup in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagedGroup.v1_0_0.HpeWfmManagedGroup in the resource map.
-## HpeWfmManagedGroupSession.v1_0_0.HpeWfmManagedGroupSession
-```@odata.type: "#HpeWfmManagedGroupSession.v1_0_0.HpeWfmManagedGroupSession"```
-ERROR: No instances found for resource type #HpeWfmManagedGroupSession.v1_0_0.HpeWfmManagedGroupSession in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagedGroupSession.v1_0_0.HpeWfmManagedGroupSession in the resource map.
-## HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes
-```@odata.type: "#HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes"```
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-|```/redfish/v1/managednodes```|GET POST PATCH |
+|```/redfish/v1/aggregatorservice/managedsystems/{item}```|GET POST DELETE |
 
 ### Links to other Resources
 |Link Name|Destination type
 |---|---|
-|```Links/ManagedGroups```|HpeWfmManagedGroupCollection|
-|```Links/ManagedSystems```|HpeWfmManagedSystemCollection|
-|```Links/RedfishSystems```|HpeWfmManagedSystemCollection|
-|```Links/ManagedSystemsSummary```|HpeWfmSystemSummaryCollection|
-|```Links/RedfishSystemsSummary```|HpeWfmSystemSummaryCollection|
-|```Links/ReportsSummary```|Collection of [HpeWfmReportsSummary](#hpewfmreportssummary-v1_0_0-hpewfmreportssummary)|
-|```Links/LogServices```|Collection of [LogService](#logservice-v1_0_3-logservice)|
+|```SystemSummary/SummaryForSystem```|[HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)|
 
-### ActionStatus
-**ActionStatus.DiscoverServersFromCSV**
-**ActionStatus.DiscoverServersFromCSV.DiscoveryStatus**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+### ArrayControllers (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```ArrayControllers``` is an array containing elements of:
+
+**ArrayControllers[{item}].CacheMemorySizeMiB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The status of the discovery process.|
+|Description|Indicates the Cache Memory size of the Array Controller.|
+|Type|integer|
+|Read Only|True|
+
+**ArrayControllers[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Firmware Version of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-The following are the supported values:
-
-|Value|Description|
-|---|---|
-|```NotInitiated```|Discovery process is not initiated|
-|```Queued```|Discovery process is queued|
-|```InProgress```|Discovery process is in progress|
-|```Successful```|Discovery process is successfully completed|
-|```PartiallySuccessful```|Discovery process is partially successful and completed|
-|```Failed```|Discovery process is completed and is failed|
-
-**ActionStatus.DiscoverServersFromCSV.ProgressPercent**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**ArrayControllers[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The progress percent of the discovery process.|
-|Type|integer|
-|Read Only|True|
-
-**ActionStatus.DiscoverServersInRange**
-**ActionStatus.DiscoverServersInRange.DiscoveryStatus**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
-
-| | |
-|---|---|
-|Description|The status of the discovery process.|
+|Description|Indicates the Health Status of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-The following are the supported values:
-
-|Value|Description|
-|---|---|
-|```NotInitiated```|Discovery process is not initiated|
-|```Queued```|Discovery process is queued|
-|```InProgress```|Discovery process is in progress|
-|```Successful```|Discovery process is successfully completed|
-|```PartiallySuccessful```|Discovery process is partially successful and completed|
-|```Failed```|Discovery process is completed and is failed|
-
-**ActionStatus.DiscoverServersInRange.EndAddress**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**ArrayControllers[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The ending address at which the discovery process stops.|
+|Description|Indicates the Location of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-**ActionStatus.DiscoverServersInRange.ProgressPercent**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**ArrayControllers[{item}].LocationFormat**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The progress percent of the discovery process.|
-|Type|integer|
-|Read Only|True|
-
-**ActionStatus.DiscoverServersInRange.StartAddress**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
-
-| | |
-|---|---|
-|Description|The starting address at which the discovery process begins.|
+|Description|Indicates the Location format of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-**ActionStatus.RefreshAll**
-**ActionStatus.RefreshAll.IsUserInitiated**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**ArrayControllers[{item}].LogicalDrives (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```LogicalDrives``` is an array containing elements of:
+
+**LogicalDrives[{item}].CapacityMiB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The flag indicates whether the refresh is initiated by user.|
-|Type|boolean|
+|Description|Capacity of the Logical Drive in MiB.|
+|Type|integer or null|
 |Read Only|True|
 
-**ActionStatus.RefreshAll.ProgressPercent**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**LogicalDrives[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The progress percent of the Refresh process.|
-|Type|integer|
+|Description|Health Status of the Logical Drive.|
+|Type|string or null|
 |Read Only|True|
 
-**ActionStatus.RefreshAll.RefreshStatus**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**LogicalDrives[{item}].LogicalDriveEncryption**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The status of the refresh process.|
+|Description|Logical Drive Encryption is Enabled on the Drive if True, Disabled if False.|
+|Type|boolean or null|
+|Read Only|True|
+
+**LogicalDrives[{item}].LogicalDriveNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Number of the Logical Drive.|
+|Type|integer or null|
+|Read Only|True|
+
+**LogicalDrives[{item}].LogicalDriveType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Type of the Logical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**LogicalDrives[{item}].Raid**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Raid level of the Logical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**LogicalDrives[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|State of the Logical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**LogicalDrives[{item}].VolumeUniqueIdentifier**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Volume Unique Identifier of the Logical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**ArrayControllers[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Model of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-The following are the supported values:
+**ArrayControllers[{item}].PhysicalDrives (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```PhysicalDrives``` is an array containing elements of:
 
-|Value|Description|
-|---|---|
-|```NotInitiated```|Refresh process is not initiated|
-|```InProgress```|Refresh process is in progress|
-|```Successful```|Refresh process is successfully completed|
-|```Failed```|Refresh process is completed and is failed|
-
-### AggregatedHealth
-**AggregatedHealth.Critical**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].CapacityGB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The number of systems with Critical health status that are managed by this device.|
-|Type|integer|
+|Description|Capacity of the Physical Drive in GB.|
+|Type|integer or null|
 |Read Only|True|
 
-**AggregatedHealth.OK**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].CapacityMiB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The number of systems with OK health status that are managed by this device.|
-|Type|integer|
+|Description|Capacity of the Physical Drive in MiB.|
+|Type|integer or null|
 |Read Only|True|
 
-**AggregatedHealth.Unknown**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The number of systems with unknown health status that are managed by this device.|
-|Type|integer|
+|Description|Firmware Version of the Physical Drive.|
+|Type|string or null|
 |Read Only|True|
 
-**AggregatedHealth.Warning**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The number of systems with Warning health status that are managed by this device.|
-|Type|integer|
+|Description|Health Status of the Physical Drive.|
+|Type|string or null|
 |Read Only|True|
 
-### AutoRefreshMode
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].InterfaceSpeedMbps**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|If enabled, servers will be refreshed automatically in intervals based on the total number of managed Nodes.|
-|Type|boolean|
-|Read Only|False|
+|Description|Interface Speed of the Physical Drive.|
+|Type|integer or null|
+|Read Only|True|
 
-### ContinousDiscovery
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
-
-| | |
-|---|---|
-|Description|If enabled, the information of nodes and groups are refreshed at a regular interval. The regular interval is specified by RefreshInterval.|
-|Type|boolean|
-|Read Only|False|
-
-### IntelligentPriovisioningEULA
-**IntelligentPriovisioningEULA.extref**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**PhysicalDrives[{item}].InterfaceType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The URI of an external resource.|
+|Description|Interface Type of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Location of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].LocationFormat**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Location Format of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].MediaType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Media Type of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Model of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].RotationalSpeedRpm**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Rotational Speed of the Physical Drive.|
+|Type|integer or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Serial Number of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalDrives[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|State of the Physical Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**ArrayControllers[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Serial Number of the Array Controller.|
 |Type|string|
 |Read Only|True|
 
-### RefreshIntervalInHours
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**ArrayControllers[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The time interval in minutes when refresh of information of nodes and groups are initiated again.|
+|Description|Indicates the State of the Array Controller.|
+|Type|string|
+|Read Only|True|
+
+**ArrayControllers[{item}].StorageEnclosures (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```StorageEnclosures``` is an array containing elements of:
+
+**StorageEnclosures[{item}].DriveBayCount**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Drive Bay Count of the Storage Enclosure.|
+|Type|integer or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Firmware Version of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Health Status of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Location of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].LocationFormat**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Location Format of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Serial Number of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageEnclosures[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|State of the Storage Enclosure.|
+|Type|string or null|
+|Read Only|True|
+
+### DeviceInventory (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```DeviceInventory``` is an array containing elements of:
+
+**DeviceInventory[{item}].DeviceClass**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The device class of the item.|
+|Type|string or null|
+|Read Only|True|
+
+**DeviceInventory[{item}].FirmwareId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The ID of the item.|
 |Type|integer|
-|Read Only|False|
+|Read Only|True|
+
+**DeviceInventory[{item}].Key**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The family-specific key of the firmware item used for correlation to a component database.|
+|Type|string or null|
+|Read Only|True|
+
+**DeviceInventory[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The location of the item.|
+|Type|string or null|
+|Read Only|True|
+
+**DeviceInventory[{item}].Targets (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Targets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**DeviceInventory[{item}].VersionString**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The user-displayable version of the firmware item in string format|
+|Type|string or null|
+|Read Only|True|
+
+### FansSummary (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```FansSummary``` is an array containing elements of:
+
+**FansSummary[{item}].CurrentReading**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The current speed of the fan.|
+|Type|integer or null|
+|Read Only|True|
+
+**FansSummary[{item}].FanName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The name of the fan sensor.|
+|Type|string or null|
+|Read Only|True|
+
+**FansSummary[{item}].ReadingRPM**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The current speed of the fan.|
+|Type|integer or null|
+|Read Only|True|
+
+**FansSummary[{item}].Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+**FansSummary[{item}].Units**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Units for the CurrentReading.|
+|Type|string or null|
+|Read Only|True|
 
 The following are the supported values:
 
 |Value|
 |---|
-|```6```|
-|```8```|
-|```12```|
-|```24```|
+|```Null```|
+|```RPM```|
+|```Percent```|
 
-### SystemsCount
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+### FirmwareInventory (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```FirmwareInventory``` is an array containing elements of:
+
+**FirmwareInventory[{item}].DeviceClass**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 | | |
 |---|---|
-|Description|The number of systems managed by Central Management Device.|
+|Description|The device class of the item.|
+|Type|string or null|
+|Read Only|True|
+
+**FirmwareInventory[{item}].FirmwareId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The ID of the item.|
 |Type|integer|
 |Read Only|True|
 
+**FirmwareInventory[{item}].Key**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The family-specific key of the firmware item used for correlation to a component database.|
+|Type|string or null|
+|Read Only|True|
+
+**FirmwareInventory[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The location of the item.|
+|Type|string or null|
+|Read Only|True|
+
+**FirmwareInventory[{item}].Targets (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Targets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**FirmwareInventory[{item}].VersionString**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The user-displayable version of the firmware item in string format|
+|Type|string or null|
+|Read Only|True|
+
+### HealthSummary
+**HealthSummary.AgentlessManagementService**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The status of Agentless Management Service.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.BiosOrHardwareHealth**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Bios or Hardware.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Fans**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Fans.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Memory**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Memory.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Network**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Network.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.PowerSupplies**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of PowerSupplies.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Processors**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Processors.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Storage**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Storage.|
+|Type|string or null|
+|Read Only|True|
+
+**HealthSummary.Temperatures**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Health status of Temperatures.|
+|Type|string or null|
+|Read Only|True|
+
+### HostBusAdapters (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```HostBusAdapters``` is an array containing elements of:
+
+**HostBusAdapters[{item}].Drives (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Drives``` is an array containing elements of:
+
+**Drives[{item}].CapacityMiB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Capacity of the drive in MiB.|
+|Type|integer or null|
+|Read Only|True|
+
+**Drives[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Firmware Version of the Disk Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**Drives[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Health Status of the Disk.|
+|Type|string or null|
+|Read Only|True|
+
+**Drives[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Location of the Disk Drive.|
+|Type|string or null|
+|Read Only|True|
+
+**Drives[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Model of the Disk.|
+|Type|string or null|
+|Read Only|True|
+
+**Drives[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Serial Number of the Disk.|
+|Type|string or null|
+|Read Only|True|
+
+**Drives[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|State of the Disk.|
+|Type|string or null|
+|Read Only|True|
+
+**HostBusAdapters[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Firmware Version of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+**HostBusAdapters[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Health Status of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+**HostBusAdapters[{item}].Location**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Location of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+**HostBusAdapters[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Model of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+**HostBusAdapters[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Serial Number of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+**HostBusAdapters[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the State of the Host Bus Adapter.|
+|Type|string|
+|Read Only|True|
+
+### Manager
+**Manager.Credentials**
+**Manager.Credentials.Password**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Password to use to log in to the management processor.|
+|Type|string|
+|Read Only|False|
+
+**Manager.Credentials.UserName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Name to use to log in to the management processor.|
+|Type|string|
+|Read Only|False|
+
+**Manager.FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The firmware version of this Manager|
+|Type|string or null|
+|Read Only|True|
+
+**Manager.License**
+**Manager.License.LicenseKey**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The license key installed on this management processor. License keys are 25 characters in length and contain both letters and numbers.Use POST method to collection of membertype HpiLOLicense to install / update the license|
+|Type|string|
+|Read Only|True|
+
+**Manager.License.LicenseType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The type of license installed on this management processor.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Unlicensed```|
+|```Evaluation```|
+|```Perpetual```|
+|```Subscription```|
+|```Internal```|
+|```Duration```|
+|```Expired```|
+
+**Manager.ManagerEthernetAddresses (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```ManagerEthernetAddresses``` is an array containing elements of:
+
+**ManagerEthernetAddresses[{item}].IPv4Address**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the IPv4 Address of the Manager Ethernet Interface.|
+|Type|string|
+|Read Only|True|
+
+**ManagerEthernetAddresses[{item}].ManagerFQDN**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the FQDN of the Manager Ethernet Interface.|
+|Type|string|
+|Read Only|True|
+
+**ManagerEthernetAddresses[{item}].NICEnabled**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates whether the NIC is enabled or not.|
+|Type|boolean|
+|Read Only|True|
+
+**Manager.ManagerType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This property is the manager type for this resource.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```ManagementController```|A controller used primarily to monitor or manage the operation of a device or system|
+|```EnclosureManager```|A controller which provides management functions for a chassis or group of devices or systems|
+|```BMC```|A controller which provides management functions for a single computer system|
+
+**Manager.Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Model name of the manager.|
+|Type|string or null|
+|Read Only|True|
+
+**Manager.RemoteSyslog**
+**Manager.RemoteSyslog.Enabled**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates whether Remote Syslog is enabled. When enabled, management processor sends notification messages to the specified Syslog server. This can be enabled only when the property RemoteSyslogServer is set or not empty.|
+|Type|boolean|
+|Read Only|False|
+
+**Manager.RemoteSyslog.Port**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The port number through which the Syslog server is listening.|
+|Type|integer|
+|Read Only|False|
+
+**Manager.RemoteSyslog.Server**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The IP address, FQDN, IPv6 name, or short name of the server running the Syslog service.|
+|Type|string|
+|Read Only|False|
+
+**Manager.UUID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The universal unique identifier for this Manager|
+|Type|string or null|
+|Read Only|True|
+
+**Manager.UpdateService**
+**Manager.UpdateService.Details**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Details about the current firmware flash status.|
+|Type|string|
+|Read Only|True|
+
+**Manager.UpdateService.Flags**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Other flags.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```NONE```|
+|```RESET_ILO```|
+|```REQUEST_SYSTEM_COLD_BOOT```|
+|```REQUEST_SYSTEM_WARM_BOOT```|
+|```DEFERRED_AUX_PWR_CYCLE```|
+
+**Manager.UpdateService.ImageType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Firmware flash image type.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```NO_DEVICE```|
+|```ILO_DEVICE```|
+|```ILO_DEVICE_FIRMWARE```|
+|```ILO_DEVICE_LANGPK```|
+|```ILO_DEVICE_DEBUGGER```|
+|```BIOS_DEVICE```|
+|```SCD_DEVICE```|
+|```CPLD_DEVICE```|
+|```CARB_DEVICE```|
+|```PM_DEVICE```|
+|```UNKNOWN```|
+
+**Manager.UpdateService.ProgressPercent**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Firmware flash progress.|
+|Type|integer|
+|Read Only|True|
+
+**Manager.UpdateService.State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Current state of the firmware flash.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```IDLE```|
+|```UPLOADING```|
+|```PROGRESSING```|
+|```COMPLETED```|
+|```ERROR```|
+
+**Manager.VirtualMedia**
+**Manager.VirtualMedia.ConnectedVia**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Specifies how the virtual media is connected to the server.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Null```|A value is temporarily unavailable|
+|```NotConnected```|No current connection.|
+|```URI```|Connected to a URI location.|
+|```Applet```|Connected to a client application.|
+
+### MemorySummary
+**MemorySummary.Details (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Details``` is an array containing elements of:
+
+**Details[{item}].DIMMStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Specifies memory module status and whether the module in use.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Null```|A value is temporarily unavailable|
+|```Unknown```|The status of the DIMM is unknown.|
+|```Other```|DIMM status that does not fit any of these definitions.|
+|```NotPresent```|DIMM is not present.|
+|```PresentUnused```|DIMM is present but unused.|
+|```GoodInUse```|DIMM is functioning properly and currently in use.|
+|```AddedButUnused```|DIMM is added but currently unused.|
+|```UpgradedButUnused```|DIMM is upgraded but currently unused.|
+|```ExpectedButMissing```|DIMM is expected but missing.|
+|```DoesNotMatch```|DIMM type does not match.|
+|```NotSupported```|DIMM is not supported.|
+|```ConfigurationError```|Configuration error in DIMM.|
+|```Degraded```|DIMM state is degraded.|
+|```PresentSpare```|DIMM is present but used as spare.|
+|```GoodPartiallyInUse```|DIMM is functioning properly but partially in use.|
+
+**Details[{item}].DIMMTechnology**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The memory module technology type.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Null```|
+|```BurstEDO```|
+|```FastPage```|
+|```Synchronous```|
+|```EDO```|
+|```LRDIMM```|
+|```RDRAM```|
+|```RDIMM```|
+|```UDIMM```|
+|```NVDIMM```|
+|```RNVDIMM```|
+|```LRNVDIMM```|
+|```Unknown```|
+
+**Details[{item}].DIMMType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The type of memory DIMM used in this system.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Null```|
+|```DDR```|
+|```DDR2```|
+|```DDR3```|
+|```DDR4```|
+|```FBD2```|
+|```LPDD3```|
+|```LPDDR```|
+|```LPDDR2```|
+|```LPDDR4```|
+
+**Details[{item}].MaximumFrequencyMHz**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Identifies the maximum, capable speed of the device in megahertz (MHz). If the value is null, the speed is unknown.|
+|Type|integer or null|
+|Read Only|True|
+
+**Details[{item}].SizeMB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The size of the memory device in megabytes.|
+|Type|integer or null|
+|Read Only|True|
+
+**Details[{item}].SocketLocator**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The socket of this device|
+|Type|string or null|
+|Read Only|True|
+
+**MemorySummary.Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+**MemorySummary.TotalSystemMemoryGiB**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the total amount of memory in the system measured in GiB.|
+|Type|integer or null|
+|Read Only|True|
+
+### NetworkAdapters (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```NetworkAdapters``` is an array containing elements of:
+
+**NetworkAdapters[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Network Adapter firmware version|
+|Type|string or null|
+|Read Only|True|
+
+**NetworkAdapters[{item}].PhysicalPorts (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```PhysicalPorts``` is an array containing elements of:
+
+**PhysicalPorts[{item}].FullDuplex**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Full-duplex data transmission means that data can be transmitted in both directions on a signal carrier at the same time.|
+|Type|boolean or null|
+|Read Only|True|
+
+**PhysicalPorts[{item}].IPv4Addresses (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```IPv4Addresses``` is an array containing elements of:
+
+**IPv4Addresses[{item}].Address**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the IPv4 Address.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalPorts[{item}].IPv6Addresses (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```IPv6Addresses``` is an array containing elements of:
+
+**IPv6Addresses[{item}].Address**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the IPv6 Address.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalPorts[{item}].MacAddress**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The port MAC address.|
+|Type|string or null|
+|Read Only|True|
+
+**PhysicalPorts[{item}].SpeedMbps**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|An estimate of the interface's current bandwidth in Megabits per second.  For interfaces which do not vary in bandwidth or for those where no accurate estimation can be made, this object should contain the nominal bandwidth.|
+|Type|integer or null|
+|Read Only|True|
+
+**PhysicalPorts[{item}].Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+### PCIDeviceSummary (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```PCIDeviceSummary``` is an array containing elements of:
+
+**PCIDeviceSummary[{item}].DeviceID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Device ID of the PCI Device.|
+|Type|integer|
+|Read Only|False|
+
+**PCIDeviceSummary[{item}].DeviceLocation**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the location of the PCI Device.|
+|Type|string|
+|Read Only|False|
+
+**PCIDeviceSummary[{item}].DeviceType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the device type of the PCI Device.|
+|Type|string|
+|Read Only|False|
+
+**PCIDeviceSummary[{item}].SubsystemDeviceID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Subsystem Device ID of the PCI Device.|
+|Type|integer|
+|Read Only|True|
+
+**PCIDeviceSummary[{item}].SubsystemVendorID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Subsystem Vendor ID of the PCI Device.|
+|Type|integer|
+|Read Only|False|
+
+**PCIDeviceSummary[{item}].VendorID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Vendor ID of the PCI Device.|
+|Type|integer|
+|Read Only|True|
+
+### Persona
+**Persona.AppliedDetails**
+**Persona.AppliedDetails.LastApplied**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The date and time when the persona was applied on this system.|
+|Type|string|
+|Read Only|True|
+
+**Persona.AppliedDetails.PersonaId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The name of the presona that was applied on this system.|
+|Type|integer|
+|Read Only|True|
+
+**Persona.AppliedDetails.Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+**Persona.ValidationDetails**
+**Persona.ValidationDetails.LastValidated**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The date and time when the persona was validated on this system.|
+|Type|string|
+|Read Only|True|
+
+**Persona.ValidationDetails.PersonaId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The name of the presona that was validated on this system.|
+|Type|integer|
+|Read Only|True|
+
+**Persona.ValidationDetails.Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+### PowerSummary
+**PowerSummary.PowerConsumedWatts**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The amount of power consumed in Watts.|
+|Type|integer or null|
+|Read Only|True|
+
+**PowerSummary.PowerSupplies (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```PowerSupplies``` is an array containing elements of:
+
+**PowerSupplies[{item}].BayNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The bay number of this processor|
+|Type|integer or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].FirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Firmware version of the power supply|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The health status of the power supply|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].HotplugCapable**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Firmware version of the power supply|
+|Type|boolean|
+|Read Only|True|
+
+**PowerSupplies[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The product model of this device|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].PowerCapacityWatts**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The total Power Capacity in Watts|
+|Type|integer or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].PowerSupplyStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Status of the power supply|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The power supply Serial Number|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].SparePartNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The power supply Spare Part Number|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The state of the power supply|
+|Type|string or null|
+|Read Only|True|
+
+### ProcessorSummary
+**ProcessorSummary.Count**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The number of processors in the system.|
+|Type|integer or null|
+|Read Only|True|
+
+**ProcessorSummary.Details (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Details``` is an array containing elements of:
+
+**Details[{item}].CoresEnabled**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The total number of cores enabled in this processor|
+|Type|integer or null|
+|Read Only|True|
+
+**Details[{item}].Manufacturer**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The processor manufacturer|
+|Type|string or null|
+|Read Only|True|
+
+**Details[{item}].Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The product model number of this device|
+|Type|string or null|
+|Read Only|True|
+
+**Details[{item}].Socket**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The socket of this device|
+|Type|string or null|
+|Read Only|True|
+
+**Details[{item}].SpeedMHz**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The maximum clock speed of the processor|
+|Type|integer or null|
+|Read Only|True|
+
+**Details[{item}].Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+**Details[{item}].TotalCores**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The total number of cores contained in this processor|
+|Type|integer or null|
+|Read Only|True|
+
+**Details[{item}].TotalThreads**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The total number of execution threads supported by this processor|
+|Type|integer or null|
+|Read Only|True|
+
+**ProcessorSummary.Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The processor model for the primary or majority of processors in this system.|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorSummary.Status**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+See the Redfish standard schema and specification for information on common Status object.
+
+### SoftwareInventory (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```SoftwareInventory``` is an array containing elements of:
+
+**SoftwareInventory[{item}].SoftwareId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the ID of the Software.|
+|Type|integer|
+|Read Only|True|
+
+**SoftwareInventory[{item}].Version**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Version of the Software.|
+|Type|string|
+|Read Only|True|
+
+### SystemSummary
+**SystemSummary.AMSStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the status of AMS.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities**
+**SystemSummary.ActionCapabilities.AHSDownload**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for AHS Download.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.AbsarokaOfflineUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Absaroka Offline Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.AbsarokaOnlineUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Absaroka Online Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.AssignRecovery**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Assign Recovery.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.BaselineAutomaticUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Baseline Automatic Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.Delete**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Delete.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.FirmwareUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Firmware Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.GroupManage**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Group Manage.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.ImportConfigBaseline**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Import config baseline.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.ManualRecovery**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Manual Recovery.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.OfflineFirmwareUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Offline Firmware Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.OnlineFirmwareUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Online Firmware Update.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.Power**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Power.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.Refresh**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Refresh.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.RemoteSyslog**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Remote Syslog.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.UID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for UID.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.UnAssignRecovery**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Unassign Recovery.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionCapabilities.VirtualMedia**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Action capability for Virtual Media.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage**
+**SystemSummary.ActionErrorMessage.AbsarokaOfflineUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Absaroka Offline Update.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.AbsarokaOnlineUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Absaroka Online Update.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.AssignRecovery**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Assign Recovery.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.BaselineAutomaticUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Baseline Automatic Update.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.GroupManage**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Manage Group.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.ImportConfigBaseline**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Import Config Baseline.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.OfflineFirmwareUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Offline Firmware Update.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ActionErrorMessage.OnlineFirmwareUpdate**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The error message for Online Firmware Update.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ChassisType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The chassis type.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.Discovery**
+**SystemSummary.Discovery.LastRefreshed**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Last refreshed timestamp|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.Discovery.ProgressPercent**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The progress percent of the discovery|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.Discovery.State**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The discovery state|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```NotInitiated```|
+|```Processing```|
+|```InProgress```|
+|```Complete```|
+|```NotResponding```|
+|```NotReachable```|
+|```FirmwareUpdateInProgress```|
+|```Discovered```|
+|```Refreshing```|
+
+**SystemSummary.Discovery.StateDescription**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The description of the state|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.EncryptionSecurityState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Encryption Security State of the Server |
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Production```|
+|```HighSecurity```|
+|```FIPS```|
+
+**SystemSummary.FederationActionGroupName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the name of the Group server belongs to.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.FederationEnabled**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates whether management processor federation management is enabled or disabled.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.FederationSupported**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates whether management processor federation is supported.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.GatewayManaged**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates if the Server is Gateway Managed(Federation Group)|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.HealthStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This represents the health status of the system|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OK```|Normal|
+|```Warning```|A condition exists that requires attention|
+|```Critical```|A critical condition exists that requires immediate attention|
+
+**SystemSummary.HostName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The DNS Host Name, without any domain information|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.HostOSDescription**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives description about OS on the Host.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.HostOSName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the OS Name of the Host.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.HostOSType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the OS Type of the Host.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.HostOSVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the OS Version of the Host.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.IndicatorLED**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The state of the indicator LED.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Unknown```|The state of the Indicator LED cannot be determined.|
+|```Lit```|The Indicator LED is lit.|
+|```Blinking```|The Indicator LED is blinking.|
+|```Off```|The Indicator LED is off.|
+
+**SystemSummary.LastTaskStatus**
+**SystemSummary.LastTaskStatus.EndTime**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last completed.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Messages (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```Messages``` is an array containing elements of:
+
+**Messages[{item}].Message**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the human readable message, if provided.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].MessageArgs (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```MessageArgs``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].MessageId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the key for this message which can be used to look up the message in a message registry.|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].RelatedProperties (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```RelatedProperties``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].Resolution**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Used to provide suggestions on how to resolve the situation that caused the error.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].Severity**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the severity of the errors.|
+|Type|string or null|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.CreatedBy**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The name of the user that created this task.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.DetailedTaskLink**
+Detailed status of the task.
+**SystemSummary.LastTaskStatus.Oem.Hpe.History**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The history of the task.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.ProgressMessages (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```ProgressMessages``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.ProgressPercent**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The progress percent of this task.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.SelectedAddress (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.SelectedGroups (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```SelectedGroups``` is an array containing elements of:
+
+**SelectedGroups[{item}].GroupName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Group name of the selected group.|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].SelectedAddress (array)**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].allSystemsInGroup**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The flag suggests whether all the servers in the group are selected.|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.SubTaskCount**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Number of subtasks for this task.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.Oem.Hpe.TaskIdentifier**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|A unique task identifier number for this task.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.StartTime**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last started.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.LastTaskStatus.TaskState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The state of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```New```|A new task|
+|```Starting```|Task is starting|
+|```Running```|Task is running normally|
+|```Suspended```|Task has been suspended|
+|```Interrupted```|Task has been interrupted|
+|```Pending```|Task is pending and has not started|
+|```Stopping```|Task is in the process of stopping|
+|```Completed```|Task has completed|
+|```Killed```|Task was terminated|
+|```Exception```|Task has stopped due to an exception condition|
+|```Service```|Task is running as a service|
+
+**SystemSummary.LastTaskStatus.TaskStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the completion status of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OK```|Normal|
+|```Warning```|A condition exists that requires attention|
+|```Critical```|A critical condition exists that requires immediate attention|
+
+**SystemSummary.ManagerAddress**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The IP address or DNS of the manager which was added by user.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ManagerFQDN**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The fully qualified domain name of the manager.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ManagerFirmwareVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Firmware Version of the manager.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ManagerIPAddress**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The IPv4 address of the manager.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ManagerLicense**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the License of the manager.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.ManagerSSLPort**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The Web Server SSL Port of the manager.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.ManagerVirtualMediaImage**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The valid URI indicating the image that is mounted on this server. A null value indicates that no image exists.|
+|Type|string|
+|Read Only|False|
+
+**SystemSummary.ManualRecoveryFlag**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates if the Server is set for Manual or Automatic Recovery|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.Manufacturer**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The manaufacturer of the system.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.MasterManagerType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The type of the manager.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.Model**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The model information that the manufacturer uses to refer to this system.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.NumOfGrpsNodeBelongs**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the number of Federation Groups this iLO is part of.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.PowerState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|This is the current power state of the system|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```On```|
+|```Off```|
+|```Unknown```|
+|```Reset```|
+
+**SystemSummary.ProductID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The system product ID.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.RecoveryAction**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Action that is set for recovery|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.RecoveryPolicyId**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Recovery Policy Id.|
+|Type|integer|
+|Read Only|True|
+
+**SystemSummary.RecoveryPolicyName**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Recovery Persona Applied on the System.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.RecoveryStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Status of the System.If the recovery install set is applied or not and once recovery starts , its status|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SUTMode**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Mode of HPSUT.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SUTServiceState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Service state of HPSUT.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SUTServiceVersion**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Service Version of HPSUT.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SecurityState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the Security State of the System.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SerialNumber**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The system serial number.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.StandAloneManaged**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates if the Server is Standalone Managed with Credentials|
+|Type|boolean|
+|Read Only|True|
+
+**SystemSummary.StatusState**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Indicates the State of the System.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.SummaryForSystem**
+Link to the Managed System with detailed information.
+**SystemSummary.SystemCategory**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The category of the system based on discovery.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Discovered```|
+|```Managed```|
+|```NotReachable```|
+
+**SystemSummary.SystemType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The system type.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.TPMModuleType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Module Type of TPM on the Server.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.TPMStatus**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|Gives the Status of TPM on the Server.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.UUID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The universal unique identifier for this system.|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.iLOType**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The iLO type of this Manager|
+|Type|string|
+|Read Only|True|
+
+**SystemSummary.iLOUUID**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+
+| | |
+|---|---|
+|Description|The universal unique identifier for the iLO.|
+|Type|string|
+|Read Only|True|
+
+### TaskHistory (array)
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
+```TaskHistory``` is an array containing elements of:
+
 ### Actions
 
-**RefreshAll**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
-There are no parameters for this action.
-
-**DiscoverServersFromCSV**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**Reset**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 **Parameters:**
 
-**File (string)**
+**ResetType (string)**
 
-CSV file content
+|Value|Description|
+|---|---|
+|On|
+|ForceOff|
+|ForceRestart|
+|PushPowerButton|
 
-**DiscoverServersInRange**
-Member of [HpeWfmManagedNodes.v1_0_0.HpeWfmManagedNodes](#hpewfmmanagednodes-v1_0_0-hpewfmmanagednodes)
+**VirtualMedia**
+Member of [HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)
 
 **Parameters:**
-
-**UserName (string)**
-
-**EndAddress (string)**
-
-**StartAddress (string)**
-
-**PortNumber (integer)**
-
-**Password (string)**
-## HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem
-```@odata.type: "#HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem"```
-ERROR: No instances found for resource type #HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagedSystem.v1_0_0.HpeWfmManagedSystem in the resource map.
-## HpeWfmManagedSystemSession.v1_0_0.HpeWfmManagedSystemSession
-```@odata.type: "#HpeWfmManagedSystemSession.v1_0_0.HpeWfmManagedSystemSession"```
-ERROR: No instances found for resource type #HpeWfmManagedSystemSession.v1_0_0.HpeWfmManagedSystemSession in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagedSystemSession.v1_0_0.HpeWfmManagedSystemSession in the resource map.
-## HpeWfmManagerExt.v1_0_0.HpeWfmManagerExt
-```@odata.type: "#HpeWfmManagerExt.v1_0_0.HpeWfmManagerExt"```
-ERROR: No instances found for resource type #HpeWfmManagerExt.v1_0_0.HpeWfmManagerExt in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagerExt.v1_0_0.HpeWfmManagerExt in the resource map.
-## HpeWfmManagerNetworkService.v1_0_0.HpeWfmManagerNetworkService
-```@odata.type: "#HpeWfmManagerNetworkService.v1_0_0.HpeWfmManagerNetworkService"```
-ERROR: No instances found for resource type #HpeWfmManagerNetworkService.v1_0_0.HpeWfmManagerNetworkService in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManagerNetworkService.v1_0_0.HpeWfmManagerNetworkService in the resource map.
-## HpeWfmManualRecoveryTask.v1_0_0.HpeWfmManualRecoveryTask
-```@odata.type: "#HpeWfmManualRecoveryTask.v1_0_0.HpeWfmManualRecoveryTask"```
-ERROR: No instances found for resource type #HpeWfmManualRecoveryTask.v1_0_0.HpeWfmManualRecoveryTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManualRecoveryTask.v1_0_0.HpeWfmManualRecoveryTask in the resource map.
-## HpeWfmManualRecoveryTaskResults.v1_0_0.HpeWfmManualRecoveryTaskResults
-```@odata.type: "#HpeWfmManualRecoveryTaskResults.v1_0_0.HpeWfmManualRecoveryTaskResults"```
-ERROR: No instances found for resource type #HpeWfmManualRecoveryTaskResults.v1_0_0.HpeWfmManualRecoveryTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmManualRecoveryTaskResults.v1_0_0.HpeWfmManualRecoveryTaskResults in the resource map.
-## HpeWfmNiOnlineUpdateTaskResults.v1_0_0.HpeWfmNiOnlineUpdateTaskResults
-```@odata.type: "#HpeWfmNiOnlineUpdateTaskResults.v1_0_0.HpeWfmNiOnlineUpdateTaskResults"```
-ERROR: No instances found for resource type #HpeWfmNiOnlineUpdateTaskResults.v1_0_0.HpeWfmNiOnlineUpdateTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmNiOnlineUpdateTaskResults.v1_0_0.HpeWfmNiOnlineUpdateTaskResults in the resource map.
-## HpeWfmNonInteractiveOnlineUpdateTask.v1_0_0.HpeWfmNonInteractiveOnlineUpdateTask
-```@odata.type: "#HpeWfmNonInteractiveOnlineUpdateTask.v1_0_0.HpeWfmNonInteractiveOnlineUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmNonInteractiveOnlineUpdateTask.v1_0_0.HpeWfmNonInteractiveOnlineUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmNonInteractiveOnlineUpdateTask.v1_0_0.HpeWfmNonInteractiveOnlineUpdateTask in the resource map.
-## HpeWfmOfflineUpdateTask.v1_0_0.HpeWfmOfflineUpdateTask
-```@odata.type: "#HpeWfmOfflineUpdateTask.v1_0_0.HpeWfmOfflineUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmOfflineUpdateTask.v1_0_0.HpeWfmOfflineUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOfflineUpdateTask.v1_0_0.HpeWfmOfflineUpdateTask in the resource map.
-## HpeWfmOfflineUpdateTaskResults.v1_0_0.HpeWfmOfflineUpdateTaskResults
-```@odata.type: "#HpeWfmOfflineUpdateTaskResults.v1_0_0.HpeWfmOfflineUpdateTaskResults"```
-ERROR: No instances found for resource type #HpeWfmOfflineUpdateTaskResults.v1_0_0.HpeWfmOfflineUpdateTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOfflineUpdateTaskResults.v1_0_0.HpeWfmOfflineUpdateTaskResults in the resource map.
-## HpeWfmOnlineSppUpdateTask.v1_0_0.HpeWfmOnlineSppUpdateTask
-```@odata.type: "#HpeWfmOnlineSppUpdateTask.v1_0_0.HpeWfmOnlineSppUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmOnlineSppUpdateTask.v1_0_0.HpeWfmOnlineSppUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOnlineSppUpdateTask.v1_0_0.HpeWfmOnlineSppUpdateTask in the resource map.
-## HpeWfmOnlineSppUpdateTaskResults.v1_0_0.HpeWfmOnlineSppUpdateTaskResults
-```@odata.type: "#HpeWfmOnlineSppUpdateTaskResults.v1_0_0.HpeWfmOnlineSppUpdateTaskResults"```
-ERROR: No instances found for resource type #HpeWfmOnlineSppUpdateTaskResults.v1_0_0.HpeWfmOnlineSppUpdateTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOnlineSppUpdateTaskResults.v1_0_0.HpeWfmOnlineSppUpdateTaskResults in the resource map.
-## HpeWfmOnlineUpdateTask.v1_0_0.HpeWfmOnlineUpdateTask
-```@odata.type: "#HpeWfmOnlineUpdateTask.v1_0_0.HpeWfmOnlineUpdateTask"```
-ERROR: No instances found for resource type #HpeWfmOnlineUpdateTask.v1_0_0.HpeWfmOnlineUpdateTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOnlineUpdateTask.v1_0_0.HpeWfmOnlineUpdateTask in the resource map.
-## HpeWfmOSBaseline.v1_0_0.HpeWfmOSBaseline
-```@odata.type: "#HpeWfmOSBaseline.v1_0_0.HpeWfmOSBaseline"```
-ERROR: No instances found for resource type #HpeWfmOSBaseline.v1_0_0.HpeWfmOSBaseline in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOSBaseline.v1_0_0.HpeWfmOSBaseline in the resource map.
-## HpeWfmOSBaselineService.v1_0_0.HpeWfmOSBaselineService
-```@odata.type: "#HpeWfmOSBaselineService.v1_0_0.HpeWfmOSBaselineService"```
-ERROR: No instances found for resource type #HpeWfmOSBaselineService.v1_0_0.HpeWfmOSBaselineService in the resource map.
-
-This is the schema definition for the Baseline Service.  It represents the properties for the service itself and has links to the various baselines that are imported.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOSBaselineService.v1_0_0.HpeWfmOSBaselineService in the resource map.
-## HpeWfmOsProvisioningTask.v1_0_0.HpeWfmOsProvisioningTask
-```@odata.type: "#HpeWfmOsProvisioningTask.v1_0_0.HpeWfmOsProvisioningTask"```
-ERROR: No instances found for resource type #HpeWfmOsProvisioningTask.v1_0_0.HpeWfmOsProvisioningTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmOsProvisioningTask.v1_0_0.HpeWfmOsProvisioningTask in the resource map.
-## HpeWfmQuarantineSystemTask.v1_0_0.HpeWfmQuarantineSystemTask
-```@odata.type: "#HpeWfmQuarantineSystemTask.v1_0_0.HpeWfmQuarantineSystemTask"```
-ERROR: No instances found for resource type #HpeWfmQuarantineSystemTask.v1_0_0.HpeWfmQuarantineSystemTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmQuarantineSystemTask.v1_0_0.HpeWfmQuarantineSystemTask in the resource map.
-## HpeWfmRecoveryPolicy.v1_0_0.HpeWfmRecoveryPolicy
-```@odata.type: "#HpeWfmRecoveryPolicy.v1_0_0.HpeWfmRecoveryPolicy"```
-ERROR: No instances found for resource type #HpeWfmRecoveryPolicy.v1_0_0.HpeWfmRecoveryPolicy in the resource map.
-
-This is the schema definition for the Recovery Policy.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmRecoveryPolicy.v1_0_0.HpeWfmRecoveryPolicy in the resource map.
-## HpeWfmRefreshTask.v1_0_0.HpeWfmRefreshTask
-```@odata.type: "#HpeWfmRefreshTask.v1_0_0.HpeWfmRefreshTask"```
-ERROR: No instances found for resource type #HpeWfmRefreshTask.v1_0_0.HpeWfmRefreshTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmRefreshTask.v1_0_0.HpeWfmRefreshTask in the resource map.
 ## HpeWfmReportsSummary.v1_0_0.HpeWfmReportsSummary
 ```@odata.type: "#HpeWfmReportsSummary.v1_0_0.HpeWfmReportsSummary"```
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
-|```/redfish/v1/managednodes/managedsystems/{item}/reportssummary```|GET |
+|```/redfish/v1/aggregatorservice/managedsystems/{item}/reportssummary```|GET |
 
 ### BasicDeviceInventory
 **BasicDeviceInventory.HealthStatus**
@@ -3078,118 +4939,377 @@ The following are the supported values:
 
 ## HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask
 ```@odata.type: "#HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask"```
-ERROR: No instances found for resource type #HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask in the resource map.
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
+|```/redfish/v1/taskservice/resetsystemtasks/{item}0000```|GET POST DELETE |
 
-ERROR: No instances found for resource type #HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask in the resource map.
-## HpeWfmResource.v1_0_0.HpeWfmResource
-```@odata.type: "#HpeWfmResource.v1_0_0.HpeWfmResource"```
-ERROR: No instances found for resource type #HpeWfmResource.v1_0_0.HpeWfmResource in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+### Links to other Resources
+|Link Name|Destination type
 |---|---|
+|```TaskSummary/Oem/Hpe/DetailedTaskLink```|[HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)|
 
-ERROR: No instances found for resource type #HpeWfmResource.v1_0_0.HpeWfmResource in the resource map.
-## HpeWfmSampleTask.v1_0_0.HpeWfmSampleTask
-```@odata.type: "#HpeWfmSampleTask.v1_0_0.HpeWfmSampleTask"```
-ERROR: No instances found for resource type #HpeWfmSampleTask.v1_0_0.HpeWfmSampleTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+### SelectedGroups (array)
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedGroups``` is an array containing elements of:
+
+**SelectedGroups[{item}].AllSystemsInGroup**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|If true then the task is run on all systems in the group otherwise will be run only on systems selected.|
+|Type|boolean|
+|Read Only|False|
 
-ERROR: No instances found for resource type #HpeWfmSampleTask.v1_0_0.HpeWfmSampleTask in the resource map.
-## HpeWfmSecurityServiceExt.v1_0_0.HpeWfmSecurityServiceExt
-```@odata.type: "#HpeWfmSecurityServiceExt.v1_0_0.HpeWfmSecurityServiceExt"```
-ERROR: No instances found for resource type #HpeWfmSecurityServiceExt.v1_0_0.HpeWfmSecurityServiceExt in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+**SelectedGroups[{item}].FederationGroupName**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|The name of the federation group.|
+|Type|string|
+|Read Only|False|
 
-ERROR: No instances found for resource type #HpeWfmSecurityServiceExt.v1_0_0.HpeWfmSecurityServiceExt in the resource map.
-## HpeWfmServerProvisioningTask.v1_0_0.HpeWfmServerProvisioningTask
-```@odata.type: "#HpeWfmServerProvisioningTask.v1_0_0.HpeWfmServerProvisioningTask"```
-ERROR: No instances found for resource type #HpeWfmServerProvisioningTask.v1_0_0.HpeWfmServerProvisioningTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+**SelectedGroups[{item}].SelectedSystemsManagerAddress (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedSystemsManagerAddress``` is an array containing elements of:
+
+
+| | |
 |---|---|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmServerProvisioningTask.v1_0_0.HpeWfmServerProvisioningTask in the resource map.
-## HpeWfmServiceExt.v1_0_0.HpeWfmServiceExt
-```@odata.type: "#HpeWfmServiceExt.v1_0_0.HpeWfmServiceExt"```
-ERROR: No instances found for resource type #HpeWfmServiceExt.v1_0_0.HpeWfmServiceExt in the resource map.
+### SelectedSystemsManagerAddress (array)
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedSystemsManagerAddress``` is an array containing elements of:
 
-This object represents the extended HP RESTful API root service.
-### Resource Instances
-|Uri|HTTP Allow|
+
+| | |
 |---|---|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmServiceExt.v1_0_0.HpeWfmServiceExt in the resource map.
-## HpeWfmSessionExt.v1_0_0.HpeWfmSessionExt
-```@odata.type: "#HpeWfmSessionExt.v1_0_0.HpeWfmSessionExt"```
-ERROR: No instances found for resource type #HpeWfmSessionExt.v1_0_0.HpeWfmSessionExt in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+### TaskParameters
+**TaskParameters.ResetType**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|The reset type to be performed for the system.|
+|Type|string|
+|Read Only|False|
 
-ERROR: No instances found for resource type #HpeWfmSessionExt.v1_0_0.HpeWfmSessionExt in the resource map.
-## HpeWfmSetIndicatorLedTask.v1_0_0.HpeWfmSetIndicatorLedTask
-```@odata.type: "#HpeWfmSetIndicatorLedTask.v1_0_0.HpeWfmSetIndicatorLedTask"```
-ERROR: No instances found for resource type #HpeWfmSetIndicatorLedTask.v1_0_0.HpeWfmSetIndicatorLedTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+The following are the supported values:
+
+|Value|
+|---|
+|```On```|
+|```ForceOff```|
+|```ForceRestart```|
+|```PushPowerButton```|
+
+### TaskProgress (array)
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```TaskProgress``` is an array containing elements of:
+
+**TaskProgress[{item}].IpAddress**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|The system/group on which the task is applied.|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmSetIndicatorLedTask.v1_0_0.HpeWfmSetIndicatorLedTask in the resource map.
-## HpeWfmSoftwareInventory.v1_0_0.HpeWfmSoftwareInventory
-```@odata.type: "#HpeWfmSoftwareInventory.v1_0_0.HpeWfmSoftwareInventory"```
-ERROR: No instances found for resource type #HpeWfmSoftwareInventory.v1_0_0.HpeWfmSoftwareInventory in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+**TaskProgress[{item}].Message**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|Progress message associated with the task.|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmSoftwareInventory.v1_0_0.HpeWfmSoftwareInventory in the resource map.
-## HpeWfmSppComplianceTask.v1_0_0.HpeWfmSppComplianceTask
-```@odata.type: "#HpeWfmSppComplianceTask.v1_0_0.HpeWfmSppComplianceTask"```
-ERROR: No instances found for resource type #HpeWfmSppComplianceTask.v1_0_0.HpeWfmSppComplianceTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+**TaskProgress[{item}].ProgressPercent**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|The progress percent of this task.|
+|Type|integer|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmSppComplianceTask.v1_0_0.HpeWfmSppComplianceTask in the resource map.
-## HpeWfmSppComplianceTaskResults.v1_0_0.HpeWfmSppComplianceTaskResults
-```@odata.type: "#HpeWfmSppComplianceTaskResults.v1_0_0.HpeWfmSppComplianceTaskResults"```
-ERROR: No instances found for resource type #HpeWfmSppComplianceTaskResults.v1_0_0.HpeWfmSppComplianceTaskResults in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+**TaskProgress[{item}].SubTaskState**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
 |---|---|
+|Description|The state of the sub task.|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmSppComplianceTaskResults.v1_0_0.HpeWfmSppComplianceTaskResults in the resource map.
-## HpeWfmStorageDef.v1_0_0.HpeWfmStorageDef
-```@odata.type: "#HpeWfmStorageDef.v1_0_0.HpeWfmStorageDef"```
-ERROR: No instances found for resource type #HpeWfmStorageDef.v1_0_0.HpeWfmStorageDef in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
+The following are the supported values:
+
+|Value|Description|
 |---|---|
+|```New```|A new task|
+|```Starting```|Task is starting|
+|```Running```|Task is running normally|
+|```Suspended```|Task has been suspended|
+|```Interrupted```|Task has been interrupted|
+|```Pending```|Task is pending and has not started|
+|```Stopping```|Task is in the process of stopping|
+|```Completed```|Task has completed|
+|```Killed```|Task was terminated|
+|```Exception```|Task has stopped due to an exception condition|
+|```Service```|Task is running as a service|
 
-ERROR: No instances found for resource type #HpeWfmStorageDef.v1_0_0.HpeWfmStorageDef in the resource map.
-## HpeWfmStorageManager.v1_0_0.HpeWfmStorageManager
-```@odata.type: "#HpeWfmStorageManager.v1_0_0.HpeWfmStorageManager"```
-ERROR: No instances found for resource type #HpeWfmStorageManager.v1_0_0.HpeWfmStorageManager in the resource map.
+**TaskProgress[{item}].TaskName**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
 
- 
-### Resource Instances
-|Uri|HTTP Allow|
+| | |
 |---|---|
+|Description|The name of the sub task.|
+|Type|string|
+|Read Only|True|
 
-ERROR: No instances found for resource type #HpeWfmStorageManager.v1_0_0.HpeWfmStorageManager in the resource map.
+### TaskSummary
+**TaskSummary.EndTime**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last completed.|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.Messages (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```Messages``` is an array containing elements of:
+
+**Messages[{item}].Message**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|This is the human readable message, if provided.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].MessageArgs (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```MessageArgs``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].MessageId**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|This is the key for this message which can be used to look up the message in a message registry.|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].RelatedProperties (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```RelatedProperties``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].Resolution**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|Used to provide suggestions on how to resolve the situation that caused the error.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].Severity**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|This is the severity of the errors.|
+|Type|string or null|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.CreatedBy**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The name of the user that created this task.|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.DetailedTaskLink**
+Detailed status of the task.
+**TaskSummary.Oem.Hpe.History**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The history of the task.|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.ProgressMessages (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```ProgressMessages``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.ProgressPercent**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The progress percent of this task.|
+|Type|integer|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.SelectedAddress (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.SelectedGroups (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedGroups``` is an array containing elements of:
+
+**SelectedGroups[{item}].GroupName**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The Group name of the selected group.|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].SelectedAddress (array)**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].allSystemsInGroup**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The flag suggests whether all the servers in the group are selected.|
+|Type|boolean|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.SubTaskCount**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|Number of subtasks for this task.|
+|Type|integer|
+|Read Only|True|
+
+**TaskSummary.Oem.Hpe.TaskIdentifier**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|A unique task identifier number for this task.|
+|Type|integer|
+|Read Only|True|
+
+**TaskSummary.StartTime**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last started.|
+|Type|string|
+|Read Only|True|
+
+**TaskSummary.TaskState**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|The state of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```New```|A new task|
+|```Starting```|Task is starting|
+|```Running```|Task is running normally|
+|```Suspended```|Task has been suspended|
+|```Interrupted```|Task has been interrupted|
+|```Pending```|Task is pending and has not started|
+|```Stopping```|Task is in the process of stopping|
+|```Completed```|Task has completed|
+|```Killed```|Task was terminated|
+|```Exception```|Task has stopped due to an exception condition|
+|```Service```|Task is running as a service|
+
+**TaskSummary.TaskStatus**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+
+| | |
+|---|---|
+|Description|This is the completion status of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OK```|Normal|
+|```Warning```|A condition exists that requires attention|
+|```Critical```|A critical condition exists that requires immediate attention|
+
+### Actions
+
+**Abort**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+There are no parameters for this action.
+
+**ReRun**
+Member of [HpeWfmResetSystemTask.v1_0_0.HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)
+There are no parameters for this action.
 ## HpeWfmSystemSummary.v1_0_0.HpeWfmSystemSummary
 ```@odata.type: "#HpeWfmSystemSummary.v1_0_0.HpeWfmSystemSummary"```
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
-|```/redfish/v1/managednodes/managedsystems/{item}/summary```|GET |
+|```/redfish/v1/aggregatorservice/managedsystems/{item}/summary```|GET |
 
 ### Links to other Resources
 |Link Name|Destination type
@@ -3438,6 +5558,15 @@ Member of [HpeWfmSystemSummary.v1_0_0.HpeWfmSystemSummary](#hpewfmsystemsummary-
 | | |
 |---|---|
 |Description|The error message for Online Firmware Update.|
+|Type|string|
+|Read Only|True|
+
+### ChassisType
+Member of [HpeWfmSystemSummary.v1_0_0.HpeWfmSystemSummary](#hpewfmsystemsummary-v1_0_0-hpewfmsystemsummary)
+
+| | |
+|---|---|
+|Description|The chassis type.|
 |Type|string|
 |Read Only|True|
 
@@ -4152,26 +6281,6 @@ Member of [HpeWfmSystemSummary.v1_0_0.HpeWfmSystemSummary](#hpewfmsystemsummary-
 |Type|string|
 |Read Only|True|
 
-## HpeWfmTaskExt.v1_0_0.HpeWfmTaskExt
-```@odata.type: "#HpeWfmTaskExt.v1_0_0.HpeWfmTaskExt"```
-ERROR: No instances found for resource type #HpeWfmTaskExt.v1_0_0.HpeWfmTaskExt in the resource map.
-
-This is the schema definition for a Task resource.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmTaskExt.v1_0_0.HpeWfmTaskExt in the resource map.
-## HpeWfmTaskServiceExt.v1_0_0.HpeWfmTaskServiceExt
-```@odata.type: "#HpeWfmTaskServiceExt.v1_0_0.HpeWfmTaskServiceExt"```
-ERROR: No instances found for resource type #HpeWfmTaskServiceExt.v1_0_0.HpeWfmTaskServiceExt in the resource map.
-
-This is the schema definition for a Task resource.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmTaskServiceExt.v1_0_0.HpeWfmTaskServiceExt in the resource map.
 ## HpeWfmTelemetryInfo.v1_0_0.HpeWfmTelemetryInfo
 ```@odata.type: "#HpeWfmTelemetryInfo.v1_0_0.HpeWfmTelemetryInfo"```
 
@@ -4226,53 +6335,12 @@ Member of [HpeWfmTelemetryInfo.v1_0_0.HpeWfmTelemetryInfo](#hpewfmtelemetryinfo-
 |Type|integer|
 |Read Only|True|
 
-## HpeWfmUnassignRecoveryPolicyTask.v1_0_0.HpeWfmUnassignRecoveryPolicyTask
-```@odata.type: "#HpeWfmUnassignRecoveryPolicyTask.v1_0_0.HpeWfmUnassignRecoveryPolicyTask"```
-ERROR: No instances found for resource type #HpeWfmUnassignRecoveryPolicyTask.v1_0_0.HpeWfmUnassignRecoveryPolicyTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmUnassignRecoveryPolicyTask.v1_0_0.HpeWfmUnassignRecoveryPolicyTask in the resource map.
-## HpeWfmUpdateFirmwareTask.v1_0_0.HpeWfmUpdateFirmwareTask
-```@odata.type: "#HpeWfmUpdateFirmwareTask.v1_0_0.HpeWfmUpdateFirmwareTask"```
-ERROR: No instances found for resource type #HpeWfmUpdateFirmwareTask.v1_0_0.HpeWfmUpdateFirmwareTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmUpdateFirmwareTask.v1_0_0.HpeWfmUpdateFirmwareTask in the resource map.
-## HpeWfmUpdateService.v1_0_0.HpeWfmUpdateService
-```@odata.type: "#HpeWfmUpdateService.v1_0_0.HpeWfmUpdateService"```
-ERROR: No instances found for resource type #HpeWfmUpdateService.v1_0_0.HpeWfmUpdateService in the resource map.
-
-The schema definition of a simple Ethernet NIC resource.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmUpdateService.v1_0_0.HpeWfmUpdateService in the resource map.
-## HpeWfmValidatePersonaTask.v1_0_0.HpeWfmValidatePersonaTask
-```@odata.type: "#HpeWfmValidatePersonaTask.v1_0_0.HpeWfmValidatePersonaTask"```
-ERROR: No instances found for resource type #HpeWfmValidatePersonaTask.v1_0_0.HpeWfmValidatePersonaTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmValidatePersonaTask.v1_0_0.HpeWfmValidatePersonaTask in the resource map.
-## HpeWfmVirtualMediaTask.v1_0_0.HpeWfmVirtualMediaTask
-```@odata.type: "#HpeWfmVirtualMediaTask.v1_0_0.HpeWfmVirtualMediaTask"```
-ERROR: No instances found for resource type #HpeWfmVirtualMediaTask.v1_0_0.HpeWfmVirtualMediaTask in the resource map.
-### Resource Instances
-|Uri|HTTP Allow|
-|---|---|
-
-ERROR: No instances found for resource type #HpeWfmVirtualMediaTask.v1_0_0.HpeWfmVirtualMediaTask in the resource map.
 ## LogEntry.v1_1_1.LogEntry
 ```@odata.type: "#LogEntry.v1_1_1.LogEntry"```
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
+|```/redfish/v1/aggregatorservice/logservices/alertlog/entries/{item}```|GET |
 |```/redfish/v1/managers/iloamplifier/logservices/devicealertlog/entries/{item}```|GET |
 
 ### Created
@@ -4581,13 +6649,13 @@ The following are the supported values:
 ### Resource Instances
 |Uri|HTTP Allow|
 |---|---|
-|```/redfish/v1/managednodes/logservices/alertlog```|GET POST |
+|```/redfish/v1/aggregatorservice/logservices/alertlog```|GET POST |
 |```/redfish/v1/managers/iloamplifier/logservices/devicealertlog```|GET POST |
 
 ### Links to other Resources
 |Link Name|Destination type
 |---|---|
-|```Entries```|LogEntryCollection|
+|```Entries```|Collection of [LogEntry](#logentry-v1_1_1-logentry)|
 
 ### DateTime
 Member of [LogService.v1_0_3.LogService](#logservice-v1_0_3-logservice)
@@ -4653,3 +6721,5096 @@ See the Redfish standard schema and specification for information on common Stat
 **ClearLog**
 Member of [LogService.v1_0_3.LogService](#logservice-v1_0_3-logservice)
 There are no parameters for this action.
+## Manager.v1_3_0.Manager
+```@odata.type: "#Manager.v1_3_0.Manager"```
+
+This is the schema definition for a manager.  Examples of managers are BMCs, Enclosure Managers, Management Controllers and other subsystems assigned manageability functions.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/managers/iloamplifier```|GET POST PATCH |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Oem/Hpe/Links/UpdateService```|[UpdateService](#updateservice-v1_2_0-updateservice)|
+|```Oem/Hpe/Links/BaselineService```|[HpeWfmBaselineService](#hpewfmbaselineservice-v1_0_0-hpewfmbaselineservice)|
+|```LogServices```|Collection of [LogService](#logservice-v1_0_3-logservice)|
+|```EthernetInterfaces```|Collection of [EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)|
+|```Oem/Hpe/Links/LoggerPolicy```|[HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewfmdebuglogs)|
+|```Oem/Hpe/Links/SecurityService```|[HpeSecurityService](#hpesecurityservice-v1_0_0-hpesecurityservice)|
+|```Oem/Hpe/Links/LicenseService```|Collection of [HpeWfmLicense](#hpewfmlicense-v1_0_0-hpewfmlicense)|
+|```NetworkProtocol```|[ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)|
+|```Oem/Hpe/Links/Telemetry```|[HpeWfmTelemetryInfo](#hpewfmtelemetryinfo-v1_0_0-hpewfmtelemetryinfo)|
+|```Oem/Hpe/Links/DateTimeService```|[HpeWfmDateTime](#hpewfmdatetime-v1_0_0-hpewfmdatetime)|
+
+### CommandShell
+**CommandShell.ConnectTypesSupported (array)**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+```ConnectTypesSupported``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```SSH```|The controller supports a Command Shell connection using the SSH protocol|
+|```Telnet```|The controller supports a Command Shell connection using the Telnet protocol|
+|```IPMI```|The controller supports a Command Shell connection using the IPMI Serial-over-LAN (SOL) protocol|
+|```Oem```|The controller supports a Command Shell connectino using an OEM-specific protocol|
+
+**CommandShell.MaxConcurrentSessions**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|This is the maximum number of Command Shell sessions, regardless of protocol, that this manager supports.|
+|Type|integer|
+|Read Only|True|
+
+**CommandShell.ServiceEnabled**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates if the Command Shell service is enabled for this manager.|
+|Type|boolean|
+|Read Only|True|
+
+### DateTime
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The current DateTime (with offset) for the manager, used to set or read time.|
+|Type|string or null|
+|Read Only|False|
+
+### DateTimeLocalOffset
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The time offset from UTC that the DateTime property is set to in format: +06:00 .|
+|Type|string or null|
+|Read Only|False|
+
+### EthernetInterfaces
+This is a reference to a collection of NICs that this manager uses for network communication.  It is here that clients will find NIC configuration options and settings.
+### FirmwareVersion
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The firmware version of this Manager|
+|Type|string or null|
+|Read Only|True|
+
+### GraphicalConsole
+**GraphicalConsole.ConnectTypesSupported (array)**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+```ConnectTypesSupported``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```KVMIP```|The controller supports a Graphical Console connection using a KVM-IP (redirection of Keyboard, Video, Mouse over IP) protocol|
+|```Oem```|The controller supports a Graphical Console connection using an OEM-specific protocol|
+
+**GraphicalConsole.MaxConcurrentSessions**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates the maximum number of Graphical Console sessions, regardless of protocol, this manager supports.|
+|Type|integer|
+|Read Only|True|
+
+**GraphicalConsole.ServiceEnabled**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates if the Command Shell service is enabled for this manager.|
+|Type|boolean|
+|Read Only|True|
+
+### HostInterfaces
+This is a reference to a collection of Host Interfaces that this manager uses for local host communication.  It is here that clients will find Host Interface configuration options and settings.
+### LogServices
+Reference to a resource of type Collection with a MemberType of Logs.
+### ManagerType
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|This property is the manager type for this resource.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```ManagementController```|A controller used primarily to monitor or manage the operation of a device or system.|
+|```EnclosureManager```|A controller which provides management functions for a chassis or group of devices or systems.|
+|```BMC```|A controller which provides management functions for a single computer system.|
+|```RackManager```|A controller which provides management functions for a whole or part of a rack.|
+|```AuxiliaryController```|A controller which provides management functions for a particular subsystem or group of devices.|
+
+### Model
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The model information of this Manager as defined by the manufacturer.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```iLO Amplifier Pack```|Manager Mode iLO Amplifier Pack|
+
+### NetworkProtocol
+ This is a reference to the network services and their settings that the manager controls.  It is here that clients will find network configuration options as well as network services.
+### Oem.Hpe.Firmware
+**Oem.Hpe.Firmware.Backup**
+**Oem.Hpe.Firmware.Backup.BuildNumber**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build number of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.BuildNumberString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The string version of the build number of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.Date**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build date of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.DebugBuild**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|True if the firmware is a debug build; False if it is not.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.Family**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The family of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.MajorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The major version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.MinorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The minor version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.Time**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build time of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Backup.VersionString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The version string of the firmware. This value might be null if VersionString is unavailable.|
+|Type|string or null|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock**
+**Oem.Hpe.Firmware.Bootblock.BuildNumber**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build number of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.BuildNumberString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The string version of the build number of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.Date**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build date of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.DebugBuild**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|True if the firmware is a debug build; False if it is not.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.Family**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The family of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.MajorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The major version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.MinorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The minor version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.Time**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build time of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Bootblock.VersionString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The version string of the firmware. This value might be null if VersionString is unavailable.|
+|Type|string or null|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current**
+**Oem.Hpe.Firmware.Current.BuildNumber**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build number of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.BuildNumberString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The string version of the build number of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.Date**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build date of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.DebugBuild**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|True if the firmware is a debug build; False if it is not.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.Family**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The family of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.MajorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The major version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.MinorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The minor version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.Time**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build time of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Current.VersionString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The version string of the firmware. This value might be null if VersionString is unavailable.|
+|Type|string or null|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending**
+**Oem.Hpe.Firmware.Pending.BuildNumber**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build number of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.BuildNumberString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The string version of the build number of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.Date**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build date of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.DebugBuild**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|True if the firmware is a debug build; False if it is not.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.Family**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The family of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.MajorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The major version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.MinorVersion**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The minor version of the firmware.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.Time**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The build time of the firmware.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Firmware.Pending.VersionString**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The version string of the firmware. This value might be null if VersionString is unavailable.|
+|Type|string or null|
+|Read Only|True|
+
+### Oem.Hpe.License
+**Oem.Hpe.License.License**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Describes the name of the license installed on management processor.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicenseFirstName**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|First name.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicenseKey**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The installed license key.Will be set to NULL on read.|
+|Type|string or null|
+|Read Only|False|
+
+**Oem.Hpe.License.LicenseLastName**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Last name.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicenseMailID**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Users email ID .|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicenseOrganization**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Organization name.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicenseType**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates whether the license is Perpetual or Evaluation.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.License.LicensedNoOfServers**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates the number of servers that can be managed.|
+|Type|integer|
+|Read Only|True|
+
+### Oem.Hpe.SerialCLISpeed
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Serial command line interface speed in bits/second.|
+|Type|integer|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```9600```|
+|```19200```|
+|```38400```|
+|```57600```|
+|```115200```|
+
+### Oem.Hpe.SerialCLIStatus
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Status of serial command line interface.|
+|Type|string or null|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Null```|A value is temporarily unavailable|
+|```Disabled```|Serial command line interface is disabled.|
+|```EnabledNoAuth```|Serial command line interface is enabled with no authentication required.|
+|```EnabledAuthReq```|Serial command line interface is enabled with authentication required.|
+
+### Oem.Hpe.Type
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.WatchdogTimerActive
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Specifies whether Watchdog is enabled ro not.|
+|Type|boolean|
+|Read Only|False|
+
+### PowerState
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|This is the current power state of the Manager.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```On```|The state is powered On.|
+|```Off```|The state is powered Off.|
+|```PoweringOn```|A temporary state between Off and On.|
+|```PoweringOff```|A temporary state between On and Off.|
+
+### Redundancy
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+See the Redfish standard schema and specification for information on common Redundancy object.
+
+### SerialConsole
+**SerialConsole.ConnectTypesSupported (array)**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+```ConnectTypesSupported``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```SSH```|The controller supports a Serial Console connection using the SSH protocol|
+|```Telnet```|The controller supports a Serial Console connection using the Telnet protocol|
+|```IPMI```|The controller supports a Serial Console connection using the IPMI Serial-over-LAN (SOL) protocol|
+|```Oem```||
+
+**SerialConsole.MaxConcurrentSessions**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|This is the maximum number of Serial Console sessions, regardless of protocol, that this manager supports.|
+|Type|integer|
+|Read Only|True|
+
+**SerialConsole.ServiceEnabled**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|Indicates if the Command Shell service is enabled for this manager.|
+|Type|boolean|
+|Read Only|True|
+
+### SerialInterfaces
+This is a reference to a collection of serial interfaces that this manager uses for serial and console communication.  It is here that clients will find serial configuration options and settings.
+### ServiceEntryPointUUID
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The UUID of the Redfish Service provided by this manager.|
+|Type|string|
+|Read Only|True|
+
+### UUID
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+
+| | |
+|---|---|
+|Description|The Universal Unique Identifier (UUID) for this Manager.|
+|Type|string|
+|Read Only|True|
+
+### VirtualMedia
+This is a reference to the Virtual Media services for this particular manager.
+### Actions
+
+**Reset**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+There are no parameters for this action.
+
+**ResetToFactoryDefaults**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+Resets Central Management Device to Factory Defaults.
+
+
+**Parameters:**
+
+**ResetType (string)**
+
+|Value|Description|
+|---|---|
+|AllConfiguration|Resets all configuration and reboot's the Centeral Management Device.|
+|ManagedSystemsConfiguration|Reset the stored configuration files of managed systems and reboot's the Central Management Device.|
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+
+**Backup**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+Performs Backup of Central Management Device Configuration.
+
+
+**Parameters:**
+
+**MountPath (string)**
+
+The mount path of the network share server where the Backup data will be stored.
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+
+**StorageType (string)**
+
+The type of storage on which the Backup data is downloaded.
+
+|Value|Description|
+|---|---|
+|USB|
+|SHARE|
+
+**DestinationPath (string)**
+
+The folder path in which the Backup data will be stored.
+
+**RemovableStorageDeviceName (string)**
+
+The device name of the removable storage.
+
+**NetworkShareAddress (string)**
+
+The network share IP address or DNS name where the Backup data will be stored.
+
+**Password (string)**
+
+The key that will be used to encrypt the backup data.
+
+**Shutdown**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+Shuts down Management Device.
+
+
+**Parameters:**
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+
+**Restore**
+Member of [Manager.v1_3_0.Manager](#manager-v1_3_0-manager)
+Restores the Central Management Device Configuration from the specified file.
+
+
+**Parameters:**
+
+**MountPath (string)**
+
+The mount path of the network share server from where the Backup data will be restored.
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+
+**StorageType (string)**
+
+The type of storage from which the Backup data is restored.
+
+|Value|Description|
+|---|---|
+|USB|
+|SHARE|
+
+**DestinationPath (string)**
+
+The folder path from which the Backup data will be stored.
+
+**RemovableStorageDeviceName (string)**
+
+The device name of the removable storage.
+
+**NetworkShareAddress (string)**
+
+The network share IP address or DNS name from where the Backup data will be restored.
+
+**Password (string)**
+
+The key that will be used to decrypt the backup data.
+## ManagerAccount.v1_0_3.ManagerAccount
+```@odata.type: "#ManagerAccount.v1_0_3.ManagerAccount"```
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/accountservice/accounts/{item}```|GET PATCH DELETE |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Links/Role```|[Role](#role-v1_0_0-role)|
+
+### Enabled
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|This property is used by a User Administrator to disable an account w/o having to delet the user information.  When set to true, the user can login.  When set to false, the account is administratively disabled and the user cannot login.|
+|Type|boolean|
+|Read Only|False|
+
+### Locked
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|This property indicates that the account has been auto-locked by the account service because the lockout threshold has been exceeded.  When set to true, the account is locked. A user admin can write the property to false to manually unlock, or the account service will unlock it once the lockout duration period has passed.|
+|Type|boolean|
+|Read Only|False|
+
+### Oem.Hpe.DisplayName
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|Descriptive display name that helps to easily identify the owner of each user name. The display name does not have to be the same as the user name and must use printable characters. The maximum length for a display name is 127 characters.|
+|Type|string|
+|Read Only|False|
+
+### Oem.Hpe.Enabled
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|Indicates whether the user accound is enabled or not.|
+|Type|boolean|
+|Read Only|False|
+
+### Oem.Hpe.Privilege
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|This privilege enables a user to log in to management processor. All local accounts have the login privilege. This privilege is added automatically if it is not specified.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Login```|Read operations allowed like viewing discovered nodes and groups and generate reports|
+|```Device```|Allows configuring and performing actions on devices includes login privilege|
+|```User```|Allows configuring users with device privilege|
+|```Manager```|All operations allowed|
+|```Security```||
+
+### Password
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|The password used to log in to the management processor. The maximum length for a password is 39 characters. The minimum length for a password is specified in the MinPasswordLength property of the AccountService schema.|
+|Type|string or null|
+|Read Only|False|
+
+### RoleId
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|This property contains the Role for this account.|
+|Type|string|
+|Read Only|False|
+
+### UserName
+Member of [ManagerAccount.v1_0_3.ManagerAccount](#manageraccount-v1_0_3-manageraccount)
+
+| | |
+|---|---|
+|Description|The name used to log in to the management processor. The user name does not have to be the same as the login name. The maximum length for the user name is 32 characters. The user name must use printable characters.|
+|Type|string|
+|Read Only|False|
+
+## ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol
+```@odata.type: "#ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol"```
+
+This resource is used to obtain or modify the network services managed by this manager.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/managers/iloamplifier/networkprotocol```|GET POST PATCH |
+
+### DHCP
+**DHCP.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**DHCP.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### FQDN
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|This is the fully qualified domain name for the manager obtained by DNS including the host name and top-level domain name.|
+|Type|string or null|
+|Read Only|True|
+
+### HTTP
+**HTTP.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**HTTP.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### HTTPS
+**HTTPS.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**HTTPS.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### HostName
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The DNS Host Name of this manager, without any domain information.|
+|Type|string or null|
+|Read Only|True|
+
+### IPMI
+**IPMI.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**IPMI.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### KVMIP
+**KVMIP.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**KVMIP.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Oem.Hpe.ProxyServer
+**Oem.Hpe.ProxyServer.Enabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates whether to use proxy server or not. When enabled, management processor sends alerts via proxy server otherwise it will not use the proxy server.|
+|Type|boolean|
+|Read Only|False|
+
+**Oem.Hpe.ProxyServer.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The port number through which the Proxy server is listening.|
+|Type|integer|
+|Read Only|False|
+
+**Oem.Hpe.ProxyServer.SecureProxyEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates whether to connect to proxy server securely. When enabled, proxy server is connected via https otherwise uses http|
+|Type|boolean|
+|Read Only|False|
+
+**Oem.Hpe.ProxyServer.Server**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The IP address, FQDN, IPv6 name, or short name of the Proxy server.|
+|Type|string|
+|Read Only|False|
+
+### Oem.Hpe.RemoteSyslog
+**Oem.Hpe.RemoteSyslog.Enabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates whether Remote Syslog is enabled. When enabled, management processor sends notification messages to the specified Syslog server. This can be enabled only when the property RemoteSyslogServer is set or not empty.|
+|Type|boolean|
+|Read Only|False|
+
+**Oem.Hpe.RemoteSyslog.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The port number through which the Syslog server is listening.|
+|Type|integer|
+|Read Only|False|
+
+**Oem.Hpe.RemoteSyslog.PrimaryServer**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The IP address, FQDN, IPv6 name, or short name of the server running the Syslog service.|
+|Type|string|
+|Read Only|False|
+
+**Oem.Hpe.RemoteSyslog.SecondaryServer**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The IP address, FQDN, IPv6 name, or short name of the server running the Syslog service.|
+|Type|string|
+|Read Only|False|
+
+### SNMP
+**SNMP.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**SNMP.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### SSDP
+**SSDP.Enabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates whether SSDP is enabled for the manager.|
+|Type|boolean or null|
+|Read Only|False|
+
+**SSDP.NotifyIPv6Scope**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The scope for IPv6 Notify messages for SSDP.|
+|Type|string or null|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Null```|A value is temporarily unavailable|
+|```Link```|SSDP Notify messages are sent to addresses in the IPv6 Local Link scope|
+|```Site```|SSDP Notify messages are sent to addresses in the IPv6 Local Site scope.|
+|```Organization```|SSDP Notify messages are sent to addresses in the IPv6 Local Organization scope.|
+
+**SSDP.NotifyMulticastIntervalSeconds**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates how often multicast is performed for SSDP.|
+|Type|integer or null|
+|Read Only|False|
+
+**SSDP.NotifyTTL**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The Time to Live (TTL) hop count for SSDP Notify messages.|
+|Type|integer or null|
+|Read Only|False|
+
+**SSDP.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|The SSDP port number.|
+|Type|integer or null|
+|Read Only|True|
+
+**SSDP.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates whether SSDP is enabled for the manager.|
+|Type|boolean or null|
+|Read Only|False|
+
+### SSH
+**SSH.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**SSH.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Status
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+See the Redfish standard schema and specification for information on common Status object.
+
+### Telnet
+**Telnet.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**Telnet.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### VirtualMedia
+**VirtualMedia.Port**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates the protocol port.|
+|Type|number or null|
+|Read Only|True|
+
+**VirtualMedia.ProtocolEnabled**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+| | |
+|---|---|
+|Description|Indicates if the protocol is enabled or disabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Actions
+
+**SendTestSyslog**
+Member of [ManagerNetworkProtocol.v1_1_0.ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)
+
+**Parameters:**
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+## Memory.v1_2_0.Memory
+```@odata.type: "#Memory.v1_2_0.Memory"```
+
+This is the schema definition for the Memory resource. It represents memory and its configuration attached to a system.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/systems/{item}/memory/{item}```|GET POST PATCH |
+
+### AllocationAlignmentMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The boundary which memory regions are allocated on, measured in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### AllocationIncrementMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The size of the smallest unit of allocation for a memory region, thus it is the multiple in which regions are actually reserved.|
+|Type|number or null|
+|Read Only|True|
+
+### AllowedSpeedsMHz (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```AllowedSpeedsMHz``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|number|
+|Read Only|True|
+
+### BaseModuleType
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The base module type of Memory.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```RDIMM```|Registered DIMM.|
+|```UDIMM```|UDIMM.|
+|```SO_DIMM```|SO_DIMM.|
+|```LRDIMM```|Load Reduced.|
+|```Mini_RDIMM```|Mini_RDIMM.|
+|```Mini_UDIMM```|Mini_UDIMM.|
+|```SO_RDIMM_72b```|SO_RDIMM_72b.|
+|```SO_UDIMM_72b```|SO_UDIMM_72b.|
+|```SO_DIMM_16b```|SO_DIMM_16b.|
+|```SO_DIMM_32b```|SO_DIMM_32b.|
+
+### BusWidthBits
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Bus Width in bits.|
+|Type|number or null|
+|Read Only|True|
+
+### CapacityMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Memory Capacity in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### DataWidthBits
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Data Width in bits.|
+|Type|number or null|
+|Read Only|True|
+
+### DeviceID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Device ID.|
+|Type|string or null|
+|Read Only|True|
+
+### DeviceLocator
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Location of the Memory in the platform.|
+|Type|string or null|
+|Read Only|True|
+
+### ErrorCorrection
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Error correction scheme supported for this memory.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```NoECC```|No ECC available.|
+|```SingleBitECC```|Single bit Data error can be corrected by ECC.|
+|```MultiBitECC```|Multi-bit Data errors can be corrected by ECC.|
+|```AddressParity```|Address Parity errors can be corrected.|
+
+### FirmwareApiVersion
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Version of API supported by the firmware.|
+|Type|string or null|
+|Read Only|True|
+
+### FirmwareRevision
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Revision of firmware on the Memory controller.|
+|Type|string or null|
+|Read Only|True|
+
+### FunctionClasses (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```FunctionClasses``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+### IsRankSpareEnabled
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Rank spare enabled status.|
+|Type|boolean or null|
+|Read Only|True|
+
+### IsSpareDeviceEnabled
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Spare device enabled status.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Manufacturer
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The Memory manufacturer.|
+|Type|string or null|
+|Read Only|True|
+
+### MaxTDPMilliWatts (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```MaxTDPMilliWatts``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|number|
+|Read Only|True|
+
+### MemoryDeviceType
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Type details of the Memory.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```DDR```|DDR.|
+|```DDR2```|DDR2.|
+|```DDR3```|DDR3.|
+|```DDR4```|DDR4.|
+|```DDR4_SDRAM```|DDR4 SDRAM.|
+|```DDR4E_SDRAM```|DDR4E SDRAM.|
+|```LPDDR4_SDRAM```|LPDDR4 SDRAM.|
+|```DDR3_SDRAM```|DDR3 SDRAM.|
+|```LPDDR3_SDRAM```|LPDDR3 SDRAM.|
+|```DDR2_SDRAM```|DDR2 SDRAM.|
+|```DDR2_SDRAM_FB_DIMM```|DDR2 SDRAM FB_DIMM.|
+|```DDR2_SDRAM_FB_DIMM_PROBE```|DDR2 SDRAM FB_DIMM PROBE.|
+|```DDR_SGRAM```|DDR SGRAM.|
+|```DDR_SDRAM```|DDR SDRAM.|
+|```ROM```|ROM.|
+|```SDRAM```|SDRAM.|
+|```EDO```|EDO.|
+|```FastPageMode```|Fast Page Mode.|
+|```PipelinedNibble```|Pipelined Nibble.|
+
+### MemoryLocation
+**MemoryLocation.Channel**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Channel number in which Memory is connected.|
+|Type|number or null|
+|Read Only|True|
+
+**MemoryLocation.MemoryController**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Memory controller number in which Memory is connected.|
+|Type|number or null|
+|Read Only|True|
+
+**MemoryLocation.Slot**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Slot number in which Memory is connected.|
+|Type|number or null|
+|Read Only|True|
+
+**MemoryLocation.Socket**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Socket number in which Memory is connected.|
+|Type|number or null|
+|Read Only|True|
+
+### MemoryMedia (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```MemoryMedia``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```DRAM```|DRAM media.|
+|```NAND```|NAND media.|
+|```Proprietary```|Proprietary media.|
+
+### MemorySubsystemControllerManufacturerID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The manufacturer ID of the memory subsystem controller of this memory module.|
+|Type|string or null|
+|Read Only|True|
+
+### MemorySubsystemControllerProductID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The product ID of the memory subsystem controller of this memory module.|
+|Type|string or null|
+|Read Only|True|
+
+### MemoryType
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The type of Memory.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```DRAM```|The memory module is composed of volatile memory.|
+|```NVDIMM_N```|The memory module is composed of volatile memory backed by non-volatile memory.|
+|```NVDIMM_F```|The memory module is composed of non-volatile memory.|
+|```NVDIMM_P```|The memory module is composed of a combination of non-volatile and volatile memory.|
+
+### Metrics
+**Metrics.BlockSizeBytes**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Block size in bytes.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.CurrentPeriod**
+**Metrics.CurrentPeriod.BlocksRead**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of blocks read since reset.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.CurrentPeriod.BlocksWritten**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of blocks written since reset.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.HealthData**
+**Metrics.HealthData.AlarmTrips**
+**Metrics.HealthData.AlarmTrips.AddressParityError**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Address parity error detected status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.AlarmTrips.CorrectableECCError**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Correctable data error threshold crossing alarm trip detected status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.AlarmTrips.SpareBlock**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Spare block capacity crossing alarm trip detected status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.AlarmTrips.Temperature**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Temperature threshold crossing alarm trip detected status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.AlarmTrips.UncorrectableECCError**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Uncorrectable data error threshold crossing alarm trip detected status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.DataLossDetected**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Data loss detection status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.LastShutdownSuccess**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Status of last shutdown.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.PerformanceDegraded**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Performance degraded mode status.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Metrics.HealthData.PredictedMediaLifeLeftPercent**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The percentage of reads and writes that are predicted to still be available for the media.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.HealthData.RemainingSpareBlockPercentage**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Remaining spare blocks in percentage.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.LifeTime**
+**Metrics.LifeTime.BlocksRead**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of blocks read for the lifetime of the Memory.|
+|Type|number or null|
+|Read Only|True|
+
+**Metrics.LifeTime.BlocksWritten**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of blocks written for the lifetime of the Memory.|
+|Type|number or null|
+|Read Only|True|
+
+### ModuleManufacturerID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The manufacturer ID of this memory module.|
+|Type|string or null|
+|Read Only|True|
+
+### ModuleProductID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The product ID of this memory module.|
+|Type|string or null|
+|Read Only|True|
+
+### Oem.Hpe.DIMMStatus
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Specifies memory module status and whether the module in use.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Null```|A value is temporarily unavailable|
+|```Unknown```|The status of the DIMM is unknown.|
+|```Other```|DIMM status that does not fit any of these definitions.|
+|```NotPresent```|DIMM is not present.|
+|```PresentUnused```|DIMM is present but unused.|
+|```GoodInUse```|DIMM is functioning properly and currently in use.|
+|```AddedButUnused```|DIMM is added but currently unused.|
+|```UpgradedButUnused```|DIMM is upgraded but currently unused.|
+|```ExpectedButMissing```|DIMM is expected but missing.|
+|```DoesNotMatch```|DIMM type does not match.|
+|```NotSupported```|DIMM is not supported.|
+|```ConfigurationError```|Configuration error in DIMM.|
+|```Degraded```|DIMM state is degraded.|
+|```PresentSpare```|DIMM is present but used as spare.|
+|```GoodPartiallyInUse```|DIMM is functioning properly but partially in use.|
+
+### Oem.Hpe.Type
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
+|Type|string|
+|Read Only|True|
+
+### OperatingMemoryModes (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```OperatingMemoryModes``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Volatile```|Volatile memory.|
+|```PMEM```|Persistent memory, byte accesible through system address space.|
+|```Block```|Block accessible system memory.|
+
+### OperatingSpeedMhz
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Operating speed of Memory in MHz.|
+|Type|number or null|
+|Read Only|True|
+
+### PartNumber
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The product part number of this device.|
+|Type|string or null|
+|Read Only|True|
+
+### PersistentRegionNumberLimit
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Total number of persistent regions this Memory can support.|
+|Type|number or null|
+|Read Only|True|
+
+### PersistentRegionSizeLimitMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Total size of persistent regions in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### PersistentRegionSizeMaxMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Maximum size of a single persistent region in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### PowerManagementPolicy
+**PowerManagementPolicy.AveragePowerBudgetMilliWatts**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Average power budget in milli watts.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerManagementPolicy.MaxTDPMilliWatts**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Maximum TDP in milli watts.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerManagementPolicy.PeakPowerBudgetMilliWatts**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Peak power budget in milli watts.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerManagementPolicy.PolicyEnabled**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Power management policy enabled status.|
+|Type|boolean or null|
+|Read Only|True|
+
+### RankCount
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of ranks available in the Memory.|
+|Type|number or null|
+|Read Only|True|
+
+### Regions (array)
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```Regions``` is an array containing elements of:
+
+**Regions[{item}].MemoryClassification**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Classification of memory occupied by the given memory region.|
+|Type|string or null|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Volatile```|Volatile memory.|
+|```ByteAccessiblePersistent```|Byte accessible persistent memory.|
+|```Block```|Block accesible memory.|
+
+**Regions[{item}].OffsetMiB**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Offset with in the Memory that corresponds to the starting of this memory region in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+**Regions[{item}].PassphraseState**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|State of the passphrase for this region.|
+|Type|boolean or null|
+|Read Only|True|
+
+**Regions[{item}].RegionId**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Unique region ID representing a specific region within the Memory.|
+|Type|string or null|
+|Read Only|True|
+
+**Regions[{item}].SizeMiB**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Size of this memory region in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### SecurityCapabilities
+**SecurityCapabilities.MaxPassphraseCount**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Maximum number of passphrases supported for this Memory.|
+|Type|number or null|
+|Read Only|True|
+
+**SecurityCapabilities.PassphraseCapable**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Memory passphrase set capability.|
+|Type|boolean or null|
+|Read Only|True|
+
+**SecurityCapabilities.SecurityStates (array)**
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+```SecurityStates``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Enabled```|Secure mode is enabled.|
+|```Disabled```|Secure mode is disabled.|
+|```Unlocked```|Secure mode is enabled and access to the data is unlocked.|
+|```Locked```|Secure mode is enabled and access to the data is locked.|
+|```Frozen```|Secure state is frozen and can not be modified until reset.|
+|```Passphraselimit```|Number of attempts to unlock the Memory exceeded limit.|
+
+### SerialNumber
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|The product serial number of this device.|
+|Type|string or null|
+|Read Only|True|
+
+### SpareDeviceCount
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Number of unused spare devices available in the Memory.|
+|Type|number or null|
+|Read Only|True|
+
+### Status
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+See the Redfish standard schema and specification for information on common Status object.
+
+### SubsystemDeviceID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Subsystem Device ID.|
+|Type|string or null|
+|Read Only|True|
+
+### SubsystemVendorID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|SubSystem Vendor ID.|
+|Type|string or null|
+|Read Only|True|
+
+### VendorID
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Vendor ID.|
+|Type|string or null|
+|Read Only|True|
+
+### VolatileRegionNumberLimit
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Total number of volatile regions this Memory can support.|
+|Type|number or null|
+|Read Only|True|
+
+### VolatileRegionSizeLimitMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Total size of volatile regions in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+### VolatileRegionSizeMaxMiB
+Member of [Memory.v1_2_0.Memory](#memory-v1_2_0-memory)
+
+| | |
+|---|---|
+|Description|Maximum size of a single volatile region in MiB.|
+|Type|number or null|
+|Read Only|True|
+
+## PCIeDevice.v1_1_0.PCIeDevice
+```@odata.type: "#PCIeDevice.v1_1_0.PCIeDevice"```
+
+This is the schema definition for the PCIeDevice resource.  It represents the properties of a PCIeDevice attached to a System.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/systems/{item}/pciedevices/{item}```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Links/PCIeFunctions[]```|[PCIeFunction](#pciefunction-v1_1_0-pciefunction)|
+
+### AssetTag
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|The user assigned asset tag for this PCIe device.|
+|Type|string or null|
+|Read Only|False|
+
+### DeviceType
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|The device type for this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### FirmwareVersion
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|The version of firmware for this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### Manufacturer
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|This is the manufacturer of this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### Model
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|This is the model number for the PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### PartNumber
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|The part number for this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### SKU
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|This is the SKU for this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### SerialNumber
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+
+| | |
+|---|---|
+|Description|The serial number for this PCIe device.|
+|Type|string or null|
+|Read Only|True|
+
+### Status
+Member of [PCIeDevice.v1_1_0.PCIeDevice](#pciedevice-v1_1_0-pciedevice)
+See the Redfish standard schema and specification for information on common Status object.
+
+## PCIeFunction.v1_1_0.PCIeFunction
+```@odata.type: "#PCIeFunction.v1_1_0.PCIeFunction"```
+
+This is the schema definition for the PCIeFunction resource.  It represents the properties of a PCIeFunction attached to a System.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/systems/{item}/pciedevices/{item}/pciefunction```|GET |
+
+### ClassCode
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Class Code of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+### DeviceClass
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The class for this PCIe Function.|
+|Type|string or null|
+|Read Only|True|
+
+### DeviceId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Device ID of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+### FunctionId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The the PCIe Function identifier.|
+|Type|number or null|
+|Read Only|True|
+
+### FunctionType
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The type of the PCIe Function.|
+|Type|string or null|
+|Read Only|True|
+
+### RevisionId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Revision ID of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+### Status
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+See the Redfish standard schema and specification for information on common Status object.
+
+### SubsystemId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Subsystem ID of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+### SubsystemVendorId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Subsystem Vendor ID of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+### VendorId
+Member of [PCIeFunction.v1_1_0.PCIeFunction](#pciefunction-v1_1_0-pciefunction)
+
+| | |
+|---|---|
+|Description|The Vendor ID of this PCIe function.|
+|Type|string or null|
+|Read Only|True|
+
+## Power.v1_3_0.Power
+```@odata.type: "#Power.v1_3_0.Power"```
+
+This is the schema definition for the Power Metrics. It represents the properties for Power Consumption and Power Limiting.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/chassis/8f55097c/power```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```PowerSupplies[]/RelatedItem[]```|[ComputerSystem](#computersystem-v1_3_0-computersystem)|
+
+### PowerControl (array)
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```PowerControl``` is an array containing elements of:
+
+**PowerControl[{item}].MemberId**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**PowerControl[{item}].PhysicalContext**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Room```|The room.|
+|```Intake```|The intake point of the chassis.|
+|```Exhaust```|The exhaust point of the chassis.|
+|```Front```|The front of the chassis.|
+|```Back```|The back of the chassis.|
+|```Upper```|The upper portion of the chassis.|
+|```Lower```|The lower portion of the chassis.|
+|```CPU```|A Processor (CPU).|
+|```GPU```|A Graphics Processor (GPU).|
+|```Backplane```|A backplane within the chassis.|
+|```SystemBoard```|The system board (PCB).|
+|```PowerSupply```|A power supply.|
+|```VoltageRegulator```|A voltage regulator device.|
+|```StorageDevice```|A storage device.|
+|```NetworkingDevice```|A networking device.|
+|```ComputeBay```|Within a compute bay.|
+|```StorageBay```|Within a storage bay.|
+|```NetworkBay```|Within a networking bay.|
+|```ExpansionBay```|Within an expansion bay.|
+|```PowerSupplyBay```|Within a power supply bay.|
+|```Memory```|A memory device.|
+
+**PowerControl[{item}].PowerAllocatedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The total amount of power that has been allocated (or budegeted)to  chassis resources.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerAvailableWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The amount of power not already budgeted and therefore available for additional allocation. (powerCapacity - powerAllocated).  This indicates how much reserve power capacity is left.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerCapacityWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The total amount of power available to the chassis for allocation. This may the power supply capacity, or power budget assigned to the chassis from an up-stream chassis.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerConsumedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The actual power being consumed by the chassis.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerLimit**
+**PowerControl[{item}].PowerLimit.CorrectionInMs**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The time required for the limiting process to reduce power consumption to below the limit.|
+|Type|number or null|
+|Read Only|False|
+
+**PowerControl[{item}].PowerLimit.LimitException**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The action that is taken if the power cannot be maintained below the LimitInWatts.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```NoAction```|Take no action when the limit is exceeded.|
+|```HardPowerOff```|Turn the power off immediately when the limit is exceeded.|
+|```LogEventOnly```|Log an event when the limit is exceeded, but take no further action.|
+|```Oem```|Take an OEM-defined action.|
+
+**PowerControl[{item}].PowerLimit.LimitInWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The Power limit in watts. Set to null to disable power capping.|
+|Type|number or null|
+|Read Only|False|
+
+**PowerControl[{item}].PowerMetrics**
+**PowerControl[{item}].PowerMetrics.AverageConsumedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The average power level over the measurement window (the last IntervalInMin minutes).|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerMetrics.IntervalInMin**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The time interval (or window) in which the PowerMetrics are measured over.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerMetrics.MaxConsumedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The highest power consumption level that has occured over the measurement window (the last IntervalInMin minutes).|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerMetrics.MinConsumedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The lowest power consumption level over the measurement window (the last IntervalInMin minutes).|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].PowerRequestedWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The potential power that the chassis resources are requesting which may be higher than the current level being consumed since requested power includes budget that the chassis resource wants for future use.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerControl[{item}].RelatedItem (array)**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```RelatedItem``` is an array containing elements of:
+
+**PowerControl[{item}].Status**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+See the Redfish standard schema and specification for information on common Status object.
+
+### PowerSupplies (array)
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```PowerSupplies``` is an array containing elements of:
+
+**PowerSupplies[{item}].FirmwareVersion**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The firmware version for this Power Supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].IndicatorLED**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The state of the indicator LED, used to identify the power supply.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Lit```|The Indicator LED is lit.|
+|```Blinking```|The Indicator LED is blinking.|
+|```Off```|The Indicator LED is off.|
+
+**PowerSupplies[{item}].InputRanges (array)**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```InputRanges``` is an array containing elements of:
+
+**InputRanges[{item}].InputType**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The Input type (AC or DC).|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```AC```|Alternating Current (AC) input range.|
+|```DC```|Direct Current (DC) input range.|
+
+**InputRanges[{item}].MaximumFrequencyHz**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The maximum line input frequency at which this power supply input range is effective.|
+|Type|number or null|
+|Read Only|True|
+
+**InputRanges[{item}].MaximumVoltage**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The maximum line input voltage at which this power supply input range is effective.|
+|Type|number or null|
+|Read Only|True|
+
+**InputRanges[{item}].MinimumFrequencyHz**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The minimum line input frequency at which this power supply input range is effective.|
+|Type|number or null|
+|Read Only|True|
+
+**InputRanges[{item}].MinimumVoltage**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The minimum line input voltage at which this power supply input range is effective.|
+|Type|number or null|
+|Read Only|True|
+
+**InputRanges[{item}].OutputWattage**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The maximum capacity of this Power Supply when operating in this input range.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].LastPowerOutputWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The average power output of this Power Supply.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].LineInputVoltage**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The line input voltage at which the Power Supply is operating.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].LineInputVoltageType**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The line voltage type supported as an input to this Power Supply.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Unknown```|The power supply line input voltage type cannot be determined.|
+|```ACLowLine```|100-127V AC input.|
+|```ACMidLine```|200-240V AC input.|
+|```ACHighLine```|277V AC input.|
+|```DCNeg48V```|-48V DC input.|
+|```DC380V```|High Voltage DC input (380V).|
+|```AC120V```|AC 120V nominal input.|
+|```AC240V```|AC 240V nominal input.|
+|```AC277V```|AC 277V nominal input.|
+|```ACandDCWideRange```|Wide range AC or DC input.|
+|```ACWideRange```|Wide range AC input.|
+|```DC240V```|DC 240V nominal input.|
+
+**PowerSupplies[{item}].Manufacturer**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|This is the manufacturer of this power supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].MemberId**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**PowerSupplies[{item}].Model**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The model number for this Power Supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].PartNumber**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The part number for this Power Supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].PowerCapacityWatts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The maximum capacity of this Power Supply.|
+|Type|number or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].PowerSupplyType**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The Power Supply type (AC or DC).|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Unknown```|The power supply type cannot be determined.|
+|```AC```|Alternating Current (AC) power supply.|
+|```DC```|Direct Current (DC) power supply.|
+|```ACorDC```|Power Supply supports both DC or AC.|
+
+**PowerSupplies[{item}].RelatedItem (array)**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```RelatedItem``` is an array containing elements of:
+
+**PowerSupplies[{item}].SerialNumber**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The serial number for this Power Supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].SparePartNumber**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The spare part number for this Power Supply.|
+|Type|string or null|
+|Read Only|True|
+
+**PowerSupplies[{item}].Status**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+See the Redfish standard schema and specification for information on common Status object.
+
+### Status
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+See the Redfish standard schema and specification for information on common Status object.
+
+### Voltages (array)
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```Voltages``` is an array containing elements of:
+
+**Voltages[{item}].LowerThresholdCritical**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Below normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].LowerThresholdFatal**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Below normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].LowerThresholdNonCritical**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Below normal range.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].MaxReadingRange**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Maximum value for this Voltage sensor.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].MemberId**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**Voltages[{item}].MinReadingRange**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Minimum value for this Voltage sensor.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].PhysicalContext**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Room```|The room.|
+|```Intake```|The intake point of the chassis.|
+|```Exhaust```|The exhaust point of the chassis.|
+|```Front```|The front of the chassis.|
+|```Back```|The back of the chassis.|
+|```Upper```|The upper portion of the chassis.|
+|```Lower```|The lower portion of the chassis.|
+|```CPU```|A Processor (CPU).|
+|```GPU```|A Graphics Processor (GPU).|
+|```Backplane```|A backplane within the chassis.|
+|```SystemBoard```|The system board (PCB).|
+|```PowerSupply```|A power supply.|
+|```VoltageRegulator```|A voltage regulator device.|
+|```StorageDevice```|A storage device.|
+|```NetworkingDevice```|A networking device.|
+|```ComputeBay```|Within a compute bay.|
+|```StorageBay```|Within a storage bay.|
+|```NetworkBay```|Within a networking bay.|
+|```ExpansionBay```|Within an expansion bay.|
+|```PowerSupplyBay```|Within a power supply bay.|
+|```Memory```|A memory device.|
+
+**Voltages[{item}].ReadingVolts**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|The present reading of the voltage sensor.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].RelatedItem (array)**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+```RelatedItem``` is an array containing elements of:
+
+**Voltages[{item}].SensorNumber**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|A numerical identifier to represent the voltage sensor.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].Status**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+See the Redfish standard schema and specification for information on common Status object.
+
+**Voltages[{item}].UpperThresholdCritical**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Above normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].UpperThresholdFatal**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Above normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Voltages[{item}].UpperThresholdNonCritical**
+Member of [Power.v1_3_0.Power](#power-v1_3_0-power)
+
+| | |
+|---|---|
+|Description|Above normal range.|
+|Type|number or null|
+|Read Only|True|
+
+## PrivilegeRegistry.v1_0_0.PrivilegeRegistry
+```@odata.type: "#PrivilegeRegistry.v1_0_0.PrivilegeRegistry"```
+
+This is the schema definition for Operation to Privilege mapping.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/accountservice/privilegeregistry```|GET |
+
+### Mappings (array)
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Mappings``` is an array containing elements of:
+
+**Mappings[{item}].Entity**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+
+| | |
+|---|---|
+|Description|Indicates entity name. e.g., Manager.|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap**
+**Mappings[{item}].OperationMap.DELETE (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```DELETE``` is an array containing elements of:
+
+**DELETE[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap.GET (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```GET``` is an array containing elements of:
+
+**GET[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap.HEAD (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```HEAD``` is an array containing elements of:
+
+**HEAD[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap.PATCH (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PATCH``` is an array containing elements of:
+
+**PATCH[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap.POST (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```POST``` is an array containing elements of:
+
+**POST[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].OperationMap.PUT (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PUT``` is an array containing elements of:
+
+**PUT[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Mappings[{item}].PropertyOverrides (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PropertyOverrides``` is an array containing elements of:
+
+**PropertyOverrides[{item}].OperationMap**
+**PropertyOverrides[{item}].OperationMap.DELETE (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```DELETE``` is an array containing elements of:
+
+**DELETE[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].OperationMap.GET (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```GET``` is an array containing elements of:
+
+**GET[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].OperationMap.HEAD (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```HEAD``` is an array containing elements of:
+
+**HEAD[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].OperationMap.PATCH (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PATCH``` is an array containing elements of:
+
+**PATCH[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].OperationMap.POST (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```POST``` is an array containing elements of:
+
+**POST[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].OperationMap.PUT (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PUT``` is an array containing elements of:
+
+**PUT[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**PropertyOverrides[{item}].Targets (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Targets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string or null|
+|Read Only|True|
+
+**Mappings[{item}].ResourceURIOverrides (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```ResourceURIOverrides``` is an array containing elements of:
+
+**ResourceURIOverrides[{item}].OperationMap**
+**ResourceURIOverrides[{item}].OperationMap.DELETE (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```DELETE``` is an array containing elements of:
+
+**DELETE[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].OperationMap.GET (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```GET``` is an array containing elements of:
+
+**GET[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].OperationMap.HEAD (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```HEAD``` is an array containing elements of:
+
+**HEAD[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].OperationMap.PATCH (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PATCH``` is an array containing elements of:
+
+**PATCH[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].OperationMap.POST (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```POST``` is an array containing elements of:
+
+**POST[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].OperationMap.PUT (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PUT``` is an array containing elements of:
+
+**PUT[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**ResourceURIOverrides[{item}].Targets (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Targets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string or null|
+|Read Only|True|
+
+**Mappings[{item}].SubordinateOverrides (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```SubordinateOverrides``` is an array containing elements of:
+
+**SubordinateOverrides[{item}].OperationMap**
+**SubordinateOverrides[{item}].OperationMap.DELETE (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```DELETE``` is an array containing elements of:
+
+**DELETE[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].OperationMap.GET (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```GET``` is an array containing elements of:
+
+**GET[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].OperationMap.HEAD (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```HEAD``` is an array containing elements of:
+
+**HEAD[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].OperationMap.PATCH (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PATCH``` is an array containing elements of:
+
+**PATCH[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].OperationMap.POST (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```POST``` is an array containing elements of:
+
+**POST[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].OperationMap.PUT (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PUT``` is an array containing elements of:
+
+**PUT[{item}].Privilege (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Privilege``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SubordinateOverrides[{item}].Targets (array)**
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```Targets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string or null|
+|Read Only|True|
+
+### OEMPrivilegesUsed (array)
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```OEMPrivilegesUsed``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OemConfigureManagerWithSecurity```|Allows a user to perform all iLO Amplifier Tasks, including Recovery Management|
+
+### PrivilegesUsed (array)
+Member of [PrivilegeRegistry.v1_0_0.PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)
+```PrivilegesUsed``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Login```|Able to log into the service and read resources.|
+|```ConfigureManager```|Able to configure Manager resources.|
+|```ConfigureUsers```|Able to configure Users and their Accounts.|
+|```ConfigureSelf```|Able to change the password for the current user Account.|
+|```ConfigureComponents```|Able to configure components managed by this service.|
+
+## Processor.v1_1_0.Processor
+```@odata.type: "#Processor.v1_1_0.Processor"```
+
+This is the schema definition for the Processor resource. It represents the properties of a processor attached to a system.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/systems/{item}/processor/{item}```|GET POST PATCH |
+
+### InstructionSet
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The instruction set of the processor|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```x86```|x86 32-bit|
+|```x86-64```|x86 64-bit|
+|```IA-64```|Intel IA-64|
+|```ARM-A32```|ARM 32-bit|
+|```ARM-A64```|ARM 64-bit|
+|```MIPS32```|MIPS 32-bit|
+|```MIPS64```|MIPS 64-bit|
+|```OEM```|OEM-defined|
+
+### Manufacturer
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The processor manufacturer|
+|Type|string or null|
+|Read Only|True|
+
+### MaxSpeedMHz
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The maximum clock speed of the processor|
+|Type|number or null|
+|Read Only|True|
+
+### Model
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The product model number of this device|
+|Type|string or null|
+|Read Only|True|
+
+### Oem.Hpe.CoresEnabled
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The number of enabled cores in the processor.|
+|Type|integer or null|
+|Read Only|True|
+
+### ProcessorArchitecture
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The architecture of the processor|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```x86```|x86 or x86-64|
+|```IA-64```|Intel Itanium|
+|```ARM```|ARM|
+|```MIPS```|MIPS|
+|```OEM```|OEM-defined|
+
+### ProcessorId
+**ProcessorId.EffectiveFamily**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The effective Family for this processor|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorId.EffectiveModel**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The effective Model for this processor|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorId.IdentificationRegisters**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The contents of the Identification Registers (CPUID) for this processor|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorId.MicrocodeInfo**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The Microcode Information for this processor|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorId.Step**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The Step value for this processor|
+|Type|string or null|
+|Read Only|True|
+
+**ProcessorId.VendorId**
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The Vendor Identification for this processor|
+|Type|string or null|
+|Read Only|True|
+
+### ProcessorType
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The type of processor|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```CPU```|A Central Processing Unit|
+|```GPU```|A Graphics Processing Unit|
+|```FPGA```|A Field Programmable Gate Array|
+|```DSP```|A Digital Signal Processor|
+|```Accelerator```|An Accelerator|
+|```OEM```|An OEM-defined Processing Unit|
+
+### Socket
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The socket or location of the processor|
+|Type|string or null|
+|Read Only|True|
+
+### Status
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+See the Redfish standard schema and specification for information on common Status object.
+
+### TotalCores
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The total number of cores contained in this processor|
+|Type|number or null|
+|Read Only|True|
+
+### TotalThreads
+Member of [Processor.v1_1_0.Processor](#processor-v1_1_0-processor)
+
+| | |
+|---|---|
+|Description|The total number of execution threads supported by this processor|
+|Type|number or null|
+|Read Only|True|
+
+## Role.v1_0_0.Role
+```@odata.type: "#Role.v1_0_0.Role"```
+
+This resource defines a user role to be used in conjunction with a Manager Account.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/accountservice/roles/administrator```|GET |
+|```/redfish/v1/accountservice/roles/configmanagerrole```|GET |
+
+### AssignedPrivileges (array)
+Member of [Role.v1_0_0.Role](#role-v1_0_0-role)
+```AssignedPrivileges``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Login```|Able to log into the service and read resources.|
+|```ConfigureManager```|Able to configure Manager resources.|
+|```ConfigureUsers```|Able to configure Users and their Accounts.|
+|```ConfigureSelf```|Able to change the password for the current user Account.|
+|```ConfigureComponents```|Able to configure components managed by this service.|
+
+### IsPredefined
+Member of [Role.v1_0_0.Role](#role-v1_0_0-role)
+
+| | |
+|---|---|
+|Description|This property is used to indicate if the Role is one of the Redfish Predefined Roles vs a Custom role.|
+|Type|boolean|
+|Read Only|True|
+
+### OemPrivileges (array)
+Member of [Role.v1_0_0.Role](#role-v1_0_0-role)
+```OemPrivileges``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OemConfigureManagerWithSecurity```|Allows a user to perform all iLO Amplifier Tasks, including Recovery Management|
+
+### RoleId
+Member of [Role.v1_0_0.Role](#role-v1_0_0-role)
+
+| | |
+|---|---|
+|Description|This property contains the name of the Role.|
+|Type|string|
+|Read Only|True|
+
+## ServiceRoot.v1_1_1.ServiceRoot
+```@odata.type: "#ServiceRoot.v1_1_1.ServiceRoot"```
+
+This object represents the HPE RESTful API root service.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Tasks```|[TaskService](#taskservice-v1_0_3-taskservice)|
+|```Registries```|Collection of [MessageRegistryFile](#messageregistryfile-v1_1_0-messageregistryfile)|
+|```Managers```|Collection of [Manager](#manager-v1_3_0-manager)|
+|```JsonSchemas```|Collection of [JsonSchemaFile](#jsonschemafile-v1_0_3-jsonschemafile)|
+|```AccountService```|[AccountService](#accountservice-v1_0_4-accountservice)|
+|```SessionService```|[SessionService](#sessionservice-v1_1_1-sessionservice)|
+|```Oem/Hpe/Links/AggregatorService```|[HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)|
+|```Chassis```|Collection of [Chassis](#chassis-v1_4_0-chassis)|
+|```Systems```|Collection of [ComputerSystem](#computersystem-v1_3_0-computersystem)|
+|```Links/Sessions```|Collection of [Session](#session-v1_0_3-session)|
+
+### AccountService
+The URI to this account service resource.
+### Chassis
+The URI to this chassis resource.
+### EventService
+The URI to the event service resource.
+### Fabrics
+A link to a collection of all fabric entities.
+### JsonSchemas
+The URI to this registries resource.
+### Managers
+The URI to this managers resource.
+### Oem.Hpe.Language
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies the Language to be used.|
+|Type|string|
+|Read Only|False|
+
+### Oem.Hpe.Manager (array)
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+```Manager``` is an array containing elements of:
+
+**Manager[{item}].FQDN**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Fully qualified domain name of the management processor.|
+|Type|string|
+|Read Only|True|
+
+**Manager[{item}].HostName**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The name of management processor.|
+|Type|string|
+|Read Only|True|
+
+**Manager[{item}].ManagerFirmwareVersion**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The major and minor management processor version numbers.|
+|Type|string|
+|Read Only|True|
+
+**Manager[{item}].ManagerFirmwareVersionPass**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The build or pass number of the management processor version.|
+|Type|string|
+|Read Only|True|
+
+**Manager[{item}].Model**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The type of the service manager.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Mercury```|Manager Mode Mercury|
+|```Wolfram```|Manager Mode Wolfram|
+
+### Oem.Hpe.Sessions
+**Oem.Hpe.Sessions.CertCommonName**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The name of the management processor as it appears in the digital certificate when a secure web GUI session is established to the management processor.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.KerberosEnabled**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies whether Kerberos login is enabled.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LDAPAuthLicenced**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies whether a valid license is installed for LDAP use.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LDAPEnabled**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies whether LDAP login is enabled.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LocalLoginEnabled**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies whether local users can log in.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LoginFailureDelay**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The delay (seconds) when a management processor login attempt has failed.|
+|Type|integer|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LoginHint**
+**Oem.Hpe.Sessions.LoginHint.Hint**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The information on how to log in to the management processor.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LoginHint.HintPOSTData**
+**Oem.Hpe.Sessions.LoginHint.HintPOSTData.Password**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The password for logging in to the management processor.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.LoginHint.HintPOSTData.UserName**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The user name for logging in to the management processor.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.SecurityMessage**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The login security banner message that is displayed on the management processor Login page.|
+|Type|string|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.SecurityOverride**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Specifies whether the security override switch is enabled.|
+|Type|boolean|
+|Read Only|True|
+
+**Oem.Hpe.Sessions.ServerName**
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The name of the server that this management processor is managing.|
+|Type|string|
+|Read Only|True|
+
+### RedfishVersion
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|The version of the Redfish service|
+|Type|string|
+|Read Only|True|
+
+### Registries
+The URI to this registries resource.
+### SessionService
+The URI to this sessions service resource.
+### StorageServices
+A link to a collection of all storage service entities.
+### StorageSystems
+This is a link to a collection of storage systems.
+### Systems
+The URI to this systems resource.
+### Tasks
+This is a link to the Task Service.
+### UUID
+Member of [ServiceRoot.v1_1_1.ServiceRoot](#serviceroot-v1_1_1-serviceroot)
+
+| | |
+|---|---|
+|Description|Unique identifier for a service instance.  This value should be an exact match of the UUID value returned in a 200OK from an SSDP M-SEARCH request during discovery.|
+|Type|string or null|
+|Read Only|True|
+
+### UpdateService
+This is a link to the UpdateService.
+## Session.v1_0_3.Session
+```@odata.type: "#Session.v1_0_3.Session"```
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/sessionservice/sessions/{item}```|GET DELETE |
+
+### Oem.Hpe.AccessTime
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|User session last-access time|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.LoginTime
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|User session login time|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.MySession
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|Indicates whether this is a session I own.|
+|Type|boolean|
+|Read Only|True|
+
+### Oem.Hpe.Privilege
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|Account privileges available for the user|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Login```|Read operations allowed like viewing discovered nodes and groups and generate reports|
+|```Device```|Allows configuring and performing actions on devices includes login privilege|
+|```User```|Allows configuring users with device privilege|
+|```Manager```|All operations allowed|
+
+### Oem.Hpe.Type
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|This object represents the type property. It represents the schema used for the resource and indicates the version of the schema in the format <schema>.<majorversion>.<minorversion>.<errataversion>.|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.UserAccount
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|Login details of the user|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.UserExpires
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|User session expire time|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.UserIP
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|IP address of the user|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.UserTag
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|Session source|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Web UI```|
+|```SSH```|
+|```Console```|
+|```Unknown```|
+
+### Oem.Hpe.UserType
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|User type|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Local```|
+|```Directory```|
+|```Single Sign On```|
+|```Kerberos```|
+|```Trusted Key```|
+|```Security Override```|
+|```System```|
+|```Federation```|
+
+### Password
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|This property is used in a POST to specify a password when creating a new session.  This property is null on a GET.|
+|Type|string or null|
+|Read Only|True|
+
+### UserName
+Member of [Session.v1_0_3.Session](#session-v1_0_3-session)
+
+| | |
+|---|---|
+|Description|Name to use to log in to the management processor.|
+|Type|string|
+|Read Only|True|
+
+## SessionService.v1_1_1.SessionService
+```@odata.type: "#SessionService.v1_1_1.SessionService"```
+
+This is the schema definition for the Session Service.  It represents the properties for the service itself and has links to the actual list of sessions.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/sessionservice```|GET PATCH |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Sessions```|Collection of [Session](#session-v1_0_3-session)|
+
+### ServiceEnabled
+Member of [SessionService.v1_1_1.SessionService](#sessionservice-v1_1_1-sessionservice)
+
+| | |
+|---|---|
+|Description|This indicates whether this service is enabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### SessionTimeout
+Member of [SessionService.v1_1_1.SessionService](#sessionservice-v1_1_1-sessionservice)
+
+| | |
+|---|---|
+|Description|This is the number of seconds of inactivity that a session may have before the session service closes the session due to inactivity. Zero indicates that the session will not be closed due to inactivity.|
+|Type|integer|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Null```|
+|```900```|
+|```1800```|
+|```3600```|
+|```7200```|
+
+### Sessions
+This property references a Collection resource of Sessions.
+### Status
+Member of [SessionService.v1_1_1.SessionService](#sessionservice-v1_1_1-sessionservice)
+See the Redfish standard schema and specification for information on common Status object.
+
+## SoftwareInventory.v1_1_1.SoftwareInventory
+```@odata.type: "#SoftwareInventory.v1_1_1.SoftwareInventory"```
+
+This schema defines an inventory of software components.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/updateservice/firmwareinventory/{item}```|GET |
+|```/redfish/v1/updateservice/softwareinventory/{item}```|GET |
+
+### LowestSupportedVersion
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|A string representing the lowest supported version of this software.|
+|Type|string or null|
+|Read Only|True|
+
+### Oem.Hpe.DeviceClass
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|The Device Class of the firmware.|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.DeviceContext
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|The Device Context of the firmware.|
+|Type|string|
+|Read Only|True|
+
+### SoftwareId
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|A string representing the implementation-specific ID for identifying this software.|
+|Type|string|
+|Read Only|True|
+
+### UefiDevicePaths (array)
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+```UefiDevicePaths``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string or null|
+|Read Only|True|
+
+### Updateable
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|Indicates whether this software can be updated by the update service.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Version
+Member of [SoftwareInventory.v1_1_1.SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)
+
+| | |
+|---|---|
+|Description|A string representing the version of this software.|
+|Type|string or null|
+|Read Only|True|
+
+## Storage.v1_2_0.Storage
+```@odata.type: "#Storage.v1_2_0.Storage"```
+
+This schema defines a storage subsystem and its respective properties.  A storage subsystem represents a set of storage controllers (physical or virtual) and the resources such as volumes that can be accessed from that subsystem.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/systems/{item}/storage/{item}```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Volumes```|VolumeCollection|
+|```Drives[]```|[Drive](#drive-v1_2_0-drive)|
+
+### Drives (array)
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+```Drives``` is an array containing elements of:
+
+### Status
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+See the Redfish standard schema and specification for information on common Status object.
+
+### StorageControllers (array)
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+```StorageControllers``` is an array containing elements of:
+
+**StorageControllers[{item}].AssetTag**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|The user assigned asset tag for this storage controller.|
+|Type|string or null|
+|Read Only|False|
+
+**StorageControllers[{item}].FirmwareVersion**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|The firmware version of this storage Controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].Identifiers (array)**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+```Identifiers``` is an array containing elements of:
+
+**Identifiers[{item}].DurableName**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This indicates the world wide, persistent name of the resource.|
+|Type|string or null|
+|Read Only|True|
+
+**Identifiers[{item}].DurableNameFormat**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This represents the format of the DurableName property.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```NAA```|Name Address Authority Format.|
+|```iQN```|iSCSI Qualified Name.|
+|```FC_WWN```|Fibre Channel World Wide Name.|
+|```UUID```|Universally Unique Identifier.|
+|```EUI```|IEEE-defined 64-bit Extended Unique Identifier.|
+
+**StorageControllers[{item}].Manufacturer**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This is the manufacturer of this storage controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].MemberId**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**StorageControllers[{item}].Model**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This is the model number for the storage controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].PartNumber**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|The part number for this storage controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].SKU**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|This is the SKU for this storage controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].SerialNumber**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|The serial number for this storage controller.|
+|Type|string or null|
+|Read Only|True|
+
+**StorageControllers[{item}].SpeedGbps**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+
+| | |
+|---|---|
+|Description|The speed of the storage controller interface.|
+|Type|number or null|
+|Read Only|True|
+
+**StorageControllers[{item}].Status**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+See the Redfish standard schema and specification for information on common Status object.
+
+**StorageControllers[{item}].SupportedControllerProtocols (array)**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+```SupportedControllerProtocols``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```PCIe```|PCI Express (Vendor Proprietary).|
+|```AHCI```|Advanced Host Controller Interface.|
+|```UHCI```|Universal Host Controller Interface.|
+|```SAS```|Serial Attached SCSI.|
+|```SATA```|Serial AT Attachment.|
+|```USB```|Universal Serial Bus.|
+|```NVMe```|Non-Volatile Memory Express.|
+|```FC```|Fibre Channel.|
+|```iSCSI```|Internet SCSI.|
+|```FCoE```|Fibre Channel over Ethernet.|
+|```FCP```|Fibre Channel Protocol for SCSI.|
+|```FICON```|FIbre CONnection (FICON).|
+|```NVMeOverFabrics```|NVMe over Fabrics.|
+|```SMB```|Server Message Block (aka CIFS Common Internet File System).|
+|```NFSv3```|Network File System version 3.|
+|```NFSv4```|Network File System version 4.|
+|```HTTP```|Hypertext Transport Protocol.|
+|```HTTPS```|Secure Hypertext Transport Protocol.|
+|```FTP```|File Transfer Protocol.|
+|```SFTP```|Secure File Transfer Protocol.|
+
+**StorageControllers[{item}].SupportedDeviceProtocols (array)**
+Member of [Storage.v1_2_0.Storage](#storage-v1_2_0-storage)
+```SupportedDeviceProtocols``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```PCIe```|PCI Express (Vendor Proprietary).|
+|```AHCI```|Advanced Host Controller Interface.|
+|```UHCI```|Universal Host Controller Interface.|
+|```SAS```|Serial Attached SCSI.|
+|```SATA```|Serial AT Attachment.|
+|```USB```|Universal Serial Bus.|
+|```NVMe```|Non-Volatile Memory Express.|
+|```FC```|Fibre Channel.|
+|```iSCSI```|Internet SCSI.|
+|```FCoE```|Fibre Channel over Ethernet.|
+|```FCP```|Fibre Channel Protocol for SCSI.|
+|```FICON```|FIbre CONnection (FICON).|
+|```NVMeOverFabrics```|NVMe over Fabrics.|
+|```SMB```|Server Message Block (aka CIFS Common Internet File System).|
+|```NFSv3```|Network File System version 3.|
+|```NFSv4```|Network File System version 4.|
+|```HTTP```|Hypertext Transport Protocol.|
+|```HTTPS```|Secure Hypertext Transport Protocol.|
+|```FTP```|File Transfer Protocol.|
+|```SFTP```|Secure File Transfer Protocol.|
+
+### Volumes
+The set of volumes produced by the storage controllers represented by this resource.
+## Task.v1_0_3.Task
+```@odata.type: "#Task.v1_0_3.Task"```
+
+This is the schema definition for a Task resource.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/taskservice/tasks/{item}0000```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Oem/Hpe/DetailedTaskLink```|[HpeWfmDeleteTask](#hpewfmdeletetask-v1_0_0-hpewfmdeletetask)|
+
+### EndTime
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last completed.|
+|Type|string|
+|Read Only|True|
+
+### Messages (array)
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```Messages``` is an array containing elements of:
+
+**Messages[{item}].Message**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|This is the human readable message, if provided.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].MessageArgs (array)**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```MessageArgs``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].MessageId**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|This is the key for this message which can be used to look up the message in a message registry.|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].RelatedProperties (array)**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```RelatedProperties``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**Messages[{item}].Resolution**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|Used to provide suggestions on how to resolve the situation that caused the error.|
+|Type|string or null|
+|Read Only|True|
+
+**Messages[{item}].Severity**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|This is the severity of the errors.|
+|Type|string or null|
+|Read Only|True|
+
+### Oem.Hpe.CreatedBy
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The name of the user that created this task.|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.DetailedTaskLink
+Detailed status of the task.
+### Oem.Hpe.History
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The history of the task.|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.ProgressMessages (array)
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```ProgressMessages``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.ProgressPercent
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The progress percent of this task.|
+|Type|integer|
+|Read Only|True|
+
+### Oem.Hpe.SelectedAddress (array)
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+### Oem.Hpe.SelectedGroups (array)
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```SelectedGroups``` is an array containing elements of:
+
+**SelectedGroups[{item}].GroupName**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The Group name of the selected group.|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].SelectedAddress (array)**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+```SelectedAddress``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+**SelectedGroups[{item}].allSystemsInGroup**
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The flag suggests whether all the servers in the group are selected.|
+|Type|boolean|
+|Read Only|True|
+
+### Oem.Hpe.SubTaskCount
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|Number of subtasks for this task.|
+|Type|integer|
+|Read Only|True|
+
+### Oem.Hpe.TaskIdentifier
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|A unique task identifier number for this task.|
+|Type|integer|
+|Read Only|True|
+
+### StartTime
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The date-time stamp that the task was last started.|
+|Type|string|
+|Read Only|True|
+
+### TaskState
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|The state of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```New```|A new task|
+|```Starting```|Task is starting|
+|```Running```|Task is running normally|
+|```Suspended```|Task has been suspended|
+|```Interrupted```|Task has been interrupted|
+|```Pending```|Task is pending and has not started|
+|```Stopping```|Task is in the process of stopping|
+|```Completed```|Task has completed|
+|```Killed```|Task was terminated|
+|```Exception```|Task has stopped due to an exception condition|
+|```Service```|Task is running as a service|
+
+### TaskStatus
+Member of [Task.v1_0_3.Task](#task-v1_0_3-task)
+
+| | |
+|---|---|
+|Description|This is the completion status of the task.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```OK```|Normal|
+|```Warning```|A condition exists that requires attention|
+|```Critical```|A critical condition exists that requires immediate attention|
+
+## TaskService.v1_0_3.TaskService
+```@odata.type: "#TaskService.v1_0_3.TaskService"```
+
+This is the schema definition for the Task Service.  It represents the properties for the service itself and has links to the various tasks that can be peformed by the system.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/taskservice```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Tasks```|Collection of [Task](#task-v1_0_3-task)|
+|```Oem/Hpe/ResetSystemTasks```|Collection of [HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)|
+
+### CompletedTaskOverWritePolicy
+Member of [TaskService.v1_0_3.TaskService](#taskservice-v1_0_3-taskservice)
+
+| | |
+|---|---|
+|Description|Overwrite policy of completed tasks|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Manual```|Completed tasks are not automatically overwritten|
+|```Oldest```|Oldest completed tasks are overwritten|
+
+### DateTime
+Member of [TaskService.v1_0_3.TaskService](#taskservice-v1_0_3-taskservice)
+
+| | |
+|---|---|
+|Description|The current DateTime (with offset) setting that the task service is using.|
+|Type|string or null|
+|Read Only|True|
+
+### LifeCycleEventOnTaskStateChange
+Member of [TaskService.v1_0_3.TaskService](#taskservice-v1_0_3-taskservice)
+
+| | |
+|---|---|
+|Description|Send an Event upon Task State Change.|
+|Type|boolean|
+|Read Only|True|
+
+### Oem.Hpe.AhsDownloadTasks
+This property references a collection resource of AHS download tasks.
+### Oem.Hpe.ApplyPersonaTasks
+This property references a collection resource of apply persona tasks.
+### Oem.Hpe.ConfigureRemoteSyslogTasks
+This property references a collection resource of configure remote syslog tasks.
+### Oem.Hpe.CreateGroupTasks
+This property references a collection resource of Create Group tasks.
+### Oem.Hpe.DeleteTasks
+This property references a collection resource of delete tasks.
+### Oem.Hpe.ImportBaselineTasks
+This property references a collection resource of Import SPP tasks.
+### Oem.Hpe.ImportPersonaTasks
+This property references a collection resource of import persona tasks.
+### Oem.Hpe.InstallLicenseTasks
+This property references a collection resource of License Install tasks.
+### Oem.Hpe.NonInteractiveOnlineUpdateTasks
+This property references a collection resource of Non Interactive Update tasks.
+### Oem.Hpe.OfflineUpdateTasks
+This property references a collection resource of offline firmware update tasks.
+### Oem.Hpe.OnlineSppUpdateTasks
+This property references a collection resource of online SPP update tasks.
+### Oem.Hpe.OnlineUpdateTasks
+This property references a collection resource of offline firmware update tasks.
+### Oem.Hpe.OsProvisioningTasks
+This property references a collection resource of OS Provisioning tasks.
+### Oem.Hpe.RefreshTasks
+This property references a collection resource of refresh tasks.
+### Oem.Hpe.ResetSystemTasks
+This property references a collection resource of System Reset tasks.
+### Oem.Hpe.SetIndicatorLedTasks
+This property references a collection resource of Setting Indicator LED tasks.
+### Oem.Hpe.SppComplianceTasks
+This property references a collection resource of Spp compliance tasks.
+### Oem.Hpe.UpdateFirmwareTasks
+This property references a collection resource of firmware update tasks.
+### Oem.Hpe.ValidatePersonaTasks
+This property references a collection resource of validate persona tasks.
+### Oem.Hpe.VirtualMediaTasks
+This property references a collection resource of virtual media tasks.
+### ServiceEnabled
+Member of [TaskService.v1_0_3.TaskService](#taskservice-v1_0_3-taskservice)
+
+| | |
+|---|---|
+|Description|This indicates whether this service is enabled.|
+|Type|boolean or null|
+|Read Only|True|
+
+### Status
+Member of [TaskService.v1_0_3.TaskService](#taskservice-v1_0_3-taskservice)
+See the Redfish standard schema and specification for information on common Status object.
+
+### Tasks
+This property references a collection resource of summary of tasks.
+## Thermal.v1_3_0.Thermal
+```@odata.type: "#Thermal.v1_3_0.Thermal"```
+
+This is the schema definition for the Thermal properties. It represents the properties for Temperature and Cooling.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/chassis/8f55097c/thermal```|GET |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```Fans[]/RelatedItem[]```|[ComputerSystem](#computersystem-v1_3_0-computersystem)|
+
+### Fans (array)
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+```Fans``` is an array containing elements of:
+
+**Fans[{item}].FanName**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Name of the fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].IndicatorLED**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|The state of the indicator LED, used to identify this Fan.|
+|Type|string|
+|Read Only|False|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Lit```|The Indicator LED is lit.|
+|```Blinking```|The Indicator LED is blinking.|
+|```Off```|The Indicator LED is off.|
+
+**Fans[{item}].LowerThresholdCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].LowerThresholdFatal**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].LowerThresholdNonCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].Manufacturer**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|This is the manufacturer of this Fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].MaxReadingRange**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Maximum value for Reading.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].MemberId**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**Fans[{item}].MinReadingRange**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Minimum value for Reading.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].Model**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|The model number for this Fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].PartNumber**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|The part number for this Fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].PhysicalContext**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Room```|The room.|
+|```Intake```|The intake point of the chassis.|
+|```Exhaust```|The exhaust point of the chassis.|
+|```Front```|The front of the chassis.|
+|```Back```|The back of the chassis.|
+|```Upper```|The upper portion of the chassis.|
+|```Lower```|The lower portion of the chassis.|
+|```CPU```|A Processor (CPU).|
+|```GPU```|A Graphics Processor (GPU).|
+|```Backplane```|A backplane within the chassis.|
+|```SystemBoard```|The system board (PCB).|
+|```PowerSupply```|A power supply.|
+|```VoltageRegulator```|A voltage regulator device.|
+|```StorageDevice```|A storage device.|
+|```NetworkingDevice```|A networking device.|
+|```ComputeBay```|Within a compute bay.|
+|```StorageBay```|Within a storage bay.|
+|```NetworkBay```|Within a networking bay.|
+|```ExpansionBay```|Within an expansion bay.|
+|```PowerSupplyBay```|Within a power supply bay.|
+|```Memory```|A memory device.|
+
+**Fans[{item}].Reading**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Current fan speed.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].ReadingUnits**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Units in which the reading and thresholds are measured.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```RPM```|Indicates that the fan reading and thresholds are measured in rotations per minute.|
+|```Percent```|Indicates that the fan reading and thresholds are measured in percentage.|
+
+**Fans[{item}].RelatedItem (array)**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+```RelatedItem``` is an array containing elements of:
+
+**Fans[{item}].SerialNumber**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|The serial number for this Fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].SparePartNumber**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|The spare part number for this Fan.|
+|Type|string or null|
+|Read Only|True|
+
+**Fans[{item}].Status**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+See the Redfish standard schema and specification for information on common Status object.
+
+**Fans[{item}].UpperThresholdCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].UpperThresholdFatal**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Fans[{item}].UpperThresholdNonCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range.|
+|Type|number or null|
+|Read Only|True|
+
+### Status
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+See the Redfish standard schema and specification for information on common Status object.
+
+### Temperatures
+**Temperatures.LowerThresholdCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.LowerThresholdFatal**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.LowerThresholdNonCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Below normal range.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.MaxReadingRangeTemp**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Maximum value for ReadingCelsius.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.MemberId**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|This is the identifier for the member within the collection.|
+|Type|string|
+|Read Only|True|
+
+**Temperatures.MinReadingRangeTemp**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Minimum value for ReadingCelsius.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.PhysicalContext**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|Description|
+|---|---|
+|```Room```|The room.|
+|```Intake```|The intake point of the chassis.|
+|```Exhaust```|The exhaust point of the chassis.|
+|```Front```|The front of the chassis.|
+|```Back```|The back of the chassis.|
+|```Upper```|The upper portion of the chassis.|
+|```Lower```|The lower portion of the chassis.|
+|```CPU```|A Processor (CPU).|
+|```GPU```|A Graphics Processor (GPU).|
+|```Backplane```|A backplane within the chassis.|
+|```SystemBoard```|The system board (PCB).|
+|```PowerSupply```|A power supply.|
+|```VoltageRegulator```|A voltage regulator device.|
+|```StorageDevice```|A storage device.|
+|```NetworkingDevice```|A networking device.|
+|```ComputeBay```|Within a compute bay.|
+|```StorageBay```|Within a storage bay.|
+|```NetworkBay```|Within a networking bay.|
+|```ExpansionBay```|Within an expansion bay.|
+|```PowerSupplyBay```|Within a power supply bay.|
+|```Memory```|A memory device.|
+
+**Temperatures.ReadingCelsius**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Temperature.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.RelatedItem (array)**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+```RelatedItem``` is an array containing elements of:
+
+**Temperatures.SensorNumber**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|A numerical identifier to represent the temperature sensor.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.Status**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+See the Redfish standard schema and specification for information on common Status object.
+
+**Temperatures.UpperThresholdCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range but not yet fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.UpperThresholdFatal**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range and is fatal.|
+|Type|number or null|
+|Read Only|True|
+
+**Temperatures.UpperThresholdNonCritical**
+Member of [Thermal.v1_3_0.Thermal](#thermal-v1_3_0-thermal)
+
+| | |
+|---|---|
+|Description|Above normal range.|
+|Type|number or null|
+|Read Only|True|
+
+## UpdateService.v1_2_0.UpdateService
+```@odata.type: "#UpdateService.v1_2_0.UpdateService"```
+
+This is the schema definition for the Update Service. It represents the properties for the service itself and has links to collections of firmware and software inventory.
+### Resource Instances
+|Uri|HTTP Allow|
+|---|---|
+|```/redfish/v1/updateservice```|GET POST |
+
+### Links to other Resources
+|Link Name|Destination type
+|---|---|
+|```FirmwareInventory```|SoftwareInventoryCollection|
+|```SoftwareInventory```|SoftwareInventoryCollection|
+
+### FirmwareInventory
+An inventory of firmware.
+### HttpPushUri
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+
+| | |
+|---|---|
+|Description|The URI used to perform an HTTP or HTTPS push update to the Update Service.|
+|Type|string|
+|Read Only|True|
+
+### HttpPushUriTargets (array)
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+```HttpPushUriTargets``` is an array containing elements of:
+
+
+| | |
+|---|---|
+|Type|string or null|
+|Read Only|True|
+
+### HttpPushUriTargetsBusy
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+
+| | |
+|---|---|
+|Description|This represents if the HttpPushUriTargets property is reserved by any client.|
+|Type|boolean or null|
+|Read Only|False|
+
+### Oem.Hpe.ProgressPercent
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+
+| | |
+|---|---|
+|Description|The progress percentage of firmware update.|
+|Type|integer|
+|Read Only|True|
+
+### Oem.Hpe.State
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+
+| | |
+|---|---|
+|Description|The State of firmware update.|
+|Type|string|
+|Read Only|True|
+
+The following are the supported values:
+
+|Value|
+|---|
+|```Idle```|
+|```In Progress```|
+|```Completed```|
+|```Error```|
+
+### ServiceEnabled
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+
+| | |
+|---|---|
+|Description|This indicates whether this service is enabled.|
+|Type|boolean or null|
+|Read Only|False|
+
+### SoftwareInventory
+An inventory of software.
+### Actions
+
+**ManagerUpdate**
+Member of [UpdateService.v1_2_0.UpdateService](#updateservice-v1_2_0-updateservice)
+Performs Update of Central Management Device.
+
+
+**Parameters:**
+
+**MountPath (string)**
+
+The mount path of the network share server where the Firmware Binary is present.
+
+**Target (string)**
+
+The Target defines an OEM action.
+
+|Value|Description|
+|---|---|
+|/Oem/Hpe|
+
+**StorageType (string)**
+
+The type of storage on which the Firmware Binary is present.
+
+|Value|Description|
+|---|---|
+|RemovableStorage|
+|NetworkShare|
+|ClientUpload|
+|HTTPShare|
+
+**FirmwarePath (string)**
+
+The file path where the Firmware Binary is present.
+
+**RemovableStorageDeviceName (string)**
+
+The device name of the removable storage.
+
+**NetworkShareAddress (string)**
+
+The network share IP address or DNS name where the Firmware Binary is present.
+
