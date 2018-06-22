@@ -10,7 +10,7 @@ To access the RESTful API, you need an HTTPS-capable client, such as a web brows
 
 The Python Redfish library is a generic Redfish client library developed by DMTF and is available at [https://github.com/DMTF/python-redfish-library](https://github.com/DMTF/python-redfish-library). It's main purpose is to simplify the communication to any RESTful API. REST (Representational State Transfer) is a web based software architectural style consisting a set of constraints that focus on a system's resource. Redfish library performs the basic HTTP operations GET, POST, PUT, PATCH and DELETE on resources using the HATEOS (Hypermedia as the Engine of Application) REST architecture. Most API's allow the clients to manage and interact with a fixed URL and several URIs.
 
-CURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. CURL is available at [http://curl.haxx.se/](http://curl.haxx.se/). Note that all the CURL examples will use a flag `-insecure`. This causes CURL to bypass validation of the HTTPS certificate. In real use iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the `-L` option to force CURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.
+cURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. cURL is available at [http://curl.haxx.se/](http://curl.haxx.se/). Note that all the cURL examples will use a flag `-insecure`. This causes cURL to bypass validation of the HTTPS certificate. In real use iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the `-L` option to force cURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.
 
 ## Example REST API operation with cURL and Python
 
@@ -114,7 +114,7 @@ Content-Type: application/json
     "Tasks": {
         "@odata.id": "/redfish/v1/TaskService"
     },
-    "UUID": "edited"
+    "UUID": "00000000-0000-6e2d-e5a8-000000000000"
 }
 ```
 

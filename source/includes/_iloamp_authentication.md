@@ -196,7 +196,7 @@ If the session is created successfully, you receive an `HTTP 201 Created` respon
 
 * **X-Auth-Token**	Your session token (string). This is a unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.
 
-* **Location**	The URI of the newly created session resource.	iLO allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.
+* **Location**	The URI of the newly created session resource.	iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.
 
 <aside class="warning">
 It is good practice to save the Location URI of the newly created session.  This is your unique session information and is needed to log out later.

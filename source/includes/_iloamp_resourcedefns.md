@@ -9,7 +9,7 @@ This is the schema definition for the Account service. It represents the propert
 
 The destination of this link is a collection of user accounts (see ManagerAccount).
 
-* You may create a new user account by POSTing a new account description the the Accounts collection.  See ManagerAccount for details.
+* You may create a new user account by POSTing a new account description the Accounts collection.  See ManagerAccount for details.
 > e.g. `POST https://{iLO}/redfish/v1/accountservice/accounts/ with new account description`
 * You may modify an existing user by PATCHing properties to the user account resource.  See ManagerAccount for details.
 > e.g. `PATCH https://{iLO}/redfish/v1/accountservice/accounts/{item} with different properties`

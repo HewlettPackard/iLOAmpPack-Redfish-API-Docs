@@ -171,8 +171,6 @@ A Compute node represents a logical computer system with attributes such as proc
 
 Find a compute node by iterating the systems collection at `/redfish/v1/systems/`.
 
-You can then GET the compute node, PATCH values, or perform Actions.
-
 ## Find a Chassis
 
 ```shell
@@ -238,11 +236,9 @@ REDFISH_OBJ.logout()
 }
 ```
 
-A Chassis represents a physical or virtual container of compute resources with attrbutes such as FRU information, power supplies, temperature, etc.  To find a chassis `GET /redfish/v1/chassis` and iterate the "Members" array in the returned JSON.  Each member has a link to a chassis.
+A Chassis represents a physical or virtual container of compute resources with attributes such as FRU information, power supplies, temperature, etc.  To find a chassis `GET /redfish/v1/chassis` and iterate the "Members" array in the returned JSON.  Each member has a link to a chassis.
 
 Find a chassis by iterating the chassis collection at `/redfish/v1/chassis/`.
-
-You can then GET the chassis, PATCH values, or perform Actions.
 
 ## Find the iLO Management Processor
 
@@ -299,9 +295,8 @@ REDFISH_OBJ.logout()
 }
 ```
 
-A Manager represents a management processor (or "BMC") that manages chassis and compute resources.  For HPE Gen10 Servers, the manager is iLO 5.  Managers contain attributes such as networking state and configuration, management services, security configuration, etc.  To find a manager `GET /redfish/v1/managers` and iterate the "Members" array in the returned JSON.  Each member has a link to a chassis.
+A Manager represents a management processor (or "BMC") that manages chassis and compute resources.  For HPE Gen10 Servers, the manager is iLO 5.  Managers contain attributes such as networking state and configuration, management services, security configuration, etc.  To find a manager `GET /redfish/v1/managers` and iterate the "Members" array in the returned JSON.  Each member has a link to a manager.
 
 Find a manager by iterating the manager collection at `/redfish/v1/managers/`.
 
-You can then GET the manager, PATCH values, or perform Actions.
 

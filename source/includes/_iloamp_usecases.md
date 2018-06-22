@@ -9,7 +9,7 @@ The discovery APIs allow users to add assets to manage with iLO Amplifier Pack. 
 ## Adding a single server
 
 ```shell
-curl https://{iLOAmpServer}//redfish/v1/ManagedNodes/ManagedSystems/ 
+curl https://{iLOAmpServer}//redfish/v1/AggregatorService/ManagedSystems/ 
   -H "Content-Type: application/json" 
   -X POST 
   --data "@data.json"  
@@ -53,7 +53,7 @@ body["Password"] = "{iLOPassword}"
 
 # Do a GET on a given path
 sys.stdout.write("Adding server %s.\n" % body["ManagerAddress"])
-response = REDFISH_OBJ.post("/redfish/v1/ManagedNodes/ManagedSystems/", body=body)
+response = REDFISH_OBJ.post("/redfish/v1/AggregatorService/ManagedSystems/", body=body)
 
 location = None
 slash = 0
@@ -87,7 +87,7 @@ while dstate != "Complete":
 REDFISH_OBJ.logout()
 ```
 
-The `/redfish/v1/ManagedNodes/ManagedSystems` collection lists all the servers managed by iLO Amplifier Pack. Performing a `POST` on this collection adds a server in iLO Amplifier Pack. When `POST` is performed on this URI, the response header contains the `Location` and `Link` of the newly added server. A `GET` on the link will retrive the discovery state of the server. The discovery state of the server can be one of the following:
+The `/redfish/v1/AggregatorService/ManagedSystems` collection lists all the servers managed by iLO Amplifier Pack. Performing a `POST` on this collection adds a server in iLO Amplifier Pack. When `POST` is performed on this URI, the response header contains the `Location` and `Link` of the newly added server. A `GET` on the link will retrive the discovery state of the server. The discovery state of the server can be one of the following:
 
 * NotInitiated
 * Processing
@@ -106,7 +106,7 @@ When a server is added, iLO Amplifier Pack performs a detailed inventory of the 
 Inventory | URI
 ----------|-----
 System Overview | /redfish/v1/Systems/{item}
-CPU Details  | /redfish/v1/Systems/{item}/Processors/{item}
+CPU Details  | /redfish/v1/Systems/{item}/Processor/{item}
 Memory Detials | /redfish/v1/Systems/{item}/Memory/{item}
 PCIe Devices | /redfish/Systems/{item}/PCIeDevices
 Chassis | /redfish/v1/Chassis/{item}
@@ -120,7 +120,7 @@ Software Inventory | /redfish/v1/UpdateService/SoftwareInventory
 ## Adding range of Servers
 
 ```shell
-curl https://{iLOAmpServer}//redfish/v1/ManagedNodes/Actions/HpeWfmManagedNodes.DiscoverServersInRange/ 
+curl https://{iLOAmpServer}//redfish/v1/AggregatorService/Actions/HpeWfmAggregatorService.DiscoverServersInRange/ 
   -H "Content-Type: application/json" 
   -X POST 
   --data "@data.json"  
@@ -169,7 +169,7 @@ body["Password"] = "password"
 
 # Do a GET on a given path
 sys.stdout.write("Adding servers in range %s to %s.\n" % (body["StartAddress"], body["EndAddress"]))
-response = REDFISH_OBJ.post("/redfish/v1/ManagedNodes/Actions/HpeWfmManagedNodes.DiscoverServersInRange/", body=body)
+response = REDFISH_OBJ.post("/redfish/v1/AggregatorService/Actions/HpeWfmAggregatorService.DiscoverServersInRange/", body=body)
 
 location = None
 slash = 0
@@ -183,7 +183,7 @@ if response.status != 202:
 dstate = "InProgress"
 
 while dstate != "Complete" and dstate != "Successful":
-    managed_system = REDFISH_OBJ.get("/redfish/v1/ManagedNodes/")
+    managed_system = REDFISH_OBJ.get("/redfish/v1/AggregatorService/")
     if managed_system.status != 200:
         sys.stdout.write("Unable to get status of IP range discovery.\n")
         sys.stdout.write("%s\n" % managed_system)
@@ -196,8 +196,8 @@ while dstate != "Complete" and dstate != "Successful":
 REDFISH_OBJ.logout()
 ```
 
-iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on `/redfish/v1/ManagedNodes` URI. 
+iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on `/redfish/v1/AggregatorService` URI. 
 
-Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on `/redfish/v1/ManagedNodes` URI and look at the `ActionStatus.DiscoverServersInRange` object. The `DiscoveryStatus` field will be set to `Complete` once the discovery process is complete.
+Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on `/redfish/v1/AggregatorService` URI and look at the `ActionStatus.DiscoverServersInRange` object. The `DiscoveryStatus` field will be set to `Complete` once the discovery process is complete.
 
 
