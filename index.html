@@ -2327,7 +2327,7 @@
 <h2 id='using-restful-interface-with-curl-and-python'>Using RESTful Interface with cURL and Python</h2>
 <p>The Python Redfish library is a generic Redfish client library developed by DMTF and is available at <a href="https://github.com/DMTF/python-redfish-library">https://github.com/DMTF/python-redfish-library</a>. It&#39;s main purpose is to simplify the communication to any RESTful API. REST (Representational State Transfer) is a web based software architectural style consisting a set of constraints that focus on a system&#39;s resource. Redfish library performs the basic HTTP operations GET, POST, PUT, PATCH and DELETE on resources using the HATEOS (Hypermedia as the Engine of Application) REST architecture. Most API&#39;s allow the clients to manage and interact with a fixed URL and several URIs.</p>
 
-<p>CURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. CURL is available at <a href="http://curl.haxx.se/">http://curl.haxx.se/</a>. Note that all the CURL examples will use a flag <code>-insecure</code>. This causes CURL to bypass validation of the HTTPS certificate. In real use iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the <code>-L</code> option to force CURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.</p>
+<p>cURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. cURL is available at <a href="http://curl.haxx.se/">http://curl.haxx.se/</a>. Note that all the cURL examples will use a flag <code>-insecure</code>. This causes cURL to bypass validation of the HTTPS certificate. In real use iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the <code>-L</code> option to force cURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.</p>
 <h2 id='example-rest-api-operation-with-curl-and-python'>Example REST API operation with cURL and Python</h2><pre class="highlight shell tab-shell"><code><span class="gp">$ </span>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>/redfish/v1/ -i --insecure -L
 </code></pre><pre class="highlight python tab-python"><code><span class="c"># Perform GET operation against a resource at /redfish/v1</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -2423,7 +2423,7 @@
     </span><span class="s2">"Tasks"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"@odata.id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/redfish/v1/TaskService"</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"edited"</span><span class="w">
+    </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000000-0000-6e2d-e5a8-000000000000"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <p>Let&#39;s perform our first GET operation using the RESTful API. We will do an HTTP GET on the iLO Amplifier Pack HTTPS port 443. Your client should be prepared to handle the HTTPS certificate challenge. The interface is not available over open HTTP (port 80), so you must use HTTPS.</p>
@@ -2684,8 +2684,6 @@ A select few URIs are documented to be stable starting points. Your client code 
 <p>A Compute node represents a logical computer system with attributes such as processors, memory, BIOS, power state, firmware version, etc.  To find a compute node <code>GET /redfish/v1/systems/</code> and iterate the &quot;Members&quot; array in the returned JSON.  Each member has a link to a compute node.</p>
 
 <p>Find a compute node by iterating the systems collection at <code>/redfish/v1/systems/</code>.</p>
-
-<p>You can then GET the compute node, PATCH values, or perform Actions.</p>
 <h2 id='find-a-chassis'>Find a Chassis</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>/redfish/v1/chassis/<span class="o">{</span>item<span class="o">}</span>/ --insecure -u username:password -L
 </code></pre><pre class="highlight python tab-python"><code><span class="c"># Perform GET operation against a resource at /redfish/v1/chassis/{item}</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -2743,11 +2741,9 @@ A select few URIs are documented to be stable starting points. Your client code 
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>A Chassis represents a physical or virtual container of compute resources with attrbutes such as FRU information, power supplies, temperature, etc.  To find a chassis <code>GET /redfish/v1/chassis</code> and iterate the &quot;Members&quot; array in the returned JSON.  Each member has a link to a chassis.</p>
+<p>A Chassis represents a physical or virtual container of compute resources with attributes such as FRU information, power supplies, temperature, etc.  To find a chassis <code>GET /redfish/v1/chassis</code> and iterate the &quot;Members&quot; array in the returned JSON.  Each member has a link to a chassis.</p>
 
 <p>Find a chassis by iterating the chassis collection at <code>/redfish/v1/chassis/</code>.</p>
-
-<p>You can then GET the chassis, PATCH values, or perform Actions.</p>
 <h2 id='find-the-ilo-management-processor'>Find the iLO Management Processor</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpPack<span class="o">}</span>/redfish/v1/managers/<span class="o">{</span>item<span class="o">}</span>/ --insecure -u username:password -L
 </code></pre><pre class="highlight python tab-python"><code><span class="c"># Perform GET operation against a resource at /redfish/v1/managers/{item}</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -2795,11 +2791,9 @@ A select few URIs are documented to be stable starting points. Your client code 
     </span><span class="s2">"UUID"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"00000000-0000-4c8a-a283-000000000000"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>A Manager represents a management processor (or &quot;BMC&quot;) that manages chassis and compute resources.  For HPE Gen10 Servers, the manager is iLO 5.  Managers contain attributes such as networking state and configuration, management services, security configuration, etc.  To find a manager <code>GET /redfish/v1/managers</code> and iterate the &quot;Members&quot; array in the returned JSON.  Each member has a link to a chassis.</p>
+<p>A Manager represents a management processor (or &quot;BMC&quot;) that manages chassis and compute resources.  For HPE Gen10 Servers, the manager is iLO 5.  Managers contain attributes such as networking state and configuration, management services, security configuration, etc.  To find a manager <code>GET /redfish/v1/managers</code> and iterate the &quot;Members&quot; array in the returned JSON.  Each member has a link to a manager.</p>
 
 <p>Find a manager by iterating the manager collection at <code>/redfish/v1/managers/</code>.</p>
-
-<p>You can then GET the manager, PATCH values, or perform Actions.</p>
 <h1 id='authentication-and-sessions'>Authentication and Sessions</h1><pre class="highlight shell tab-shell"><code><span class="gp">$ </span>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>/redfish/v1/systems/ -i --insecure -L
 </code></pre><pre class="highlight python tab-python"><code><span class="c"># Perform GET operation against a resource at /redfish/v1/systems</span>
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -2973,7 +2967,7 @@ You must include the HTTP header <code>Content-Type: application/json</code> for
 
 <ul>
 <li><p><strong>X-Auth-Token</strong>  Your session token (string). This is a unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.</p></li>
-<li><p><strong>Location</strong>  The URI of the newly created session resource.  iLO allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.</p></li>
+<li><p><strong>Location</strong>  The URI of the newly created session resource.  iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.</p></li>
 </ul>
 
 <aside class="warning">
@@ -3170,7 +3164,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <p>This section covers the basic use cases of RESTful APIs provided by iLO Amplifier Pack</p>
 <h2 id='discovering-servers'>Discovering Servers</h2>
 <p>The discovery APIs allow users to add assets to manage with iLO Amplifier Pack. These APIs allow users to discover individual servers, servers in iLO Federation groups, servers within an IPv4 range, and servers listed in CSV file.</p>
-<h2 id='adding-a-single-server'>Adding a single server</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>//redfish/v1/ManagedNodes/ManagedSystems/ 
+<h2 id='adding-a-single-server'>Adding a single server</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>//redfish/v1/AggregatorService/ManagedSystems/ 
   -H <span class="s2">"Content-Type: application/json"</span> 
   -X POST 
   --data <span class="s2">"@data.json"</span>  
@@ -3213,7 +3207,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 
 <span class="c"># Do a GET on a given path</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Adding server </span><span class="si">%</span><span class="s">s.</span><span class="se">\n</span><span class="s">"</span> <span class="o">%</span> <span class="n">body</span><span class="p">[</span><span class="s">"ManagerAddress"</span><span class="p">])</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">"/redfish/v1/ManagedNodes/ManagedSystems/"</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">"/redfish/v1/AggregatorService/ManagedSystems/"</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
 
 <span class="n">location</span> <span class="o">=</span> <span class="bp">None</span>
 <span class="n">slash</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3246,7 +3240,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <span class="c"># Logout of the current session</span>
 <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">logout</span><span class="p">()</span>
 </code></pre>
-<p>The <code>/redfish/v1/ManagedNodes/ManagedSystems</code> collection lists all the servers managed by iLO Amplifier Pack. Performing a <code>POST</code> on this collection adds a server in iLO Amplifier Pack. When <code>POST</code> is performed on this URI, the response header contains the <code>Location</code> and <code>Link</code> of the newly added server. A <code>GET</code> on the link will retrive the discovery state of the server. The discovery state of the server can be one of the following:</p>
+<p>The <code>/redfish/v1/AggregatorService/ManagedSystems</code> collection lists all the servers managed by iLO Amplifier Pack. Performing a <code>POST</code> on this collection adds a server in iLO Amplifier Pack. When <code>POST</code> is performed on this URI, the response header contains the <code>Location</code> and <code>Link</code> of the newly added server. A <code>GET</code> on the link will retrive the discovery state of the server. The discovery state of the server can be one of the following:</p>
 
 <ul>
 <li>NotInitiated</li>
@@ -3274,7 +3268,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 </tr>
 <tr>
 <td>CPU Details</td>
-<td>/redfish/v1/Systems/{item}/Processors/{item}</td>
+<td>/redfish/v1/Systems/{item}/Processor/{item}</td>
 </tr>
 <tr>
 <td>Memory Detials</td>
@@ -3313,7 +3307,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <td>/redfish/v1/UpdateService/SoftwareInventory</td>
 </tr>
 </tbody></table>
-<h2 id='adding-range-of-servers'>Adding range of Servers</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>//redfish/v1/ManagedNodes/Actions/HpeWfmManagedNodes.DiscoverServersInRange/ 
+<h2 id='adding-range-of-servers'>Adding range of Servers</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>//redfish/v1/AggregatorService/Actions/HpeWfmAggregatorService.DiscoverServersInRange/ 
   -H <span class="s2">"Content-Type: application/json"</span> 
   -X POST 
   --data <span class="s2">"@data.json"</span>  
@@ -3361,7 +3355,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 
 <span class="c"># Do a GET on a given path</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Adding servers in range </span><span class="si">%</span><span class="s">s to </span><span class="si">%</span><span class="s">s.</span><span class="se">\n</span><span class="s">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">body</span><span class="p">[</span><span class="s">"StartAddress"</span><span class="p">],</span> <span class="n">body</span><span class="p">[</span><span class="s">"EndAddress"</span><span class="p">]))</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">"/redfish/v1/ManagedNodes/Actions/HpeWfmManagedNodes.DiscoverServersInRange/"</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">"/redfish/v1/AggregatorService/Actions/HpeWfmAggregatorService.DiscoverServersInRange/"</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
 
 <span class="n">location</span> <span class="o">=</span> <span class="bp">None</span>
 <span class="n">slash</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3375,7 +3369,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <span class="n">dstate</span> <span class="o">=</span> <span class="s">"InProgress"</span>
 
 <span class="k">while</span> <span class="n">dstate</span> <span class="o">!=</span> <span class="s">"Complete"</span> <span class="ow">and</span> <span class="n">dstate</span> <span class="o">!=</span> <span class="s">"Successful"</span><span class="p">:</span>
-    <span class="n">managed_system</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"/redfish/v1/ManagedNodes/"</span><span class="p">)</span>
+    <span class="n">managed_system</span> <span class="o">=</span> <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"/redfish/v1/AggregatorService/"</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">managed_system</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Unable to get status of IP range discovery.</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">s</span><span class="se">\n</span><span class="s">"</span> <span class="o">%</span> <span class="n">managed_system</span><span class="p">)</span>
@@ -3387,9 +3381,9 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <span class="c"># Logout of the current session</span>
 <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">logout</span><span class="p">()</span>
 </code></pre>
-<p>iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on <code>/redfish/v1/ManagedNodes</code> URI. </p>
+<p>iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on <code>/redfish/v1/AggregatorService</code> URI. </p>
 
-<p>Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on <code>/redfish/v1/ManagedNodes</code> URI and look at the <code>ActionStatus.DiscoverServersInRange</code> object. The <code>DiscoveryStatus</code> field will be set to <code>Complete</code> once the discovery process is complete.</p>
+<p>Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on <code>/redfish/v1/AggregatorService</code> URI and look at the <code>ActionStatus.DiscoverServersInRange</code> object. The <code>DiscoveryStatus</code> field will be set to <code>Complete</code> once the discovery process is complete.</p>
 <h1 id='error-messages-and-registries'>Error messages and registries</h1>
 <blockquote>
 <p>HTTP response 400</p>
@@ -3774,11 +3768,11 @@ strings in the registry to form detailed messages tailored to the instance of th
 
 <p>Redfish does not define a generic collection &quot;type&quot; (@odata.type) but all collections are identical in structure.  A <code>ComputerSystemCollection</code> is identical in structure to a <code>ChassisCollection</code> although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presense of the <code>Members</code> array of links.</p>
 
-<p>Collections may be GET-only that may not be added to or removed from.  Examples of GET-only collections are the Systems collection at <code>/redfish/v1/systems/</code>.  In a typical systems collection describing physical hardware, it wouldn&#39;t make sense to be able to create or remove members using GET or DELETE.</p>
+<p>Collections may be GET-only that may not be added to or removed from.  Examples of GET-only collections are the Systems collection at <code>/redfish/v1/systems/</code>.  In a typical systems collection describing physical hardware, it wouldn&#39;t make sense to be able to create or remove members using POST or DELETE.</p>
 
 <p>Other collections may be editable.  Examples of these might be the Accounts collection at <code>/redfish/v1/accountservice/accounts</code>.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or take a default value.)</p>
 
-<p>For more information on collections see the Redfish 1.0 DMTF standard at <a href="http://%20www.dmtf.org/standards/redfish">http://www.dmtf.org/standards/redfish</a> and the example Python code:  <a href="https://github.com/DMTF/python-redfish-library">https://github.com/DMTF/python-redfish-library</a>. </p>
+<p>For more information on collections see the Redfish 1.0 DMTF standard at <a href="https://%20www.dmtf.org/standards/redfish">https://www.dmtf.org/standards/redfish</a> and the example Python code:  <a href="https://github.com/DMTF/python-redfish-library">https://github.com/DMTF/python-redfish-library</a>. </p>
 
 <p><strong>Properties</strong></p>
 <h3 id='members-odata-count'>Members@odata.count</h3>
@@ -3799,7 +3793,7 @@ strings in the registry to form detailed messages tailored to the instance of th
 <p>The destination of this link is a collection of user accounts (see ManagerAccount).</p>
 
 <ul>
-<li>You may create a new user account by POSTing a new account description the the Accounts collection.  See ManagerAccount for details.
+<li>You may create a new user account by POSTing a new account description the Accounts collection.  See ManagerAccount for details.
 &gt; e.g. <code>POST https://{iLO}/redfish/v1/accountservice/accounts/ with new account description</code></li>
 <li>You may modify an existing user by PATCHing properties to the user account resource.  See ManagerAccount for details.
 &gt; e.g. <code>PATCH https://{iLO}/redfish/v1/accountservice/accounts/{item} with different properties</code></li>
