@@ -1,6 +1,6 @@
 # Navigating the Data Model
 
-Unlike some simple REST service, this API is designed to be implemented on many different management appliances, different models of servers, and other IT infrastructure devices for years to come.  These devices may be quite different from one another.  For this reason, the API does not specify the URIs to various resources. Do not assume the BIOS version information is always at a particular URI.
+Unlike some simple REST service, this API is designed to be implemented on many different management appliances, different models of servers, and other IT infrastructure devices for years to come.  These devices may be quite different from one another.  For this reason, the API does not specify the URIs to various resources. Do not assume that the BIOS version information is always at a particular URI.
 
 This is more complex for the client, but is necessary to make sure the data model can change to accommodate various future server architectures without requiring specification changes. As an example, if the BIOS version is at `/redfish/v1/systems/1/`, and a client assumed it is always there, the client would then break when the interface is implemented on a different type of architecture with many compute nodes, each with its own BIOS version. 
 
