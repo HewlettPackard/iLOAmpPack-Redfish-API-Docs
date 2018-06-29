@@ -1,6 +1,6 @@
 
 ### Base.1.1.AccessDenied
-Indicates that while attempting to access, connect to or transfer to/from another resource, the service denied access.
+Indicates that while attempting to access, connect to or transfer to/from another resource, the service has denied access.
 
 | | |
 |:---|:---|
@@ -51,7 +51,7 @@ Indicates that the action supplied with the POST operation is not supported by t
 |:---|:---|
 |Message Format|"The action %1 is not supported by the resource."
 |Severity|Critical
-|Resolution|The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target or the implementation documentation may be of assistance.
+|Resolution|The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target, or the implementation documentation may be of assistance.
 
 ### Base.1.1.ActionParameterDuplicate
 Indicates that the action was supplied with a duplicated parameter in the request body.
@@ -90,7 +90,7 @@ Indicates that an action was submitted but a parameter supplied did not match an
 |Resolution|Correct the invalid parameter and resubmit the request if the operation failed.
 
 ### Base.1.1.ActionParameterValueFormatError
-Indicates that a parameter was given the correct value type but the value of that parameter was not supported.  This includes value size/length exceeded.
+Indicates that a parameter was given the correct value type but the value of that parameter was not supported. This includes value size/length exceeded.
 
 | | |
 |:---|:---|
@@ -114,10 +114,10 @@ Indicates that the attempt to access the resource/file/image at the URI was unsu
 |:---|:---|
 |Message Format|"The service failed to establish a connection with the URI %1."
 |Severity|Critical
-|Resolution|Ensure that the URI contains a valid and reachable node name, protocol information and other URI components.
+|Resolution|Ensure that the URI contains a valid and reachable node name, protocol information, and other URI components.
 
 ### Base.1.1.CreateFailedMissingReqProperties
-Indicates that a create was attempted on a resource but that properties that are required for the create operation were missing from the request.
+Indicates that a create was attempted on a resource but the properties that are required for the create operation were missing from the request.
 
 | | |
 |:---|:---|
@@ -234,7 +234,7 @@ Indicates that a required property was not supplied as part of the request.
 |Resolution|Ensure that the property is in the request body and has a valid value and resubmit the request if the operation failed.
 
 ### Base.1.1.PropertyNotWritable
-Indicates that a property was given a value in the request body, but the property is a readonly property.
+Indicates that a property was given a value in the request body, but the property is a read only property.
 
 | | |
 |:---|:---|
@@ -270,7 +270,7 @@ Indicates that a property was given the correct value type but the value of that
 |Resolution|No resolution is required.
 
 ### Base.1.1.PropertyValueNotInList
-Indicates that a property was given the correct value type but the value of that property was not supported.  This values not in an enumeration
+Indicates that a property was given the correct value type but the value of that property was not supported.  This value is not in an enumeration.
 
 | | |
 |:---|:---|
@@ -432,7 +432,7 @@ Indicates that a session establishment has been requested but the operation fail
 |Resolution|Reduce the number of other sessions before trying to establish the session or increase the limit of simultaneous sessions (if supported).
 
 ### Base.1.1.SourceDoesNotSupportProtocol
-Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol
+Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol.
 
 | | |
 |:---|:---|
