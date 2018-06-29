@@ -28,11 +28,11 @@ This section defines the supported types and lists the typical instances of each
 
 Many resource types in the API are members of "collections."  Collections are groups of similar resources and are typically an array of Member links.
 
-Redfish does not define a generic collection "type" (@odata.type) but all collections are identical in structure.  A `ComputerSystemCollection` is identical in structure to a `ChassisCollection` although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presense of the `Members` array of links.
+Redfish does not define a generic collection "type" (@odata.type) but all collections are identical in structure.  A `ComputerSystemCollection` is identical in structure to a `ChassisCollection` although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presence of the `Members` array of links.
 
 Collections may be GET-only that may not be added to or removed from.  Examples of GET-only collections are the Systems collection at `/redfish/v1/systems/`.  In a typical systems collection describing physical hardware, it wouldn't make sense to be able to create or remove members using POST or DELETE.
 
-Other collections may be editable.  Examples of these might be the Accounts collection at `/redfish/v1/accountservice/accounts`.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or take a default value.)
+Other collections may be editable.  Examples of these might be the Accounts collection at `/redfish/v1/accountservice/accounts`.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or a default value.)
 
 For more information on collections see the Redfish 1.0 DMTF standard at [https://www.dmtf.org/standards/redfish](https:// www.dmtf.org/standards/redfish) and the example Python code:  [https://github.com/DMTF/python-redfish-library](https://github.com/DMTF/python-redfish-library). 
 
