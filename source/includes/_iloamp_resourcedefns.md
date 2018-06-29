@@ -9,7 +9,7 @@ This is the schema definition for the Account service. It represents the propert
 
 The destination of this link is a collection of user accounts (see ManagerAccount).
 
-* You may create a new user account by POSTing a new account description the Accounts collection.  See ManagerAccount for details.
+* You may create a new user account by POSTing a new account description to the Accounts collection.  See ManagerAccount for details.
 > e.g. `POST https://{iLO}/redfish/v1/accountservice/accounts/ with new account description`
 * You may modify an existing user by PATCHing properties to the user account resource.  See ManagerAccount for details.
 > e.g. `PATCH https://{iLO}/redfish/v1/accountservice/accounts/{item} with different properties`
@@ -128,7 +128,7 @@ Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computer
 
 | | |
 |---|---|
-|Description|The DNS Host Name, without any domain information|
+|Description|The DNS Host Name, without any domain information.|
 |Type|string or null|
 |Read Only|True|
 
@@ -137,7 +137,7 @@ Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computer
 
 | | |
 |---|---|
-|Description|The state of the indicator LED.|
+|Description|The state of the indicator LED|
 |Type|string|
 |Read Only|False|
 
@@ -204,7 +204,7 @@ Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computer
 
 | | |
 |---|---|
-|Description|This is the current power state of the system|
+|Description|This is the current power state of the system.|
 |Type|string or null|
 |Read Only|True|
 
@@ -297,7 +297,7 @@ Member of [ComputerSystem.v1_3_0.ComputerSystem](#computersystem-v1_3_0-computer
 
 | | |
 |---|---|
-|Description|The firmware version of this Trusted Module|
+|Description|The firmware version of this Trusted Module.|
 |Type|string or null|
 |Read Only|True|
 
