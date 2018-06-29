@@ -1,6 +1,6 @@
 # Use Cases
 
-This section covers the basic use cases of RESTful APIs provided by iLO Amplifier Pack
+This section covers the basic use cases of RESTful APIs provided by iLO Amplifier Pack.
 
 ## Discovering Servers
 
@@ -196,8 +196,8 @@ while dstate != "Complete" and dstate != "Successful":
 REDFISH_OBJ.logout()
 ```
 
-iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on `/redfish/v1/AggregatorService` URI. 
+iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an action on `/redfish/v1/AggregatorService` URI. 
 
-Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on `/redfish/v1/AggregatorService` URI and look at the `ActionStatus.DiscoverServersInRange` object. The `DiscoveryStatus` field will be set to `Complete` once the discovery process is complete.
+Once the action is triggered, the IP range discovery is performed as a task by the iLO Amplifier. The discovery process can take a while to complete. To know the progress of the discovery status, perform a GET on `/redfish/v1/AggregatorService` URI and look at the `ActionStatus.DiscoverServersInRange` object. The `DiscoveryStatus` field will be set to `Complete` once the discovery process is complete.
 
 
