@@ -194,7 +194,7 @@ You must include the HTTP header <code>Content-Type: application/json</code> for
 
 If the session is created successfully, you receive an `HTTP 201 Created` response from iLO Amplifier Pack. There will also be two important HTTP response headers.
 
-* **X-Auth-Token**	Your session token (string). This is a unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.
+* **X-Auth-Token**	Your session token (string). This is an unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.
 
 * **Location**	The URI of the newly created session resource.	iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.
 
