@@ -2531,7 +2531,7 @@
 NOTE:   If an error occurs, indicated by a return code 4xx or 5xx, an ExtendedError or ExtendedInfo JSON response is returned. The expected resource is not returned.
 </aside>
 <h1 id='navigating-the-data-model'>Navigating the Data Model</h1>
-<p>Unlike some simple REST service, this API is designed to be implemented on many different management appliances, different models of servers, and other IT infrastructure devices for years to come.  These devices may be quite different from one another.  For this reason, the API does not specify the URIs to various resources. Do not assume the BIOS version information is always at a particular URI.</p>
+<p>Unlike some simple REST service, this API is designed to be implemented on many different management appliances, different models of servers, and other IT infrastructure devices for years to come.  These devices may be quite different from one another.  For this reason, the API does not specify the URIs to various resources. Do not assume that the BIOS version information is always at a particular URI.</p>
 
 <p>This is more complex for the client, but is necessary to make sure the data model can change to accommodate various future server architectures without requiring specification changes. As an example, if the BIOS version is at <code>/redfish/v1/systems/1/</code>, and a client assumed it is always there, the client would then break when the interface is implemented on a different type of architecture with many compute nodes, each with its own BIOS version. </p>
 
@@ -2966,7 +2966,7 @@ You must include the HTTP header <code>Content-Type: application/json</code> for
 <p>If the session is created successfully, you receive an <code>HTTP 201 Created</code> response from iLO Amplifier Pack. There will also be two important HTTP response headers.</p>
 
 <ul>
-<li><p><strong>X-Auth-Token</strong>  Your session token (string). This is a unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.</p></li>
+<li><p><strong>X-Auth-Token</strong>  Your session token (string). This is an unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.</p></li>
 <li><p><strong>Location</strong>  The URI of the newly created session resource.  iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.</p></li>
 </ul>
 
@@ -3082,7 +3082,7 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 </code></pre>
 <p>REST resources usually support HTTP GET to read the current state, and some support modification and removal with HTTP POST, PUT, PATCH, or DELETE.</p>
 
-<p>There are some resources that support other types of operations not easily mapped to HTTP operations.  For this reason the Redfish specification defines &quot;Actions&quot;.  Actions are HTTP POST operations with a specifically formatted JSON request including the operation to perform and any parameters.  For instance, it is not enough to simply tell a server to reset, but it is also necessary to specify the type of reset:  cold boot, warm boot, PCI reset, etc.  Actions are often used when the operation causes iLO Amplifier Pack not just to update a value, but to change system state.</p>
+<p>There are some resources that support other types of operations not easily mapped to HTTP operations.  For this reason the Redfish specification defines &quot;Actions&quot;.  Actions are HTTP POST operations with a specifically formatted JSON request including the operation to perform on any parameters.  For instance, it is not enough to simply tell a server to reset, but it is also necessary to specify the type of reset: cold boot, warm boot, PCI reset, etc.  Actions are often used when the operation causes iLO Amplifier Pack not just to update a value, but to change system state.</p>
 
 <p>In Redfish, the available actions that can be invoked are identified by a &quot;target&quot; property in the resource&#39;s &quot;Actions&quot; object definitions.  The parameters identify the supported values with the annotation <code>@Redfish.AllowableValues.</code></p>
 <h2 id='actions-on-hpe-specific-extensions'>Actions on HPE-specific Extensions</h2>
@@ -3159,9 +3159,9 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <span class="c"># Logout of the current session</span>
 <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">logout</span><span class="p">()</span>
 </code></pre>
-<p>The embedded OEM extensions may also have Actions not specified by the Redfish standard.  They are invoked in a similar way.  The POST URI indicate&#39;s the HPE specific nature of the action.</p>
+<p>The embedded OEM extensions may also have Actions not specified by the Redfish standard.  They are invoked in a similar way.  The POST URI indicates the HPE specific nature of the action.</p>
 <h1 id='use-cases'>Use Cases</h1>
-<p>This section covers the basic use cases of RESTful APIs provided by iLO Amplifier Pack</p>
+<p>This section covers the basic use cases of RESTful APIs provided by iLO Amplifier Pack.</p>
 <h2 id='discovering-servers'>Discovering Servers</h2>
 <p>The discovery APIs allow users to add assets to manage with iLO Amplifier Pack. These APIs allow users to discover individual servers, servers in iLO Federation groups, servers within an IPv4 range, and servers listed in CSV file.</p>
 <h2 id='adding-a-single-server'>Adding a single server</h2><pre class="highlight shell tab-shell"><code>curl https://<span class="o">{</span>iLOAmpServer<span class="o">}</span>//redfish/v1/AggregatorService/ManagedSystems/ 
@@ -3381,9 +3381,9 @@ If you cannot preserve the session URI on login, you may iterate the Sessions co
 <span class="c"># Logout of the current session</span>
 <span class="n">REDFISH_OBJ</span><span class="o">.</span><span class="n">logout</span><span class="p">()</span>
 </code></pre>
-<p>iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an aciton on <code>/redfish/v1/AggregatorService</code> URI. </p>
+<p>iLO Amplifier Pack allows users to discover more than one server at a time. Using IP range discovery, iLO Amplifier Pack can discover multiple servers simultaneously. The IP range discovery is advertised as an action on <code>/redfish/v1/AggregatorService</code> URI. </p>
 
-<p>Once the action is triggered, the IP range discovery is performed as a task by iLO Amplifier. The discovery process can take a while to complete. In order to know the progress of the discovery status, perform a GET on <code>/redfish/v1/AggregatorService</code> URI and look at the <code>ActionStatus.DiscoverServersInRange</code> object. The <code>DiscoveryStatus</code> field will be set to <code>Complete</code> once the discovery process is complete.</p>
+<p>Once the action is triggered, the IP range discovery is performed as a task by the iLO Amplifier. The discovery process can take a while to complete. To know the progress of the discovery status, perform a GET on <code>/redfish/v1/AggregatorService</code> URI and look at the <code>ActionStatus.DiscoverServersInRange</code> object. The <code>DiscoveryStatus</code> field will be set to <code>Complete</code> once the discovery process is complete.</p>
 <h1 id='error-messages-and-registries'>Error messages and registries</h1>
 <blockquote>
 <p>HTTP response 400</p>
@@ -3766,11 +3766,11 @@ strings in the registry to form detailed messages tailored to the instance of th
 </span></code></pre>
 <p>Many resource types in the API are members of &quot;collections.&quot;  Collections are groups of similar resources and are typically an array of Member links.</p>
 
-<p>Redfish does not define a generic collection &quot;type&quot; (@odata.type) but all collections are identical in structure.  A <code>ComputerSystemCollection</code> is identical in structure to a <code>ChassisCollection</code> although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presense of the <code>Members</code> array of links.</p>
+<p>Redfish does not define a generic collection &quot;type&quot; (@odata.type) but all collections are identical in structure.  A <code>ComputerSystemCollection</code> is identical in structure to a <code>ChassisCollection</code> although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presence of the <code>Members</code> array of links.</p>
 
 <p>Collections may be GET-only that may not be added to or removed from.  Examples of GET-only collections are the Systems collection at <code>/redfish/v1/systems/</code>.  In a typical systems collection describing physical hardware, it wouldn&#39;t make sense to be able to create or remove members using POST or DELETE.</p>
 
-<p>Other collections may be editable.  Examples of these might be the Accounts collection at <code>/redfish/v1/accountservice/accounts</code>.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or take a default value.)</p>
+<p>Other collections may be editable.  Examples of these might be the Accounts collection at <code>/redfish/v1/accountservice/accounts</code>.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or a default value.)</p>
 
 <p>For more information on collections see the Redfish 1.0 DMTF standard at <a href="https://%20www.dmtf.org/standards/redfish">https://www.dmtf.org/standards/redfish</a> and the example Python code:  <a href="https://github.com/DMTF/python-redfish-library">https://github.com/DMTF/python-redfish-library</a>. </p>
 
@@ -3793,7 +3793,7 @@ strings in the registry to form detailed messages tailored to the instance of th
 <p>The destination of this link is a collection of user accounts (see ManagerAccount).</p>
 
 <ul>
-<li>You may create a new user account by POSTing a new account description the Accounts collection.  See ManagerAccount for details.
+<li>You may create a new user account by POSTing a new account description to the Accounts collection.  See ManagerAccount for details.
 &gt; e.g. <code>POST https://{iLO}/redfish/v1/accountservice/accounts/ with new account description</code></li>
 <li>You may modify an existing user by PATCHing properties to the user account resource.  See ManagerAccount for details.
 &gt; e.g. <code>PATCH https://{iLO}/redfish/v1/accountservice/accounts/{item} with different properties</code></li>
@@ -4060,7 +4060,7 @@ See the Redfish standard schema and specification for information on common Stat
 </thead><tbody>
 <tr>
 <td>Description</td>
-<td>The DNS Host Name, without any domain information</td>
+<td>The DNS Host Name, without any domain information.</td>
 </tr>
 <tr>
 <td>Type</td>
@@ -4082,7 +4082,7 @@ See the Redfish standard schema and specification for information on common Stat
 </thead><tbody>
 <tr>
 <td>Description</td>
-<td>The state of the indicator LED.</td>
+<td>The state of the indicator LED</td>
 </tr>
 <tr>
 <td>Type</td>
@@ -4231,7 +4231,7 @@ Member of <a href="#computersystem-v1_3_0-computersystem">ComputerSystem.v1_3_0.
 </thead><tbody>
 <tr>
 <td>Description</td>
-<td>This is the current power state of the system</td>
+<td>This is the current power state of the system.</td>
 </tr>
 <tr>
 <td>Type</td>
@@ -4436,7 +4436,7 @@ Member of <a href="#computersystem-v1_3_0-computersystem">ComputerSystem.v1_3_0.
 </thead><tbody>
 <tr>
 <td>Description</td>
-<td>The firmware version of this Trusted Module</td>
+<td>The firmware version of this Trusted Module.</td>
 </tr>
 <tr>
 <td>Type</td>
@@ -31971,7 +31971,7 @@ Performs Update of Central Management Device.</p>
 <h1 id='response-message-definitions'>Response Message Definitions</h1>
 <p>API Responses are discussed in the section Handling Error Responses.  The responses contain one or more &quot;MessageId&quot; properties each corresponding to an entry in a message registry.  This section is a reference for the defined message registry entries.</p>
 <h3 id='base-1-1-accessdenied'>Base.1.1.AccessDenied</h3>
-<p>Indicates that while attempting to access, connect to or transfer to/from another resource, the service denied access.</p>
+<p>Indicates that while attempting to access, connect to or transfer to/from another resource, the service has denied access.</p>
 
 <table><thead>
 <tr>
@@ -32099,7 +32099,7 @@ Performs Update of Central Management Device.</p>
 </tr>
 <tr>
 <td style="text-align: left">Resolution</td>
-<td style="text-align: left">The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target or the implementation documentation may be of assistance.</td>
+<td style="text-align: left">The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target, or the implementation documentation may be of assistance.</td>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-actionparameterduplicate'>Base.1.1.ActionParameterDuplicate</h3>
@@ -32191,7 +32191,7 @@ Performs Update of Central Management Device.</p>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-actionparametervalueformaterror'>Base.1.1.ActionParameterValueFormatError</h3>
-<p>Indicates that a parameter was given the correct value type but the value of that parameter was not supported.  This includes value size/length exceeded.</p>
+<p>Indicates that a parameter was given the correct value type but the value of that parameter was not supported. This includes value size/length exceeded.</p>
 
 <table><thead>
 <tr>
@@ -32253,11 +32253,11 @@ Performs Update of Central Management Device.</p>
 </tr>
 <tr>
 <td style="text-align: left">Resolution</td>
-<td style="text-align: left">Ensure that the URI contains a valid and reachable node name, protocol information and other URI components.</td>
+<td style="text-align: left">Ensure that the URI contains a valid and reachable node name, protocol information, and other URI components.</td>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-createfailedmissingreqproperties'>Base.1.1.CreateFailedMissingReqProperties</h3>
-<p>Indicates that a create was attempted on a resource but that properties that are required for the create operation were missing from the request.</p>
+<p>Indicates that a create was attempted on a resource but the properties that are required for the create operation were missing from the request.</p>
 
 <table><thead>
 <tr>
@@ -32543,7 +32543,7 @@ Performs Update of Central Management Device.</p>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-propertynotwritable'>Base.1.1.PropertyNotWritable</h3>
-<p>Indicates that a property was given a value in the request body, but the property is a readonly property.</p>
+<p>Indicates that a property was given a value in the request body, but the property is a read only property.</p>
 
 <table><thead>
 <tr>
@@ -32631,7 +32631,7 @@ Performs Update of Central Management Device.</p>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-propertyvaluenotinlist'>Base.1.1.PropertyValueNotInList</h3>
-<p>Indicates that a property was given the correct value type but the value of that property was not supported.  This values not in an enumeration</p>
+<p>Indicates that a property was given the correct value type but the value of that property was not supported.  This value is not in an enumeration.</p>
 
 <table><thead>
 <tr>
@@ -33027,7 +33027,7 @@ Performs Update of Central Management Device.</p>
 </tr>
 </tbody></table>
 <h3 id='base-1-1-sourcedoesnotsupportprotocol'>Base.1.1.SourceDoesNotSupportProtocol</h3>
-<p>Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol</p>
+<p>Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol.</p>
 
 <table><thead>
 <tr>
