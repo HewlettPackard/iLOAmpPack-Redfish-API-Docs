@@ -14,6 +14,7 @@ includes:
   - iloamp_navigating
   - iloamp_authentication
   - iloamp_performingaction
+  - iloamp_subscribing
   - iloamp_usecases
   - iloamp_errorhandling
   - iloamp_resmap

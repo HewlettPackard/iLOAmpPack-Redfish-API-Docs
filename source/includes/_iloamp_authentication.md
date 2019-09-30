@@ -50,7 +50,7 @@ Content-Type: application/json
 }
 ```
 
-If you perform an HTTP operation (without providing authentication) on any other resource other than the root `/redfish/v1/` resource, you will receive an `HTTP 401 Unauthorized` error indicating that you don’t have the authentication needed to access the resource.
+If you perform an HTTP operation (without providing authentication) on any resource other than the root `/redfish/v1/` resource, you will receive an `HTTP 401 Unauthorized` error indicating that you don’t have the authentication needed to access the resource.
 
 ## Basic Authentication
 
@@ -194,9 +194,9 @@ You must include the HTTP header <code>Content-Type: application/json</code> for
 
 If the session is created successfully, you receive an `HTTP 201 Created` response from iLO Amplifier Pack. There will also be two important HTTP response headers.
 
-* **X-Auth-Token**	Your session token (string). This is an unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.
+* **X-Auth-Token:**	Your session token (string). This is a unique string for your login session. It must be included as a header in all subsequent HTTP operations in the session.
 
-* **Location**	The URI of the newly created session resource.	iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.
+* **Location:**	The URI of the newly created session resource.	iLO Amplifier Pack allocates a new session resource describing your session. This is the URI that you must DELETE against, in order to log out. If you lose this location URI, you can find it by crawling the HREF links in the Sessions collection. Store this URI to facilitate logging out.
 
 <aside class="warning">
 It is good practice to save the Location URI of the newly created session.  This is your unique session information and is needed to log out later.
@@ -208,7 +208,7 @@ The above process is implemented by the login method provided by REDFISH_OBJ of 
 
 To use a session, simply include the `X-Auth-Token` header supplied by the login response in all REST requests.
 
-If REDFISH_OBJ of Redfish Python Library is used, then the login method automatically caches the session key and is included in any future calls made using that object.
+If REDFISH_OBJ of Redfish Python Library is used, then the login method automatically caches the session key and it is included in any future calls made using that object.
 
 ## Log Out of a Session
 
@@ -246,7 +246,7 @@ iLO Amplifier Pack supports a limited number of simultaneous sessions.  If you d
 To log out perform an `HTTP DELETE` to the URI that was returned in the "Location" header when you created the session.
 
 <aside class="notice">
-If you cannot preserve the session URI on login, you may iterate the Sessions collection at /redfish/v1/SessionService/Sessions/.  Be sure to include the X-Auth-Token header.  For each session look for a JSON property called "MySession" that is true. You may then DELETE that URI.
+If you cannot preserve the session URI on login, you may iterate the Sessions collection at /redfish/v1/SessionService/Sessions/.  Be sure to include the X-Auth-Token header.  For each session, look for a JSON property called "MySession" that is true. You may then DELETE that URI.
 </aside>
 
 If REDFISH_OBJ of Redfish Python Library is used, then the logout method delete's the session using the location URI that was previously cached.

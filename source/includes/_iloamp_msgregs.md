@@ -1,6 +1,6 @@
 
 ### Base.1.1.AccessDenied
-Indicates that while attempting to access, connect to or transfer to/from another resource, the service has denied access.
+Indicates that while attempting to access, connect to or transfer to/from another resource, the service denied access.
 
 | | |
 |:---|:---|
@@ -51,7 +51,7 @@ Indicates that the action supplied with the POST operation is not supported by t
 |:---|:---|
 |Message Format|"The action %1 is not supported by the resource."
 |Severity|Critical
-|Resolution|The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target, or the implementation documentation may be of assistance.
+|Resolution|The action supplied cannot be resubmitted to the implementation.  Perhaps the action was invalid, the wrong resource was the target or the implementation documentation may be of assistance.
 
 ### Base.1.1.ActionParameterDuplicate
 Indicates that the action was supplied with a duplicated parameter in the request body.
@@ -90,7 +90,7 @@ Indicates that an action was submitted but a parameter supplied did not match an
 |Resolution|Correct the invalid parameter and resubmit the request if the operation failed.
 
 ### Base.1.1.ActionParameterValueFormatError
-Indicates that a parameter was given the correct value type but the value of that parameter was not supported. This includes value size/length exceeded.
+Indicates that a parameter was given the correct value type but the value of that parameter was not supported.  This includes value size/length exceeded.
 
 | | |
 |:---|:---|
@@ -114,10 +114,10 @@ Indicates that the attempt to access the resource/file/image at the URI was unsu
 |:---|:---|
 |Message Format|"The service failed to establish a connection with the URI %1."
 |Severity|Critical
-|Resolution|Ensure that the URI contains a valid and reachable node name, protocol information, and other URI components.
+|Resolution|Ensure that the URI contains a valid and reachable node name, protocol information and other URI components.
 
 ### Base.1.1.CreateFailedMissingReqProperties
-Indicates that a create was attempted on a resource but the properties that are required for the create operation were missing from the request.
+Indicates that a create was attempted on a resource but that properties that are required for the create operation were missing from the request.
 
 | | |
 |:---|:---|
@@ -143,6 +143,15 @@ Indicates that all conditions of a successful creation operation have been met.
 |Severity|OK
 |Resolution|None
 
+### Base.1.1.EventServiceDisabled
+Event subscription requests failed because Event Service is disabled. 
+
+| | |
+|:---|:---|
+|Message Format|"Subscription request to %1 failed because the event service is not enabled."
+|Severity|Warning
+|Resolution|In order to perform any operations on subscriptions, please set ServiceEnabled to true at EventService level.
+
 ### Base.1.1.EventSubscriptionLimitExceeded
 Indicates that a event subscription establishment has been requested but the operation failed due to the number of simultaneous connection exceeding the limit of the implementation.
 
@@ -160,6 +169,15 @@ Indicates that a general error has occurred.
 |Message Format|"A general error has occurred. See ExtendedInfo for more information."
 |Severity|Critical
 |Resolution|See ExtendedInfo for more information.
+
+### Base.1.1.InfoSightServiceDisabed
+Indicates that the request could not be performed because the infosight service is disabled.
+
+| | |
+|:---|:---|
+|Message Format|"The request could not be performed because the infosight service is disabled."
+|Severity|Critical
+|Resolution|Ensure that the infosight service is enabled.
 
 ### Base.1.1.InsufficientPrivilege
 Indicates that the credentials associated with the established session do not have sufficient privileges for the requested operation
@@ -234,7 +252,7 @@ Indicates that a required property was not supplied as part of the request.
 |Resolution|Ensure that the property is in the request body and has a valid value and resubmit the request if the operation failed.
 
 ### Base.1.1.PropertyNotWritable
-Indicates that a property was given a value in the request body, but the property is a read only property.
+Indicates that a property was given a value in the request body, but the property is a readonly property.
 
 | | |
 |:---|:---|
@@ -270,7 +288,7 @@ Indicates that a property was given the correct value type but the value of that
 |Resolution|No resolution is required.
 
 ### Base.1.1.PropertyValueNotInList
-Indicates that a property was given the correct value type but the value of that property was not supported.  This value is not in an enumeration.
+Indicates that a property was given the correct value type but the value of that property was not supported.  This values not in an enumeration
 
 | | |
 |:---|:---|
@@ -432,7 +450,7 @@ Indicates that a session establishment has been requested but the operation fail
 |Resolution|Reduce the number of other sessions before trying to establish the session or increase the limit of simultaneous sessions (if supported).
 
 ### Base.1.1.SourceDoesNotSupportProtocol
-Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol.
+Indicates that while attempting to access, connect to or transfer a resource/file/image from another location that the other end of the connection did not support the protocol
 
 | | |
 |:---|:---|
@@ -458,7 +476,7 @@ Indicates that the service encountered an unrecognizable request body that could
 |Severity|Warning
 |Resolution|Correct the request body and resubmit the request if it failed.
 
-### HpeBios.1.0.MessagesMaxSizeExceeded
+### HpeBiosMessageRegistry.1.0.MessagesMaxSizeExceeded
 Indicates that the last configuration change attempted by the user resulted in a number of error messages that exceeded the maximum storage capacity alloted for messages corresponding to this resource.
 
 | | |
@@ -467,7 +485,7 @@ Indicates that the last configuration change attempted by the user resulted in a
 |Severity|Warning
 |Resolution|Inspect the last configuration change request for issues that may be generating errors, compare the request against the resource's schema, then retry the configuration change.
 
-### HpeBios.1.0.UnsupportedAMPConfiguration
+### HpeBiosMessageRegistry.1.0.UnsupportedAMPConfiguration
 Indicates that the user provided Advanced Memory Protection (AMP) option is not appropriate for this memory configuration, as the underlying hardware does not support it.
 
 | | |
@@ -476,7 +494,7 @@ Indicates that the user provided Advanced Memory Protection (AMP) option is not 
 |Severity|Warning
 |Resolution|Ensure that the current memory configuration meets the requirements of the requested value before applying the settings.
 
-### HpeBios.1.0.UnsupportedDramRaplValue
+### HpeBiosMessageRegistry.1.0.UnsupportedDramRaplValue
 Indicates that the user provided Running Average Power Limit (RAPL) value could not be applied due to inherent DRAM power limitation. The value may be out of bounds or invalid.
 
 | | |
@@ -485,7 +503,7 @@ Indicates that the user provided Running Average Power Limit (RAPL) value could 
 |Severity|Warning
 |Resolution|Ensure that the requested value is within the supported bounds before applying the settings.
 
-### HpeBios.1.0.UnsupportedProcessorRaplValue
+### HpeBiosMessageRegistry.1.0.UnsupportedProcessorRaplValue
 Indicates that the user provided Running Average Power Limit (RAPL) value could not be applied due to inherent processor power limitation. The value may be out of bounds or invalid.
 
 | | |
@@ -529,6 +547,15 @@ The specified configuration is not valid.
 |Message Format|"The specified configuration is not valid."
 |Severity|Warning
 |Resolution|Correct the configuration, and then retry the operation.
+
+### HpeCommon.1.0.JobCreated
+A job was created in response to the operation.
+
+| | |
+|:---|:---|
+|Message Format|"A job was created in response to the operation. The status of the job is accessible at %1."
+|Severity|OK
+|Resolution|Perform an HTTP GET request on the supplied URI for job status.
 
 ### HpeCommon.1.0.PropertyValueExceedsMaxLength
 The value for the property exceeds the maximum length.
@@ -610,6 +637,339 @@ A previously requested property value change was reverted because the current ha
 |Message Format|"The value %1 for property %2 was reverted because the current hardware configuration does not support it."
 |Severity|Warning
 |Resolution|Ensure that the system's hardware configuration supports the property value.
+
+### HpeRedfishMessage.1.0.AHSDownloadJobException
+The AHS Downlaod Job Failed.
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed. %2."
+|Severity|Warning
+|Resolution|Retry the operation.
+
+### HpeRedfishMessage.1.0.ConfigBaseLineValidationFailed
+Configuration Baseline Validation Failed
+
+| | |
+|:---|:---|
+|Message Format|"Server configuration baseline validation job failed. %1"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.EmptySerialNumberorProductID
+Serial Number or Product ID is blank.
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed as Serial number/Product ID is empty for server: %2."
+|Severity|Warning
+|Resolution|Contact HPE support to get serial number.
+
+### HpeRedfishMessage.1.0.FWImageNotAccessible
+Firmware Image not accessible
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because the firmware image is not accessible."
+|Severity|Warning
+|Resolution|Retry the operation with correct credentials. 
+
+### HpeRedfishMessage.1.0.FWUpdateNotStarted
+Firmware update not started
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed beacause the firmware update job is not started for group %2."
+|Severity|Warning
+|Resolution|Retry the operation. 
+
+### HpeRedfishMessage.1.0.GroupAlreadyExists
+Group Name already Exists
+
+| | |
+|:---|:---|
+|Message Format|"%1 job Failed because the group is already present."
+|Severity|Warning
+|Resolution|Create the group with a different name.
+
+### HpeRedfishMessage.1.0.GroupDoesNotExist
+Group Name Does Not Exist
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because the Group Name does not exist."
+|Severity|Warning
+|Resolution|Specify a Group Name that exists and retry the operation.
+
+### HpeRedfishMessage.1.0.GroupEmpty
+No Servers present in Group
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because no servers are present in the Group."
+|Severity|Warning
+|Resolution|Add servers in the group and retry the operation.
+
+### HpeRedfishMessage.1.0.HpeOneViewManagedServer
+One View Managed Server
+
+| | |
+|:---|:---|
+|Message Format|"%1 failed.Server is HPE OneView managed."
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.InvalidSUTMode
+Invalid SUT Mode
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because existing SUT mode must be in AutoStage for Deploy Operation"
+|Severity|Warning
+|Resolution|Start the SUT service.
+
+### HpeRedfishMessage.1.0.JobAborted
+The job was aborted
+
+| | |
+|:---|:---|
+|Message Format|"%1 Job aborted."
+|Severity|Warning
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobCompleted
+Job completion message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobCompletedStatus
+Job completed on some servers
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed for %2 servers"
+|Severity|Warning
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobCompletedWithException
+Job completed with exception on some servers
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed. Failed for %2 servers."
+|Severity|Warning
+|Resolution|Retry the operation on failed servers
+
+### HpeRedfishMessage.1.0.JobCompletedWithExceptionStatus
+Job completed with exception on some servers and failed for some servers
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed for %2 servers, Succeeded for %3 servers, Failed for %4 servers"
+|Severity|Warning
+|Resolution|Retry the operation on failed servers
+
+### HpeRedfishMessage.1.0.JobCompletedWithFailure
+Job completed with failure
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed. %2"
+|Severity|Warning
+|Resolution|Clear the iLO Repository manually
+
+### HpeRedfishMessage.1.0.JobCompletedWithStatus
+Job completed with status
+
+| | |
+|:---|:---|
+|Message Format|"%1 job completed. %2"
+|Severity|Ok
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobException
+The job failure message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because %2."
+|Severity|Warning
+|Resolution|Retry the operation.
+
+### HpeRedfishMessage.1.0.JobFailed
+Job failed message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobPartiallyCompleted
+Job completion message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job partially completed. %2"
+|Severity|OK
+|Resolution|Manually reboot the server.
+
+### HpeRedfishMessage.1.0.JobRunning
+The job is currently running
+
+| | |
+|:---|:---|
+|Message Format|"%1 job is in progress."
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobRunningStatus
+The job is running and finished on some of the servers
+
+| | |
+|:---|:---|
+|Message Format|"%1 started on %2 Servers. Succeeded for %3 servers, Failed for %4 servers."
+|Severity|Warning
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.JobRunningStep
+The job is currently running
+
+| | |
+|:---|:---|
+|Message Format|"%1 job is in progress. %2"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.MaxGroupCreated
+The maximum number of allowed Server Groups have been created.
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because the maximum number of allowed groups have been created."
+|Severity|Warning
+|Resolution|Delete an existing Group and then create the new Group.
+
+### HpeRedfishMessage.1.0.ModifyServerToInfosight
+Modify the InfoSight connectivity of server
+
+| | |
+|:---|:---|
+|Message Format|"%1 completed"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.NoManagedServers
+Servers does not exist in iLO Amplifier Pack.
+
+| | |
+|:---|:---|
+|Message Format|"%1 failed as there are no servers managed by this iLO Amplifier Pack."
+|Severity|Warning
+|Resolution|Add server in iLO Amplifier Pack and retry the operation.
+
+### HpeRedfishMessage.1.0.NodeAddressException
+Exception for Node Address.
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed with exception for server address: %2"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.SUTModeNotSupported
+SUT Mode is not supported
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because SUT mode is not supported. iLO Error Response: %2"
+|Severity|Warning
+|Resolution|Set the supported SUT mode.
+
+### HpeRedfishMessage.1.0.SUTNotInstalled
+SUT is not installed/responding
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because SUT is not installed/responding. iLO Error Response: %2"
+|Severity|Warning
+|Resolution|Start the SUT service.
+
+### HpeRedfishMessage.1.0.SUTOperatorRequestorFailed
+SUT Operator Requestor failed
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because setting the Operator Requestor in SUT to iLO Amplifier Pack is failed."
+|Severity|Warning
+|Resolution|Retry the SUT operator request to set to iLO Amplifier Pack.
+
+### HpeRedfishMessage.1.0.SUTServiceNotRunning
+SUT Service is not running
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because SUT service is not running. iLO Error Response: %2"
+|Severity|Warning
+|Resolution|Start the SUT service.
+
+### HpeRedfishMessage.1.0.SUTUpdateRequestFailed
+SUT Update Request failed
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because SUT Update Request is failed. iLO Error Response: %2"
+|Severity|Warning
+|Resolution|Retry the SUT update request.
+
+### HpeRedfishMessage.1.0.ServerInventoryNotFound
+Server Inventory details Not Exist
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because the Server inventory details not found in the iLO Amplifier."
+|Severity|Warning
+|Resolution|Specify the server that is managed by iLO Amplifier and retry the operation.
+
+### HpeRedfishMessage.1.0.ServerNotResponding
+Server Credentials is incorrect or not responding
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because Server credentials is incorrect or Server is not responding."
+|Severity|Warning
+|Resolution|Retry the operation with correct credentials.
+
+### HpeRedfishMessage.1.0.SystemUpToDate
+System is up to date
+
+| | |
+|:---|:---|
+|Message Format|"System is up to date. %1"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.iLOErrorId
+ iLO message ID
+
+| | |
+|:---|:---|
+|Message Format|" %1 job failed. iLoMessage Id:%2"
+|Severity|Warning
+|Resolution|None
+
+### HpeRedfishMessage.1.0.iLOErrorMessage
+iLo Message args
+
+| | |
+|:---|:---|
+|Message Format|" %1 job failed. iLoMessage Args:%2"
+|Severity|Warning
+|Resolution|None
 
 ### HpeSmartStorage.2.0.AddEditableDataDriveFailed
 Indicates that the data drive was not added due to an unknown error.
@@ -3465,7 +3825,7 @@ Indicates that the correct value type was supplied for the action parameter, but
 |Resolution|Choose a value from the enumeration list and resubmit the request if the operation failed.
 
 ### HpeWolfram.1.0.ActivationError
-Device not activated or Invalid Activation Key
+Device not activated or Invalid Activation Key.
 
 | | |
 |:---|:---|
@@ -3480,7 +3840,7 @@ Add server failed because the supplied credentials are wrong or the server is no
 |:---|:---|
 |Message Format|"The login was not successful, credentials are wrong or Timeout has occurred or Server is not reachable or server has unsupported iLO version."
 |Severity|Warning
-|Resolution|Log in with correct user name and password credentials.Also verify the server has supported iLO Version.
+|Resolution|Log in with correct user name and password credentials. Also verify if the server has supported iLO Version installed.
 
 ### HpeWolfram.1.0.AddNodeValidationFail
 Add server operation failed the validation check for iLO firmware version.
@@ -3489,10 +3849,10 @@ Add server operation failed the validation check for iLO firmware version.
 |:---|:---|
 |Message Format|"Adding server failed due to incompatible iLO firmware version"
 |Severity|Warning
-|Resolution|Check if the iLO firmware version is supported.The supported iLO version is 2.50 and above.
+|Resolution|Check if the iLO firmware version is supported. The supported iLO version is 2.50 and above.
 
 ### HpeWolfram.1.0.AutoRefreshStarted
-Periodic refresh of all the servers and groups has started
+Periodic refresh of all the servers and groups has started.
 
 | | |
 |:---|:---|
@@ -3501,13 +3861,13 @@ Periodic refresh of all the servers and groups has started
 |Resolution|No action required
 
 ### HpeWolfram.1.0.BaselineAlreadyPresent
-Cannot create Import Baseline task as the baseline is already imported or another task is importing the same baseline
+Cannot create Import Baseline task as the baseline is already imported or another task is importing the same baseline.
 
 | | |
 |:---|:---|
 |Message Format|"The baseline trying to be imported already exists or is being processed."
 |Severity|Warning
-|Resolution|Delete the existing baseline and try again
+|Resolution|Delete the existing baseline and try again.
 
 ### HpeWolfram.1.0.BaselineCannotBeDeleted
 The baseline cannot be deleted now.
@@ -3534,52 +3894,61 @@ Audit logs cannot be downloaded.
 |:---|:---|
 |Message Format|"Audit logs cannot be downloaded beacuse there are no servers added at all."
 |Severity|Critical
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.CannotDownloadDebugLogs
 Debug logs cannot be downloaded.
 
 | | |
 |:---|:---|
-|Message Format|"Debug logs cannot be downloaded beacuse there is a download in progress"
+|Message Format|"Debug logs cannot be downloaded because there is a download in progress"
 |Severity|Critical
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.CertCSRKeyMismatch
 Certificate Import Failed, Private/Public Key Mismatch
 
 | | |
 |:---|:---|
-|Message Format|"Certificate Import Failed due to mismatch of Private/Public key of CSR and Certificate"
+|Message Format|"Certificate Import Failed due to mismatch of Private/Public key of CSR and Certificate."
 |Severity|Warning
-|Resolution|Generate a new CSR and Import the certificate
+|Resolution|Generate a new CSR and Import the certificate.
 
 ### HpeWolfram.1.0.CertDateTimeMismatch
-Certificate Import Failed, Invalid Start or End Date
+Certificate Import Failed, Invalid Start or End Date.
 
 | | |
 |:---|:---|
-|Message Format|"Certificate Import Failed as the Certificate has expired or is not yet valid"
+|Message Format|"Certificate Import Failed as the Certificate has expired or is not yet valid."
 |Severity|Warning
-|Resolution|Retry importing a certificate with a valid date/time
+|Resolution|Retry importing a certificate with a valid date/time.
 
 ### HpeWolfram.1.0.CertInvalidCAFormat
-Certificate Import Failed, Invalid CA Certificate
+Certificate Import Failed, Invalid CA Certificate.
 
 | | |
 |:---|:---|
-|Message Format|"Certificate Import Failed due to Invalid CA Certificate"
+|Message Format|"Certificate Import Failed due to Invalid CA Certificate."
 |Severity|Warning
-|Resolution|Retry importing a certificate with a valid CA Certificate
+|Resolution|Retry importing a certificate with a valid CA Certificate.
 
 ### HpeWolfram.1.0.CertInvalidX509Format
-Certificate Import Failed, Invalid X.509 Format
+Certificate Import Failed, Invalid X.509 Format.
 
 | | |
 |:---|:---|
 |Message Format|"Certificate Import Failed due to Invalid X.509 Format"
 |Severity|Warning
-|Resolution|Retry importing a certificate with a valid X.509 format
+|Resolution|Retry importing a certificate with a valid X.509 format.
+
+### HpeWolfram.1.0.ClaimTokenValidationInProgress
+A claim token validation is already in progress.
+
+| | |
+|:---|:---|
+|Message Format|"A claim token validation is already in progress."
+|Severity|Warning
+|Resolution|Wait for the current claim token validation to finish and then try again.
 
 ### HpeWolfram.1.0.ConfigurationBaselineAlreadyExists
 The configuration baseline of the same name already exists.
@@ -3618,11 +3987,11 @@ The configuration setting was not found in master configuration.
 |Resolution|Specify a different configuration baseline name and retry the operation.
 
 ### HpeWolfram.1.0.DeleteGroupFailed
-Delete group failed because the group Discovery is in Progress
+Delete group failed because the group Discovery is in Progress.
 
 | | |
 |:---|:---|
-|Message Format|"Group Discovery is in progress.Hence operations like Delete is not allowed"
+|Message Format|"Group Discovery is in progress. Hence operations like Delete are not allowed"
 |Severity|Warning
 |Resolution|Wait for the group discovery to be completed and then try again.
 
@@ -3636,11 +4005,11 @@ Indicates that one or more properties were correctly changed, but will not take 
 |Resolution|Reset the device for the settings to take effect.
 
 ### HpeWolfram.1.0.DiscoverServersFromCSVInProgress
-Discovery of servers from CSV is already in progress.Cannot start a new csv discovery.
+Discovery of servers from CSV is already in progress. Cannot start a new csv discovery.
 
 | | |
 |:---|:---|
-|Message Format|"Discovery of servers from CSV is already in progress.Cannot start a new csv discovery."
+|Message Format|"Discovery of servers from CSV is already in progress. Cannot start a new csv discovery."
 |Severity|Warning
 |Resolution|Wait for the current Discovery of servers from CSV to complete.
 
@@ -3662,6 +4031,15 @@ EULA for Intelligent Provisioning not accepted and hence OS provisioning could n
 |Severity|Warning
 |Resolution|Accept the EULA to start the OS Provisioning Tasks.
 
+### HpeWolfram.1.0.EnabledSendingServerAddressInfo
+The user has enabled sending the server hostname and IP Address to InfoSight.
+
+| | |
+|:---|:---|
+|Message Format|"The user has enabled sending the server hostname and IP Address information in the heartbeat to InfoSight."
+|Severity|OK
+|Resolution|None.
+
 ### HpeWolfram.1.0.FileExists
 File already exists in folder.
 
@@ -3678,7 +4056,7 @@ Unable to read file.
 |:---|:---|
 |Message Format|"Restore was not successful."
 |Severity|Warning
-|Resolution|Verify File path
+|Resolution|Verify File path.
 
 ### HpeWolfram.1.0.FileWriteFailed
 Unable to write file.
@@ -3687,7 +4065,7 @@ Unable to write file.
 |:---|:---|
 |Message Format|"Backup was not successful."
 |Severity|Warning
-|Resolution|Verify File path
+|Resolution|Verify File path.
 
 ### HpeWolfram.1.0.FirmwareFlashAlreadyInProgress
 A firmware upgrade operation is already in progress.
@@ -3705,7 +4083,7 @@ Firmware Update cannot be initiated because some tasks are in running state.
 |:---|:---|
 |Message Format|"Firmware Update cannot be initiated because some tasks are in running state."
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.FirmwareUpdateFailed
 Firmware Update Failed
@@ -3714,16 +4092,16 @@ Firmware Update Failed
 |:---|:---|
 |Message Format|"Firmware Update Failed because %1"
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.FirmwareUpdateSuccessful
-Firmware Update Successful
+Firmware Update Successful.
 
 | | |
 |:---|:---|
 |Message Format|"%1"
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.GatewayNodeFail
 Add iLO federation group operation failed due to gateway server not responding or invalid address was given.
@@ -3742,6 +4120,24 @@ Generating the X.509 Certificate.
 |Message Format|"X.509 Certificate is being generated and the process might take up to 10 minutes."
 |Severity|OK
 |Resolution|None.
+
+### HpeWolfram.1.0.GetServerGroupsHealthStatusInProgress
+Get server groups health status is already in progress. Cannot start a new health status process.
+
+| | |
+|:---|:---|
+|Message Format|"Get server groups health status is already in progress. Cannot start a new health status process."
+|Severity|Warning
+|Resolution|Wait for the current server groups health status action to complete.
+
+### HpeWolfram.1.0.GroupDoesNotExist
+Group Name Does Not Exist
+
+| | |
+|:---|:---|
+|Message Format|"Group join failed since the Group Name does not Exist."
+|Severity|Warning
+|Resolution|Specify a Group Name that exists and retry the operation.
 
 ### HpeWolfram.1.0.GroupKeyMisMatch
 Invalid Group Key Provided.
@@ -3762,11 +4158,11 @@ Group Name already Exists
 |Resolution|Specify a Group Name that doesnt exist and retry the operation.
 
 ### HpeWolfram.1.0.IPRangeAddInProgress
-IP Range Add is already in progress.Cannot start a new range discovery.
+IP Range Add is already in progress. Cannot start a new range discovery.
 
 | | |
 |:---|:---|
-|Message Format|"IP Range Add is already in progress.Cannot start a new range discovery until the previous discovery is complete."
+|Message Format|"IP Range Add is already in progress. Cannot start a new range discovery until the previous discovery is complete."
 |Severity|Warning
 |Resolution|Wait for the current IP Range discovery to complete.
 
@@ -3813,7 +4209,7 @@ Incorrect filter query format.
 |:---|:---|
 |Message Format|"Incorrect filter query format."
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.IncorrectSearchQuery
 Incorrect search query parameters given.
@@ -3822,14 +4218,14 @@ Incorrect search query parameters given.
 |:---|:---|
 |Message Format|"Incorrect search query format."
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.IncorrectSearchQuerySelectMissing
-Incorrect search query parameters given.Select query parameter is mandatory for search query.
+Incorrect search query parameters given. Select query parameter is mandatory for search query.
 
 | | |
 |:---|:---|
-|Message Format|"Incorrect search query format.Select parameter is mandatory."
+|Message Format|"Incorrect search query format. Select parameter is mandatory."
 |Severity|Warning
 |Resolution|Please specify select query parameters to search the given field in.
 
@@ -3840,7 +4236,7 @@ Incorrect select query parameters given.
 |:---|:---|
 |Message Format|"Incorrect select query format."
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.IncorrectSortQuery
 Incorrect sorting order or sorting parameters given.
@@ -3849,16 +4245,16 @@ Incorrect sorting order or sorting parameters given.
 |:---|:---|
 |Message Format|"Incorrect sorting query format."
 |Severity|Warning
-|Resolution|No action required
+|Resolution|No action required.
 
 ### HpeWolfram.1.0.InvalidActivationKey
-Invalid Activation Key
+Invalid Activation Key.
 
 | | |
 |:---|:---|
 |Message Format|"Invalid Activation Key"
 |Severity|Warning
-|Resolution|Retry Installation with a valid Activation Key
+|Resolution|Retry Installation with a valid Activation Key.
 
 ### HpeWolfram.1.0.InvalidFederationGroupName
 Specified Federation group name is invalid.
@@ -3905,14 +4301,41 @@ Creation of tasks are mutually exclusive for federated and non federated nodes.
 |Severity|Warning
 |Resolution|Specify either federated or non federated nodes for the action and try again.
 
+### HpeWolfram.1.0.JobCannotBeAborted
+Job cannot be aborted at this time.
+
+| | |
+|:---|:---|
+|Message Format|"Job cannot be aborted completely at this time"
+|Severity|Warning
+|Resolution|Job cannot be aborted at this time, wait for the job to be completed.
+
+### HpeWolfram.1.0.JobCannotBeContinued
+Job cannot be Continued at this time.
+
+| | |
+|:---|:---|
+|Message Format|"Job cannot be Continued at this time"
+|Severity|Critical
+|Resolution|No Resolution.
+
 ### HpeWolfram.1.0.JobNameNotValid
-Job Creation Failed due to Bad Job Type 
+Job Creation Failed due to Bad Job Type.
 
 | | |
 |:---|:---|
 |Message Format|"Job Creation Failed due to Bad Job Type"
 |Severity|Critical
-|Resolution|Provide a valid Job Type string
+|Resolution|Provide a valid Job Type string.
+
+### HpeWolfram.1.0.JobQueueFull
+New Jobs cannot be created at this time.
+
+| | |
+|:---|:---|
+|Message Format|"New Jobs cannot be created at this time as the task queue is full"
+|Severity|Warning
+|Resolution|Wait for other jobs to be completed and then try again.
 
 ### HpeWolfram.1.0.LDAPGroupAlreadyExist
 Specified LDAP group name/DN already exists.
@@ -3939,7 +4362,16 @@ Limit for maximum number of configuration baselines reached.
 |:---|:---|
 |Message Format|"Limit for maximum number of configuration baselines reached."
 |Severity|Warning
-|Resolution|Delete few configuration baseline and retry the operation.
+|Resolution|Delete some configuration baselines and retry the operation.
+
+### HpeWolfram.1.0.MaxEventSubscriptionsReached
+The maximum number of event subscriptions has reached.
+
+| | |
+|:---|:---|
+|Message Format|"The operation can not be completed because the maximum number of event subscriptions has reached."
+|Severity|Warning
+|Resolution|None.
 
 ### HpeWolfram.1.0.MaxRecoveryPolicyLimit
 Limit for maximum number of recovery policies reached.
@@ -3948,7 +4380,16 @@ Limit for maximum number of recovery policies reached.
 |:---|:---|
 |Message Format|"Limit for maximum number of recovery policies reached."
 |Severity|Warning
-|Resolution|Delete few recovery policies and retry the operation.
+|Resolution|Delete some recovery policies and retry the operation.
+
+### HpeWolfram.1.0.MaxServerGroupsCreated
+Server group creation was not successful, because the maximum number of allowed Server Groups have been created.
+
+| | |
+|:---|:---|
+|Message Format|"The Server group creation was not successful, because the maximum number of allowed Server Groups have been created."
+|Severity|Warning
+|Resolution|Delete an existing Server Group and try again.
 
 ### HpeWolfram.1.0.MaxSessionsCreated
 The login was not successful, because the maximum number of allowed sessions have been created.
@@ -3966,7 +4407,7 @@ Delete operation failed because members of a group cannot be deleted.
 |:---|:---|
 |Message Format|"Deleting Members of a group failed."
 |Severity|Warning
-|Resolution|Members of a group cannot be deleted.Only the whole group can be deleted.
+|Resolution|Members of a group cannot be deleted. Only the whole group can be deleted.
 
 ### HpeWolfram.1.0.MethodNotAllowed
 The specified method for the operation is not allowed.
@@ -3978,13 +4419,13 @@ The specified method for the operation is not allowed.
 |Resolution|Specify a method that is allowed and retry the operation.
 
 ### HpeWolfram.1.0.ModifyDefaultCredentials
-Modify Credentials of Default User
+Modify Credentials of Default User.
 
 | | |
 |:---|:---|
 |Message Format|"Modify Credentials of Default User"
 |Severity|Warning
-|Resolution|Modify Credentials of Default User
+|Resolution|Modify Credentials of Default User.
 
 ### HpeWolfram.1.0.MountFailed
 Mount operation failed.
@@ -4011,7 +4452,7 @@ Mount operation failed for the provided IP.
 |:---|:---|
 |Message Format|"%1"
 |Severity|Warning
-|Resolution|Check issues related to firewall & check if the folder has been mounted properly
+|Resolution|Check issues related to firewall & check if the folder has been mounted properly.
 
 ### HpeWolfram.1.0.MountSuccess
 Mount operation was successful.
@@ -4041,11 +4482,11 @@ No power history samples are available.
 |Resolution|To accumulate power history samples, power on the server, and then wait at least 5 minutes.
 
 ### HpeWolfram.1.0.NotAcceptable
-Indicates that one of the values in the request headears are not accpetable.
+Indicates that one of the values in the request headers are not accpetable.
 
 | | |
 |:---|:---|
-|Message Format|"Indicates that one of the values in the request headears are not accpetable."
+|Message Format|"Indicates that one of the values in the request headers are not accpetable."
 |Severity|Critical
 |Resolution|Provide proper values in the request header and try the operation again.
 
@@ -4173,16 +4614,25 @@ Restore was not successful.
 |:---|:---|
 |Message Format|"Restore was not successful."
 |Severity|Warning
-|Resolution|Verify Password
+|Resolution|Verify Password.
 
 ### HpeWolfram.1.0.RestoreFileNotFound
-Restore Failed, File not found
+Restore Failed, File not found.
 
 | | |
 |:---|:---|
 |Message Format|"Restore Failed as the specified file is not found"
 |Severity|Warning
 |Resolution|Specify a valid backup file and retry the operation.
+
+### HpeWolfram.1.0.ServerGenerationsMismatchInPayload
+The payload for this action can accept either only Gen8/Gen9 servers or Gen10 servers.
+
+| | |
+|:---|:---|
+|Message Format|"The payload for this action can accept either only Gen8/Gen9 servers or Gen10 servers."
+|Severity|Warning
+|Resolution|Seperate out Gen8/Gen9 and Gen10 servers into two requests.
 
 ### HpeWolfram.1.0.SpecialCharacterNotAllowedInUsername
 No special characters except underscore are allowed in the username.
@@ -4200,10 +4650,10 @@ The system properties were correctly changed, but will not take effect until the
 |:---|:---|
 |Message Format|"One or more properties were changed and will not take effect until system is reset."
 |Severity|Warning
-|Resolution|Reset system for the settings to take effect.
+|Resolution|Reset the system for the settings to take effect.
 
 ### HpeWolfram.1.0.TaskCannotBeAborted
-Task cannot be aborted at this time
+Task cannot be aborted at this time.
 
 | | |
 |:---|:---|
@@ -4212,7 +4662,7 @@ Task cannot be aborted at this time
 |Resolution|Task cannot be aborted at this time, wait for the task to be completed.
 
 ### HpeWolfram.1.0.TaskCannotBeContinued
-Task cannot be Continued at this time
+Task cannot be Continued at this time.
 
 | | |
 |:---|:---|
@@ -4221,7 +4671,7 @@ Task cannot be Continued at this time
 |Resolution|No Resolution.
 
 ### HpeWolfram.1.0.TaskCannotBeCreated
-New Tasks cannot be created at this time
+New Tasks cannot be created at this time.
 
 | | |
 |:---|:---|
@@ -4236,7 +4686,7 @@ Completed execution of nmap command for the provided network share IP.
 |:---|:---|
 |Message Format|"%1"
 |Severity|Warning
-|Resolution|Check issues related to firewall & check if the folder has been mounted properly
+|Resolution|Check issues related to firewall & check if the folder has been mounted properly.
 
 ### HpeWolfram.1.0.TestShowMountCompleted
 Completed execution of showmount -e command for the provided network share IP.
@@ -4254,7 +4704,7 @@ USB not mounted.
 |:---|:---|
 |Message Format|"No USB found plugged to the device."
 |Severity|Warning
-|Resolution|Plug in ext2 type USB and perform operation
+|Resolution|Plug in ext2 type USB and perform operation.
 
 ### HpeWolfram.1.0.UnableToModifyDuringSystemPOST
 The value for the property cannot be changed while the computer system BIOS is in POST.

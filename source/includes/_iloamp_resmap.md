@@ -1,78 +1,96 @@
 # Resource Map
 |URI|Type|
 |:---|:---|
-|`/redfish/v1/`|[ServiceRoot](#serviceroot-v1_1_1-serviceroot)|
-|`/redfish/v1/accountservice`|[AccountService](#accountservice-v1_0_4-accountservice)|
-|`/redfish/v1/accountservice/accounts`|Collection of [ManagerAccount](#manageraccount-v1_0_3-manageraccount)|
-|`/redfish/v1/accountservice/accounts/{item}`|[ManagerAccount](#manageraccount-v1_0_3-manageraccount)|
-|`/redfish/v1/accountservice/privilegeregistry`|[PrivilegeRegistry](#privilegeregistry-v1_0_0-privilegeregistry)|
-|`/redfish/v1/accountservice/roles`|Collection of [Role](#role-v1_0_0-role)|
-|`/redfish/v1/accountservice/roles/administrator`|[Role](#role-v1_0_0-role)|
-|`/redfish/v1/accountservice/roles/configmanagerrole`|[Role](#role-v1_0_0-role)|
-|`/redfish/v1/aggregatorservice`|[HpeWfmAggregatorService](#hpewfmaggregatorservice-v1_1_0-hpewfmaggregatorservice)|
-|`/redfish/v1/aggregatorservice/federationgroups`|HpeWfmFederationGroupCollection|
-|`/redfish/v1/aggregatorservice/logservices`|Collection of [LogService](#logservice-v1_0_3-logservice)|
-|`/redfish/v1/aggregatorservice/logservices/alertlog`|[LogService](#logservice-v1_0_3-logservice)|
-|`/redfish/v1/aggregatorservice/logservices/alertlog/entries`|Collection of [LogEntry](#logentry-v1_1_1-logentry)|
-|`/redfish/v1/aggregatorservice/logservices/alertlog/entries/{item}`|[LogEntry](#logentry-v1_1_1-logentry)|
-|`/redfish/v1/aggregatorservice/managedgroups`|HpeWfmManagedGroupCollection|
-|`/redfish/v1/aggregatorservice/managedsystems`|Collection of [HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)|
-|`/redfish/v1/aggregatorservice/managedsystems/{item}`|[HpeWfmManagedSystem](#hpewfmmanagedsystem-v1_0_0-hpewfmmanagedsystem)|
-|`/redfish/v1/aggregatorservice/managedsystems/{item}/reportssummary`|[HpeWfmReportsSummary](#hpewfmreportssummary-v1_0_0-hpewfmreportssummary)|
-|`/redfish/v1/aggregatorservice/managedsystems/{item}/summary`|[HpeWfmSystemSummary](#hpewfmsystemsummary-v1_0_0-hpewfmsystemsummary)|
-|`/redfish/v1/aggregatorservice/systems`|Collection of [ComputerSystem](#computersystem-v1_3_0-computersystem)|
-|`/redfish/v1/chassis`|Collection of [Chassis](#chassis-v1_4_0-chassis)|
-|`/redfish/v1/chassis/8f55097c`|[Chassis](#chassis-v1_4_0-chassis)|
-|`/redfish/v1/chassis/8f55097c/power`|[Power](#power-v1_3_0-power)|
-|`/redfish/v1/chassis/8f55097c/thermal`|[Thermal](#thermal-v1_3_0-thermal)|
-|`/redfish/v1/managers`|Collection of [Manager](#manager-v1_3_0-manager)|
-|`/redfish/v1/managers/iloamplifier`|[Manager](#manager-v1_3_0-manager)|
-|`/redfish/v1/managers/iloamplifier/datetime`|[HpeWfmDateTime](#hpewfmdatetime-v1_0_0-hpewfmdatetime)|
-|`/redfish/v1/managers/iloamplifier/debuglogpolicy`|[HpeWfmDebugLogs](#hpewfmdebuglogs-v1_0_0-hpewfmdebuglogs)|
-|`/redfish/v1/managers/iloamplifier/ethernetinterfaces`|Collection of [EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)|
-|`/redfish/v1/managers/iloamplifier/ethernetinterfaces/{item}`|[EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)|
-|`/redfish/v1/managers/iloamplifier/licenseservice`|Collection of [HpeWfmLicense](#hpewfmlicense-v1_0_0-hpewfmlicense)|
-|`/redfish/v1/managers/iloamplifier/licenseservice/{item}`|[HpeWfmLicense](#hpewfmlicense-v1_0_0-hpewfmlicense)|
-|`/redfish/v1/managers/iloamplifier/logservices`|Collection of [LogService](#logservice-v1_0_3-logservice)|
-|`/redfish/v1/managers/iloamplifier/logservices/devicealertlog`|[LogService](#logservice-v1_0_3-logservice)|
-|`/redfish/v1/managers/iloamplifier/logservices/devicealertlog/entries`|Collection of [LogEntry](#logentry-v1_1_1-logentry)|
-|`/redfish/v1/managers/iloamplifier/logservices/devicealertlog/entries/{item}`|[LogEntry](#logentry-v1_1_1-logentry)|
-|`/redfish/v1/managers/iloamplifier/networkprotocol`|[ManagerNetworkProtocol](#managernetworkprotocol-v1_1_0-managernetworkprotocol)|
-|`/redfish/v1/managers/iloamplifier/securityservice`|[HpeSecurityService](#hpesecurityservice-v1_0_0-hpesecurityservice)|
-|`/redfish/v1/managers/iloamplifier/securityservice/httpscacerts`|HpWfmHttpsCertCollection|
-|`/redfish/v1/managers/iloamplifier/securityservice/httpscert`|[HpeHttpsCert](#hpehttpscert-v1_0_0-hpehttpscert)|
-|`/redfish/v1/managers/iloamplifier/telemetry`|[HpeWfmTelemetryInfo](#hpewfmtelemetryinfo-v1_0_0-hpewfmtelemetryinfo)|
-|`/redfish/v1/registries`|Collection of [MessageRegistryFile](#messageregistryfile-v1_1_0-messageregistryfile)|
-|`/redfish/v1/registries/{item}`|[MessageRegistryFile](#messageregistryfile-v1_1_0-messageregistryfile)|
-|`/redfish/v1/schemas`|Collection of [JsonSchemaFile](#jsonschemafile-v1_0_3-jsonschemafile)|
-|`/redfish/v1/schemas/{item}`|[JsonSchemaFile](#jsonschemafile-v1_0_3-jsonschemafile)|
-|`/redfish/v1/sessionservice`|[SessionService](#sessionservice-v1_1_1-sessionservice)|
-|`/redfish/v1/sessionservice/sessions`|Collection of [Session](#session-v1_0_3-session)|
-|`/redfish/v1/sessionservice/sessions/{item}`|[Session](#session-v1_0_3-session)|
-|`/redfish/v1/systems`|Collection of [ComputerSystem](#computersystem-v1_3_0-computersystem)|
-|`/redfish/v1/systems/{item}`|[ComputerSystem](#computersystem-v1_3_0-computersystem)|
-|`/redfish/v1/systems/{item}/ethernetinterfaces`|Collection of [EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)|
-|`/redfish/v1/systems/{item}/ethernetinterfaces/{item}`|[EthernetInterface](#ethernetinterface-v1_2_0-ethernetinterface)|
-|`/redfish/v1/systems/{item}/firmwareinventory`|SoftwareInventoryCollection|
-|`/redfish/v1/systems/{item}/memory`|Collection of [Memory](#memory-v1_2_0-memory)|
-|`/redfish/v1/systems/{item}/memory/{item}`|[Memory](#memory-v1_2_0-memory)|
-|`/redfish/v1/systems/{item}/pciedevices`|Collection of [PCIeDevice](#pciedevice-v1_1_0-pciedevice)|
-|`/redfish/v1/systems/{item}/pciedevices/{item}`|[PCIeDevice](#pciedevice-v1_1_0-pciedevice)|
-|`/redfish/v1/systems/{item}/pciedevices/{item}/pciefunction`|[PCIeFunction](#pciefunction-v1_1_0-pciefunction)|
-|`/redfish/v1/systems/{item}/processor`|Collection of [Processor](#processor-v1_1_0-processor)|
-|`/redfish/v1/systems/{item}/processor/{item}`|[Processor](#processor-v1_1_0-processor)|
-|`/redfish/v1/systems/{item}/softwareinventory`|SoftwareInventoryCollection|
-|`/redfish/v1/systems/{item}/storage`|Collection of [Storage](#storage-v1_2_0-storage)|
-|`/redfish/v1/systems/{item}/storage/{item}`|[Storage](#storage-v1_2_0-storage)|
-|`/redfish/v1/systems/{item}/storage/{item}/drives/{item}`|[Drive](#drive-v1_2_0-drive)|
-|`/redfish/v1/systems/{item}/storage/{item}/volumes`|VolumeCollection|
-|`/redfish/v1/taskservice`|[TaskService](#taskservice-v1_0_3-taskservice)|
-|`/redfish/v1/taskservice/resetsystemtasks`|Collection of [HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)|
-|`/redfish/v1/taskservice/resetsystemtasks/{item}0000`|[HpeWfmResetSystemTask](#hpewfmresetsystemtask-v1_0_0-hpewfmresetsystemtask)|
-|`/redfish/v1/taskservice/tasks`|Collection of [Task](#task-v1_0_3-task)|
-|`/redfish/v1/taskservice/tasks/{item}0000`|[Task](#task-v1_0_3-task)|
-|`/redfish/v1/updateservice`|[UpdateService](#updateservice-v1_2_0-updateservice)|
-|`/redfish/v1/updateservice/firmwareinventory`|SoftwareInventoryCollection|
-|`/redfish/v1/updateservice/firmwareinventory/{item}`|[SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)|
-|`/redfish/v1/updateservice/softwareinventory`|SoftwareInventoryCollection|
-|`/redfish/v1/updateservice/softwareinventory/{item}`|[SoftwareInventory](#softwareinventory-v1_1_1-softwareinventory)|
+|`/redfish/v1`|[ServiceRoot](#serviceroot-1-3-1)|
+|`/redfish/v1/AccountService`|[AccountService](#accountservice-1-3-0)|
+|`/redfish/v1/AccountService/Accounts`|Collection of [ManagerAccount](#manageraccount-1-1-2)|
+|`/redfish/v1/AccountService/Accounts/{item}`|[ManagerAccount](#manageraccount-1-1-2)|
+|`/redfish/v1/AccountService/PrivilegeRegistry`|[PrivilegeRegistry](#privilegeregistry-1-1-1)|
+|`/redfish/v1/AccountService/Roles`|Collection of [Role](#role-1-2-1)|
+|`/redfish/v1/AggregatorService`|[HpeWfmAggregatorService](#hpewfmaggregatorservice)|
+|`/redfish/v1/AggregatorService/Dashboard/Alerts`|[HpeWfmDashboardAlerts](#hpewfmdashboardalerts)|
+|`/redfish/v1/AggregatorService/Dashboard/Assets`|[HpeWfmDashboardAssets](#hpewfmdashboardassets)|
+|`/redfish/v1/AggregatorService/Dashboard/Compliance`|[HpeWfmDashboardCompliance](#hpewfmdashboardcompliance)|
+|`/redfish/v1/AggregatorService/Dashboard/ServerGroups`|[HpeWfmDashboardServerGroups](#hpewfmdashboardservergroups)|
+|`/redfish/v1/AggregatorService/FederationGroups`|Collection of [HpeWfmFederationGroup](#hpewfmfederationgroup)|
+|`/redfish/v1/AggregatorService/LicenseInfo`|[HpeWfmLicenseInfo](#hpewfmlicenseinfo)|
+|`/redfish/v1/AggregatorService/LogServices`|Collection of [LogService](#logservice-1-1-0)|
+|`/redfish/v1/AggregatorService/LogServices/AlertLog`|[LogService](#logservice-1-1-0)|
+|`/redfish/v1/AggregatorService/LogServices/AlertLog/Entries`|Collection of [LogEntry](#logentry-1-3-0)|
+|`/redfish/v1/AggregatorService/ManagedGroups`|Collection of [HpeWfmManagedGroup](#hpewfmmanagedgroup)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups`|Collection of [HpeWfmManagedServerGroups](#hpewfmmanagedservergroups)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups/{item}`|[HpeWfmManagedServerGroups](#hpewfmmanagedservergroups)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups/{item}/ManagedSystems`|Collection of [HpeWfmManagedSystem](#hpewfmmanagedsystem)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups/{item}/ManagedSystems/{item}`|[HpeWfmManagedSystem](#hpewfmmanagedsystem)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups/{item}/ManagedSystems/{item}`|Collection of [HpeWfmSystemSummary](#hpewfmsystemsummary)|
+|`/redfish/v1/AggregatorService/ManagedServerGroups/{item}/ManagedSystems/{item}/Summary`|[HpeWfmSystemSummary](#hpewfmsystemsummary)|
+|`/redfish/v1/AggregatorService/ManagedSystems`|Collection of [HpeWfmManagedSystem](#hpewfmmanagedsystem)|
+|`/redfish/v1/AggregatorService/ManagedSystems/{item}`|[HpeWfmManagedSystem](#hpewfmmanagedsystem)|
+|`/redfish/v1/AggregatorService/ManagedSystems/{item}`|Collection of [HpeWfmSystemSummary](#hpewfmsystemsummary)|
+|`/redfish/v1/AggregatorService/ManagedSystems/{item}/Summary`|[HpeWfmSystemSummary](#hpewfmsystemsummary)|
+|`/redfish/v1/AggregatorService/ServerGroups`|Collection of [HpeWfmServerGroups](#hpewfmservergroups)|
+|`/redfish/v1/AggregatorService/ServerGroups/{item}`|[HpeWfmServerGroups](#hpewfmservergroups)|
+|`/redfish/v1/AggregatorService/ServerGroups/{item}/Systems`|Collection of [ComputerSystem](#computersystem-1-5-0)|
+|`/redfish/v1/AggregatorService/Systems`|Collection of [ComputerSystem](#computersystem-1-5-0)|
+|`/redfish/v1/Chassis`|Collection of [Chassis](#chassis-1-7-0)|
+|`/redfish/v1/Chassis/{item}`|[Chassis](#chassis-1-7-0)|
+|`/redfish/v1/Chassis/{item}/Power`|[Power](#power-1-5-0)|
+|`/redfish/v1/Chassis/{item}/Thermal`|[Thermal](#thermal-1-4-0)|
+|`/redfish/v1/EventService`|[EventService](#eventservice-1-0-6)|
+|`/redfish/v1/EventService/Subscriptions`|Collection of [EventDestination](#eventdestination-1-3-0)|
+|`/redfish/v1/JobService`|[JobService](#jobservice-1-0-0)|
+|`/redfish/v1/JobService/Jobs`|Collection of [Job](#job-1-0-1)|
+|`/redfish/v1/JobService/Jobs/{item}`|[Job](#job-1-0-1)|
+|`/redfish/v1/JobService/Jobs/{item}/Steps`|Collection of [Job](#job-1-0-1)|
+|`/redfish/v1/JobService/Jobs/{item}/Steps/{item}`|[Job](#job-v1_0_1-job)|
+|`/redfish/v1/JobService/Results/BaselineComplianceJobs/{item}`|[HpeWfmSppComplianceJobResults](#hpewfmsppcompliancejobresults)|
+|`/redfish/v1/JobService/Results/ServerUpdateJobs/{item}`|Collection of [HpeWfmUpdateJobResults](#hpewfmupdatejobresults)|
+|`/redfish/v1/JobService/Results/ServerUpdateJobs/{item}/{item}`|[HpeWfmUpdateJobResults](#hpewfmupdatejobresults)|
+|`/redfish/v1/Managers`|Collection of [Manager](#manager-1-4-0)|
+|`/redfish/v1/Managers/iLOAmplifier`|[Manager](#manager-1-4-0)|
+|`/redfish/v1/Managers/iLOAmplifier/BaselineService`|[HpeWfmBaselineService](#hpewfmbaselineservice)|
+|`/redfish/v1/Managers/iLOAmplifier/BaselineService/Baselines`|Collection of [HpeWfmBaseline](#hpewfmbaseline)|
+|`/redfish/v1/Managers/iLOAmplifier/BaselineService/Baselines/{item}`|[HpeWfmBaseline](#hpewfmbaseline)|
+|`/redfish/v1/Managers/iLOAmplifier/DateTime`|[HpeWfmDateTime](#hpewfmdatetime)|
+|`/redfish/v1/Managers/iLOAmplifier/EthernetInterfaces`|Collection of [EthernetInterface](#ethernetinterface-1-4-0)|
+|`/redfish/v1/Managers/iLOAmplifier/EthernetInterfaces/{item}`|[EthernetInterface](#ethernetinterface-1-4-0)|
+|`/redfish/v1/Managers/iLOAmplifier/InfosightPolicy`|[HpeWfmInfosightAggregation](#hpewfminfosightaggregation)|
+|`/redfish/v1/Managers/iLOAmplifier/LicenseService`|Collection of [HpeWfmLicense](#hpewfmlicense)|
+|`/redfish/v1/Managers/iLOAmplifier/LicenseService/{item}`|[HpeWfmLicense](#hpewfmlicense)|
+|`/redfish/v1/Managers/iLOAmplifier/LogServices`|Collection of [LogService](#logservice-1-1-0)|
+|`/redfish/v1/Managers/iLOAmplifier/LogServices/DeviceAlertLog`|[LogService](#logservice-1-1-0)|
+|`/redfish/v1/Managers/iLOAmplifier/LogServices/DeviceAlertLog/Entries`|Collection of [LogEntry](#logentry-1-3-0)|
+|`/redfish/v1/Managers/iLOAmplifier/NetworkProtocol`|[ManagerNetworkProtocol](#managernetworkprotocol-1-2-0)|
+|`/redfish/v1/Managers/iLOAmplifier/SecurityService`|[HpeSecurityService](#hpesecurityservice)|
+|`/redfish/v1/Managers/iLOAmplifier/SecurityService/HttpsCACerts`|Collection of [HpeWfmHttpsCert](#hpewfmhttpscert)|
+|`/redfish/v1/Managers/iLOAmplifier/SecurityService/HttpsCert`|[HpeHttpsCert](#hpehttpscert)|
+|`/redfish/v1/Registries`|Collection of [MessageRegistryFile](#messageregistryfile-1-1-0)|
+|`/redfish/v1/Registries/{item}`|[MessageRegistryFile](#messageregistryfile-1-1-0)|
+|`/redfish/v1/Schemas`|Collection of [JsonSchemaFile](#jsonschemafile-1-1-0)|
+|`/redfish/v1/Schemas/{item}`|[JsonSchemaFile](#jsonschemafile-1-1-0)|
+|`/redfish/v1/SessionService`|[SessionService](#sessionservice-1-1-3)|
+|`/redfish/v1/SessionService/Sessions`|Collection of [Session](#session-1-1-0)|
+|`/redfish/v1/SessionService/Sessions/{item}`|[Session](#session-1-1-0)|
+|`/redfish/v1/Systems`|Collection of [ComputerSystem](#computersystem-1-5-0)|
+|`/redfish/v1/Systems/{item}`|[ComputerSystem](#computersystem-1-5-0)|
+|`/redfish/v1/Systems/{item}/EthernetInterfaces`|Collection of [EthernetInterface](#ethernetinterface-1-4-0)|
+|`/redfish/v1/Systems/{item}/EthernetInterfaces/{item}`|[EthernetInterface](#ethernetinterface-1-4-0)|
+|`/redfish/v1/Systems/{item}/FirmwareInventory`|Collection of [SoftwareInventory](#softwareinventory-1-2-0)|
+|`/redfish/v1/Systems/{item}/Memory`|Collection of [Memory](#memory-1-5-0)|
+|`/redfish/v1/Systems/{item}/Memory/{item}`|[Memory](#memory-1-5-0)|
+|`/redfish/v1/Systems/{item}/Processor`|Collection of [Processor](#processor-1-3-0)|
+|`/redfish/v1/Systems/{item}/Processor/{item}`|[Processor](#processor-1-3-0)|
+|`/redfish/v1/Systems/{item}/SoftwareInventory`|Collection of [SoftwareInventory](#softwareinventory-1-2-0)|
+|`/redfish/v1/Systems/{item}/Storage`|Collection of [Storage](#storage-1-4-0)|
+|`/redfish/v1/Systems/{item}/Storage/{item}`|[Storage](#storage-1-4-0)|
+|`/redfish/v1/Systems/{item}/Storage/{item}/Drives/{item}`|[Drive](#drive-1-4-0)|
+|`/redfish/v1/Systems/{item}/Storage/{item}/Volumes`|Collection of [Volume](#volume-1-0-3)|
+|`/redfish/v1/Systems/{item}/Storage/{item}/Volumes/{item}`|[Volume](#volume-1-0-3)|
+|`/redfish/v1/TaskService`|[TaskService](#taskservice-1-1-1)|
+|`/redfish/v1/TaskService/Tasks`|Collection of [Task](#task-1-2-0)|
+|`/redfish/v1/TaskService/Tasks/{item}0000`|[Task](#task-1-2-0)|
+|`/redfish/v1/UpdateService`|[UpdateService](#updateservice-1-2-1)|
+|`/redfish/v1/UpdateService/FirmwareInventory`|Collection of [SoftwareInventory](#softwareinventory-1-2-0)|
+|`/redfish/v1/UpdateService/FirmwareInventory/{item}`|[SoftwareInventory](#softwareinventory-1-2-0)|
+|`/redfish/v1/UpdateService/SoftwareInventory`|Collection of [SoftwareInventory](#softwareinventory-1-2-0)|
+|`/redfish/v1/UpdateService/SoftwareInventory/{item}`|[SoftwareInventory](#softwareinventory-1-2-0)|

@@ -2,10 +2,10 @@
 
 Each resource in the API has a "type" that defines its properties.  See the Redfish specification for `@odata.type` for details.
 
-This section defines the supported types and lists the typical instances of each.  Because this API document is applicable to iLO Amplifier managing various HPE servers, you may find variations such as:
+This section defines the supported types and lists the typical instances of each type.  Because this API document is applicable to iLO Amplifier Pack managing various HPE servers, you may find variations such as:
 
-* properties implemented on one type of server and not another
-* resources that are read only on one type of server and not another
+* Properties implemented on one type of server and not another
+* Resources that are read on only one type of server and not another
 * The number of resources of a particular type (e.g. multiple compute nodes or enclosing chassis)
 
 ## Collections
@@ -30,7 +30,7 @@ Many resource types in the API are members of "collections."  Collections are gr
 
 Redfish does not define a generic collection "type" (@odata.type) but all collections are identical in structure.  A `ComputerSystemCollection` is identical in structure to a `ChassisCollection` although they have slightly different names.  Typically, collection types are suffixed with the word collection and are recognizable by the presence of the `Members` array of links.
 
-Collections may be GET-only that may not be added to or removed from.  Examples of GET-only collections are the Systems collection at `/redfish/v1/systems/`.  In a typical systems collection describing physical hardware, it wouldn't make sense to be able to create or remove members using POST or DELETE.
+Collections may be GET-only in the sense that they may not be added to or removed from.  Examples of GET-only collections are the Systems collection at `/redfish/v1/systems/`.  In a typical systems collection describing physical hardware, it wouldn't make sense to be able to create or remove members using POST or DELETE.
 
 Other collections may be editable.  Examples of these might be the Accounts collection at `/redfish/v1/accountservice/accounts`.  The API supports the addition or removal of user accounts.  To add a new member to an editable collection, perform an HTTP POST to the collection resource with a body consisting of the required JSON properties needed to create a new member (this does not necessarily require you to POST every property because many may take a unique service-assigned value or a default value.)
 

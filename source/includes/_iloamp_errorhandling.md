@@ -29,11 +29,11 @@
 }
 ```
 
-Error messages appear in iLO Amplifier Pack RESTful API as an immediate response to an HTTP operation. 
+Error messages appear in the iLO Amplifier Pack RESTful API as an immediate response to an HTTP operation. 
 
 All error cases use a basic error JSON structure called `ExtendedInfo`.  The most important property in `ExtendedInfo` is `MessageId`, a string containing a lookup key into a message registry.
 
-`MessageId` helps to keep the iLO Amplifier Pack service small by keeping much of the explanatory text for an error out of the code. Instead, iLO Amplifier Pack supplies an `ExtendedInfo` response, where the `MessageId` provides enough information so that you can look up more details from another file.
+`MessageId` helps to keep the iLO Amplifier Pack service small by keeping much of the explanatory text for an error out of the code. Instead, iLO Amplifier Pack supplies an `ExtendedInfo` response, where the `MessageId` provides enough information for you to look up more details from another file.
 
 For example, if you `POST` to the iLO Amplifier Pack license service to install an iLO Amplifier Pack license, but you supply an incorrect `LicenceKey` string, iLO Amplifier Pack responds with an error similar to the following:
 

@@ -4,13 +4,13 @@
 
 The RESTful API for HPE iLO Amplifier Pack is available on version 1.25 or later.
 
-To access the RESTful API, you need an HTTPS-capable client, such as a web browser with the Postman REST Client plugin extension or cURL (a popular command line HTTP utility).
+To access the RESTful API, you need an HTTPS-capable client, such as a web browser with a REST Client plugin extension, or a Desktop REST Client application (such as Postman), or cURL (a popular command line HTTP utility).
 
 ## Using RESTful Interface with cURL and Python
 
-The Python Redfish library is a generic Redfish client library developed by DMTF and is available at [https://github.com/DMTF/python-redfish-library](https://github.com/DMTF/python-redfish-library). It's main purpose is to simplify the communication to any RESTful API. REST (Representational State Transfer) is a web based software architectural style consisting a set of constraints that focus on a system's resource. Redfish library performs the basic HTTP operations GET, POST, PUT, PATCH and DELETE on resources using the HATEOS (Hypermedia as the Engine of Application) REST architecture. Most API's allow the clients to manage and interact with a fixed URL and several URIs.
+The Python Redfish library is a generic Redfish client library developed by DMTF and is available at [https://github.com/DMTF/python-redfish-library](https://github.com/DMTF/python-redfish-library). It's main purpose is to simplify the communication to any RESTful API. REST (Representational State Transfer) is a web based software architectural style consisting of a set of constraints that focus on a system's resource. The Redfish library performs the basic HTTP operations GET, POST, PUT, PATCH and DELETE on resources using the HATEOS (Hypermedia as the Engine of Application State) REST architecture. Most API's allow the clients to manage and interact with a fixed URL and several URIs.
 
-cURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. cURL is available at [http://curl.haxx.se/](http://curl.haxx.se/). Note that all the cURL examples will use a flag `-insecure`. This causes cURL to bypass validation of the HTTPS certificate. In real use iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the `-L` option to force cURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.
+cURL is a command line utility available for many Operating Systems that enables easy access to the RESTful API. cURL is available at [http://curl.haxx.se/](http://curl.haxx.se/). Note that all the cURL examples will use a flag `-insecure`. This causes cURL to bypass validation of the HTTPS certificate. In actual usage, iLO Amplifier Pack should be configured to use a user-supplied certificate and this option is not necessary. Notice also that we use the `-L` option to force cURL to follow HTTP redirect responses. If iLO Amplifier Pack changes URI locations for various items, it can indicate to the client where the new location is and automatically follow the new link.
 
 ## Example REST API operation with cURL and Python
 
@@ -34,7 +34,7 @@ response = REDFISH_OBJ.get("/redfish/v1")
 # Print out the response
 sys.stdout.write("%s\n" % response)
 ```
-> The above command (or program) returns HTTP response headers and JSON response body structured like this:
+> The above command (or program) returns HTTP response headers and a JSON response body structured like this:
 
 ```http
 HTTP/1.1 200 OK
@@ -122,7 +122,7 @@ Let's perform our first GET operation using the RESTful API. We will do an HTTP 
 
 Our GET operation will be against a resource at `/redfish/v1/` (with a trailing slash):
 
-It is best to perform this initial GET with a tool like the CURL or the Postman REST Client tool. Later you will want to do this with your own scripting code. The options used with the CURL command are:
+It is best to perform this initial GET with a tool like CURL or the Postman REST Client tool. Later you will want to do this with your own scripting code. The options used with the CURL command are:
 
 * `-i` returns HTTP response headers
 * `--insecure` bypasses TLS/SSL certification verification
@@ -148,18 +148,18 @@ Return Status | Description
 2xx | Successful operation.
 308 | The resource has moved
 400 | Bad Request -- Request is invalid.
-401 | Unauthorized -- Provided credentials is incorrect or is not authorized to perform the operation.
+401 | Unauthorized -- Provided credentials are incorrect or is not authorized to perform the operation.
 403 | Forbidden -- The request is hidden for administrators only.
 404 | Not Found -- The specified request or URI could not be found.
 405 | Method Not Allowed -- The requested method is not allowed.
 406 | Not Acceptable -- The requested format is not correct.
 410 | Gone -- The requested URI has been removed.
 429 | Too Many Requests -- Too many requests to the server! Slow down!
-500 | Internal Server Error -- A problem occured with in the server. Try again later.
+500 | Internal Server Error -- A problem occured within the server. Try again later.
 503 | Service Unavailable -- Temporarily offline for maintenance. Please try again later.
 
 <aside class="notice">
-NOTE:	If an error occurs, indicated by a return code 4xx or 5xx, an ExtendedError or ExtendedInfo JSON response is returned. The expected resource is not returned.
+NOTE:	If an error indicated by a return code 4xx or 5xx occurs, an ExtendedError or ExtendedInfo JSON response is returned. The expected resource is not returned.
 </aside>
 
 
