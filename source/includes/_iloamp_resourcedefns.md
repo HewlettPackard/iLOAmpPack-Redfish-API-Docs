@@ -376,7 +376,9 @@ This schema defines a computer system and its respective properties.  A computer
 | } |   |   |
 | **HostedServices** { | object | The services that this computer system supports. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Oem** {} | object | Oem extension object. See the *Resource* schema for details on this property. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** | <br><br>*read-only* | A reference to a collection of storage services supported by this computer system. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** { | object | A reference to a collection of storage services supported by this computer system. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | } |   |   |
 | **HostingRoles** [ ] | array (string<br>(enum))<br><br>*read-only* | The hosing roles that this computer system supports. The enumerations of HostingRoles specify different features that the hosting ComputerSystem supports. *For the possible property values, see HostingRoles in Property Details.* |
 | **HostName** | string<br><br>*read-write<br>(null)* | The DNS Host Name, without any domain information. |
@@ -1379,6 +1381,89 @@ This is the schema definition for a HpeWfmActivityLogs.
 (This action takes no parameters.)
 
 
+## HpeWfmAddOnServices
+
+This is the schema definition for HpeWfmAddOnServices.
+
+|     |     |     |
+| --- | --- | --- |
+| **AddOnServiceId** | string<br><br>*read-write* | Describes the ID of the add-on service available in iLO Amplifier. |
+| **AddOnServiceVersion** | string<br><br>*read-only* | This property contains the add-on service version as defined by the developer for the associated service. |
+| **Description** | string<br><br>*read-only* | Brief description about the add-on service available in iLO Amplifier |
+| **Id** | <br><br>*read-write* |  |
+| **Name** | string<br><br>*read-only* | Describes the name of the add-on service available in iLO Amplifier. |
+| **Oem** | <br><br>*read-write* |  |
+| **PackageName** | string<br><br>*read-only* | Describes the package name of the add-on service available in iLO Amplifier. |
+| **Status** {} | object | This type describes the status and health of a resource and its children. See the *Resource* schema for details on this property. |
+
+## HpeWfmAddOnServicesManager
+
+This is the schema definition for HpeWfmAddOnServicesManager.
+
+|     |     |     |
+| --- | --- | --- |
+| **AddOnServiceAvailableVersion** | string<br><br>*read-only* | Describes the new version of the add-on service available in iLO Amplifier. |
+| **AddOnServiceId** | string<br><br>*read-only* | Describes the ID of the add-on service available in iLO Amplifier. |
+| **AddOnServiceVersion** | string<br><br>*read-only* | Describes the installed version of the add-on service in iLO Amplifier. |
+| **BinaryPath** | string<br><br>*read-only* | The path where the binary to be used for the installation of the add-on service is available in iLO Amplifier. |
+| **Description** | string<br><br>*read-only* | Brief description about the add-on service available in iLO Amplifier |
+| **Id** | <br><br>*read-write* |  |
+| **InstallationStatus** | string<br>(enum)<br><br>*read-only* | Describes the current installation status of the add-on service. *For the possible property values, see InstallationStatus in Property Details.* |
+| **MenuHtmlRef** | string<br><br>*read-only* | Describes the menu html reference and js file of the add-on service installed in iLO Amplifier |
+| **MenuName** | string<br><br>*read-only* | Describes the menu name of the add-on service installed in iLO Amplifier |
+| **Name** | string<br><br>*read-only* | Describes the name of the add-on service available in iLO Amplifier. |
+| **Oem** | <br><br>*read-write* |  |
+| **PackageName** | string<br><br>*read-only* | Describes the package name of the add-on service available in iLO Amplifier. |
+| **Status** {} | object | This type describes the status and health of a resource and its children. See the *Resource* schema for details on this property. |
+
+### Actions
+
+### Reset
+
+
+The reset action to reset the specified add-on service.
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+### Start
+
+
+The start action to start the specified add-on service.
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+### Stop
+
+
+The stop action to start the specified add-on service.
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+### Property Details
+
+### InstallationStatus:
+
+
+Describes the current installation status of the add-on service.
+
+| string |
+| --- |
+| Installed | 
+| NotInstalled | 
+
+
 ## HpeWfmAggregatorService
 
 This is the schema definition for HpeWfmAggregatorService.
@@ -1765,6 +1850,10 @@ This is the schema definition for HpeWfmComputerSystem.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Count** | integer<br><br>*read-only<br>(null)* | This indicates the total count of servers of a server model. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name** | string<br><br>*read-only<br>(null)* | This indicates the server model's name. |
 | } ] |   |   |
+| **ServerPlatforms** [ { | array |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Count** | integer<br><br>*read-only<br>(null)* | This indicates the total count of servers of a server platform. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name** | string<br><br>*read-only<br>(null)* | This indicates the name of a server platform. |
+| } ] |   |   |
 
 ## HpeWfmDashboardCompliance
 
@@ -1955,6 +2044,11 @@ This is the schema definition for a HpeWfmEthernetNetworkInterface.
 | **HostName** | string<br><br>*read-write* | The management processor host name. |
 | **Id** | <br><br>*read-write* |  |
 | **IPv4** { | object | The Management Processor IPv4 Configuration Settings. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CurrentStaticRoutes** [ { | array | The current configured IPv4 static routes. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Destination** | string<br><br>*read-only* | An IPv4 static route destination. Only writeable when use of DHCPv4-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv4. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Gateway** | string<br><br>*read-only* | An IPv4 static route gateway. Only writeable when use of DHCPv4-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv4. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SubnetMask** | string<br><br>*read-only* | An IPv4 static route subnet mask. Only writeable when use of DHCPv4-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv4. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DDNSRegistration** | boolean<br><br>*read-write* | Determines whether DDNS registration is enabled. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DNSSearch** { | object |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableSettings** | string<br><br>*read-only* | Currently configured IPv4 DNS Domain servers. |
@@ -1975,6 +2069,11 @@ This is the schema definition for a HpeWfmEthernetNetworkInterface.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**WINSServers** [ ] | array (string)<br><br>*read-write* | Currently configured WINS servers in order of descending preference. Static values when not configured to use DHCPv4-supplied WINS servers; otherwise this property is read-only indicating the values are provided by DHCPv4 |
 | } |   |   |
 | **IPv6** { | object | The Management Processor IPv6 Configuration Settings. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CurrentStaticRoutes** [ { | array | The current configured IPv6 static routes. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Destination** | string<br><br>*read-only* | An IPv6 static route destination. Only writeable when use of DHCPv6-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv6. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Gateway** | string<br><br>*read-only* | An IPv6 static route gateway. Only writeable when use of DHCPv6-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv6. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**PrefixLength** | integer<br><br>*read-only* | Prefix Length |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DNSSearch** { | object |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableSettings** | string<br><br>*read-only* | Currently configured IPv6 DNS Domain servers. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CurrentSettings** | string<br><br>*read-write* | Currently configured IPv6 DNS Domain servers. |
@@ -1983,6 +2082,11 @@ This is the schema definition for a HpeWfmEthernetNetworkInterface.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv6Addresses** [ { | array | The IPv6 connection characteristics for this interface. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Address** | string<br><br>*read-write<br>(null)* | The IPv6 Address. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Gateway** | string<br><br>*read-write<br>(null)* | The IPv6 gateway for this address. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**PrefixLength** | integer<br><br>*read-write<br>(null)* | Prefix Length |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StaticRoutes** [ { | array | The current configured IPv6 static routes. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Destination** | string<br><br>*read-write<br>(null)* | An IPv6 static route destination. Only writeable when use of DHCPv6-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv6. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Gateway** | string<br><br>*read-write<br>(null)* | An IPv6 static route gateway. Only writeable when use of DHCPv6-supplied static routes is disabled; otherwise this property is read-only indicating the value is provided by DHCPv6. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**PrefixLength** | integer<br><br>*read-write<br>(null)* | Prefix Length |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
 | } |   |   |
@@ -2040,6 +2144,7 @@ This is the schema definition for HpeWfmEventDestinationExt.
 | --- | --- | --- |
 | **DeliveryRetryAttempts** | integer<br><br>*read-write* | Specifies number of delivery retry attempts that will be made while forwarding events. |
 | **DeliveryRetryIntervalSeconds** | integer<br><br>*read-write* | Specifies number of seconds after which a retry will be made for forwarding the events. |
+| **EnableActivityAlerts** | boolean<br><br>*read-write* | Flag to be enabled to allow forwarding of iLO Amplifier Alerts to the subscriber. By default, it is set to false. |
 | **NotificationCategory** { | object | The properties of the object specify the category of alerts for which the events will be sent. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Administration** | boolean<br><br>*read-write* | All alerts related to Administration are sent to the configured subscription destination if it is set to true. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**GeneralFailure** | boolean<br><br>*read-write* | All alerts related to General Failure are sent to the configured subscription destination if it is set to true. |
@@ -2105,9 +2210,9 @@ This is the schema definition for HpeWfmInfosightAggregation.
 
 |     |     |     |
 | --- | --- | --- |
-| **AHSDownloadErrorCount** | integer<br><br>*read-only* | This is the number of errors that happened during AHS Downloads for all servers in the current cycle (24 hours). |
+| **AHSDownloadErrorCount** | integer<br><br>*read-only* | This is the number of errors that happened during AHS Downloads for all servers in the current cycle(24 hours). |
 | **AHSScheduleStartTime** | integer<br><br>*read-write* | This is the AHS Schedule Start time in seconds. |
-| **AHSUploadErrorCount** | integer<br><br>*read-only* | This is the number of errors that happened during AHS Uploads for all servers in the current cycle (24 hours). |
+| **AHSUploadErrorCount** | integer<br><br>*read-only* | This is the number of errors that happened during AHS Uploads for all servers in the current cycle(24 hours). |
 | **ApplianceSerialNumber** | string<br><br>*read-only<br>(null)* | This is the unqiue iLO Amplifier Serial Number. |
 | **AverageAHSFileSize** | integer<br><br>*read-only* | The average file size in KB of an AHS file in the current cyle for all servers (in a day). |
 | **ClaimId** | string<br><br>*read-only<br>(null)* | Claim Id from the claim token |
@@ -2408,7 +2513,7 @@ Server group jobs.
 ### ServerUpdateJobs
 
 
-Server Update jobs.
+Server Updatejobs.
 
 **URIs**:
 
@@ -2482,7 +2587,7 @@ This is the schema definition for HpeWfmLicense.
 | **License** | string<br><br>*read-only* | Describes the name of the license installed on management processor. |
 | **LicensedNoOfServers** | integer<br><br>*read-only* | Indicates the number of servers that can be managed. |
 | **LicenseFirstName** | string<br><br>*read-only* | First name. |
-| **LicenseKey** | string<br><br>*read-write<br>(null)* | The installed license key. Will be set to NULL on read. |
+| **LicenseKey** | string<br><br>*read-write<br>(null)* | The installed license key.Will be set to NULL on read. |
 | **LicenseLastName** | string<br><br>*read-only* | Last name. |
 | **LicenseMailID** | string<br><br>*read-only* | Users email ID . |
 | **LicenseOrganization** | string<br><br>*read-only* | Organization name. |
@@ -2831,6 +2936,20 @@ This is the schema definition for HpeWfmManagedSystem.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Model** | string<br><br>*read-only<br>(null)* | The processor model for the primary or majority of processors in this system. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Status** | <br><br>*read-write* |  |
 | } |   |   |
+| **ServerGroups** [ ] | array (string)<br><br>*read-only* |  |
+| **SmartStorageBatterySummary** [ { | array | This object describes the Smart Storage Battery details of the system. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ChargeLevelPercent** | integer<br><br>*read-only* | Charge Level Percent of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**FirmwareVersion** | string<br><br>*read-only* | Firmware Version of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HealthStatus** | string<br>(enum)<br><br>*read-only* | This represents the health status of the system *For the possible property values, see HealthStatus in Property Details.* |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Index** | integer<br><br>*read-only* | Index of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**MaximumCapWatts** | integer<br><br>*read-only* | Maximum Capacity of Smart Storage Battery in Watts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Model** | string<br><br>*read-only* | Model name of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ProductName** | string<br><br>*read-only* | Product name of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**RemainingChargeTimeSeconds** | integer<br><br>*read-only* | Remaining Charge Time Seconds of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SerialNumber** | string<br><br>*read-only* | Serial Number of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SparePartNumber** | string<br><br>*read-only* | Spare Part Number of Smart Storage Battery. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**State** | string<br><br>*read-only* | Indicates the State of the System. |
+| } ] |   |   |
 | **SoftwareInventory** [ { | array |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Description** | string<br><br>*read-only* | Indicates the description about the Software. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name** | string<br><br>*read-only* | Indicates the Name of the Software. |
@@ -2943,6 +3062,17 @@ Other flags.
 | REQUEST_SYSTEM_WARM_BOOT | 
 | DEFERRED_AUX_PWR_CYCLE | 
 
+### HealthStatus:
+
+
+This represents the health status of the system
+
+| string | Description |
+| --- | --- |
+| Critical | A critical condition exists that requires immediate attention |
+| OK | Normal |
+| Warning | A condition exists that requires attention |
+
 ### ImageType:
 
 
@@ -3052,6 +3182,9 @@ This is the schema definition for HpeWfmManagerExt.
 | **Id** | <br><br>*read-write* |  |
 | **License** | <br><br>*read-write* |  |
 | **Links** { | object | The links array contains the links to other resources that are related to this resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AddOnServicesManager** { | object | The URI for the add-on services manager resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BaselineService** { | object | The URI for this security service resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
@@ -3064,7 +3197,7 @@ This is the schema definition for HpeWfmManagerExt.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LicenseService** { | object | The URI for this license service resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LoggerPolicy** { | object | Reference to a resource of Debug Logger Policy. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LoggerPolicy** { | object | Reference to a resource of Debug LoggerPolicy. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SecurityService** { | object | The URI for this security service resource. |
@@ -3248,7 +3381,7 @@ This is the schema definition for HpeWfmManualRecoveryJobResults.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableVersion** | string<br><br>*read-write* | The component version available for update. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentDescription** | string<br><br>*read-write* | The component description of the install component. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentName** | string<br><br>*read-write* | The component name of the install component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentType** | string<br><br>*read-write* | The component type (Firmware/Driver etc.) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentType** | string<br><br>*read-write* | The component type(Firmware/Driver etc.) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CurrentVersion** | string<br><br>*read-write* | The component current version. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DependencyFailed** | boolean<br><br>*read-write* | The component install dependency failed flag. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DeploymentResult** | string<br><br>*read-write* | The result after the deployment. |
@@ -3492,6 +3625,7 @@ This is the schema definition for HpeWfmSoftwareInventory.
 | **DeviceContext** | string<br><br>*read-only* | The Device Context of the firmware. |
 | **Id** | <br><br>*read-write* |  |
 | **Name** | <br><br>*read-write* |  |
+| **OSType** | string<br><br>*read-only* | The OS type for the driver/software. |
 
 ## HpeWfmSppComplianceJobResults
 
@@ -3563,6 +3697,7 @@ This is the schema definition for HpeWfmSystemSummary.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OfflineFirmwareUpdate** | string<br><br>*read-only* | The error message for Offline Firmware Update. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OnlineFirmwareUpdate** | string<br><br>*read-only* | The error message for Online Firmware Update. |
 | } |   |   |
+| **AllowActions** | boolean<br><br>*read-only* | Indicates if the action is allowed on a server. |
 | **AMSStatus** | string<br><br>*read-only* | Gives the status of AMS. |
 | **ChassisType** | string<br><br>*read-only* | The chassis type. |
 | **Description** | <br><br>*read-write* |  |
@@ -3599,6 +3734,7 @@ This is the schema definition for HpeWfmSystemSummary.
 | **ManualRecoveryFlag** | boolean<br><br>*read-only* | Indicates if the Server is set for Manual or Automatic Recovery. |
 | **Manufacturer** | string<br><br>*read-only* | The manufacturer of the system. |
 | **MasterManagerType** | string<br><br>*read-only* | The type of the manager. |
+| **MasterManagerTypeUrl** | string<br><br>*read-only* | The url of the master manager type. |
 | **Model** | string<br><br>*read-only* | The model information that the manufacturer uses to refer to this system. |
 | **Name** | <br><br>*read-write* |  |
 | **NumOfGrpsNodeBelongs** | integer<br><br>*read-only* | Gives the number of Federation Groups this iLO is part of. |
@@ -3610,6 +3746,7 @@ This is the schema definition for HpeWfmSystemSummary.
 | **RecoveryStatus** | string<br><br>*read-only* | Indicates the Status of the System. If the recovery install set is applied or not,  and its status once recovery starts. |
 | **SecurityState** | string<br><br>*read-only* | Indicates the Security State of the System. |
 | **SerialNumber** | string<br><br>*read-only* | The system serial number. |
+| **ServerPlatformType** | string<br>(enum)<br><br>*read-only* | This property is the server platform type for this resource. *For the possible property values, see ServerPlatformType in Property Details.* |
 | **ServerUpdateInfo** { | object | This object describes the status of the update operations. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BaselineId** | integer<br><br>*read-only* | The baseline that is applied for the server update. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BaselineName** | string<br><br>*read-only* | The name of the baseline that the server was staged with. |
@@ -3677,6 +3814,18 @@ This is the current power state of the system.
 | Off | 
 | Unknown | 
 | Reset | 
+
+### ServerPlatformType:
+
+
+This property is the server platform type for this resource.
+
+| string |
+| --- |
+| Edgeline | 
+| Proliant | 
+| Apollo | 
+| Synergy | 
 
 ### State:
 
@@ -3767,7 +3916,7 @@ This is the schema definition for HpeWfmUpdateJobResults.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableVersion** | string<br><br>*read-write* | The component version available for update. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentDescription** | string<br><br>*read-write* | The component description of the install component. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentName** | string<br><br>*read-write* | The component name of the install component. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentType** | string<br><br>*read-write* | The component type (Firmware/Driver etc.) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ComponentType** | string<br><br>*read-write* | The component type(Firmware/Driver etc.) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CurrentVersion** | string<br><br>*read-write* | The component current version. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DependencyFailed** | boolean<br><br>*read-write* | The component install dependency failed flag. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DeploymentResult** | string<br><br>*read-write* | The result after the deployment. |
@@ -3793,6 +3942,12 @@ This is the schema definition for HpeWfmUpdateService.
 
 |     |     |     |
 | --- | --- | --- |
+| **AddOnServiceStatusInfo** { | object | Status of add-on service installation and uninstallation action |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ProgressPercent** | integer<br><br>*read-only* | The progress percentage of add-on service installation/uninstallation action. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**State** | string<br><br>*read-only* | The state of add-on service installation/ uninstallation action. |
+| } |   |   |
+| **AddOnServicesUpdatesAvailable** | boolean<br><br>*read-only* | Indicates if add-on services updates are available. |
+| **AddOnServicesUpdatesDismissed** | boolean<br><br>*read-write* | Indicates if add-on services updates have been disabled by the user. |
 | **AutoUpdateFeatureEnabled** | boolean<br><br>*read-write* | Indicates if Automatic Self Update of iLO Amplifier Pack Feature is enabled by the user. |
 | **AutoUpdatePackageInfo** { | object | The Automatic Self Update Firmware Package Details. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BuildNumber** | integer<br><br>*read-only* | The build number of the firmware. |
@@ -3817,6 +3972,28 @@ This is the schema definition for HpeWfmUpdateService.
 | **State** | string<br>(enum)<br><br>*read-only* | The State of firmware update. *For the possible property values, see State in Property Details.* |
 
 ### Actions
+
+### AddOnServiceInstallation
+
+
+
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+### AddOnServiceUnInstallation
+
+
+The uninstall action to uninstall the specified add-on service.
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
 
 ### CheckForUpdates
 
@@ -6098,8 +6275,12 @@ This object represents the root Redfish service.
 | **SessionService** { | object | This is a link to the Sessions Service. See the *SessionService* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to a SessionService resource. See the Links section and the *SessionService* schema for details. |
 | } |   |   |
-| **StorageServices** | <br><br>*read-only* | A link to a collection of all storage service entities. |
-| **StorageSystems** | <br><br>*read-only* | This is a link to a collection of storage systems. |
+| **StorageServices** { | object | A link to a collection of all storage service entities. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
+| } |   |   |
+| **StorageSystems** { | object | This is a link to a collection of storage systems. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
+| } |   |   |
 | **Systems** { | object | This is a link to a collection of Systems. Contains a link to a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to Collection of *ComputerSystem*. See the ComputerSystem schema for details. |
 | } |   |   |
@@ -6223,7 +6404,7 @@ This schema defines a storage subsystem and its respective properties.  A storag
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Endpoints** [ { } ] | array (object) | An array of references to the endpoints that connect to this controller. This is the schema definition for the Endpoint resource. It represents the properties of an entity that sends or receives protocol defined messages over a transport. See the *Endpoint* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Oem** {} | object | Oem extension object. See the *Resource* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** [ { | array | An array of references to the StorageServices that connect to this controller. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br><br>*read-write* |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Location** {} | object | This type describes the location of a resource. See the *Resource* schema for details on this property. |

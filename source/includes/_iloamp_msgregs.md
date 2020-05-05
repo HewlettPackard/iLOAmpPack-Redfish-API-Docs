@@ -647,6 +647,15 @@ The AHS Downlaod Job Failed.
 |Severity|Warning
 |Resolution|Retry the operation.
 
+### HpeRedfishMessage.1.0.ApplyServerConfigurationFailed
+Apply server configuration job Failed.
+
+| | |
+|:---|:---|
+|Message Format|" Apply server configuration job failed. %1."
+|Severity|Warning
+|Resolution|Retry the operation.
+
 ### HpeRedfishMessage.1.0.ConfigBaseLineValidationFailed
 Configuration Baseline Validation Failed
 
@@ -655,6 +664,24 @@ Configuration Baseline Validation Failed
 |Message Format|"Server configuration baseline validation job failed. %1"
 |Severity|OK
 |Resolution|None.
+
+### HpeRedfishMessage.1.0.ETagVerificationFailed
+Unable to verify ETag
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed. %2."
+|Severity|Warning
+|Resolution|Retry the operation.
+
+### HpeRedfishMessage.1.0.ETagVerificationPartiallyCompleted
+Apply configuration baseline completed partially
+
+| | |
+|:---|:---|
+|Message Format|"%1 job partially completed. %2"
+|Severity|OK
+|Resolution|Verify the configuration settings manually.
 
 ### HpeRedfishMessage.1.0.EmptySerialNumberorProductID
 Serial Number or Product ID is blank.
@@ -718,6 +745,24 @@ One View Managed Server
 |Message Format|"%1 failed.Server is HPE OneView managed."
 |Severity|OK
 |Resolution|None.
+
+### HpeRedfishMessage.1.0.InsufficientPrivilege
+Job failure message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed due to insufficient privilege."
+|Severity|Warning
+|Resolution|Retry the operation with sufficent privileges.
+
+### HpeRedfishMessage.1.0.InvalidCredentials
+Server Credentials are not valid
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because credentials used for server are invalid."
+|Severity|Warning
+|Resolution|Retry the operation with correct credentials.
 
 ### HpeRedfishMessage.1.0.InvalidSUTMode
 Invalid SUT Mode
@@ -797,6 +842,24 @@ The job failure message
 | | |
 |:---|:---|
 |Message Format|"%1 job failed because %2."
+|Severity|Warning
+|Resolution|Retry the operation.
+
+### HpeRedfishMessage.1.0.JobExceptionInternalError
+The job failure message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because of an internal error."
+|Severity|Warning
+|Resolution|Retry the operation.
+
+### HpeRedfishMessage.1.0.JobExceptionWithStatus
+The job failure message
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed. %2."
 |Severity|Warning
 |Resolution|Retry the operation.
 
@@ -881,6 +944,15 @@ Exception for Node Address.
 |Severity|OK
 |Resolution|None.
 
+### HpeRedfishMessage.1.0.RecoveryEventNotReceived
+Recovery Job failed because the recovery event was not received from iLO
+
+| | |
+|:---|:---|
+|Message Format|"%1 failed because the recovery event was not received from iLO"
+|Severity|OK
+|Resolution|None.
+
 ### HpeRedfishMessage.1.0.SUTModeNotSupported
 SUT Mode is not supported
 
@@ -926,6 +998,15 @@ SUT Update Request failed
 |Severity|Warning
 |Resolution|Retry the SUT update request.
 
+### HpeRedfishMessage.1.0.ServerGroupNotResponding
+Credentials of servers in group are either incorrect or servers are not responding
+
+| | |
+|:---|:---|
+|Message Format|"%1 job failed because either credentials of servers in the group are incorrect or servers are not responding."
+|Severity|Warning
+|Resolution|Retry the operation with correct credentials.
+
 ### HpeRedfishMessage.1.0.ServerInventoryNotFound
 Server Inventory details Not Exist
 
@@ -953,12 +1034,39 @@ System is up to date
 |Severity|OK
 |Resolution|None.
 
+### HpeRedfishMessage.1.0.TelemetryJobCompleted
+Telemetry Job completion message
+
+| | |
+|:---|:---|
+|Message Format|"%1 completed"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.TelemetryJobException
+Telemetry Job exception message
+
+| | |
+|:---|:---|
+|Message Format|"%1 failed. %2"
+|Severity|OK
+|Resolution|None.
+
+### HpeRedfishMessage.1.0.ValidatingServerConfigUpdateProgress
+Validating server configuration update progress status
+
+| | |
+|:---|:---|
+|Message Format|"%1"
+|Severity|OK
+|Resolution|None.
+
 ### HpeRedfishMessage.1.0.iLOErrorId
  iLO message ID
 
 | | |
 |:---|:---|
-|Message Format|" %1 job failed. iLoMessage Id:%2"
+|Message Format|" %1 job failed. iLoMessage Id: %2"
 |Severity|Warning
 |Resolution|None
 
@@ -967,7 +1075,16 @@ iLo Message args
 
 | | |
 |:---|:---|
-|Message Format|" %1 job failed. iLoMessage Args:%2"
+|Message Format|" %1 job failed. iLoMessage Args: %2"
+|Severity|Warning
+|Resolution|None
+
+### HpeRedfishMessage.1.0.iLOMessageID
+iLo Message args
+
+| | |
+|:---|:---|
+|Message Format|" %1 job failed. iLoMessage ID:%2"
 |Severity|Warning
 |Resolution|None
 
@@ -3851,6 +3968,105 @@ Add server operation failed the validation check for iLO firmware version.
 |Severity|Warning
 |Resolution|Check if the iLO firmware version is supported. The supported iLO version is 2.50 and above.
 
+### HpeWolfram.1.0.AddOnServiceInstallationCannotBeInitiated
+Add-on Service installation cannot be initiated because some jobs are in running state.
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service installation cannot be initiated because some jobs are in running state."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceInstallationFailed
+Add-on Service installation Failed
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service installation Failed."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceInstallationSuccessful
+Add-on Service installation completed successfully.
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service installation completed successfully."
+|Severity|OK
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceResetFailed
+Add-on Service reset failed
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service reset failed."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceResetSuccessful
+Add-on Service reset successfully
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service reset successfully."
+|Severity|OK
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceStartFailed
+Add-on Service failed to start
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service failed to start."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceStartSuccessful
+Add-on Service started successfully
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service started successfully."
+|Severity|OK
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceStopFailed
+Add-on Service stop failed
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service stop failed."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceStopSuccessful
+Add-on Service stopped successfully
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service stopped successfully."
+|Severity|OK
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceUnInstallationFailed
+Add-on Service uninstallation failed
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service uninstallation Failed."
+|Severity|Warning
+|Resolution|No action required
+
+### HpeWolfram.1.0.AddOnServiceUnInstallationSuccessful
+Add-on Service uninstallation successful
+
+| | |
+|:---|:---|
+|Message Format|"Add-on Service uninstallation completed successfully."
+|Severity|OK
+|Resolution|No action required
+
 ### HpeWolfram.1.0.AutoRefreshStarted
 Periodic refresh of all the servers and groups has started.
 
@@ -3904,6 +4120,15 @@ Debug logs cannot be downloaded.
 |Message Format|"Debug logs cannot be downloaded because there is a download in progress"
 |Severity|Critical
 |Resolution|No action required.
+
+### HpeWolfram.1.0.CannotModifyDefaultUser
+Cannot delete or modify certain properties for user created during first time setup.
+
+| | |
+|:---|:---|
+|Message Format|"Cannot delete or modify certain properties for user created during first time setup."
+|Severity|Warning
+|Resolution|Only Username, Password and DisplayName can be modified for user created during first time setup.
 
 ### HpeWolfram.1.0.CertCSRKeyMismatch
 Certificate Import Failed, Private/Public Key Mismatch
@@ -4148,14 +4373,14 @@ Invalid Group Key Provided.
 |Severity|Warning
 |Resolution|Specify a Group key that matches and retry the operation.
 
-### HpeWolfram.1.0.GroupNameAlreadyExist
+### HpeWolfram.1.0.GroupNameAlreadyExists
 Group Name already Exists
 
 | | |
 |:---|:---|
-|Message Format|"Group creation failed since the Group Name already Exists."
+|Message Format|"Group creation failed since the Group Name %1 already exists."
 |Severity|Warning
-|Resolution|Specify a Group Name that doesnt exist and retry the operation.
+|Resolution|Specify a Group Name that doesn't exist and retry the operation.
 
 ### HpeWolfram.1.0.IPRangeAddInProgress
 IP Range Add is already in progress. Cannot start a new range discovery.
@@ -4174,6 +4399,15 @@ The specified IPv6 configuration caused an error.
 |Message Format|"The specified IPv6 configuration was in error due to %1."
 |Severity|Warning
 |Resolution|Resolve the indicated error in the configuration data.
+
+### HpeWolfram.1.0.IPv6StaticRouteNotSupported
+IPv6 Static Route is not supported
+
+| | |
+|:---|:---|
+|Message Format|"IPv6 Static Route is not supported"
+|Severity|Warning
+|Resolution|No action required
 
 ### HpeWolfram.1.0.IncompatibleBaseline
 Recovery policy cannot be created or modified as an incompatible baseline is specified.
@@ -4531,7 +4765,16 @@ The length for the property is less than the minimum length.
 
 | | |
 |:---|:---|
-|Message Format|"The length of %1 for the property %2 is less than the minimum length of %3."
+|Message Format|"The length for the property %1 is less than the specified minimum length of %2."
+|Severity|Warning
+|Resolution|Correct the value for the property in the request body, and then retry the operation.
+
+### HpeWolfram.1.0.PropertyLengthMoreThanMaxLength
+The length for the property is more than the maximum length.
+
+| | |
+|:---|:---|
+|Message Format|"The length for the property %1 is more than the specified maximum length of %2."
 |Severity|Warning
 |Resolution|Correct the value for the property in the request body, and then retry the operation.
 
@@ -4579,6 +4822,15 @@ Indicates that a required property is not specified.
 |Message Format|"Required Property %1 needs to be specifed."
 |Severity|Warning
 |Resolution|Include the required property in the request body and then retry the operation.
+
+### HpeWolfram.1.0.ReservedGroupName
+Group Name used is reserved.
+
+| | |
+|:---|:---|
+|Message Format|"Group creation failed since the Group Name is reserved."
+|Severity|Warning
+|Resolution|Specify a different Group Name and retry the operation.
 
 ### HpeWolfram.1.0.ResourceBeingFlashed
 The change to the requested resource failed because the resource is being flashed.
@@ -4633,6 +4885,15 @@ The payload for this action can accept either only Gen8/Gen9 servers or Gen10 se
 |Message Format|"The payload for this action can accept either only Gen8/Gen9 servers or Gen10 servers."
 |Severity|Warning
 |Resolution|Seperate out Gen8/Gen9 and Gen10 servers into two requests.
+
+### HpeWolfram.1.0.ServerInformationMissing
+Server information required for this action is missing.
+
+| | |
+|:---|:---|
+|Message Format|"Server information required for this action is missing."
+|Severity|Warning
+|Resolution|Make sure the servers are valid and of known type
 
 ### HpeWolfram.1.0.SpecialCharacterNotAllowedInUsername
 No special characters except underscore are allowed in the username.

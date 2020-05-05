@@ -7,6 +7,7 @@
 |`/redfish/v1/AccountService/Accounts/{item}`|[ManagerAccount](#manageraccount-1-1-2)|
 |`/redfish/v1/AccountService/PrivilegeRegistry`|[PrivilegeRegistry](#privilegeregistry-1-1-1)|
 |`/redfish/v1/AccountService/Roles`|Collection of [Role](#role-1-2-1)|
+|`/redfish/v1/AddOnServices`|Collection of [HpeWfmAddOnServices](#hpewfmaddonservices)|
 |`/redfish/v1/AggregatorService`|[HpeWfmAggregatorService](#hpewfmaggregatorservice)|
 |`/redfish/v1/AggregatorService/Dashboard/Alerts`|[HpeWfmDashboardAlerts](#hpewfmdashboardalerts)|
 |`/redfish/v1/AggregatorService/Dashboard/Assets`|[HpeWfmDashboardAssets](#hpewfmdashboardassets)|
@@ -88,7 +89,7 @@
 |`/redfish/v1/Systems/{item}/Storage/{item}/Volumes/{item}`|[Volume](#volume-1-0-3)|
 |`/redfish/v1/TaskService`|[TaskService](#taskservice-1-1-1)|
 |`/redfish/v1/TaskService/Tasks`|Collection of [Task](#task-1-2-0)|
-|`/redfish/v1/TaskService/Tasks/{item}0000`|[Task](#task-1-2-0)|
+|`/redfish/v1/TaskService/Tasks/{item}`|[Task](#task-1-2-0)|
 |`/redfish/v1/UpdateService`|[UpdateService](#updateservice-1-2-1)|
 |`/redfish/v1/UpdateService/FirmwareInventory`|Collection of [SoftwareInventory](#softwareinventory-1-2-0)|
 |`/redfish/v1/UpdateService/FirmwareInventory/{item}`|[SoftwareInventory](#softwareinventory-1-2-0)|
