@@ -376,9 +376,7 @@ This schema defines a computer system and its respective properties.  A computer
 | } |   |   |
 | **HostedServices** { | object | The services that this computer system supports. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Oem** {} | object | Oem extension object. See the *Resource* schema for details on this property. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** { | object | A reference to a collection of storage services supported by this computer system. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** | <br><br>*read-only* | A reference to a collection of storage services supported by this computer system. |
 | } |   |   |
 | **HostingRoles** [ ] | array (string<br>(enum))<br><br>*read-only* | The hosing roles that this computer system supports. The enumerations of HostingRoles specify different features that the hosting ComputerSystem supports. *For the possible property values, see HostingRoles in Property Details.* |
 | **HostName** | string<br><br>*read-write<br>(null)* | The DNS Host Name, without any domain information. |
@@ -859,72 +857,72 @@ The state of the status indicator, used to communicate status information about 
 | Rebuild | The drive is being rebuilt. |
 
 
-## EthernetInterface 1.4.0
+## EthernetInterface 1.6.0
 
-The EthernetInterface schema represents a single, logical ethernet interface or network interface controller (NIC).
+The EthernetInterface schema represents a single, logical Ethernet interface or network interface controller (NIC).
 
 |     |     |     |
 | --- | --- | --- |
-| **AutoNeg** | boolean<br><br>*read-write<br>(null)* | This indicates if the speed and duplex are automatically negotiated and configured on this interface. |
+| **AutoNeg** | boolean<br><br>*read-write<br>(null)* | An indication of whether the speed and duplex are automatically negotiated and configured on this interface. |
 | **Description** | string<br><br>*read-only<br>(null)* | Provides a description of this resource and is used for commonality  in the schema definitions. |
 | **DHCPv4** { | object<br><br>*<br>(null)* | DHCPv4 configuration for this interface. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DHCPEnabled** | boolean<br><br>*read-write<br>(null)* | Determines whether DHCPv4 is enabled on this interface. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDNSServers** | boolean<br><br>*read-write<br>(null)* | Determines whether to use DHCPv4-supplied DNS servers. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDomainName** | boolean<br><br>*read-write<br>(null)* | Determines whether to use a DHCPv4-supplied domain name. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseGateway** | boolean<br><br>*read-write<br>(null)* | Determines whether to use a DHCPv4-supplied gateway. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseNTPServers** | boolean<br><br>*read-write<br>(null)* | Determines whether to use DHCPv4-supplied NTP servers. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseStaticRoutes** | boolean<br><br>*read-write<br>(null)* | Determines whether to use DHCPv4-supplied static routes. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DHCPEnabled** | boolean<br><br>*read-write<br>(null)* | An indication of whether DHCP v4 is enabled on this Ethernet interface. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDNSServers** | boolean<br><br>*read-write<br>(null)* | An indication of whether this interface uses DHCP v4-supplied DNS servers. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDomainName** | boolean<br><br>*read-write<br>(null)* | An indication of whether this interface uses a DHCP v4-supplied domain name. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseGateway** | boolean<br><br>*read-write<br>(null)* | An indication of whether this interface uses a DHCP v4-supplied gateway. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseNTPServers** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses DHCP v4-supplied NTP servers. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseStaticRoutes** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses DHCP v4-supplied static routes. |
 | } |   |   |
 | **DHCPv6** { | object<br><br>*<br>(null)* | DHCPv6 configuration for this interface. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OperatingMode** | string<br>(enum)<br><br>*read-write<br>(null)* | Determines the DHCPv6 operating mode for this interface. *For the possible property values, see OperatingMode in Property Details.* |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDNSServers** | boolean<br><br>*read-write<br>(null)* | When enabled, DNS server addresses supplied through DHCPv6 stateless mode will be used. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDomainName** | boolean<br><br>*read-write<br>(null)* | When enabled, the domain name supplied through DHCPv6 stateless mode will be used. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseNTPServers** | boolean<br><br>*read-write<br>(null)* | When enabled, NTP server addresses supplied through DHCPv6 stateless mode will be used. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseRapidCommit** | boolean<br><br>*read-write<br>(null)* | Determines whether to use DHCPv6 rapid commit mode for stateful mode address assignments. Do not enable in networks where more than one DHCPv6 server is configured to provide address assignments. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDNSServers** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses DHCP v6-supplied DNS servers. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseDomainName** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses a domain name supplied through DHCP v6 stateless mode. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseNTPServers** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses DHCP v6-supplied NTP servers. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UseRapidCommit** | boolean<br><br>*read-write<br>(null)* | An indication of whether the interface uses DHCP v6 rapid commit mode for stateful mode address assignments.  Do not enable this option in networks where more than one DHCP v6 server is configured to provide address assignments. |
 | } |   |   |
-| **FQDN** | string<br><br>*read-write<br>(null)* | This is the complete, fully qualified domain name obtained by DNS for this interface. |
-| **FullDuplex** | boolean<br><br>*read-write<br>(null)* | This indicates if the interface is in Full Duplex mode or not. |
-| **HostName** | string<br><br>*read-write<br>(null)* | The DNS Host Name, without any domain information. |
+| **FQDN** | string<br><br>*read-write<br>(null)* | The complete, fully qualified domain name that DNS obtains for this interface. |
+| **FullDuplex** | boolean<br><br>*read-write<br>(null)* | An indication of whether full-duplex mode is enabled on the Ethernet connection for this interface. |
+| **HostName** | string<br><br>*read-write<br>(null)* | The DNS host name, without any domain information. |
 | **Id** | string<br><br>*read-only required* | Uniquely identifies the resource within the collection of like resources. |
-| **InterfaceEnabled** | boolean<br><br>*read-write<br>(null)* | This indicates whether this interface is enabled. |
-| **IPv4Addresses** [ { } ] | array (object) | The IPv4 addresses currently assigned to this interface. This type describes an IPv4 Address. See the *IPAddresses* schema for details on this property. |
-| **IPv4StaticAddresses** [ { } ] | array (object) | The IPv4 static addresses assigned to this interface. This type describes an IPv4 Address. See the *IPAddresses* schema for details on this property. |
-| **IPv6Addresses** [ { } ] | array (object) | Enumerates in an array all of the currently assigned IPv6 addresses on this interface. This type describes an IPv6 Address. See the *IPAddresses* schema for details on this property. |
-| **IPv6AddressPolicyTable** [ { | array | An array representing the RFC 6724 Address Selection Policy Table. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Label** | number<br><br>*read-write<br>(null)* | The IPv6 Label (as defined in RFC 6724 section 2.1). |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Precedence** | number<br><br>*read-write<br>(null)* | The IPv6 Precedence (as defined in RFC 6724 section 2.1. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Prefix** | string<br><br>*read-write<br>(null)* | The IPv6 Address Prefix (as defined in RFC 6724 section 2.1). |
+| **InterfaceEnabled** | boolean<br><br>*read-write<br>(null)* | An indication of whether this interface is enabled. |
+| **IPv4Addresses** [ { } ] | array (object) | The IPv4 addresses currently assigned to this interface. This type describes an IPv4 Address. See the *redfish.dmtf.org/schemas/v1/IPAddresses.v1_0_6.json* schema for details on this property. |
+| **IPv4StaticAddresses** [ { } ] | array (object) | The IPv4 static addresses assigned to this interface. This type describes an IPv4 Address. See the *redfish.dmtf.org/schemas/v1/IPAddresses.v1_0_6.json* schema for details on this property. |
+| **IPv6Addresses** [ { } ] | array (object) | An array of the currently assigned IPv6 addresses on this interface. This type describes an IPv6 Address. See the *redfish.dmtf.org/schemas/v1/IPAddresses.v1_0_6.json* schema for details on this property. |
+| **IPv6AddressPolicyTable** [ { | array | An array that represents the RFC6724-defined address selection policy table. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Label** | integer<br><br>*read-write<br>(null)* | The IPv6 label, as defined in RFC6724, section 2.1. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Precedence** | integer<br><br>*read-write<br>(null)* | The IPv6 precedence, as defined in RFC6724, section 2.1. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Prefix** | string<br><br>*read-write<br>(null)* | The IPv6 address prefix, as defined in RFC6724, section 2.1. |
 | } ] |   |   |
-| **IPv6DefaultGateway** | string<br><br>*read-only<br>(null)* | This is the IPv6 default gateway address that is currently in use on this interface. |
-| **IPv6StaticAddresses** [ { } ] | array (object) | Represents in an array all of the IPv6 static addresses to be assigned on this interface. This object represents a single IPv6 static address to be assigned on a network interface. See the *IPAddresses* schema for details on this property. |
+| **IPv6DefaultGateway** | string<br><br>*read-only<br>(null)* | The IPv6 default gateway address in use on this interface. |
+| **IPv6StaticAddresses** [ { } ] | array (object) | An array of the IPv6 static addresses to assign on this interface. This object represents a single IPv6 static address to be assigned on a network interface. See the *redfish.dmtf.org/schemas/v1/IPAddresses.v1_0_6.json* schema for details on this property. |
 | **IPv6StaticDefaultGateways** [ { } ] | array (object) | The IPv6 static default gateways for this interface. This object represents a single IPv6 static address to be assigned on a network interface. See the *IPAddresses* schema for details on this property. |
-| **Links** { | object | Contains references to other resources that are related to this resource. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Chassis** { | object | A reference to the Chassis which contains this Ethernet Interface. See the *Chassis* schema for details on this property. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to a Chassis resource. See the Links section and the *Chassis* schema for details. |
+| **Links** { | object | The links to other resources that are related to this resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Chassis** { | object | The link to the chassis that contains this Ethernet interface. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Endpoints** [ { } ] | array (object) | An array of references to the endpoints that connect to this ethernet interface. This is the schema definition for the Endpoint resource. It represents the properties of an entity that sends or receives protocol defined messages over a transport. See the *Endpoint* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HostInterface** {} | object | This is a reference to a Host Interface that is associated with this Ethernet Interface. See the *HostInterface* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Oem** {} | object | Oem extension object. See the *Resource* schema for details on this property. |
 | } |   |   |
-| **LinkStatus** | string<br>(enum)<br><br>*read-only<br>(null)* | The link status of this interface (port). *For the possible property values, see LinkStatus in Property Details.* |
-| **MACAddress** | string<br><br>*read-write<br>(null)* | This is the currently configured MAC address of the (logical port) interface. |
-| **MaxIPv6StaticAddresses** | number<br><br>*read-only<br>(null)* | This indicates the maximum number of Static IPv6 addresses that can be configured on this interface. |
-| **MTUSize** | number<br><br>*read-write<br>(null)* | This is the currently configured Maximum Transmission Unit (MTU) in bytes on this interface. |
+| **LinkStatus** | string<br>(enum)<br><br>*read-only<br>(null)* | The link status of this interface, or port. *For the possible property values, see LinkStatus in Property Details.* |
+| **MACAddress** | string<br><br>*read-write<br>(null)* | The currently configured MAC address of the interface, or logical port. |
+| **MaxIPv6StaticAddresses** | integer<br><br>*read-only<br>(null)* | The maximum number of static IPv6 addresses that can be configured on this interface. |
+| **MTUSize** | integer<br><br>*read-write<br>(null)* | The currently configured maximum transmission unit (MTU), in bytes, on this interface. |
 | **Name** | string<br><br>*read-only required* | The name of the resource or array element. |
-| **NameServers** [ ] | array (string)<br><br>*read-only* | This represents DNS name servers that are currently in use on this interface. |
+| **NameServers** [ ] | array (string)<br><br>*read-only* | The DNS servers in use on this interface. |
 | **NameServersIPv6** [ ] | array (string, null)<br><br>*read-only* | The IPV6 DNS name servers to be used for retrieving the host name. |
-| **Oem** {} | object | This is the manufacturer/provider specific extension moniker used to divide the Oem object into sections. See the *Resource* schema for details on this property. |
-| **PermanentMACAddress** | string<br><br>*read-only<br>(null)* | This is the permanent MAC address assigned to this interface (port). |
-| **SpeedMbps** | number<br>(Mbit/s)<br><br>*read-write<br>(null)* | This is the current speed in Mbps of this interface. |
-| **StatelessAddressAutoConfig** { | object<br><br>*<br>(null)* | Stateless Address Automatic Configuration (SLAAC) parameters for this interface. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv4AutoConfigEnabled** | boolean<br><br>*read-write<br>(null)* | Indicates whether IPv4 SLAAC is enabled for this interface. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv6AutoConfigEnabled** | boolean<br><br>*read-write<br>(null)* | Indicates whether IPv6 SLAAC is enabled for this interface. |
+| **Oem** {} | object | The OEM extension property. See the *redfish.dmtf.org/schemas/v1/Resource.json* schema for details on this property. |
+| **PermanentMACAddress** | string<br><br>*read-only<br>(null)* | The permanent MAC address assigned to this interface, or port. |
+| **SpeedMbps** | integer<br>(Mbit/s)<br><br>*read-write<br>(null)* | The current speed, in Mbit/s, of this interface. |
+| **StatelessAddressAutoConfig** { | object<br><br>*<br>(null)* | Stateless address autoconfiguration (SLAAC) parameters for this interface. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv4AutoConfigEnabled** | boolean<br><br>*read-write<br>(null)* | An indication of whether IPv4 stateless address autoconfiguration (SLAAC) is enabled for this interface. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv6AutoConfigEnabled** | boolean<br><br>*read-write<br>(null)* | An indication of whether IPv6 stateless address autoconfiguration (SLAAC) is enabled for this interface. |
 | } |   |   |
-| **StaticNameServers** [ ] | array (string)<br><br>*read-write* | A statically defined set of DNS server IP addresses (both IPv4 and IPv6). |
-| **Status** {} | object<br><br>*<br>(null)* | This type describes the status and health of a resource and its children. See the *Resource* schema for details on this property. |
+| **StaticNameServers** [ ] | array (string)<br><br>*read-write* | The statically-defined set of DNS server IPv4 and IPv6 addresses. |
+| **Status** {} | object<br><br>*<br>(null)* | The status and health of the resource and its subordinate or dependent resources. See the *redfish.dmtf.org/schemas/v1/Resource.json* schema for details on this property. |
 | **UefiDevicePath** | string<br><br>*read-only<br>(null)* | The UEFI device path for this interface. |
-| **VLAN** {} | object<br><br>*<br>(null)* | If this Network Interface supports more than one VLAN, this property is not present. VLANs collections appear in the Link section of this resource. See the *VLanNetworkInterface* schema for details on this property. |
-| **VLANs** { | object | This is a reference to a collection of VLANs and is only used if the interface supports more than one VLANs. Contains a link to a resource. |
+| **VLAN** {} | object<br><br>*<br>(null)* | If this network interface supports more than one VLAN, this property is absent.  VLAN collections appear in the Links property of this resource. See the *redfish.dmtf.org/schemas/v1/VLanNetworkInterface.v1_1_2.json* schema for details on this property. |
+| **VLANs** { | object | The link to a collection of VLANs, which applies only if the interface supports more than one VLAN.  If this property applies, the VLANEnabled and VLANId properties do not apply. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to Collection of *VLanNetworkInterface*. See the VLanNetworkInterface schema for details. |
 | } |   |   |
 
@@ -1194,6 +1192,7 @@ This is the schema definition for HpeHttpsCert.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**State** | string<br><br>*read-only* | The state where the company or organization that owns this device is located. |
 | } |   |   |
 | **Id** | string<br><br>*read-write* | Uniquely identifies the resource within the collection of like resources. |
+| **Type** | <br><br>*read-write* |  |
 | **X509CertificateInformation** { | object | Contains the X509 Certificate Information. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Issuer** | string<br><br>*read-only* | The Certificate Authority that issued the certificate. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SerialNumber** | string<br><br>*read-only* | The serial number that the Certificate Authority assigned to the certificate. |
@@ -1329,8 +1328,11 @@ This is the schema definition for HpeWfmAccountExt.
 | **DisplayName** | string<br><br>*read-write* | Descriptive display name that helps to easily identify the owner of each user name. The display name does not have to be the same as the user name and must use printable characters. The maximum length for a display name is 127 characters. |
 | **Enabled** | boolean<br><br>*read-write* | Indicates whether the user account is enabled or not. |
 | **Id** | <br><br>*read-write* |  |
+| **InfoSightGuidedTour** | boolean<br><br>*read-write* | Specifies InfoSight guided tour status for the user account created with the manager/security privilage.The value is set to TRUE by default. |
+| **InfoSightSetupNotificationDismissed** | boolean<br><br>*read-write* | Indicates if InfoSight setup noification updates have been disabled by the user. |
 | **Name** | <br><br>*read-write* |  |
 | **Privilege** | string<br>(enum)<br><br>*read-write* | This privilege enables a user to log in to management processor. All local accounts have the login privilege. This privilege is added automatically if it is not specified. *For the possible property values, see Privilege in Property Details.* |
+| **SalientFeaturesGuidedTour** | boolean<br><br>*read-write* | Specifies OPA  sailent feature tour status for the user accounts with any privilage.The value is set to TRUE by default. |
 
 ### Property Details
 
@@ -1494,6 +1496,7 @@ This is the schema definition for HpeWfmAggregatorService.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Warning** | integer<br><br>*read-only* | The number of systems with Warning health status that are managed by this device. |
 | } |   |   |
 | **AllowAlertBasedRefresh** | boolean<br><br>*read-write* | If enabled, servers will be refreshed on alerts on the managed Nodes. |
+| **AnonymousUsageFeatureEnabled** | boolean<br><br>*read-write* | Indicates if Sends Anonymous Data to HPE Backend Feature is enabled by the user. |
 | **AutoRefreshMode** | boolean<br><br>*read-write* | If enabled, servers will be refreshed automatically in intervals based on the total number of managed Nodes. |
 | **ContinousDiscovery** | boolean<br><br>*read-write* | If enabled, the information of nodes and groups are refreshed at a regular interval. The regular interval is specified by RefreshInterval. |
 | **Description** | <br><br>*read-write* |  |
@@ -1501,6 +1504,8 @@ This is the schema definition for HpeWfmAggregatorService.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | } |   |   |
 | **Id** | <br><br>*read-write required* |  |
+| **iLOHTTPSConnectionTimeOut** | integer<br><br>*read-write* | Connection timeout for any Redfish or REST Calls to iLO in seconds. Default timeout is set to 30 seconds. |
+| **LastScannedTime** | string<br><br>*read-only<br>(null)* | Last time when IPv4 range got scanned. |
 | **Links** { | object |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Dashboard** { | object |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Alerts** { | object | The value of this property shall be a reference to a resource of Type Alerts. |
@@ -1512,9 +1517,15 @@ This is the schema definition for HpeWfmAggregatorService.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Compliance** { | object | The value of this property shall be a reference to a resource of Type Compliance. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**InfoSightAlerts** { | object | The value of this property shall be a reference to a resource of Type InfoSight Alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ServerGroups** { | object | The value of this property shall be a reference to a resource of Type Server Groups. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IPv4Range** { | object | The value of this property shall be a reference to a resource of Type Assets Scan. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LicenseInfo** { | object | The value of this property shall be a reference to a resource of Type LicenseInfo. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
@@ -1539,7 +1550,9 @@ This is the schema definition for HpeWfmAggregatorService.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | } |   |   |
 | **Name** | <br><br>*read-write required* |  |
+| **NotifyAnonymousUsageFeature** | boolean<br><br>*read-write* | Indicates whether to notify the user about send anonymous data to HPE backend feature. |
 | **RefreshIntervalInHours** | integer<br>(enum)<br><br>*read-write* | The time interval in minutes when refresh of information of nodes and groups are initiated again. *For the possible property values, see RefreshIntervalInHours in Property Details.* |
+| **ScheduledScanTime** | integer<br><br>*read-write* | Scheduled Scan time for IPv4 range scan in seconds which by default is set to 0(00:00 hours). |
 | **ServerGroups** { | object | This property references a resource of type Collection with a MemberType of Server groups. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | } |   |   |
@@ -1662,6 +1675,7 @@ This is the schema definition for a HpeWfmAlertService.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Enabled** | boolean<br><br>*read-write* | Specifies whether IFTTT is enabled or not. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Key** | string<br><br>*read-write* | IFTTT Key. |
 | } |   |   |
+| **InfoSightAlertsEnabled** | boolean<br><br>*read-write* | Specifies whether InfoSight Alerts are enabled or not. |
 | **Links** { | object | The URIs for the resources related to the alert mail service resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AlertLogs** { | object | The URI for alert logs resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
@@ -1713,6 +1727,23 @@ Send a test Alert mail to the configured mail address.
 | Fahrenheit | It specifies that measuring unit of temperature is Fahrenheit. |
 | None | It specifies that no measuring unit has been configured for temperature. |
 
+## HpeWfmAssetsScan
+
+This is the schema definition for HpeWfmAssetsScan.
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **Id** | <br><br>*read-write* |  |
+| **IPv4Range** { | object | Collated details of IPv4 Ranges for automated discovery at scheduled time. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**EndAddress** | string<br><br>*read-write required* | The ending address at which the discovery process stops. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Password** | string<br><br>*read-write required* | Password to use to log in to the management processor. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**PortNumber** | integer<br><br>*read-write* | SSL Port of the managed systems.Default to 443. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ServerGroupName** | string<br><br>*read-write* | Group to which Server will be added. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StartAddress** | string<br><br>*read-write required* | The starting address at which the discovery process begins. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**UserName** | string<br><br>*read-write required* | Name to use to log in to the management processor. |
+| } |   |   |
+| **Name** | <br><br>*read-write* |  |
 
 ## HpeWfmBaseline
 
@@ -1749,14 +1780,14 @@ This property indicates the state of inventory for this resource.
 
 ## HpeWfmBaselineComponents
 
-This is the schema definition for a HpeWfmBaselineComponents.
+This is the schema definition for HpeWfmBaselineComponents.
 
 |     |     |     |
 | --- | --- | --- |
 | **Description** | <br><br>*read-write* |  |
 | **Id** | <br><br>*read-write* |  |
 | **Name** | <br><br>*read-write* |  |
-| **Recommendation** | string<br>(enum)<br><br>*read-only* | This property indicates the upgrade recommendataion for the component. *For the possible property values, see Recommendation in Property Details.* |
+| **Recommendation** | string<br>(enum)<br><br>*read-only* | This property indicates the upgrade recommendation for the component. *For the possible property values, see Recommendation in Property Details.* |
 | **Version** | string<br><br>*read-only* | The version of this component. |
 
 ### Property Details
@@ -1783,15 +1814,30 @@ This is the schema definition for HpeWfmBaselineService.
 | **Baselines** { | object | This property references a collection resource of imported baselines. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | } |   |   |
+| **ComponentsRepositoryFreeSpaceInMB** | integer<br><br>*read-only* | Total free space of disk (in MB) remaining for hotfix update. |
 | **DateTime** | string<br><br>*read-only<br>(null)* | The current DateTime (with offset) setting that the task service is using. |
 | **Description** | <br><br>*read-write* |  |
-| **FreeSpaceInMB** | integer<br><br>*read-only* | Free space of disk (in MB) remaining for importing baselines . |
+| **FreeSpaceInMB** | integer<br><br>*read-only* | Free space of disk (in MB) remaining for importing baselines. |
 | **Id** | <br><br>*read-write* |  |
 | **Name** | <br><br>*read-write* |  |
 | **Oem** | <br><br>*read-write* | This is the manufacturer/provider specific extension moniker used to divide the Oem object into sections. |
 | **ServiceEnabled** | boolean<br><br>*read-only<br>(null)* | This indicates whether this service is enabled. |
 | **Status** | <br><br>*read-write* |  |
-| **TotalSpaceInMB** | integer<br><br>*read-only* | Total space of disk (in MB) allocated for importing baselines. |
+| **TotalComponentsRepositoryUsageSpace** | integer<br><br>*read-only* | Total space of disk (in MB) allocated for hotfix update. |
+| **TotalSpaceInMB** | integer<br><br>*read-only* | Total space of disk (in MB) allocated for importing baselines . |
+
+### Actions
+
+### ClearComponentRepsoitory
+
+
+Delete autodownloaded hotfix components.
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
 
 ## HpeWfmComputerSystem
 
@@ -1873,13 +1919,28 @@ This is the schema definition for HpeWfmComputerSystem.
 | **NotRunCount** | integer<br><br>*read-only<br>(null)* | Count of servers for which compliance has never been run for any imported firmware baseline. |
 | **TotalServersCount** | integer<br><br>*read-only<br>(null)* | Total number of servers managed by this iLO Amp. |
 
+## HpeWfmDashboardInfoSightAlerts
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **Id** | <br><br>*read-write* |  |
+| **InfoSightAlertsCount** { | object | This indicates the count of various categories of InfoSight alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CustomerAdvisoryAlerts** | integer<br><br>*read-only<br>(null)* | Count of InfoSight Customer Advisory Alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HotfixAlerts** | integer<br><br>*read-only<br>(null)* | Count of InfoSight Hotfix Alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Others** | integer<br><br>*read-only<br>(null)* | Count of InfoSight misc. Alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Total** | integer<br><br>*read-only<br>(null)* | Count of all InfoSight Alerts. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**WellnessAlerts** | integer<br><br>*read-only<br>(null)* | Count of InfoSight Wellness Alerts. |
+| } |   |   |
+| **Name** | <br><br>*read-write* |  |
+
 ## HpeWfmDashboardServerGroups
 
 |     |     |     |
 | --- | --- | --- |
 | **ActionStatus** { | object | The detailed and collated status of action performed |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ServerGroupsHealthStatus** { | object | The status of task initiated for fetching details of health status of various servers in all server groups managed by iLO Amplifier. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HealthActionStatus** | string<br>(enum)<br><br>*read-only* | The status of the getting process. *For the possible property values, see HealthActionStatus in Property Details.* |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HealthActionStatus** | string<br>(enum)<br><br>*read-only* | The status of the process. *For the possible property values, see HealthActionStatus in Property Details.* |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ProgressPercent** | integer<br><br>*read-only* | The progress percent of the HealthStatus process. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | } |   |   |
@@ -2013,6 +2074,60 @@ This is the schema definition for a HpeWfmDirectoryGroup.
 | **Id** | <br><br>*read-write* |  |
 | **Name** | <br><br>*read-write* |  |
 | **privilege** | string<br><br>*read-write* | The type of privilege this group is entitled to. |
+
+## HpeWfmDiscoverFederationGroup
+
+This is the schema definition for a HpeWfmDiscoverFederationGroup.
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **FedrationGroup** [ ] | array (string)<br><br>*read-only* | Name to use to log in to the management processor. |
+| **ManagerAddress** | string<br><br>*read-only* | The IP address or DNS name of the management processor. |
+| **Name** | <br><br>*read-write* |  |
+
+## HpeWfmDiscoveryJobResults
+
+This is the schema definition for HpeWfmDiscoveryJobResults.
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **DiscoveryJobInfo** [ { | array |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**InventoryStatus** | string<br><br>*read-only* | Progress status associated with the job. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ManagerAddress** | string<br><br>*read-only* | The Manager address of the Server. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StatusMessage** | string<br><br>*read-only* | Progress message associated with the job. |
+| } ] |   |   |
+| **Name** | <br><br>*read-write* |  |
+
+## HpeWfmEnvironmentMetrics
+
+This is the schema definition for a HpeWfmEnvironmentMetrics.
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **EnvironmentMetrics** [ { | array |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Altitude** | number<br><br>*read-only* | The altitude reading of the sensor at time. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AtTime** | string<br><br>*read-only* | The time, when the sensor data was captured. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Humidity** | number<br><br>*read-only* | The humidity reading of the sensor at time. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Temperature** | number<br><br>*read-only* | The temperature reading of sensor at time. |
+| } ] |   |   |
+| **Id** | <br><br>*read-write* |  |
+| **Name** | <br><br>*read-write* |  |
+
+## HpeWfmEnvironmentMetricsExt
+
+This is the schema definition for a HpeWfmEnvironmentMetricsExt.
+
+|     |     |     |
+| --- | --- | --- |
+| **Description** | <br><br>*read-write* |  |
+| **EnvironmentMetrics** { | object |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
+| } |   |   |
+| **Id** | <br><br>*read-write* |  |
+| **Name** | <br><br>*read-write* |  |
 
 ## HpeWfmEthernetNetworkInterface
 
@@ -2204,9 +2319,9 @@ This is the schema definition for HpeWfmHttpsCert.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ValidNotBefore** | string<br><br>*read-only* | The date on which the certificate validity period begins. |
 | } |   |   |
 
-## HpeWfmInfosightAggregation
+## HpeWfmInfoSightAggregation
 
-This is the schema definition for HpeWfmInfosightAggregation.
+This is the schema definition for HpeWfmInfoSightAggregation.
 
 |     |     |     |
 | --- | --- | --- |
@@ -2217,18 +2332,19 @@ This is the schema definition for HpeWfmInfosightAggregation.
 | **AverageAHSFileSize** | integer<br><br>*read-only* | The average file size in KB of an AHS file in the current cyle for all servers (in a day). |
 | **ClaimId** | string<br><br>*read-only<br>(null)* | Claim Id from the claim token |
 | **ClaimToken** | string<br><br>*read-write<br>(null)* | Claim token associated with the user |
-| **ClaimTokenValidationStatus** | string<br>(enum)<br><br>*read-only* | This property shows the current status of the connection to HPE Infosight from this device. *For the possible property values, see ClaimTokenValidationStatus in Property Details.* |
+| **ClaimTokenValidationStatus** | string<br>(enum)<br><br>*read-only* | This property shows the current status of the connection to HPE InfoSight from this device. *For the possible property values, see ClaimTokenValidationStatus in Property Details.* |
 | **CompletedAHSDownloadCount** | integer<br><br>*read-only* | This is the number of AHS downloads completed in the current cycle (a day). |
 | **CompletedAHSUploadCount** | integer<br><br>*read-only* | This is the number of AHS Uploads completed in the current cycle (a day). |
 | **CompletedHeartBeatUploadCount** | integer<br><br>*read-only* | This is the number of HeartBeat Uploads completed in the current cycle(10 mins). |
 | **ConcurrentAHSDownloadCount** | integer<br><br>*read-only* | This is the number of AHS Downloads happening concurrently. |
 | **ConcurrentAHSUploadCount** | integer<br><br>*read-only* | This is the number of AHS Uploads happening concurrently. |
-| **ConnectionStatus** | string<br>(enum)<br><br>*read-only* | This property shows the current status of the connection to HPE Infosight from this device. *For the possible property values, see ConnectionStatus in Property Details.* |
+| **ConnectionStatus** | string<br>(enum)<br><br>*read-only* | This property shows the current status of the connection to HPE InfoSight from this device. *For the possible property values, see ConnectionStatus in Property Details.* |
 | **ConnectionStatusErrorDetails** | string<br><br>*read-only<br>(null)* | Detailed error string in case of connection failure |
 | **DatacenterLocation** | string<br><br>*read-write<br>(null)* | Location of the Datacenter |
 | **Description** | <br><br>*read-write* |  |
 | **HeartBeatUploadErrorCount** | integer<br><br>*read-only* | This is the number of errors that happened during HeartBeat Uploads for all servers in the current cycle (10mins). |
 | **Id** | <br><br>*read-write* |  |
+| **InfoSightPolicy** | string<br>(enum)<br><br>*read-write* | This property indicates if server operations are allowed or restricted from HPE InfoSight portal. *For the possible property values, see InfoSightPolicy in Property Details.* |
 | **MaxAHSFileSize** | integer<br><br>*read-only* | The largest file size in KB of an AHS file in the current cycle for all servers (in a day). |
 | **Name** | <br><br>*read-write* |  |
 | **NewAHSCycleStartTime** | string<br><br>*read-only<br>(null)* | Time at which the AHS download and upload was started for all servers. |
@@ -2264,6 +2380,16 @@ This property shows the current status of the connection to HPE InfoSight from t
 | Connecting | Connection to HPE InfoSight is being attempted. |
 | ConnectionFailed | Connection to HPE InfoSight failed. |
 | NotInitiated | Connection to HPE InfoSight was not initiated. |
+
+### InfoSightPolicy:
+
+
+This property indicates if server operations are allowed or restricted from HPE InfoSight portal.
+
+| string | Description |
+| --- | --- |
+| AllowInfoSightServerOperations | This option indicates if server operations are allowed from HPE InfoSight portal. |
+| RestrictInfoSightServerOperations | This option indicates if server operations are restricted from HPE InfoSight portal. |
 
 
 ## HpeWfmJobResults
@@ -2535,7 +2661,7 @@ Setting Indicator LED.
 ### SppComplianceJobs
 
 
-SPP Compliance jobs.
+Baseline Compliance jobs.
 
 **URIs**:
 
@@ -2583,14 +2709,9 @@ This is the schema definition for HpeWfmLicense.
 |     |     |     |
 | --- | --- | --- |
 | **Description** | <br><br>*read-write* |  |
+| **EntitlementEULAViewed** | boolean<br><br>*read-write* | Indicates whether the entitlement is viewed or not |
 | **Id** | <br><br>*read-write* |  |
 | **License** | string<br><br>*read-only* | Describes the name of the license installed on management processor. |
-| **LicensedNoOfServers** | integer<br><br>*read-only* | Indicates the number of servers that can be managed. |
-| **LicenseFirstName** | string<br><br>*read-only* | First name. |
-| **LicenseKey** | string<br><br>*read-write<br>(null)* | The installed license key.Will be set to NULL on read. |
-| **LicenseLastName** | string<br><br>*read-only* | Last name. |
-| **LicenseMailID** | string<br><br>*read-only* | Users email ID . |
-| **LicenseOrganization** | string<br><br>*read-only* | Organization name. |
 | **LicenseType** | string<br><br>*read-only* | Indicates whether the license is Perpetual or Evaluation. |
 | **Name** | <br><br>*read-write* |  |
 | **Oem** | <br><br>*read-write* |  |
@@ -2613,14 +2734,126 @@ This is the schema definition for HpeWfmLogEntry.
 
 |     |     |     |
 | --- | --- | --- |
+| **ActionAvailable** | boolean<br><br>*read-only* | This flag is to indicate if the alert has an action associated that the end user can choose to perform. |
 | **ActionRequired** | string<br><br>*read-only* | The ActionRequired is to be done in order to possibly resolve the problem occured. |
+| **ActionUri** | <br><br>*read-only* | This is a reference to the schema that has definitions of recommended actions on servers |
+| **AdditionalInfo** { | object | This indicates the additional info associated to InfoSight alert logs. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**HotfixInfo** { | object | This indicates the additional info associated to hotfix InfoSight alert logs. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Firmware** [ { | array |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableSupportURL** | string<br><br>*read-only* | Indicates the available support URL of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableVersion** | string<br><br>*read-only* | Indicates the available version of firmware of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Criticality** | integer<br><br>*read-only* | Indicates the criticality level of the firmware related InfoSight alert log generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CriticalityStr** | string<br><br>*read-only* | Indicates the criticality detail of the firmware related InfoSight alert log generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name** | string<br><br>*read-only* | Indicates the firmware name of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Version** | string<br><br>*read-only* | Indicates the firmware version of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Software** [ { | array |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableSupportURL** | string<br><br>*read-only* | Indicates the available support URL of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AvailableVersion** | string<br><br>*read-only* | Indicates the available version of software of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Criticality** | integer<br><br>*read-only* | Indicates the criticality level of the software related InfoSight alert log generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**CriticalityStr** | string<br><br>*read-only* | Indicates the criticality detail of the software related InfoSight alert log generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name** | string<br><br>*read-only* | Indicates the software name of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Version** | string<br><br>*read-only* | Indicates the software version of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SPPVersion** | string<br><br>*read-only* | Indicates the SPP version of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| } |   |   |
+| **AlertAcknowledged** | string<br><br>*read-only* | This string is to indicate if an InfoSight alert has been acknowledged by the end user.Initially it is set to no for all InfoSight alerts. |
 | **Category** | string<br><br>*read-only* | The log entry category. |
 | **Description** | <br><br>*read-write* |  |
+| **DisplayTime** | string<br><br>*read-only* | This field stores the updated timestamp for InfoSight Alert in mm/dd/yy hh:mm:ss format |
 | **Id** | <br><br>*read-write* |  |
-| **iLoIPAddress** | string<br><br>*read-only* | The IP address of the iLO. |
+| **iLOIPAddress** | string<br><br>*read-only* | The IP address of iLo. |
+| **InfoSightAlertId** | string<br><br>*read-only* | The InfoSight alert Id. |
+| **InfoSightAlertType** | string<br>(enum)<br><br>*read-write<br>(null)* | This field indicates the various InfoSight alert categories. *For the possible property values, see InfoSightAlertType in Property Details.* |
+| **IsMarkedForDeletion** | string<br><br>*read-only* | This string is to indicate if the server for which InfoSight alert has been parsed, has been deleted or alert itself is deleted.Initially it is set to No for all parsed InfoSight alerts. |
 | **Name** | <br><br>*read-write* |  |
+| **Recommendation** | string<br><br>*read-only* | Recommended action to be performed for the alert. |
+| **ServerInfo** { | object |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ManagerAddress** | string<br><br>*read-only* | Indicates the manager address of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ManagerHostname** | string<br><br>*read-only* | Indicates the hostname of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**OPAServerGroup** | string<br><br>*read-only* | Indicates the server group name of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ProductID** | string<br><br>*read-only* | Indicates the productID of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**SerialNumber** | string<br><br>*read-only* | Indicates the serial number of the server for which InfoSight alert log has been generated. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ServerName** | string<br><br>*read-only* | Indicates the name of the server for which InfoSight alert log has been generated. |
+| } |   |   |
 | **Summary** | string<br><br>*read-only* | The log entry summary. |
 | **Updated** | string<br><br>*read-only* | The date and time of the latest log entry update, for example, 2014-04-15T00:38:00Z. |
+
+## Property Details
+
+### InfoSightAlertType:
+
+
+This field indicates the various InfoSight alert categories.
+
+| string |
+| --- |
+| Wellness | 
+| Hotfix | 
+| CustomerAdvisory | 
+| Others | 
+| All | 
+
+
+## HpeWfmLogServiceExt
+
+This is the schema definition for a HpeWfmLogServiceExt.
+
+|     |     |     |
+| --- | --- | --- |
+| **AcknowledgeTaskStatus** | string<br>(enum)<br><br>*read-only* | This field indicates the current status of InfoSight Alerts acknowledge task. *For the possible property values, see AcknowledgeTaskStatus in Property Details.* |
+| **ClearTaskStatus** | string<br>(enum)<br><br>*read-only* | This field indicates the current status of InfoSight Alerts clear task. *For the possible property values, see ClearTaskStatus in Property Details.* |
+| **Description** | <br><br>*read-write* |  |
+| **Id** | <br><br>*read-write* |  |
+| **Name** | <br><br>*read-write* |  |
+
+### Actions
+
+###### AcknowledgeAlerts
+
+
+Acknowledge InfoSight Alerts job
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+###### ClearAlerts
+
+
+Clear InfoSight Alerts job
+
+**URIs**:
+
+
+(This action takes no parameters.)
+
+
+### Property Details
+
+#### AcknowledgeTaskStatus:
+
+
+This field indicates the current status of InfoSight Alerts acknowledge task.
+
+| string |
+| --- |
+| Idle | 
+| InProgress | 
+
+#### ClearTaskStatus:
+
+
+This field indicates the current status of InfoSight Alerts clear task.
+
+| string |
+| --- |
+| Idle | 
+| InProgress | 
+
 
 ## HpeWfmManagedGroup
 
@@ -3191,7 +3424,7 @@ This is the schema definition for HpeWfmManagerExt.
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DateTimeService** { | object | The URI for this date time service resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**InfosightAggregationPolicy** { | object | Reference to a resource of InfoSight Aggregation Policy. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**InfoSightAggregationPolicy** { | object | Reference to a resource of InfoSight Aggregation Policy. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**LicenseService** { | object | The URI for this license service resource. |
@@ -3327,6 +3560,7 @@ This is the schema definition for HpeWfmManagerNetworkService.
 | } |   |   |
 
 ### Actions
+
 
 ### SendTestSyslog
 
@@ -3517,6 +3751,9 @@ This is the schema definition for HpeWfmServiceExt.
 | **Id** | <br><br>*read-write* |  |
 | **Language** | string<br><br>*read-write* | Specifies the Language to be used. |
 | **Links** { | object | The links array contains the links to other resources that are related to this resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AddOnServices** { | object | The URI to Add-on Services resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**AggregatorService** { | object | The URI to this Aggregator service resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | <br><br>*read-write* |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
@@ -3560,6 +3797,11 @@ This is the schema definition for HpeWfmSessionExt.
 | **AccessTime** | string<br><br>*read-only* | User session last-access time |
 | **Description** | <br><br>*read-write* |  |
 | **Id** | <br><br>*read-write* |  |
+| **Links** { | object | Contains references to other resources that are related to this resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Account** { | object | The user accounts, owned by a Manager, are defined in this resource.  Changes to a Manager Account may affect the current Redfish service connection if this manager is responsible for the Redfish service. See the *ManagerAccount* schema for details on this property. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to a ManagerAccount resource. See the Links section and the *ManagerAccount* schema for details. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
+| } |   |   |
 | **LoginTime** | string<br><br>*read-only* | User session login time |
 | **MySession** | boolean<br><br>*read-only* | Indicates whether this is a session you own. |
 | **Name** | <br><br>*read-write* |  |
@@ -3702,7 +3944,8 @@ This is the schema definition for HpeWfmSystemSummary.
 | **ChassisType** | string<br><br>*read-only* | The chassis type. |
 | **Description** | <br><br>*read-write* |  |
 | **Discovery** | <br><br>*read-write* |  |
-| **EncryptionSecurityState** | string<br>(enum)<br><br>*read-only* | Indicates the Encryption Security State of the Server.  *For the possible property values, see EncryptionSecurityState in Property Details.* |
+| **EncryptionSecurityState** | string<br>(enum)<br><br>*read-only* | Indicates the Encryption Security State of the Server. *For the possible property values, see EncryptionSecurityState in Property Details.* |
+| **ExternalManagementEntity** | string<br><br>*read-only* | Indicates the external management entity information. |
 | **FederationActionGroupName** | string<br><br>*read-only* | Gives the name of the Federation Group the server belongs to. |
 | **FederationEnabled** | boolean<br><br>*read-only* | Indicates whether management processor Federation management is enabled or disabled. |
 | **FederationSupported** | boolean<br><br>*read-only* | Indicates whether management processor Federation is supported. |
@@ -3743,7 +3986,7 @@ This is the schema definition for HpeWfmSystemSummary.
 | **RecoveryAction** | string<br><br>*read-only* | Indicates the Action that is set for recovery. |
 | **RecoveryPolicyId** | integer<br><br>*read-only* | Gives the Recovery Policy Id. |
 | **RecoveryPolicyName** | string<br><br>*read-only* | Indicates the Recovery Persona Applied on the System. |
-| **RecoveryStatus** | string<br><br>*read-only* | Indicates the Status of the System. If the recovery install set is applied or not,  and its status once recovery starts. |
+| **RecoveryStatus** | string<br><br>*read-only* | Indicates the Status of the System. If the recovery install set is applied or not, and its status once recovery starts. |
 | **SecurityState** | string<br><br>*read-only* | Indicates the Security State of the System. |
 | **SerialNumber** | string<br><br>*read-only* | The system serial number. |
 | **ServerPlatformType** | string<br>(enum)<br><br>*read-only* | This property is the server platform type for this resource. *For the possible property values, see ServerPlatformType in Property Details.* |
@@ -6275,12 +6518,8 @@ This object represents the root Redfish service.
 | **SessionService** { | object | This is a link to the Sessions Service. See the *SessionService* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to a SessionService resource. See the Links section and the *SessionService* schema for details. |
 | } |   |   |
-| **StorageServices** { | object | A link to a collection of all storage service entities. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
-| } |   |   |
-| **StorageSystems** { | object | This is a link to a collection of storage systems. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
-| } |   |   |
+| **StorageServices** | <br><br>*read-only* | A link to a collection of all storage service entities. |
+| **StorageSystems** | <br><br>*read-only* | This is a link to a collection of storage systems. |
 | **Systems** { | object | This is a link to a collection of Systems. Contains a link to a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | Link to Collection of *ComputerSystem*. See the ComputerSystem schema for details. |
 | } |   |   |
@@ -6404,7 +6643,7 @@ This schema defines a storage subsystem and its respective properties.  A storag
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Endpoints** [ { } ] | array (object) | An array of references to the endpoints that connect to this controller. This is the schema definition for the Endpoint resource. It represents the properties of an entity that sends or receives protocol defined messages over a transport. See the *Endpoint* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Oem** {} | object | Oem extension object. See the *Resource* schema for details on this property. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**StorageServices** [ { | array | An array of references to the StorageServices that connect to this controller. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**@odata.id** | string<br><br>*read-only* | The unique identifier for a resource. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <br><br>*read-write* | The unique identifier for a resource. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} ] |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} |   |   |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Location** {} | object | This type describes the location of a resource. See the *Resource* schema for details on this property. |
@@ -6760,6 +6999,7 @@ Units in which the reading and thresholds are measured.
 | --- | --- |
 | Percent | Indicates that the fan reading and thresholds are measured in percentage. |
 | RPM | Indicates that the fan reading and thresholds are measured in rotations per minute. |
+
 
 
 
