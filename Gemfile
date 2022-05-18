@@ -8,5 +8,5 @@ gem 'middleman-autoprefixer', '~> 2.7.0'
 gem "middleman-sprockets", "~> 4.1.0"
 gem 'rouge', '~> 2.0.5'
 gem 'redcarpet', '~> 3.5.1'
-gem 'nokogiri', '~> 1.11.4'
+gem 'nokogiri', '~> 1.13.5'
 gem 'therubyracer'
